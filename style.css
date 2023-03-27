@@ -8,59 +8,43 @@ a{
     text-decoration: none;
 }
 .header{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 20px;
     height: 80px;
     background: #FFFFFF;
     box-shadow: 0px 0px 50px rgba(1, 1, 1, 0.05);
     border-radius: 0px 0px 15px 15px;
 }
-#logo{
-    flex-basis: 3;
-    font-size: 22px;
-    font-weight: 600;
-    color: #010101;
+.header > a{
+    margin: 26px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #666666;
 }
-#logoHidden{
-    visibility: hidden;
-    flex-basis: 3;
+.header > a:hover{
+    color: #1C1B1F;
+}
+#logo{
+    margin: 20px 100px;
+    grid-column: 1;
     font-size: 22px;
     font-weight: 600;
-    color: #010101;
+    color: #1C1B1F;
 }
 #aboutPage{
-    font-size: 16px;
-    font-weight: 500;
-    color: #666666;
-}
-#aboutPage:hover{
-    color: #010101;
+    grid-column: 3;
 }
 #worksPage{
-    font-size: 16px;
-    font-weight: 500;
-    color: #666666;
-}
-#worksPage:hover{
-    color: #010101;
+    grid-column: 4;
 }
 #contactsPage{
-    font-size: 16px;
-    font-weight: 500;
-    color: #666666;
-}
-#contactsPage:hover{
-    color: #010101;
+    grid-column: 5;
 }
 .contentMainPage{
     margin-top: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     font-size: 40px;
-    text-align: center;
+    align-items: center;
 }
 #applicationButton{
     width: 450px;
@@ -76,79 +60,82 @@ a{
 #applicationButton:hover{
     box-shadow: 5px 5px #5955B3;
 }
+#imgContainer{
+    margin-bottom: 200px;
+    height: 914px;
+    background-repeat: repeat space;
+    background-attachment: fixed;
+    background-position: center top;
+    background-image: url(https://i.ibb.co/myvfy1k/photo-2022-08-01-18-49-48-1.png);
+}
 #img1{
     height: 914px;
     margin-bottom: 200px;
 }
-.contentAboutPage{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 40px;
-    text-align: center;
+.container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(10, auto);
+  /*background-color: #6e6e6e46;*/
+  gap: 40px;
 }
-#education{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-#educationContainer{
-    display: flex;
-    align-content: flex-start;
-    flex-direction: column;
+.container > div{
     background:rgba(239, 238, 234, 0.9);
-    border-radius: 50px;
-    box-shadow: 0px, opx, 50px rgba(1, 1, 1, 0.05);
-    padding: 30px;
-    font-size: 30px;
-    width: 900px;
+  padding: 10px 60px 60px 69px;
+  border-radius: 30px;
+  box-shadow: 0px 0px #504CFF;
+  transition: all .5s ease-in-out;
 }
-#educationDescription{
-    display: flex;
-    align-content: flex-start;
-    justify-content: space-between;
-    flex-direction: column;
-    font-size: 18px;
+p:first-child{
+    font-family: 'Soyuz Grotesk', sans-serif;
+    font-size: 35px;
+    color: #1C1B1F;
 }
-#facult{
-    display: flex;
-    align-content: flex-start;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
+.container > div:hover{
+  transition: all .4s ease-in-out;
+  box-shadow: 5px 5px #504CFF; /*D6FC51*/
 }
-#facult1{
-    display: flex;
-    flex-basis: 2;
+#educationBox{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(7, auto);
+    grid-gap: 10px;
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    height: fit-content;
 }
-#spec{
-    display: flex;
-    align-content: flex-start;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
+#mainInfoBox{
+    grid-column: 4;
 }
-#spec1{
-    display: flex;
-    flex-basis: 2;
+#coursesBox{
+    grid-column: 2 / 4;
+    grid-row: 3 / 5;
 }
-#eForm{
-    display: flex;
-    align-content: flex-start;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
+#experienceBox{
+    grid-column: 2;
 }
-#eForm1{
-    display: flex;
-    flex-basis: 2;
+#languagesBox{
+    grid-column: 3;
 }
-tr{
-    text-align: left;
-    height: 65px;
+.educationSubHeading{
+    font-weight: 700;
+    font-size: 22;
+    grid-column: 1 / 3;
 }
-td{
-    padding: 0px 35px;
+.educationDescription{
+    font-weight: 400;
+    font-size: 20;
+    grid-column: 2 / 4;
+}
+#university{
+    grid-row: 2;
+}
+#faculty, #facultyName{
+    grid-row: 3;
+}
+#specialization, #specializationName{
+    grid-row: 4;
+}
+#educationForm, #educationFormName{
+    grid-row: 5;
 }
