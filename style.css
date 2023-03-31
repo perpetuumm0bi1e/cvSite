@@ -109,34 +109,6 @@ p:first-child{
   transition: all .4s ease-in-out;
   box-shadow: 5px 5px #504CFF; /*D6FC51*/
 }
-#aboutMeBox{
-    grid-column: 1 / 13;
-    grid-row: 1 / 4;
-}
-#educationBox{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(7, auto);
-    grid-gap: 10px;
-    grid-column: 1 / 9;
-    grid-row: 4 / 7;
-}
-#mainInfoBox{
-    grid-column: 9 / 13;
-    grid-row: 4/8;
-}
-#coursesBox{
-    grid-column: 1 / 9;
-    grid-row: 7 / 10;
-}
-#experienceBox{
-    grid-column: 9 / 13;
-    grid-row: 8;
-}
-#languagesBox{
-    grid-column: 1 / 9;
-    grid-row: 10;
-}
 .subHeading{
     font-weight: 700;
     font-size: 22;
@@ -147,24 +119,194 @@ p:first-child{
     font-size: 20;
     grid-column: 2 / 4;
 }
-#university{
-    grid-row: 2;
+li, p{
+    line-height: 160%;
 }
-#faculty, #facultyName{
-    grid-row: 3;
+#aboutMeBox{
+    grid-column: 1 / 9;
+    grid-row: 1 / 4;
 }
-#specialization, #specializationName{
-    grid-row: 4;
-}
-#educationForm, #educationFormName{
-    grid-row: 5;
+#mainInfoBox{
+    grid-column: 9 / 13;
+    grid-row: 1 / 4;
 }
 #mainInfoBox .subHeading:not(#birthday){
     margin-top: 40px;
 }
-#mainInfoBox li{
+li{
     margin-left: -18px;
 }
-li, p{
-    line-height: 160%;
+#educationBox{
+    display: grid;
+    grid-template-rows: repeat(auto, auto);
+    grid-gap: 10px;
+    grid-column: 1 / 6;
+    grid-row: 4 / 7;
+}
+#university{
+    grid-column: 1;
+    grid-row: 2;
+}
+#faculty{
+    grid-column: 1;
+    grid-row: 3;
+}
+#facultyName{
+    grid-column: 1;
+    grid-row: 4;
+}
+#specialization{
+    grid-column: 1;
+    grid-row: 6;
+}
+#specializationName{
+    grid-column: 1;
+    grid-row: 7;
+}
+#educationForm{
+    grid-column: 1;
+    grid-row: 9;
+}
+#educationFormName{
+    grid-column: 1;
+    grid-row: 10;
+}
+#coursesBox{
+    grid-column: 6 / 13;
+    grid-row: 4 / 7;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+}
+#coursesBox p:not(:first-child){
+    margin-bottom: -10px;
+}
+#sololearn{
+    grid-column: 1;
+    grid-row: 2;
+}
+#sololearnList{
+    grid-column: 1;
+    grid-row: 3;
+} 
+#stepik{
+    grid-column: 1;
+    grid-row: 4;
+}
+#stepikList{
+    grid-column: 1;
+    grid-row: 5;
+}
+#niu{
+    grid-column: 2;
+    grid-row: 2;
+}
+#niuList{
+    grid-column: 2;
+    grid-row: 3;
+}
+#mgtu{
+    grid-column: 2;
+    grid-row: 4;
+}
+#mgtuList{
+    grid-column: 2;
+    grid-row: 5;
+}
+#experienceBox{
+    grid-column: 1 / 6;
+    grid-row: 7;
+}
+#languagesBox{
+    grid-column: 6 / 13;
+    grid-row: 7;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(10, auto);
+    grid-template-rows: repeat(auto, auto);
+    align-items: center;
+}
+#languagesBox p:not(:first-child){
+    margin-top: -10px;
+}
+#languagesBox:first-child{
+    grid-column: 1/9;
+}
+#english{
+    grid-row: 2;
+    grid-column: 1;
+}
+#englishLevel{
+    grid-row: 3;
+    grid-column: 1;
+}
+#deutch{
+    grid-row: 5;
+    grid-column: 1;
+}
+#deutchLevel{
+    grid-row: 6;
+    grid-column: 1;
+}
+.filledCircle, .circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 40px;
+    border: 3px solid #504CFF;
+}
+.filledCircle{
+    background-color: #504CFF;
+}
+#englishCircle1, 
+#englishCircle2, 
+#englishCircle3, 
+#englishCircle4,
+#englishCircle5,
+#englishCircle6{
+    grid-row: 2;
+}
+#englishCircle1{
+    grid-column: 4;
+} 
+#englishCircle2{
+    grid-column: 5;
+}
+#englishCircle3{
+    grid-column: 6;
+} 
+#englishCircle4{
+    grid-column: 7;
+}
+#englishCircle5{
+    grid-column: 8;
+}
+#englishCircle6{
+    grid-column: 9;
+}
+#deutchCircle1, 
+#deutchCircle2, 
+#deutchCircle3, 
+#deutchCircle4,
+#deutchCircle5,
+#deutchCircle6{
+    grid-row: 5;
+}
+#deutchCircle1{
+    grid-column: 4;
+} 
+#deutchCircle2{
+    grid-column: 5;
+}  
+#deutchCircle3{
+    grid-column: 6;
+}  
+#deutchCircle4{
+    grid-column: 7;
+} 
+#deutchCircle5{
+    grid-column: 8;
+} 
+#deutchCircle6{
+    grid-column: 9;
 }
