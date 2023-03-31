@@ -138,10 +138,14 @@ li{
 }
 #educationBox{
     display: grid;
-    grid-template-rows: repeat(auto, auto);
+    grid-template-rows: repeat(auto, 1fr);
     grid-gap: 10px;
     grid-column: 1 / 6;
     grid-row: 4 / 7;
+    align-items: start;
+}
+#educationBox .description{
+    margin-top: -25px;
 }
 #university{
     grid-column: 1;
@@ -157,19 +161,19 @@ li{
 }
 #specialization{
     grid-column: 1;
-    grid-row: 6;
+    grid-row: 5;
 }
 #specializationName{
     grid-column: 1;
-    grid-row: 7;
+    grid-row: 6;
 }
 #educationForm{
     grid-column: 1;
-    grid-row: 9;
+    grid-row: 7;
 }
 #educationFormName{
     grid-column: 1;
-    grid-row: 10;
+    grid-row: 8;
 }
 #coursesBox{
     grid-column: 6 / 13;
