@@ -109,34 +109,40 @@ p:first-child{
   transition: all .4s ease-in-out;
   box-shadow: 5px 5px #504CFF; /*D6FC51*/
 }
+#aboutMeBox{
+    grid-column: 1 / 13;
+    grid-row: 1 / 4;
+}
 #educationBox{
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(7, auto);
     grid-gap: 10px;
     grid-column: 1 / 9;
-    grid-row: 1 / 3;
-    height: fit-content
+    grid-row: 4 / 7;
 }
 #mainInfoBox{
     grid-column: 9 / 13;
-    grid-row: 1 / 5;
+    grid-row: 4/8;
 }
 #coursesBox{
     grid-column: 1 / 9;
+    grid-row: 7 / 10;
 }
 #experienceBox{
-    grid-column: 1 / 7;
+    grid-column: 9 / 13;
+    grid-row: 8;
 }
 #languagesBox{
-    grid-column: 7 / 13;
+    grid-column: 1 / 9;
+    grid-row: 10;
 }
-.educationSubHeading{
+.subHeading{
     font-weight: 700;
     font-size: 22;
     grid-column: 1 / 3;
 }
-.educationDescription{
+.description{
     font-weight: 400;
     font-size: 20;
     grid-column: 2 / 4;
@@ -152,4 +158,13 @@ p:first-child{
 }
 #educationForm, #educationFormName{
     grid-row: 5;
+}
+#mainInfoBox .subHeading:not(#birthday){
+    margin-top: 40px;
+}
+#mainInfoBox li{
+    margin-left: -18px;
+}
+li, p{
+    line-height: 160%;
 }
