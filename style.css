@@ -42,23 +42,29 @@ a:visited{
 }
 #worksPage{
     grid-column: 4;
-}-wi
+}
 #contactsPage{
     grid-column: 5;
 }
-.contentMainPage{
-    max-width: 1300px;
-    margin-top: 300px;
-    margin-left: auto;
-    margin-right: auto;
+#firstImgContainer{
+    height: 1500px;
+    background-image: url(https://i.ibb.co/F4gZch5/IMG-4567.jpg);
+    background-size: cover;
+    margin-bottom: 200px;
+    background-repeat: repeat space;
+    background-attachment: fixed;
+    background-position: center top;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    justify-items: center;
 }
 #text1{
-    font-size: 80px;
     grid-column: 1 / 4;
+    margin-top: 200px;
+    font-size: 80px;
     text-align: center;
+    color: #ffffff;
 }
 #text2{
     font-size: 50px;
@@ -66,6 +72,7 @@ a:visited{
     text-align: center;
 }
 #applicationButton{
+    grid-column: 2;
     width: 450px;
     height: 65px;
     background: #E3F265;
@@ -73,8 +80,6 @@ a:visited{
     border-width: 0;
     font-weight: 600;
     font-size: 20px;
-    margin-top: 200px;
-    grid-column: 2;
     transition: all .4s ease-in-out;
 }
 #applicationButton:hover{
@@ -87,17 +92,13 @@ a:visited{
     box-shadow: 0px 0px #504CFF;
     transition: all .2s ease-in-out;
 }
-#imgContainer{
-    margin-bottom: 200px;
+#secondImgContainer{
     height: 914px;
+    background-image: url(https://i.ibb.co/myvfy1k/photo-2022-08-01-18-49-48-1.png);
+    margin-bottom: 200px;
     background-repeat: repeat space;
     background-attachment: fixed;
     background-position: center top;
-    background-image: url(https://i.ibb.co/myvfy1k/photo-2022-08-01-18-49-48-1.png);
-}
-#img1{
-    height: 914px;
-    margin-bottom: 200px;
 }
 .container{
   display: grid;
@@ -343,15 +344,15 @@ li{
     grid-column: 1/ 4;;
     display: flex;
     max-width: 1300px;
-    margin-top: 300px;
+    margin-top: 200px;
     margin-left: auto;
     margin-right: auto;
 }
 .contsctCard{
     position: relative;
     left: 0px;
-    width: 200px;
-    height: 400px;
+    width: 300px;
+    height: 500px;
     background:rgba(239, 238, 234, 0.9);
     border: none;
     border-radius: 20px;
@@ -370,11 +371,19 @@ li{
     box-shadow: none;
     box-shadow: 7px 7px #c7c7c7;
   }
+  .contsctCard:active{
+    transform: translateY(7px);
+    transform: translateX(7px);
+    box-shadow: none;
+    transition: all .3s ease-in-out;
+  }
   .contsctCard:hover ~ .contsctCard{
     left: 40px;
     transition: all .3s ease-in-out;
   }
-  .contactsCards div p:first-child{
+  .contactsCards button p:first-child{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
     margin-top: 200px;
     margin-left: -180px;
     transform: rotate(-90deg);
