@@ -1,11 +1,15 @@
 *{
     font-family: 'Manrope', sans-serif;
 }
-main{
+body{
     background: #fefefe;
 }
 a{
     text-decoration: none;
+    color: #504CFF;
+}
+a:visited{
+    color: #5955B3;
 }
 .header{
     display: grid;
@@ -56,20 +60,32 @@ a{
     grid-column: 1 / 4;
     text-align: center;
 }
+#text2{
+    font-size: 50px;
+    grid-column: 1 / 4;
+    text-align: center;
+}
 #applicationButton{
     width: 450px;
     height: 65px;
     background: #E3F265;
-    box-shadow: 1px 1px 50px rgba(1, 1, 1, 0.05);
     border-radius: 40px;
     border-width: 0;
     font-weight: 600;
     font-size: 20px;
     margin-top: 200px;
     grid-column: 2;
+    transition: all .4s ease-in-out;
 }
 #applicationButton:hover{
     box-shadow: 5px 5px #504CFF;
+    transition: all .4s ease-in-out;
+}
+#applicationButton:active{
+    transform: translateX(5px);
+    transform: translateY(5px);
+    box-shadow: 0px 0px #504CFF;
+    transition: all .2s ease-in-out;
 }
 #imgContainer{
     margin-bottom: 200px;
@@ -314,3 +330,65 @@ li{
 #deutchCircle6{
     grid-column: 9;
 }
+.contentContactsPage{
+    max-width: 1300px;
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+.contactsCards{
+    grid-column: 1/ 4;;
+    display: flex;
+    max-width: 1300px;
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contsctCard{
+    position: relative;
+    left: 0px;
+    width: 200px;
+    height: 400px;
+    background:rgba(239, 238, 234, 0.9);
+    border: none;
+    border-radius: 20px;
+    padding: 40px;
+    font-family: sans-serif;
+    color: #404040;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+  }
+  .contsctCard:not(:first-child){
+    margin-left: -160px;
+  }
+  .contsctCard:hover{
+    transform: translateY(-30px);
+    transition: all .3s ease-in-out;
+    box-shadow: none;
+    box-shadow: 7px 7px #c7c7c7;
+  }
+  .contsctCard:hover ~ .contsctCard{
+    left: 40px;
+    transition: all .3s ease-in-out;
+  }
+  .contactsCards div p:first-child{
+    margin-top: 200px;
+    margin-left: -180px;
+    transform: rotate(-90deg);
+    text-align: right;
+  }
+  #telegram{
+    background:rgba(135, 191, 215, 0.9);
+  }
+  #email{
+    background:rgba(231, 255, 86, 0.9);
+  }
+  #instagram{
+    background:rgba(238, 220, 250, 0.9);
+  }
+  #github{
+    background:rgba(254, 252, 3, 0.9);
+  }
