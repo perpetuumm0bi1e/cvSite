@@ -537,42 +537,52 @@ li {
 
 /*Стиль страницы "Работы"*/
 .worksContainer {
-    margin: 0px auto 1000px auto;
+    margin: 0px auto 100vh auto;
 }
 .workDescription {
     height: 110vh;
     width:inherit;
     display: grid;
-    grid-template-columns: repeat(3 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    justify-content: center;
+    justify-items: center;
 }
 #number1{
     grid-column: 1;
-    margin: -150px 0px 0px -300px;
+    margin: -200px 0px 0px -50px;
 }
 .worksName {
     grid-column: 2;
-    display: flex;
-    flex-direction: column;
 }
 .workCardsContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.screenShots1{
+    transition: 1s all ease;
+    margin-right: -300px;
+    grid-column: 1;
+}
+
+.screenShots1 > .worksCard:not(:last-child){
+    margin-right: -100px;
+}
+.mobilePhone{
+    grid-column: 2;
+    z-index: 5;
+}
+.screenShots2{
+    margin-left: -300px;
+    grid-column: 3;
+}
+.screenShots2 > .worksCard:not(:first-child){
+    margin-left: -100px;
 }
 .workCardsContainer > .screenShots1, .screenShots2{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: start;
-}
-.worksCard:not(:first-child){
-    margin-left: -50px;
-}
-.worksCard:not(:last-child){
-    margin-right: -50px;
 }
 #mobilePhoneCard{
     background-image: url(main.svg);
@@ -581,7 +591,7 @@ li {
     background-size: contain;
     height: 700px;
     width: 360px;
-    margin: -175px 70px 0px 70px;
+    margin-top: -100px;
 }
 .worksCard {
     background-position: center center;
@@ -599,7 +609,6 @@ li {
     animation-iteration-count: 1;
     transition: all .2s ease-in-out;
 }
-
 @keyframes shake-animaiton2 {
     0% {
         transform: rotate(0deg);
