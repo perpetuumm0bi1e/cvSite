@@ -15,7 +15,7 @@ a:visited {
     color: #5955B3;
 }
 
-#textStyle1 {
+.textStyle1 {
     grid-column: 1 / 4;
     margin-top: 200px;
     font-size: 80px;
@@ -23,32 +23,31 @@ a:visited {
     color: #ffffff;
 }
 
-#textStyle2 {
+.textStyle2 {
     font-size: 50px;
     font-weight: 600;
     grid-column: 1 / 4;
     text-align: center;
 }
 
-#textStyle3 {
+.textStyle3 {
     font-size: 40px;
     font-weight: 600;
     grid-column: 1 / 4;
     text-align: center;
 }
 
-#textStyle4 {
+.textStyle4 {
     font-size: 25px;
     font-weight: 400;
     grid-column: 1 / 4;
     text-align: center;
 }
 
-#textStyle5 {
-    margin-bottom: -150px;
+.textStyle5 {
     grid-column: 1;
     font-size: 200px;
-    text-align: Left;
+    text-align: left;
     color: rgba(1, 1, 1, 0.1);
 }
 
@@ -160,7 +159,7 @@ a:visited {
     transition: all .5s ease-in-out;
 }
 
-p:first-child {
+.aboutMePageHeading {
     font-family: 'Soyuz Grotesk', sans-serif;
     font-size: 35px;
     color: #1C1B1F;
@@ -441,7 +440,6 @@ li {
 
 .contactsCards {
     grid-column: 1/ 4;
-    ;
     display: flex;
     max-width: 1300px;
     margin-top: 200px;
@@ -470,9 +468,30 @@ li {
 
 .contsctCard:hover {
     transform: translateY(-30px);
-    transition: all .3s ease-in-out;
     box-shadow: none;
     box-shadow: 7px 7px #c7c7c7;
+    animation-name: shake-animaiton;
+    animation-duration: .4s;
+    animation-iteration-count: infinite;
+    transition: all .3s ease-in-out;
+}
+
+@keyframes shake-animaiton {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
 }
 
 .contsctCard:active {
@@ -514,11 +533,24 @@ li {
 
 .worksContainer {
     max-width: 1300px;
-    margin: 100px auto 1000px auto;
+    margin: 0px auto 1000px auto;
+}
+
+.workDescription {
+    height: 100vh;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.worksName {
+    display: flex;
+    flex-direction: column;
 }
 
 .workCardsContainer {
-    margin-top: 150px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -531,7 +563,7 @@ li {
     background-size: contain;
     height: 400px;
     width: 200px;
-    transition: all 0.25s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .worksCard:not(:first-child) {
@@ -539,25 +571,49 @@ li {
 }
 
 #firstWorkMain {
+    background-image: url(mainNoBorder.svg);
+}
+
+#firstWorkMain:hover {
     background-image: url(main.svg);
 }
 
 #firstWorkProfile {
+    background-image: url(profileNoBorder.svg);
+}
+
+#firstWorkProfile:hover {
     background-image: url(profile.svg);
 }
 
 #firstWorkSettings {
+    background-image: url(settingsNoBorder.svg);
+}
+
+#firstWorkSettings:hover {
     background-image: url(settings.svg);
 }
 
 #firstWorkStatisticsDay {
+    background-image: url(statisticsDayNoBorder.svg);
+}
+
+#firstWorkStatisticsDay:hover {
     background-image: url(statisticsDay.svg);
 }
 
 #firstWorkStatisticsWeek {
+    background-image: url(statisticsWeekNoBorder.svg);
+}
+
+#firstWorkStatisticsWeek:hover {
     background-image: url(statisticsWeek.svg);
 }
 
 #firstWorkStatisticsCourse {
+    background-image: url(statisticsCourseNoBorder.svg);
+}
+
+#firstWorkStatisticsCourse:hover {
     background-image: url(statisticsCourse.svg);
 }
