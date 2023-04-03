@@ -5,29 +5,22 @@ let firstWorkSettings = document.getElementById('firstWorkSettings');
 let firstWorkStatisticsDay = document.getElementById('firstWorkStatisticsDay');
 let firstWorkStatisticsWeek = document.getElementById('firstWorkStatisticsWeek');
 let firstWorkStatisticsCourse = document.getElementById('firstWorkStatisticsCourse');
+let mobilePhoneCard = document.getElementById('mobilePhoneCard');
+let mobilePhoneCardCoord = mobilePhoneCard.getBoundingClientRect();
+let mobilePhoneScreenShots = ['main.svg', 'profile.svg', 'settings.svg', 'statisticsDay.svg', 'statisticsWeek.svg', 'statisticsCourse.svg'];
+let oldZIndex;
 
 for (let i = 0; i < firstWorkCards.length; i++) {
     firstWorkCards[i].onmouseover = function() {
-
+        mobilePhoneCard.style.backgroundImage = `url(${mobilePhoneScreenShots[i]})`;
         for (let j = 0; j < firstWorkCards.length; j++) {
-            firstWorkCards[j].style.opacity = '.4';
-            firstWorkCards[j].style.zIndex = "\u0027" + String(`${j}`) + "\u0027";
-            if (j < i) {
-                firstWorkCards[j].style.transform = 'rotate(-5deg)';
-            } else if (j > i) {
-                firstWorkCards[j].style.transform = 'rotate(5deg)';
-            }
+            firstWorkCards[j].style.opacity = '1';
         }
-        firstWorkCards[i].style.transform = 'scale(1.5)';
         firstWorkCards[i].style.opacity = '1';
-        firstWorkCards[i].style.zIndex = '6';
     }
     firstWorkCards[i].onmouseleave = function() {
         for (let j = 0; j < firstWorkCards.length; j++) {
-            firstWorkCards[j].style.transform = 'rotate(0deg)';
-            firstWorkCards[j].style.transform = 'scale(1)';
             firstWorkCards[j].style.opacity = '1';
-            firstWorkCards[j].style.zIndex = '0';
         }
     }
 }

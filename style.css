@@ -14,7 +14,7 @@ a {
 a:visited {
     color: #5955B3;
 }
-
+/*Стили текста*/
 .textStyle1 {
     grid-column: 1 / 4;
     margin-top: 200px;
@@ -51,6 +51,7 @@ a:visited {
     color: rgba(1, 1, 1, 0.1);
 }
 
+/*Стиль хедера*/
 .header {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -93,6 +94,7 @@ a:visited {
     grid-column: 5;
 }
 
+/*Стиль главной страницы*/
 #firstImgContainer {
     height: 1500px;
     background-image: url(myPhoto2.jpg);
@@ -131,6 +133,7 @@ a:visited {
     transition: all .2s ease-in-out;
 }
 
+/*Стиль страницы "Обо мне"*/
 #secondImgContainer {
     height: 914px;
     background-image: url(myPhoto1.png);
@@ -428,6 +431,7 @@ li {
     grid-column: 9;
 }
 
+/*Стиль страницы "Контакты"*/
 .contentContactsPage {
     max-width: 1300px;
     margin-top: 300px;
@@ -531,89 +535,115 @@ li {
     background: rgba(254, 252, 3, 0.9);
 }
 
+/*Стиль страницы "Работы"*/
 .worksContainer {
-    max-width: 1300px;
     margin: 0px auto 1000px auto;
 }
-
 .workDescription {
-    height: 100vh;
-    width: inherit;
-    display: flex;
-    justify-content: center;
+    height: 110vh;
+    width:inherit;
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
     align-items: center;
-    flex-direction: row;
+    justify-content: center;
 }
-
+#number1{
+    grid-column: 1;
+    margin: -150px 0px 0px -300px;
+}
 .worksName {
+    grid-column: 2;
     display: flex;
     flex-direction: column;
 }
-
 .workCardsContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-
+.workCardsContainer > .screenShots1, .screenShots2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.worksCard:not(:first-child){
+    margin-left: -50px;
+}
+.worksCard:not(:last-child){
+    margin-right: -50px;
+}
+#mobilePhoneCard{
+    background-image: url(main.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 700px;
+    width: 360px;
+    margin: -175px 70px 0px 70px;
+}
 .worksCard {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 400px;
-    width: 200px;
-    transition: all 0.2s ease-in-out;
+    height: 500px;
+    width: 250px;
+    transition: all .3s ease-in-out;
+}
+.worksCard:hover{
+    z-index: 3;
+    margin-top: -20px;
+    animation-name: shake-animaiton2;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    transition: all .2s ease-in-out;
 }
 
-.worksCard:not(:first-child) {
-    margin-left: -30px;
+@keyframes shake-animaiton2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(1deg);
+    }
+    50% {
+        transform: rotate(-1deg);
+    }
+    75% {
+        transform: rotate(1deg);
+    }
+    100% {
+        transform: rotate(-1deg);
+    }
 }
-
 #firstWorkMain {
     background-image: url(mainNoBorder.svg);
 }
-
-#firstWorkMain:hover {
-    background-image: url(main.svg);
-}
-
 #firstWorkProfile {
     background-image: url(profileNoBorder.svg);
 }
-
-#firstWorkProfile:hover {
-    background-image: url(profile.svg);
-}
-
 #firstWorkSettings {
     background-image: url(settingsNoBorder.svg);
 }
-
-#firstWorkSettings:hover {
-    background-image: url(settings.svg);
-}
-
 #firstWorkStatisticsDay {
     background-image: url(statisticsDayNoBorder.svg);
+    z-index: 2;
 }
-
 #firstWorkStatisticsDay:hover {
-    background-image: url(statisticsDay.svg);
+    z-index: 3;
 }
-
 #firstWorkStatisticsWeek {
     background-image: url(statisticsWeekNoBorder.svg);
+    z-index: 1;
 }
-
 #firstWorkStatisticsWeek:hover {
-    background-image: url(statisticsWeek.svg);
+    z-index: 3;
 }
-
 #firstWorkStatisticsCourse {
     background-image: url(statisticsCourseNoBorder.svg);
+    z-index: 0;
 }
-
 #firstWorkStatisticsCourse:hover {
-    background-image: url(statisticsCourse.svg);
+    z-index: 3;
 }
