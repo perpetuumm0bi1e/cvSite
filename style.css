@@ -106,7 +106,6 @@ a:visited {
     height: 1500px;
     background-image: url(myPhoto2.jpg);
     background-size: cover;
-    margin-bottom: 200px;
     background-repeat: repeat space;
     background-attachment: fixed;
     background-position: center top;
@@ -566,10 +565,6 @@ li {
     justify-content: center;
 }
 
-#interactiveLayout {
-    margin: 250px auto 0px auto;
-}
-
 .workDescription {
     height: 115vh;
     width: inherit;
@@ -584,10 +579,6 @@ li {
 #number5 {
     grid-column: 1;
     margin: -200px 0px 0px -50px;
-}
-
-.secondWork {
-    margin-top: -250px;
 }
 
 #number2,
@@ -720,4 +711,12 @@ li {
 
 #firstWorkStatisticsCourse:hover {
     z-index: 3;
+}
+
+#interactiveLayoutButton1,
+#gitButton1,
+#interactiveLayout3,
+#gitButton2,
+#gitButton3 {
+    margin: 250px auto 0px auto;
 }
