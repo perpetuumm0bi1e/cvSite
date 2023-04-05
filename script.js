@@ -36,12 +36,30 @@ let basketballFlightModelingBoxImages = ['basketballFlightModeling1.svg',
                                         'basketballFlightModeling9.svg',
                                         'basketballFlightModeling10.svg'];
 
-
 let basketballFlightModelingBoxNavigationLeft = document.getElementById('basketballFlightModelingBoxNavigationLeft');
 let basketballFlightModelingBoxNavigationRight = document.getElementById('basketballFlightModelingBoxNavigationRight');
 let basketballFlightModelingNavigationClickCounter = 0;
 
 let basketballFlightModelingImage = document.getElementById('basketballFlightModelingImage');
+
+let studentsKnowledgeControlBoxImages =['studentsKnowledgeControl1.svg',
+                                        'studentsKnowledgeControl2.svg',
+                                        'studentsKnowledgeControl3.svg',
+                                        'studentsKnowledgeControl4.svg',
+                                        'studentsKnowledgeControl5.svg',
+                                        'studentsKnowledgeControl6.svg',
+                                        'studentsKnowledgeControl7.svg',
+                                        'studentsKnowledgeControl8.svg',
+                                        'studentsKnowledgeControl9.svg',
+                                        'studentsKnowledgeControl10.svg',
+                                        'studentsKnowledgeControl11.svg',
+                                        'studentsKnowledgeControl12.svg',];
+
+let studentsKnowledgeControlBoxNavigationLeft = document.getElementById('studentsKnowledgeControlBoxNavigationLeft');
+let studentsKnowledgeControlBoxNavigationRight = document.getElementById('studentsKnowledgeControlBoxNavigationRight');
+let studentsKnowledgeControlClickCounter = 0;
+                                        
+let studentsKnowledgeControlImage = document.getElementById('studentsKnowledgeControlImage');
 
 let interactiveLayoutButton1 = document.getElementById('interactiveLayoutButton1');
 let gitButton1 = document.getElementById('gitButton1');
@@ -67,7 +85,7 @@ for (let i = 0; i < worksCardFirst.length; i++) {
         window.location = "https://github.com/perpetuumm0bi1e/BasketballFlightModeling";
     }
 }
-function kasumiBoxImageChanger(clickCounter, imageBox, imagesArray) {
+function boxImageChanger(clickCounter, imageBox, imagesArray) {
     if(clickCounter < 0){
         imageBox.style.backgroundImage = `url(${imagesArray[imagesArray.length - 1 + (clickCounter % imagesArray.length)]})`;
     } else {
@@ -76,25 +94,33 @@ function kasumiBoxImageChanger(clickCounter, imageBox, imagesArray) {
 }
 firstKasumiBoxNavigationLeft.onclick = function() {
     firstKasumiBoxNavigationClickCounter--;
-    kasumiBoxImageChanger(firstKasumiBoxNavigationClickCounter, fourthWorkEncryptionDecryption, kasumiFirstBoxImages);
+    boxImageChanger(firstKasumiBoxNavigationClickCounter, fourthWorkEncryptionDecryption, kasumiFirstBoxImages);
 }
 firstKasumiBoxNavigationRight.onclick = function() {
     firstKasumiBoxNavigationClickCounter++;
-    kasumiBoxImageChanger(firstKasumiBoxNavigationClickCounter, fourthWorkEncryptionDecryption, kasumiFirstBoxImages);
+    boxImageChanger(firstKasumiBoxNavigationClickCounter, fourthWorkEncryptionDecryption, kasumiFirstBoxImages);
 }
 secondKasumiBoxNavigationLeft.onclick = function() {
     secondKasumiBoxNavigationClickCounter--;
-    kasumiBoxImageChanger(secondKasumiBoxNavigationClickCounter, fourthWorkAlgorithmImages, kasumiSecondBoxImages);
+    boxImageChanger(secondKasumiBoxNavigationClickCounter, fourthWorkAlgorithmImages, kasumiSecondBoxImages);
 }
 secondKasumiBoxNavigationRight.onclick = function() {
     secondKasumiBoxNavigationClickCounter++;
-    kasumiBoxImageChanger(secondKasumiBoxNavigationClickCounter, fourthWorkAlgorithmImages, kasumiSecondBoxImages);
+    boxImageChanger(secondKasumiBoxNavigationClickCounter, fourthWorkAlgorithmImages, kasumiSecondBoxImages);
 }
 basketballFlightModelingBoxNavigationLeft.onclick = function() {
     basketballFlightModelingNavigationClickCounter--;
-    kasumiBoxImageChanger(basketballFlightModelingNavigationClickCounter, basketballFlightModelingImage, basketballFlightModelingBoxImages);
+    boxImageChanger(basketballFlightModelingNavigationClickCounter, basketballFlightModelingImage, basketballFlightModelingBoxImages);
 }
 basketballFlightModelingBoxNavigationRight.onclick = function() {
     basketballFlightModelingNavigationClickCounter++;
-    kasumiBoxImageChanger(basketballFlightModelingNavigationClickCounter, basketballFlightModelingImage, basketballFlightModelingBoxImages);
+    boxImageChanger(basketballFlightModelingNavigationClickCounter, basketballFlightModelingImage, basketballFlightModelingBoxImages);
+}
+studentsKnowledgeControlBoxNavigationLeft.onclick = function() {
+    studentsKnowledgeControlClickCounter--;
+    boxImageChanger(studentsKnowledgeControlClickCounter, studentsKnowledgeControlImage, studentsKnowledgeControlBoxImages);
+}
+studentsKnowledgeControlBoxNavigationRight.onclick = function() {
+    studentsKnowledgeControlClickCounter++;
+    boxImageChanger(studentsKnowledgeControlClickCounter, studentsKnowledgeControlImage, studentsKnowledgeControlBoxImages);
 }
