@@ -11,7 +11,6 @@ let mobilePhoneCard = document.getElementById('mobilePhoneCard');
 let mobilePhoneCardCoord = mobilePhoneCard.getBoundingClientRect();
 let mobilePhoneScreenShots = ['main.svg', 'profile.svg', 'settings.svg', 'statisticsDay.svg', 'statisticsWeek.svg', 'statisticsCourse.svg'];
 
-
 let kasumiFirstBoxImages = ['kasumiEncryption.svg', 'kasumiDecryption.svg'];
 let kasumiSecondBoxImages = ['kasumiAlgorithm.svg', 'kasumiFI.svg', 'kasumiFO.svg', 'kasumiFL.svg'];
 
@@ -25,6 +24,23 @@ let secondKasumiBoxNavigationClickCounter = 0;
 
 let fourthWorkEncryptionDecryption = document.getElementById('fourthWorkEncryptionDecryption');
 let fourthWorkAlgorithmImages = document.getElementById('fourthWorkAlgorithmImages');
+
+let basketballFlightModelingBoxImages = ['basketballFlightModeling1.svg',
+                                        'basketballFlightModeling2.svg',
+                                        'basketballFlightModeling3.svg',
+                                        'basketballFlightModeling4.svg',
+                                        'basketballFlightModeling5.svg',
+                                        'basketballFlightModeling6.svg',
+                                        'basketballFlightModeling7.svg',
+                                        'basketballFlightModeling8.svg',
+                                        'basketballFlightModeling9.svg'];
+
+
+let basketballFlightModelingBoxNavigationLeft = document.getElementById('basketballFlightModelingBoxNavigationLeft');
+let basketballFlightModelingBoxNavigationRight = document.getElementById('basketballFlightModelingBoxNavigationRight');
+let basketballFlightModelingNavigationClickCounter = 0;
+
+let basketballFlightModelingImage = document.getElementById('basketballFlightModelingImage');
 
 let interactiveLayoutButton1 = document.getElementById('interactiveLayoutButton1');
 let gitButton1 = document.getElementById('gitButton1');
@@ -72,4 +88,12 @@ secondKasumiBoxNavigationLeft.onclick = function() {
 secondKasumiBoxNavigationRight.onclick = function() {
     secondKasumiBoxNavigationClickCounter++;
     kasumiBoxImageChanger(secondKasumiBoxNavigationClickCounter, fourthWorkAlgorithmImages, kasumiSecondBoxImages);
+}
+basketballFlightModelingBoxNavigationLeft.onclick = function() {
+    basketballFlightModelingNavigationClickCounter--;
+    kasumiBoxImageChanger(basketballFlightModelingNavigationClickCounter, basketballFlightModelingImage, basketballFlightModelingBoxImages);
+}
+basketballFlightModelingBoxNavigationRight.onclick = function() {
+    basketballFlightModelingNavigationClickCounter++;
+    kasumiBoxImageChanger(basketballFlightModelingNavigationClickCounter, basketballFlightModelingImage, basketballFlightModelingBoxImages);
 }
