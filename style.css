@@ -566,7 +566,7 @@ li {
 }
 
 .workDescription {
-    height: 115vh;
+    height: 55vh;
     width: inherit;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -591,7 +591,7 @@ li {
     grid-column: 2;
 }
 
-.workCardsContainer {
+.workCardsContainerFirst {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -603,7 +603,7 @@ li {
     grid-column: 1;
 }
 
-.screenShots1>.worksCard:not(:last-child) {
+.screenShots1>.worksCardFirst:not(:last-child) {
     margin-right: -100px;
 }
 
@@ -617,11 +617,11 @@ li {
     grid-column: 3;
 }
 
-.screenShots2>.worksCard:not(:first-child) {
+.screenShots2>.worksCardFirst:not(:first-child) {
     margin-left: -100px;
 }
 
-.workCardsContainer>.screenShots1,
+.workCardsContainerFirst>.screenShots1,
 .screenShots2 {
     display: flex;
     flex-direction: row;
@@ -638,7 +638,7 @@ li {
     margin-top: -100px;
 }
 
-.worksCard {
+.worksCardFirst {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -647,7 +647,7 @@ li {
     transition: all .3s ease-in-out;
 }
 
-.worksCard:hover {
+.worksCardFirst:hover {
     z-index: 3;
     margin-top: -20px;
     animation-name: shake-animaiton2;
@@ -713,10 +713,69 @@ li {
     z-index: 3;
 }
 
+.worksCardFourth{
+    height: 550px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .4s ease-in-out;
+}
+#fourthWorkEncryptionDecryption{
+    background-image: url(kasumiEncryption.svg);
+    width: 615px; 
+}
+#fourthWorkAlgorithmImages{
+    background-image: url(kasumiAlgorithm.svg);
+    width: 442px; 
+}
+
 #interactiveLayoutButton1,
 #gitButton1,
 #interactiveLayout3,
 #gitButton2,
 #gitButton3 {
     margin: 250px auto 0px auto;
+}
+.workCardsContainerFourth{
+    transition: all .3s ease-in-out;
+    max-width: 1700px;
+    margin: 0px auto 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.kasumiBox{
+    background-color: rgba(64, 94, 233, .8);
+    border-radius: 40px;
+    margin: 100px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.kasumiBoxNavigationButtons{
+    display: flex;
+    flex-direction: row;
+}
+#firstKasumiBox{
+    width: 900px;
+}
+#secondKasumiBox{
+    width: 700px;
+}
+.kasumiBoxNavigationButton{
+    text-align: center;
+    color: #ffffff;
+    padding: 0px 70px;
+    margin: 0px 30px;
+    font-weight: 200;
+    font-size: 35px;
+    transition: all .4s ease-in-out;
+    border-radius: 20px;
+    background-color: rgba(229, 229, 229, .8);
+    border: none;
+}
+.kasumiBoxNavigationButton:hover{
+    background-color: rgba(229, 229, 229, .9);
 }
