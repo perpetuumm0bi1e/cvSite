@@ -563,6 +563,8 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 1700px;
+    margin: 0px auto 0px auto;
 }
 
 .workDescription {
@@ -748,7 +750,7 @@ li {
 .kasumiBox{
     background-color: rgba(64, 94, 233, .8);
     border-radius: 40px;
-    margin: 100px;
+    margin: 0px 100px;
     height: 750px;
     display: flex;
     flex-direction: column;
@@ -792,7 +794,7 @@ li {
 .basketballFlightModelingBox{
     background-color: rgba(216, 135, 20, .8);
     height: 750px;
-    width: 950px;
+    width: 1050px;
     border-radius: 40px;
     display: flex;
     justify-content: center;

@@ -33,7 +33,8 @@ let basketballFlightModelingBoxImages = ['basketballFlightModeling1.svg',
                                         'basketballFlightModeling6.svg',
                                         'basketballFlightModeling7.svg',
                                         'basketballFlightModeling8.svg',
-                                        'basketballFlightModeling9.svg'];
+                                        'basketballFlightModeling9.svg',
+                                        'basketballFlightModeling10.svg'];
 
 
 let basketballFlightModelingBoxNavigationLeft = document.getElementById('basketballFlightModelingBoxNavigationLeft');
