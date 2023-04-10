@@ -9,10 +9,19 @@ let firstWorkStatisticsCourse = document.getElementById('firstWorkStatisticsCour
 
 let mobilePhoneCard = document.getElementById('mobilePhoneCard');
 let mobilePhoneCardCoord = mobilePhoneCard.getBoundingClientRect();
-let mobilePhoneScreenShots = ['main.svg', 'profile.svg', 'settings.svg', 'statisticsDay.svg', 'statisticsWeek.svg', 'statisticsCourse.svg'];
+let mobilePhoneScreenShots = ['./img/perfectPosture/main.svg', 
+                              './img/perfectPosture/profile.svg', 
+                              './img/perfectPosture/settings.svg', 
+                              './img/perfectPosture/statisticsDay.svg', 
+                              './img/perfectPosture/statisticsWeek.svg', 
+                              './img/perfectPosture/statisticsCourse.svg'];
 
-let kasumiFirstBoxImages = ['kasumiEncryption.svg', 'kasumiDecryption.svg'];
-let kasumiSecondBoxImages = ['kasumiAlgorithm.svg', 'kasumiFI.svg', 'kasumiFO.svg', 'kasumiFL.svg'];
+let kasumiFirstBoxImages = ['./img/kasumi/kasumiEncryption.svg', 
+                            './img/kasumi/kasumiDecryption.svg'];
+let kasumiSecondBoxImages = ['./img/kasumi/kasumiAlgorithm.svg', 
+                             './img/kasumi/kasumiFI.svg', 
+                             './img/kasumi/kasumiFO.svg', 
+                             './img/kasumi/kasumiFL.svg'];
 
 let firstKasumiBoxNavigationLeft = document.getElementById('firstKasumiBoxNavigationLeft');
 let firstKasumiBoxNavigationRight = document.getElementById('firstKasumiBoxNavigationRight');
@@ -25,16 +34,16 @@ let secondKasumiBoxNavigationClickCounter = 0;
 let fourthWorkEncryptionDecryption = document.getElementById('fourthWorkEncryptionDecryption');
 let fourthWorkAlgorithmImages = document.getElementById('fourthWorkAlgorithmImages');
 
-let basketballFlightModelingBoxImages = ['basketballFlightModeling1.svg',
-                                        'basketballFlightModeling2.svg',
-                                        'basketballFlightModeling3.svg',
-                                        'basketballFlightModeling4.svg',
-                                        'basketballFlightModeling5.svg',
-                                        'basketballFlightModeling6.svg',
-                                        'basketballFlightModeling7.svg',
-                                        'basketballFlightModeling8.svg',
-                                        'basketballFlightModeling9.svg',
-                                        'basketballFlightModeling10.svg'];
+let basketballFlightModelingBoxImages = ['./img/basketballFlightModeling/basketballFlightModeling1.svg',
+                                         './img/basketballFlightModeling/basketballFlightModeling2.svg',
+                                         './img/basketballFlightModeling/basketballFlightModeling3.svg',
+                                         './img/basketballFlightModeling/basketballFlightModeling4.svg',
+                                         './img/basketballFlightModeling/basketballFlightModeling5.svg',
+                                         './img/basketballFlightModeling/basketballFlightModeling6.svg',
+                                         './img/basketballFlightModeling/basketballFlightModeling7.svg',
+                                         './img/basketballFlightModeling/basketballFlightModeling8.svg',
+                                         './img/basketballFlightModeling/basketballFlightModeling9.svg',
+                                         './img/basketballFlightModeling/basketballFlightModeling10.svg'];
 
 let basketballFlightModelingBoxNavigationLeft = document.getElementById('basketballFlightModelingBoxNavigationLeft');
 let basketballFlightModelingBoxNavigationRight = document.getElementById('basketballFlightModelingBoxNavigationRight');
@@ -42,18 +51,18 @@ let basketballFlightModelingNavigationClickCounter = 0;
 
 let basketballFlightModelingImage = document.getElementById('basketballFlightModelingImage');
 
-let studentsKnowledgeControlBoxImages =['studentsKnowledgeControl1.svg',
-                                        'studentsKnowledgeControl2.svg',
-                                        'studentsKnowledgeControl3.svg',
-                                        'studentsKnowledgeControl4.svg',
-                                        'studentsKnowledgeControl5.svg',
-                                        'studentsKnowledgeControl6.svg',
-                                        'studentsKnowledgeControl7.svg',
-                                        'studentsKnowledgeControl8.svg',
-                                        'studentsKnowledgeControl9.svg',
-                                        'studentsKnowledgeControl10.svg',
-                                        'studentsKnowledgeControl11.svg',
-                                        'studentsKnowledgeControl12.svg',];
+let studentsKnowledgeControlBoxImages =['./img/studentsKnowledgeControl/studentsKnowledgeControl1.svg',
+                                        './img/studentsKnowledgeControl/studentsKnowledgeControl2.svg',
+                                        './img/studentsKnowledgeControl/studentsKnowledgeControl3.svg',
+                                        './img/studentsKnowledgeControl/studentsKnowledgeControl4.svg',
+                                        './img/studentsKnowledgeControl/studentsKnowledgeControl5.svg',
+                                        './img/studentsKnowledgeControl/studentsKnowledgeControl6.svg',
+                                        './img/studentsKnowledgeControl/studentsKnowledgeControl7.svg',
+                                        './img/studentsKnowledgeControl/studentsKnowledgeControl8.svg',
+                                        './img/studentsKnowledgeControl/studentsKnowledgeControl9.svg',
+                                        './img/studentsKnowledgeControl/studentsKnowledgeControl10.svg',
+                                        './img/studentsKnowledgeControl/studentsKnowledgeControl11.svg',
+                                        './img/studentsKnowledgeControl/studentsKnowledgeControl12.svg',];
 
 let studentsKnowledgeControlBoxNavigationLeft = document.getElementById('studentsKnowledgeControlBoxNavigationLeft');
 let studentsKnowledgeControlBoxNavigationRight = document.getElementById('studentsKnowledgeControlBoxNavigationRight');

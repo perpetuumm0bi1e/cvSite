@@ -104,7 +104,7 @@ a:visited {
 
 #firstImgContainer {
     height: 1500px;
-    background-image: url(myPhoto2.jpg);
+    background-image: url(../img/myPhoto2.jpg);
     background-size: cover;
     background-repeat: repeat space;
     background-attachment: fixed;
@@ -147,7 +147,7 @@ a:visited {
 
 #secondImgContainer {
     height: 914px;
-    background-image: url(myPhoto1.png);
+    background-image: url(../img/myPhoto1.png);
     margin-bottom: 200px;
     background-repeat: repeat space;
     background-attachment: fixed;
@@ -633,7 +633,7 @@ li {
 
 #mobilePhoneCard {
     margin-top: -100px;
-    background-image: url(main.svg);
+    background-image: url(../img/perfectPosture/main.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -678,20 +678,20 @@ li {
 }
 
 #firstWorkMain {
-    background-image: url(mainNoBorder.svg);
+    background-image: url(../img/perfectPosture/mainNoBorder.svg);
 }
 
 #firstWorkProfile {
-    background-image: url(profileNoBorder.svg);
+    background-image: url(../img/perfectPosture/profileNoBorder.svg);
 }
 
 #firstWorkSettings {
-    background-image: url(settingsNoBorder.svg);
+    background-image: url(../img/perfectPosture/settingsNoBorder.svg);
 }
 
 #firstWorkStatisticsDay {
     z-index: 2;
-    background-image: url(statisticsDayNoBorder.svg);
+    background-image: url(../img/perfectPosture/statisticsDayNoBorder.svg);
 }
 
 #firstWorkStatisticsDay:hover {
@@ -700,7 +700,7 @@ li {
 
 #firstWorkStatisticsWeek {
     z-index: 1;
-    background-image: url(statisticsWeekNoBorder.svg);
+    background-image: url(../img/perfectPosture/statisticsWeekNoBorder.svg);
 }
 
 #firstWorkStatisticsWeek:hover {
@@ -709,7 +709,7 @@ li {
 
 #firstWorkStatisticsCourse {
     z-index: 0;
-    background-image: url(statisticsCourseNoBorder.svg);
+    background-image: url(../img/perfectPosture/statisticsCourseNoBorder.svg);
 }
 
 #firstWorkStatisticsCourse:hover {
@@ -726,12 +726,12 @@ li {
 
 #fourthWorkEncryptionDecryption {
     width: 615px;
-    background-image: url(kasumiEncryption.svg);
+    background-image: url(../img/kasumi/kasumiEncryption.svg);
 }
 
 #fourthWorkAlgorithmImages {
     width: 442px;
-    background-image: url(kasumiAlgorithm.svg);
+    background-image: url(../img/kasumi/kasumiAlgorithm.svg);
 }
 
 #interactiveLayoutButton1,
@@ -804,7 +804,7 @@ li {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url(basketballFlightModeling1.svg);
+    background-image: url(../img/basketballFlightModeling/basketballFlightModeling1.svg);
     transition: all .4s ease-in-out;
 }
 
@@ -829,7 +829,7 @@ li {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url(studentsKnowledgeControl1.svg);
+    background-image: url(../img/studentsKnowledgeControl/studentsKnowledgeControl1.svg);
     transition: all .4s ease-in-out;
 }
 
