@@ -1,13 +1,37 @@
-let worksCardFirst = document.getElementsByClassName('worksCardFirst');
+document.addEventListener('DOMContentLoaded', () => {
+    const onScrollHeader = () => {
+        const header = document.querySelector('.header');
+        let prevScroll = window.pageYOffset;
+        let currentScroll;
 
-let firstWorkMain = document.getElementById('firstWorkMain');
-let firstWorkProfile = document.getElementById('firstWorkProfile');
-let firstWorkSettings = document.getElementById('firstWorkSettings');
-let firstWorkStatisticsDay = document.getElementById('firstWorkStatisticsDay');
-let firstWorkStatisticsWeek = document.getElementById('firstWorkStatisticsWeek');
-let firstWorkStatisticsCourse = document.getElementById('firstWorkStatisticsCourse');
+        window.addEventListener('scroll', () => { 
+            currentScroll = window.pageYOffset;
 
-let mobilePhoneCard = document.getElementById('mobilePhoneCard');
+            const headerHidden = () => header.classList.contains('header_hidden');
+
+            if (currentScroll > prevScroll && !headerHidden()) { 
+                header.classList.add('header_hidden');
+            }
+            if (currentScroll < prevScroll && headerHidden()) {
+                header.classList.remove('header_hidden');
+            }
+        
+            prevScroll = currentScroll ;
+        })
+    }
+    onScrollHeader();
+});
+
+let worksCardFirst = document.getElementsByClassName('works-card-first');
+
+let firstWorkMain = document.getElementById('first-work-main');
+let firstWorkProfile = document.getElementById('first-work-profile');
+let firstWorkSettings = document.getElementById('first-work-settings');
+let firstWorkStatisticsDay = document.getElementById('first-work-statistics-day');
+let firstWorkStatisticsWeek = document.getElementById('first-work-statistics-week');
+let firstWorkStatisticsCourse = document.getElementById('first-work-statistics-course');
+
+let mobilePhoneCard = document.getElementById('mobile-phone-card');
 let mobilePhoneCardCoord = mobilePhoneCard.getBoundingClientRect();
 let mobilePhoneScreenShots = ['./img/perfectPosture/main.svg', 
                               './img/perfectPosture/profile.svg', 
@@ -23,16 +47,16 @@ let kasumiSecondBoxImages = ['./img/kasumi/kasumiAlgorithm.svg',
                              './img/kasumi/kasumiFO.svg', 
                              './img/kasumi/kasumiFL.svg'];
 
-let firstKasumiBoxNavigationLeft = document.getElementById('firstKasumiBoxNavigationLeft');
-let firstKasumiBoxNavigationRight = document.getElementById('firstKasumiBoxNavigationRight');
+let firstKasumiBoxNavigationLeft = document.getElementById('first-kasumi-box-navigation-left');
+let firstKasumiBoxNavigationRight = document.getElementById('first-kasumi-box-navigation-right');
 let firstKasumiBoxNavigationClickCounter = 0;
 
-let secondKasumiBoxNavigationLeft = document.getElementById('secondKasumiBoxNavigationLeft');
-let secondKasumiBoxNavigationRight = document.getElementById('secondKasumiBoxNavigationRight');
+let secondKasumiBoxNavigationLeft = document.getElementById('second-kasumi-box-navigation-left');
+let secondKasumiBoxNavigationRight = document.getElementById('second-kasumi-box-navigation-right');
 let secondKasumiBoxNavigationClickCounter = 0;
 
-let fourthWorkEncryptionDecryption = document.getElementById('fourthWorkEncryptionDecryption');
-let fourthWorkAlgorithmImages = document.getElementById('fourthWorkAlgorithmImages');
+let fourthWorkEncryptionDecryption = document.getElementById('fourth-work-encryption-decryption');
+let fourthWorkAlgorithmImages = document.getElementById('fourth-work-algorithm-images');
 
 let basketballFlightModelingBoxImages = ['./img/basketballFlightModeling/basketballFlightModeling1.svg',
                                          './img/basketballFlightModeling/basketballFlightModeling2.svg',
@@ -45,11 +69,11 @@ let basketballFlightModelingBoxImages = ['./img/basketballFlightModeling/basketb
                                          './img/basketballFlightModeling/basketballFlightModeling9.svg',
                                          './img/basketballFlightModeling/basketballFlightModeling10.svg'];
 
-let basketballFlightModelingBoxNavigationLeft = document.getElementById('basketballFlightModelingBoxNavigationLeft');
-let basketballFlightModelingBoxNavigationRight = document.getElementById('basketballFlightModelingBoxNavigationRight');
+let basketballFlightModelingBoxNavigationLeft = document.getElementById('basketball-flight-modeling-box-navigation-left');
+let basketballFlightModelingBoxNavigationRight = document.getElementById('asketball-flight-modeling-box-navigation-right');
 let basketballFlightModelingNavigationClickCounter = 0;
 
-let basketballFlightModelingImage = document.getElementById('basketballFlightModelingImage');
+let basketballFlightModelingImage = document.getElementById('basketball-flight-modeling-image');
 
 let studentsKnowledgeControlBoxImages =['./img/studentsKnowledgeControl/studentsKnowledgeControl1.svg',
                                         './img/studentsKnowledgeControl/studentsKnowledgeControl2.svg',
@@ -64,16 +88,16 @@ let studentsKnowledgeControlBoxImages =['./img/studentsKnowledgeControl/students
                                         './img/studentsKnowledgeControl/studentsKnowledgeControl11.svg',
                                         './img/studentsKnowledgeControl/studentsKnowledgeControl12.svg',];
 
-let studentsKnowledgeControlBoxNavigationLeft = document.getElementById('studentsKnowledgeControlBoxNavigationLeft');
-let studentsKnowledgeControlBoxNavigationRight = document.getElementById('studentsKnowledgeControlBoxNavigationRight');
+let studentsKnowledgeControlBoxNavigationLeft = document.getElementById('students-knowledge-control-box-navigation-left');
+let studentsKnowledgeControlBoxNavigationRight = document.getElementById('students-knowledge-control-box-navigation-right');
 let studentsKnowledgeControlClickCounter = 0;
                                         
-let studentsKnowledgeControlImage = document.getElementById('studentsKnowledgeControlImage');
+let studentsKnowledgeControlImage = document.getElementById('students-knowledge-control-image');
 
-let interactiveLayoutButton1 = document.getElementById('interactiveLayoutButton1');
-let gitButton1 = document.getElementById('gitButton1');
-let gitButton2 = document.getElementById('gitButton2');
-let gitButton3 = document.getElementById('gitButton3');
+let interactiveLayoutButton1 = document.getElementById('interactive-layout-button-1');
+let gitButton1 = document.getElementById('git-button-1');
+let gitButton2 = document.getElementById('git-button-2');
+let gitButton3 = document.getElementById('git-button-3');
 
 for (let i = 0; i < worksCardFirst.length; i++) {
     worksCardFirst[i].onmouseover = function() {
