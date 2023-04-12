@@ -83,9 +83,22 @@ li {
     grid-column: 1;
     font-size: 200px;
     text-align: left;
-    color: var(--light-gray);
+    color: var(--lightest-gray);
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    width: 100vw;
+    font-size: 14px;
+    line-height: 200%;
+    color: var(--white);
+    background-color: var(--darkest-gray);
+}
 
 /* Стиль хедера */
 
@@ -416,74 +429,68 @@ li {
 
 /* Стиль страницы "Работы" */
 
-.works-container {
-    margin: 200px auto;
-    max-width: 1700px;
-}
-
-.first-work,
-.second-work,
-.third-work,
-.fourth-work,
-.fifth-work {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.work-containers {
     margin: 0px auto;
 }
 
-.works-name {
-    grid-column: 2;
+.work-container {
+    padding: 250px 0px;
 }
 
 .work-description {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    align-items: center;
-    justify-items: center;
-    height: 50vh;
-    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 200px;
 }
-
+.work-name-odd{
+    margin-right: 300px;
+}
+.work-name-even{
+    margin-left: 300px;
+}
 #number-1,
 #number-3,
 #number-5 {
-    grid-column: 1;
-    margin-top: -100px;
+    width: 200px;
+    margin: -200px 100px 0px 0px;
 }
 
 #number-2,
 #number-4 {
-    grid-column: 3;
-    margin-top: -100px;
+    width: 200px;
+    margin: -200px 0px 0px 100px;
 }
 
-.work-cards-container-first {
+.screenshots-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: 50vh;
     max-width: 1900px;
+    margin: 0px auto 200px auto;
+    max-width: 1700px;
+    transition: all .3s ease-in-out;
+}
+
+.screenshots-container>.screenshots-1,
+.screenshots-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
 }
 
 .screenshots-1>.works-card-first:not(:last-child) {
     margin-right: -100px;
 }
 
-.mobile-phone {
-    grid-column: 2;
-    z-index: 5;
-}
-
 .screenshots-2>.works-card-first:not(:first-child) {
     margin-left: -100px;
 }
 
-.work-cards-container-first>.screenshots-1,
-.screenshots-2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
+.mobile-phone {
+    z-index: 5;
 }
 
 #mobile-phone-card {
@@ -570,59 +577,32 @@ li {
 #first-work-statistics-course:hover {
     z-index: 3;
 }
-
-.works-card-fourth {
-    height: 550px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    transition: all .4s ease-in-out;
-}
-
-#fourth-work-encryption-decryption {
-    width: 615px;
-    background-image: url(../img/kasumi/kasumiEncryption.svg);
-}
-
-#fourth-work-algorithm-images {
-    width: 442px;
-    background-image: url(../img/kasumi/kasumiAlgorithm.svg);
-}
-
-#interactive-layout-button-1,
-#git-button-1,
-#interactive-layout-button-3,
-#git-button-2,
-#git-button-3 {
-    margin: 150px auto 100px auto;
-}
-
-.work-cards-container-third,
-.work-cards-container-fourth,
-.work-cards-container-fifth {
-    margin: 0px auto 0px auto;
+.work-button{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    transition: all .3s ease-in-out;
+    justify-content: center;
 }
-
-.kasumi-box {
-    margin: 0px 50px;
+.preview-box{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    height: 750px;
+    justify-content: space-evenly;
     border-radius: 40px;
-    background-color: rgba(64, 94, 233, .8);
+    background-color: var(--lightest-gray);
     transition: all .3s ease-in-out;
 }
 
-.image-box-navigation-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.preview-box:hover {
+    transform: scale(110%, 110%);
+    box-shadow: 5px 5px var(--blue);
+}
+.students-knowledge-control-preview,
+.basketball-flight-modeling-preview{
+    height: 750px;
+    width: 1050px;
+}
+.kasumi-preview{
+    margin: 0px 50px;
+    height: 750px;
 }
 
 #first-kasumi-box {
@@ -633,67 +613,54 @@ li {
     width: 550px;
 }
 
+#basketball-flight-modeling-image {
+    width: 870px;
+    background-image: url(../img/basketballFlightModeling/basketballFlightModeling1.svg);
+}
+#students-knowledge-control-image {
+    width: 756px;
+    background-image: url(../img/studentsKnowledgeControl/studentsKnowledgeControl1.svg);
+}
+.preview-box-images{
+    height: 550px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .4s ease-in-out;
+}
+
+#kasumi-encryption-decryption-image {
+    width: 615px;
+    background-image: url(../img/kasumi/kasumiEncryption.svg);
+}
+
+#kasumi-algorithm-image {
+    width: 442px;
+    background-image: url(../img/kasumi/kasumiAlgorithm.svg);
+}
+.image-box-navigation-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .image-box-navigation-button {
     padding: 0px 70px;
     margin: 0px 30px;
     text-align: center;
-    font-weight: 200;
-    font-size: 35px;
+    font-weight: 300;
+    font-size: 30px;
     border: none;
-    border-radius: 20px;
+    border-radius: 18px;
     color: var(--white);
-    background-color: rgba(229, 229, 229, .8);
+    background-color: rgba(80, 76, 255);
     transition: all .4s ease-in-out;
 }
 
 .image-box-navigation-button:hover {
-    background-color: rgba(229, 229, 229, .9);
+    transform: translate(-1px, -1px);
 }
-
-#basketball-flight-modeling-image {
-    height: 550px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../img/basketballFlightModeling/basketballFlightModeling1.svg);
-    transition: all .4s ease-in-out;
-}
-
-.basketball-flight-modeling-box {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 750px;
-    width: 1050px;
-    border-radius: 40px;
-    background-color: rgba(216, 135, 20, .8);
-    transition: all .3s ease-in-out;
-}
-
-#students-knowledge-control-image {
-    height: 550px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../img/studentsKnowledgeControl/studentsKnowledgeControl1.svg);
-    transition: all .4s ease-in-out;
-}
-
-.students-knowledge-control-box {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 750px;
-    width: 1050px;
-    border-radius: 40px;
-    background-color: rgba(255, 193, 7, .8);
-    transition: all .3s ease-in-out;
-}
-
-.students-knowledge-control-box:hover,
-.basketball-flight-modeling-box:hover,
-.kasumi-box:hover {
-    box-shadow: 7px 7px var(--lightest-gray);
+.image-box-navigation-button:active {
+    transform: translate(1px, 1px);
+    box-shadow: none;
 }

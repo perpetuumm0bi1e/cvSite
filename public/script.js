@@ -55,8 +55,8 @@ let secondKasumiBoxNavigationLeft = document.getElementById('second-kasumi-box-n
 let secondKasumiBoxNavigationRight = document.getElementById('second-kasumi-box-navigation-right');
 let secondKasumiBoxNavigationClickCounter = 0;
 
-let fourthWorkEncryptionDecryption = document.getElementById('fourth-work-encryption-decryption');
-let fourthWorkAlgorithmImages = document.getElementById('fourth-work-algorithm-images');
+let fourthWorkEncryptionDecryption = document.getElementById('kasumi-encryption-decryption-image');
+let fourthWorkAlgorithmImages = document.getElementById('kasumi-algorithm-image');
 
 let basketballFlightModelingBoxImages = ['./img/basketballFlightModeling/basketballFlightModeling1.svg',
                                          './img/basketballFlightModeling/basketballFlightModeling2.svg',
@@ -70,7 +70,7 @@ let basketballFlightModelingBoxImages = ['./img/basketballFlightModeling/basketb
                                          './img/basketballFlightModeling/basketballFlightModeling10.svg'];
 
 let basketballFlightModelingBoxNavigationLeft = document.getElementById('basketball-flight-modeling-box-navigation-left');
-let basketballFlightModelingBoxNavigationRight = document.getElementById('asketball-flight-modeling-box-navigation-right');
+let basketballFlightModelingBoxNavigationRight = document.getElementById('basketball-flight-modeling-box-navigation-right');
 let basketballFlightModelingNavigationClickCounter = 0;
 
 let basketballFlightModelingImage = document.getElementById('basketball-flight-modeling-image');
@@ -157,3 +157,5 @@ studentsKnowledgeControlBoxNavigationRight.onclick = function() {
     studentsKnowledgeControlClickCounter++;
     boxImageChanger(studentsKnowledgeControlClickCounter, studentsKnowledgeControlImage, studentsKnowledgeControlBoxImages);
 }
+
+
