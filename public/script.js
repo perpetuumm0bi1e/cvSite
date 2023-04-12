@@ -104,20 +104,7 @@ let gitButton1 = document.getElementById('git-button-1');
 let gitButton2 = document.getElementById('git-button-2');
 let gitButton3 = document.getElementById('git-button-3');
 
-let telegramButton = document.getElementById('telegram');
-let instagramButton = document.getElementById('instagram');
-let githubButton = document.getElementById('github');
 
-telegramButton.onclick = function() {
-    window.location = "https://t.me/perpetuumm0bi1e";
-    console.log('телега');
-}
-instagramButton.onclick = function() {
-    window.location = "https://instagram.com/perpetuumm0bi1e";
-}
-githubButton.onclick = function() {
-    window.location = "https://github.com/perpetuumm0bi1e";
-}
 for (let i = 0; i < worksCardFirst.length; i++) {
     worksCardFirst[i].onmouseover = function() {
         mobilePhoneCard.style.backgroundImage = `url(${mobilePhoneScreenShots[i]})`;
@@ -136,7 +123,6 @@ gitButton2.onclick = function() {
 gitButton3.onclick = function() {
     window.location = "https://github.com/perpetuumm0bi1e/BasketballFlightModeling";
 }
-
 
 function boxImageChanger(clickCounter, imageBox, imagesArray) {
     if (clickCounter < 0) {
@@ -176,4 +162,18 @@ studentsKnowledgeControlBoxNavigationLeft.onclick = function() {
 studentsKnowledgeControlBoxNavigationRight.onclick = function() {
     studentsKnowledgeControlClickCounter++;
     boxImageChanger(studentsKnowledgeControlClickCounter, studentsKnowledgeControlImage, studentsKnowledgeControlBoxImages);
+}
+let telegramButton = document.getElementById('telegram');
+let instagramButton = document.getElementById('instagram');
+let githubButton = document.getElementById('github');
+
+telegramButton.onclick = function() {
+    window.location = "https://t.me/perpetuumm0bi1e";
+    console.log('телега');
+}
+instagramButton.onclick = function() {
+    window.location = "https://instagram.com/perpetuumm0bi1e";
+}
+githubButton.onclick = function() {
+    window.location = "https://github.com/perpetuumm0bi1e";
 }

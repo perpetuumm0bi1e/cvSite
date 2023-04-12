@@ -92,7 +92,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 200px;
+    height: 150px;
     width: 100vw;
     font-size: 14px;
     line-height: 200%;
@@ -110,6 +110,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     height: 70px;
     width: 100vw;
     background: var(--white);
@@ -127,8 +128,7 @@ footer {
 }
 
 #logo {
-    position: relative;
-    margin-left: 100px;
+    margin-left: 300px;
     width: 300px;
     font-family: 'Rozenssa', sans-serif;
     letter-spacing: 5px;
@@ -142,7 +142,7 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 0px auto;
+    margin-right: 300px;
 }
 
 .links a {
@@ -347,7 +347,7 @@ footer {
     border-radius: 20px;
     padding: 40px;
     font-family: sans-serif;
-    color: #404040;
+    color: var(--darkest-gray);
     font-size: 20px;
     transition: all .3s ease-in-out;
 }
@@ -361,9 +361,6 @@ footer {
     transform: translateY(-30px);
     box-shadow: none;
     box-shadow: 7px 7px var(--gray);
-    animation-name: shake-animaiton;
-    animation-duration: .4s;
-    animation-iteration-count: infinite;
     transition: all .3s ease-in-out;
 }
 
@@ -508,16 +505,16 @@ footer {
     background-size: contain;
     height: 500px;
     width: 250px;
-    transition: all .3s cubic-bezier(.51, .77, .95, .33);
+    transition: all .3s ease-in-out;
 }
 
 .works-card-first:hover {
     z-index: 3;
     margin-top: -20px;
     animation-name: shake-animaiton2;
-    animation-duration: .5s;
+    animation-duration: .3s;
     animation-iteration-count: 1;
-    transition: all .3s cubic-bezier(.51, .77, .95, .33);
+    transition: all .3s ease-in-out;
 }
 
 @keyframes shake-animaiton2 {
@@ -525,16 +522,16 @@ footer {
         transform: rotate(0deg);
     }
     25% {
-        transform: rotate(1deg);
+        transform: rotate(.5deg);
     }
     50% {
-        transform: rotate(-1deg);
+        transform: rotate(-.5deg);
     }
     75% {
-        transform: rotate(1deg);
+        transform: rotate(.5deg);
     }
     100% {
-        transform: rotate(-1deg);
+        transform: rotate(-.5deg);
     }
 }
 
