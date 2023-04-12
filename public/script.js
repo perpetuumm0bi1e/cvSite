@@ -4,19 +4,19 @@ document.addEventListener('DOMContentLoaded', () => {
         let prevScroll = window.pageYOffset;
         let currentScroll;
 
-        window.addEventListener('scroll', () => { 
+        window.addEventListener('scroll', () => {
             currentScroll = window.pageYOffset;
 
             const headerHidden = () => header.classList.contains('header_hidden');
 
-            if (currentScroll > prevScroll && !headerHidden()) { 
+            if (currentScroll > prevScroll && !headerHidden()) {
                 header.classList.add('header_hidden');
             }
             if (currentScroll < prevScroll && headerHidden()) {
                 header.classList.remove('header_hidden');
             }
-        
-            prevScroll = currentScroll ;
+
+            prevScroll = currentScroll;
         })
     }
     onScrollHeader();
@@ -33,19 +33,22 @@ let firstWorkStatisticsCourse = document.getElementById('first-work-statistics-c
 
 let mobilePhoneCard = document.getElementById('mobile-phone-card');
 let mobilePhoneCardCoord = mobilePhoneCard.getBoundingClientRect();
-let mobilePhoneScreenShots = ['./img/perfectPosture/main.svg', 
-                              './img/perfectPosture/profile.svg', 
-                              './img/perfectPosture/settings.svg', 
-                              './img/perfectPosture/statisticsDay.svg', 
-                              './img/perfectPosture/statisticsWeek.svg', 
-                              './img/perfectPosture/statisticsCourse.svg'];
+let mobilePhoneScreenShots = ['./img/perfectPosture/main.svg',
+    './img/perfectPosture/profile.svg',
+    './img/perfectPosture/settings.svg',
+    './img/perfectPosture/statisticsDay.svg',
+    './img/perfectPosture/statisticsWeek.svg',
+    './img/perfectPosture/statisticsCourse.svg'
+];
 
-let kasumiFirstBoxImages = ['./img/kasumi/kasumiEncryption.svg', 
-                            './img/kasumi/kasumiDecryption.svg'];
-let kasumiSecondBoxImages = ['./img/kasumi/kasumiAlgorithm.svg', 
-                             './img/kasumi/kasumiFI.svg', 
-                             './img/kasumi/kasumiFO.svg', 
-                             './img/kasumi/kasumiFL.svg'];
+let kasumiFirstBoxImages = ['./img/kasumi/kasumiEncryption.svg',
+    './img/kasumi/kasumiDecryption.svg'
+];
+let kasumiSecondBoxImages = ['./img/kasumi/kasumiAlgorithm.svg',
+    './img/kasumi/kasumiFI.svg',
+    './img/kasumi/kasumiFO.svg',
+    './img/kasumi/kasumiFL.svg'
+];
 
 let firstKasumiBoxNavigationLeft = document.getElementById('first-kasumi-box-navigation-left');
 let firstKasumiBoxNavigationRight = document.getElementById('first-kasumi-box-navigation-right');
@@ -59,15 +62,16 @@ let fourthWorkEncryptionDecryption = document.getElementById('kasumi-encryption-
 let fourthWorkAlgorithmImages = document.getElementById('kasumi-algorithm-image');
 
 let basketballFlightModelingBoxImages = ['./img/basketballFlightModeling/basketballFlightModeling1.svg',
-                                         './img/basketballFlightModeling/basketballFlightModeling2.svg',
-                                         './img/basketballFlightModeling/basketballFlightModeling3.svg',
-                                         './img/basketballFlightModeling/basketballFlightModeling4.svg',
-                                         './img/basketballFlightModeling/basketballFlightModeling5.svg',
-                                         './img/basketballFlightModeling/basketballFlightModeling6.svg',
-                                         './img/basketballFlightModeling/basketballFlightModeling7.svg',
-                                         './img/basketballFlightModeling/basketballFlightModeling8.svg',
-                                         './img/basketballFlightModeling/basketballFlightModeling9.svg',
-                                         './img/basketballFlightModeling/basketballFlightModeling10.svg'];
+    './img/basketballFlightModeling/basketballFlightModeling2.svg',
+    './img/basketballFlightModeling/basketballFlightModeling3.svg',
+    './img/basketballFlightModeling/basketballFlightModeling4.svg',
+    './img/basketballFlightModeling/basketballFlightModeling5.svg',
+    './img/basketballFlightModeling/basketballFlightModeling6.svg',
+    './img/basketballFlightModeling/basketballFlightModeling7.svg',
+    './img/basketballFlightModeling/basketballFlightModeling8.svg',
+    './img/basketballFlightModeling/basketballFlightModeling9.svg',
+    './img/basketballFlightModeling/basketballFlightModeling10.svg'
+];
 
 let basketballFlightModelingBoxNavigationLeft = document.getElementById('basketball-flight-modeling-box-navigation-left');
 let basketballFlightModelingBoxNavigationRight = document.getElementById('basketball-flight-modeling-box-navigation-right');
@@ -75,23 +79,24 @@ let basketballFlightModelingNavigationClickCounter = 0;
 
 let basketballFlightModelingImage = document.getElementById('basketball-flight-modeling-image');
 
-let studentsKnowledgeControlBoxImages =['./img/studentsKnowledgeControl/studentsKnowledgeControl1.svg',
-                                        './img/studentsKnowledgeControl/studentsKnowledgeControl2.svg',
-                                        './img/studentsKnowledgeControl/studentsKnowledgeControl3.svg',
-                                        './img/studentsKnowledgeControl/studentsKnowledgeControl4.svg',
-                                        './img/studentsKnowledgeControl/studentsKnowledgeControl5.svg',
-                                        './img/studentsKnowledgeControl/studentsKnowledgeControl6.svg',
-                                        './img/studentsKnowledgeControl/studentsKnowledgeControl7.svg',
-                                        './img/studentsKnowledgeControl/studentsKnowledgeControl8.svg',
-                                        './img/studentsKnowledgeControl/studentsKnowledgeControl9.svg',
-                                        './img/studentsKnowledgeControl/studentsKnowledgeControl10.svg',
-                                        './img/studentsKnowledgeControl/studentsKnowledgeControl11.svg',
-                                        './img/studentsKnowledgeControl/studentsKnowledgeControl12.svg',];
+let studentsKnowledgeControlBoxImages = ['./img/studentsKnowledgeControl/studentsKnowledgeControl1.svg',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl2.svg',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl3.svg',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl4.svg',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl5.svg',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl6.svg',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl7.svg',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl8.svg',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl9.svg',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl10.svg',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl11.svg',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl12.svg',
+];
 
 let studentsKnowledgeControlBoxNavigationLeft = document.getElementById('students-knowledge-control-box-navigation-left');
 let studentsKnowledgeControlBoxNavigationRight = document.getElementById('students-knowledge-control-box-navigation-right');
 let studentsKnowledgeControlClickCounter = 0;
-                                        
+
 let studentsKnowledgeControlImage = document.getElementById('students-knowledge-control-image');
 
 let interactiveLayoutButton1 = document.getElementById('interactive-layout-button-1');
@@ -99,27 +104,42 @@ let gitButton1 = document.getElementById('git-button-1');
 let gitButton2 = document.getElementById('git-button-2');
 let gitButton3 = document.getElementById('git-button-3');
 
+let telegramButton = document.getElementById('telegram');
+let instagramButton = document.getElementById('instagram');
+let githubButton = document.getElementById('github');
+
+telegramButton.onclick = function() {
+    window.location = "https://t.me/perpetuumm0bi1e";
+    console.log('телега');
+}
+instagramButton.onclick = function() {
+    window.location = "https://instagram.com/perpetuumm0bi1e";
+}
+githubButton.onclick = function() {
+    window.location = "https://github.com/perpetuumm0bi1e";
+}
 for (let i = 0; i < worksCardFirst.length; i++) {
     worksCardFirst[i].onmouseover = function() {
         mobilePhoneCard.style.backgroundImage = `url(${mobilePhoneScreenShots[i]})`;
     }
     worksCardFirst[i].onmouseleave = function() {}
-
-    interactiveLayoutButton1.onclick = function() {
-        window.location = "https://www.figma.com/proto/1l01NZ1BpN7Q5N1txMbLT4/PerfectPosture?page-id=0%3A1&node-id=202-344&viewport=-269%2C450%2C0.07&scaling=scale-down&starting-point-node-id=202%3A344";
-    }
-    gitButton1.onclick = function() {
-        window.location = "https://github.com/perpetuumm0bi1e/StudentsKnowledgeControl";
-    }
-    gitButton2.onclick = function() {
-        window.location = "https://github.com/perpetuumm0bi1e/Kasumi";
-    }
-    gitButton3.onclick = function() {
-        window.location = "https://github.com/perpetuumm0bi1e/BasketballFlightModeling";
-    }
 }
+interactiveLayoutButton1.onclick = function() {
+    window.location = "https://www.figma.com/proto/1l01NZ1BpN7Q5N1txMbLT4/PerfectPosture?page-id=0%3A1&node-id=202-344&viewport=-269%2C450%2C0.07&scaling=scale-down&starting-point-node-id=202%3A344";
+}
+gitButton1.onclick = function() {
+    window.location = "https://github.com/perpetuumm0bi1e/StudentsKnowledgeControl";
+}
+gitButton2.onclick = function() {
+    window.location = "https://github.com/perpetuumm0bi1e/Kasumi";
+}
+gitButton3.onclick = function() {
+    window.location = "https://github.com/perpetuumm0bi1e/BasketballFlightModeling";
+}
+
+
 function boxImageChanger(clickCounter, imageBox, imagesArray) {
-    if(clickCounter < 0){
+    if (clickCounter < 0) {
         imageBox.style.backgroundImage = `url(${imagesArray[imagesArray.length - 1 + (clickCounter % imagesArray.length)]})`;
     } else {
         imageBox.style.backgroundImage = `url(${imagesArray[clickCounter % imagesArray.length]})`;
@@ -157,5 +177,3 @@ studentsKnowledgeControlBoxNavigationRight.onclick = function() {
     studentsKnowledgeControlClickCounter++;
     boxImageChanger(studentsKnowledgeControlClickCounter, studentsKnowledgeControlImage, studentsKnowledgeControlBoxImages);
 }
-
-

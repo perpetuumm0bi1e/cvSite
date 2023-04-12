@@ -86,7 +86,7 @@ li {
     color: var(--lightest-gray);
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,19 +100,18 @@ footer{
     background-color: var(--darkest-gray);
 }
 
+
 /* Стиль хедера */
 
 .header {
     position: sticky;
     top: 0;
     z-index: 10;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    place-items: center;
-    grid-gap: 20px;
     height: 70px;
-    width: 100%;
+    width: 100vw;
     background: var(--white);
     box-shadow: 0px 0px 50px rgba(28, 28, 28, 0.05);
     border-radius: 0px 0px 15px 15px;
@@ -123,36 +122,34 @@ footer{
     transform: translateY(-100%);
 }
 
-.header>a {
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--dark-gray);
-}
-
-.header>a:hover {
+.links>a:hover {
     color: var(--darkest-gray);
 }
 
 #logo {
+    position: relative;
+    margin-left: 100px;
+    width: 300px;
     font-family: 'Rozenssa', sans-serif;
     letter-spacing: 5px;
-    grid-column: 1;
-    margin-left: 100px;
     font-size: 22px;
     font-weight: 600;
     color: var(--darkest-gray);
 }
 
-#about-me-page {
-    grid-column: 3;
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
 }
 
-#works-page {
-    grid-column: 4;
-}
-
-#contacts-page {
-    grid-column: 5;
+.links a {
+    margin: 0px 60px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--dark-gray);
 }
 
 
@@ -179,18 +176,19 @@ footer{
     border-width: 0;
     font-weight: 600;
     font-size: 20px;
-    transition: all .4s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .button-type-1:hover {
+    transform: translate(-1px, -1px);
     box-shadow: 5px 5px var(--blue);
-    transition: all .4s ease-in-out;
+    cursor: pointer;
 }
 
-#application-button:active {
-    transform: translate(5px, 5px);
+.button-type-1:active {
+    transform: translate(1px, 1px);
     box-shadow: none;
-    transition: all .2s ease-in-out;
+    cursor: pointer;
 }
 
 
@@ -325,17 +323,14 @@ footer{
 
 .content-contacts-page {
     max-width: 1300px;
-    margin-top: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    margin: 300px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .contacts-cards {
-    grid-column: 1/ 4;
-    display: flex;
     max-width: 1300px;
     margin-top: 200px;
     margin-left: auto;
@@ -362,6 +357,7 @@ footer{
 }
 
 .contact-card:hover {
+    cursor: pointer;
     transform: translateY(-30px);
     box-shadow: none;
     box-shadow: 7px 7px var(--gray);
@@ -444,12 +440,15 @@ footer{
     height: auto;
     margin-bottom: 200px;
 }
-.work-name-odd{
+
+.work-name-odd {
     margin-right: 300px;
 }
-.work-name-even{
+
+.work-name-even {
     margin-left: 300px;
 }
+
 #number-1,
 #number-3,
 #number-5 {
@@ -467,9 +466,9 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 50vh;
+    height: auto;
     max-width: 1900px;
-    margin: 0px auto 200px auto;
+    margin: 0px auto 150px auto;
     max-width: 1700px;
     transition: all .3s ease-in-out;
 }
@@ -577,11 +576,13 @@ footer{
 #first-work-statistics-course:hover {
     z-index: 3;
 }
-.work-button{
+
+.work-button {
     display: flex;
     justify-content: center;
 }
-.preview-box{
+
+.preview-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -595,12 +596,14 @@ footer{
     transform: scale(110%, 110%);
     box-shadow: 5px 5px var(--blue);
 }
+
 .students-knowledge-control-preview,
-.basketball-flight-modeling-preview{
+.basketball-flight-modeling-preview {
     height: 750px;
     width: 1050px;
 }
-.kasumi-preview{
+
+.kasumi-preview {
     margin: 0px 50px;
     height: 750px;
 }
@@ -617,11 +620,13 @@ footer{
     width: 870px;
     background-image: url(../img/basketballFlightModeling/basketballFlightModeling1.svg);
 }
+
 #students-knowledge-control-image {
     width: 756px;
     background-image: url(../img/studentsKnowledgeControl/studentsKnowledgeControl1.svg);
 }
-.preview-box-images{
+
+.preview-box-images {
     height: 550px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -638,6 +643,7 @@ footer{
     width: 442px;
     background-image: url(../img/kasumi/kasumiAlgorithm.svg);
 }
+
 .image-box-navigation-buttons {
     display: flex;
     flex-direction: row;
@@ -659,8 +665,10 @@ footer{
 
 .image-box-navigation-button:hover {
     transform: translate(-1px, -1px);
+    cursor: pointer;
 }
+
 .image-box-navigation-button:active {
     transform: translate(1px, 1px);
-    box-shadow: none;
+    cursor: pointer;
 }
