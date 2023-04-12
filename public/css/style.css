@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.cdnfonts.com/css/soyuz-grotesk');
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700&display=swap');@import url('https://fonts.cdnfonts.com/css/rozenssa');
-
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/rozenssa');
+:root {
     --blue: #504CFF;
     --violet: #5955B3;
     --green: #E3F265;
@@ -13,6 +13,7 @@
     --light-gray: #E5E5E5;
     --lightest-gray: #EFEEEA;
 }
+
 * {
     font-family: 'Manrope', sans-serif;
 }
@@ -42,11 +43,12 @@ li {
 
 /* Стили текста */
 
-.text{
+.text {
     line-height: 160%;
     text-align: center;
     color: var(--darkest-gray);
 }
+
 .text-style-1 {
     margin-top: 200px;
     font-size: 80px;
@@ -76,17 +78,18 @@ li {
     font-weight: 400;
     margin-top: 100px;
 }
+
 .text-style-6 {
     grid-column: 1;
     font-size: 200px;
     text-align: left;
-    color: rgba(28, 28, 28, 0.1);
+    color: var(--light-gray);
 }
 
 
 /* Стиль хедера */
 
-.header { 
+.header {
     position: sticky;
     top: 0;
     z-index: 10;
@@ -102,16 +105,18 @@ li {
     border-radius: 0px 0px 15px 15px;
     transition: all .6s ease-in-out;
 }
+
 .header_hidden {
     transform: translateY(-100%);
-  }
-.header > a {
+}
+
+.header>a {
     font-size: 16px;
     font-weight: 500;
     color: var(--dark-gray);
 }
 
-.header > a:hover {
+.header>a:hover {
     color: var(--darkest-gray);
 }
 
@@ -197,7 +202,7 @@ li {
     margin-right: auto;
 }
 
-.about-me-container > div {
+.about-me-container>div {
     background: var(--lightest-gray);
     padding: 20px 60px 60px 60px;
     border-radius: 30px;
@@ -205,7 +210,7 @@ li {
     transition: all .5s ease-in-out;
 }
 
-.about-me-container > div:hover {
+.about-me-container>div:hover {
     transition: all .4s ease-in-out;
     box-shadow: 5px 5px var(--blue);
 }
@@ -221,14 +226,14 @@ li {
 .subheading {
     margin: 20px 0px;
     font-weight: 700;
-    font-size: 22;
+    font-size: 16px;
 }
 
 .description {
     margin-top: -15px;
     margin-bottom: 10px;
     font-weight: 400;
-    font-size: 20;
+    font-size: 14px;
     letter-spacing: .3px;
 }
 
@@ -237,49 +242,55 @@ li {
     grid-row: 1 / 4;
 }
 
-#about-me-box .description:not(:last-child){
+#about-me-box .description:not(:last-child) {
     margin-top: 0px;
 }
+
 #main-info-box {
-    display: flex;
-    flex-direction: column;
     grid-column: 9 / 13;
     grid-row: 1 / 4;
 }
 
-
 #education-box {
-    display: flex;
-    flex-direction: column;
     grid-column: 1 / 6;
-    grid-row: 4 / 7;
+    grid-row: 4 / 6;
+}
+
+#experience-box {
+    grid-column: 1 / 6;
+    grid-row: 6;
+}
+
+#experience-box p:not(:first-child) {
+    margin-top: 40px;
 }
 
 #courses-box {
     grid-column: 6 / 13;
     grid-row: 4 / 7;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 #languages-box {
-    grid-column: 1 / 7;
+    grid-column: 1 / 13;
     grid-row: 7;
-    display: flex;
-    flex-direction: column;
 }
 
-.language-group{
+.language-grous {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.language-group {
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
-.circles{
+.circles {
     display: flex;
     flex-direction: row;
+    margin-left: 150px;
     width: 250px;
 }
 
@@ -296,14 +307,6 @@ li {
     background-color: var(--blue);
 }
 
-#experience-box {
-    grid-column: 7 / 13;
-    grid-row: 7;
-}
-
-#experience-box p:not(:first-child){
-    margin-top: 40px;
-}
 
 /* Стиль страницы "Контакты" */
 
@@ -380,7 +383,7 @@ li {
     transition: all .3s ease-in-out;
 }
 
-.contsct-card:hover ~ .contsct-card {
+.contsct-card:hover~.contsct-card {
     left: 40px;
     transition: all .3s ease-in-out;
 }
@@ -463,7 +466,7 @@ li {
     max-width: 1900px;
 }
 
-.screenshots-1 > .works-card-first:not(:last-child) {
+.screenshots-1>.works-card-first:not(:last-child) {
     margin-right: -100px;
 }
 
@@ -499,7 +502,7 @@ li {
     background-size: contain;
     height: 500px;
     width: 250px;
-    transition: all .3s cubic-bezier(.51,.77,.95,.33);
+    transition: all .3s cubic-bezier(.51, .77, .95, .33);
 }
 
 .works-card-first:hover {
@@ -508,7 +511,7 @@ li {
     animation-name: shake-animaiton2;
     animation-duration: .5s;
     animation-iteration-count: 1;
-    transition: all .3s cubic-bezier(.51,.77,.95,.33);
+    transition: all .3s cubic-bezier(.51, .77, .95, .33);
 }
 
 @keyframes shake-animaiton2 {
@@ -689,7 +692,7 @@ li {
     transition: all .3s ease-in-out;
 }
 
-.students-knowledge-control-box:hover, 
+.students-knowledge-control-box:hover,
 .basketball-flight-modeling-box:hover,
 .kasumi-box:hover {
     box-shadow: 7px 7px var(--lightest-gray);
