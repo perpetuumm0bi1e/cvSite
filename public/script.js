@@ -1,3 +1,22 @@
+function onEntry(entry) {
+    entry.forEach(change => {
+        if (change.isIntersecting) {
+            change.target.classList.add('appeared');
+        }
+    });
+}
+let options = { threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let bottomAppearedElements = document.querySelectorAll('.bottom-appearance-animation'),
+    leftAppearedElements = document.querySelectorAll('.left-appearance-animation'),
+    rightAppearedElements = document.querySelectorAll('.right-appearance-animation');
+for (let elm of bottomAppearedElements) {
+    observer.observe(elm);
+}for (let elm of leftAppearedElements) {
+    observer.observe(elm);
+}for (let elm of rightAppearedElements) {
+    observer.observe(elm);
+}
 document.addEventListener('DOMContentLoaded', () => {
     const onScrollHeader = () => {
         const header = document.querySelector('.header');
@@ -30,7 +49,7 @@ let firstWorkSettings = document.getElementById('first-work-settings');
 let firstWorkStatisticsDay = document.getElementById('first-work-statistics-day');
 let firstWorkStatisticsWeek = document.getElementById('first-work-statistics-week');
 let firstWorkStatisticsCourse = document.getElementById('first-work-statistics-course');
-
+let telegramButtonMain = document.getElementById('telegram-button');
 let mobilePhoneCard = document.getElementById('mobile-phone-card');
 let mobilePhoneCardCoord = mobilePhoneCard.getBoundingClientRect();
 let mobilePhoneScreenShots = ['./img/perfectPosture/main.svg',
@@ -60,6 +79,22 @@ let secondKasumiBoxNavigationClickCounter = 0;
 
 let fourthWorkEncryptionDecryption = document.getElementById('kasumi-encryption-decryption-image');
 let fourthWorkAlgorithmImages = document.getElementById('kasumi-algorithm-image');
+
+let proCreditBoxNavigationLeft = document.getElementById('pro-credit-box-navigation-left');
+let proCreditBoxNavigationRight = document.getElementById('pro-credit-box-navigation-right');
+let proCreditBoxNavigationClickCounter = 0;
+
+let proCreditImage = document.getElementById('pro-credit-image');
+
+let proCreditBoxImages = ['./img/proCredit/proCredit1.svg',
+    './img/proCredit/proCredit2.svg',
+    './img/proCredit/proCredit3.svg',
+    './img/proCredit/proCredit4.svg',
+    './img/proCredit/proCredit5.svg',
+    './img/proCredit/proCredit6.svg',
+    './img/proCredit/proCredit7.svg',
+    './img/proCredit/proCredit8.svg'
+];
 
 let basketballFlightModelingBoxImages = ['./img/basketballFlightModeling/basketballFlightModeling1.svg',
     './img/basketballFlightModeling/basketballFlightModeling2.svg',
@@ -103,6 +138,7 @@ let interactiveLayoutButton1 = document.getElementById('interactive-layout-butto
 let gitButton1 = document.getElementById('git-button-1');
 let gitButton2 = document.getElementById('git-button-2');
 let gitButton3 = document.getElementById('git-button-3');
+let gitButton4 = document.getElementById('git-button-4');
 
 
 for (let i = 0; i < worksCardFirst.length; i++) {
@@ -118,9 +154,12 @@ gitButton1.onclick = function() {
     window.location = "https://github.com/perpetuumm0bi1e/StudentsKnowledgeControl";
 }
 gitButton2.onclick = function() {
-    window.location = "https://github.com/perpetuumm0bi1e/Kasumi";
+    window.location = "https://github.com/perpetuumm0bi1e/ProCredit";
 }
 gitButton3.onclick = function() {
+    window.location = "https://github.com/perpetuumm0bi1e/Kasumi";
+}
+gitButton4.onclick = function() {
     window.location = "https://github.com/perpetuumm0bi1e/BasketballFlightModeling";
 }
 
@@ -163,13 +202,22 @@ studentsKnowledgeControlBoxNavigationRight.onclick = function() {
     studentsKnowledgeControlClickCounter++;
     boxImageChanger(studentsKnowledgeControlClickCounter, studentsKnowledgeControlImage, studentsKnowledgeControlBoxImages);
 }
+proCreditBoxNavigationLeft.onclick = function() {
+    proCreditBoxNavigationClickCounter--;
+    boxImageChanger(proCreditBoxNavigationClickCounter, proCreditImage, proCreditBoxImages);
+}
+proCreditBoxNavigationRight.onclick = function() {
+    proCreditBoxNavigationClickCounter++;
+    boxImageChanger(proCreditBoxNavigationClickCounter, proCreditImage, proCreditBoxImages);
+}
 let telegramButton = document.getElementById('telegram');
 let instagramButton = document.getElementById('instagram');
 let githubButton = document.getElementById('github');
-
+telegramButtonMain.onclick = function() {
+    window.location = "https://t.me/perpetuumm0bi1e";
+}
 telegramButton.onclick = function() {
     window.location = "https://t.me/perpetuumm0bi1e";
-    console.log('телега');
 }
 instagramButton.onclick = function() {
     window.location = "https://instagram.com/perpetuumm0bi1e";

@@ -39,8 +39,31 @@ p {
 li {
     margin-left: -18px;
 }
+/* Анимация появления */
+.left-appearance-animation{
+    opacity: 0;
+    transform: translateX(-50%);
+}
+.right-appearance-animation{
+    opacity: 0;
+    transform: translateX(50%);
+}
+.bottom-appearance-animation {
+    opacity: 0;
+    transform: translateY(100%);
+}
 
-
+.bottom-appearance-animation.appeared {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all 1.3s;
+}
+.right-appearance-animation.appeared,
+.left-appearance-animation.appeared {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 1s;
+}
 /* Стили текста */
 
 .text {
@@ -83,7 +106,7 @@ li {
     grid-column: 1;
     font-size: 200px;
     text-align: left;
-    color: var(--lightest-gray);
+    color: var(--blue);
 }
 
 footer {
@@ -595,7 +618,8 @@ footer {
 }
 
 .students-knowledge-control-preview,
-.basketball-flight-modeling-preview {
+.basketball-flight-modeling-preview,
+.pro-credit-preview {
     height: 750px;
     width: 1050px;
 }
@@ -611,6 +635,11 @@ footer {
 
 #second-kasumi-box {
     width: 550px;
+}
+
+#pro-credit-image {
+    width: 880px;
+    background-image: url(../img/proCredit/proCredit1.svg);
 }
 
 #basketball-flight-modeling-image {
