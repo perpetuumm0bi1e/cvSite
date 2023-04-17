@@ -39,15 +39,20 @@ p {
 li {
     margin-left: -18px;
 }
+
+
 /* Анимация появления */
-.left-appearance-animation{
+
+.left-appearance-animation {
     opacity: 0;
     transform: translateX(-50%);
 }
-.right-appearance-animation{
+
+.right-appearance-animation {
     opacity: 0;
     transform: translateX(50%);
 }
+
 .bottom-appearance-animation {
     opacity: 0;
     transform: translateY(100%);
@@ -56,14 +61,17 @@ li {
 .bottom-appearance-animation.appeared {
     opacity: 1;
     transform: translateY(0%);
-    transition: all 1.3s;
+    transition: all 1s ease-in-out;
 }
+
 .right-appearance-animation.appeared,
 .left-appearance-animation.appeared {
     opacity: 1;
     transform: translateX(0%);
-    transition: all 1s;
+    transition: all 1s ease-in-out;
 }
+
+
 /* Стили текста */
 
 .text {
@@ -87,24 +95,23 @@ li {
 
 .text-style-3 {
     font-family: 'Unbounded', sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 500;
 }
 
 .text-style-4 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
 }
 
 .text-style-5 {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     margin-top: 100px;
 }
 
 .text-style-6 {
-    grid-column: 1;
-    font-size: 200px;
+    font-size: 180px;
     text-align: left;
     color: var(--blue);
 }
@@ -206,12 +213,14 @@ footer {
     transform: translate(-1px, -1px);
     box-shadow: 5px 5px var(--blue);
     cursor: pointer;
+    transition: all .3s ease-in-out;
 }
 
 .button-type-1:active {
     transform: translate(1px, 1px);
     box-shadow: none;
     cursor: pointer;
+    transition: all .3s ease-in-out;
 }
 
 
@@ -473,13 +482,13 @@ footer {
 #number-3,
 #number-5 {
     width: 200px;
-    margin: -200px 100px 0px 0px;
+    margin: -200px 95px 0px 0px;
 }
 
 #number-2,
 #number-4 {
     width: 200px;
-    margin: -200px 0px 0px 100px;
+    margin: -200px 0px 0px 130px;
 }
 
 .screenshots-container {
