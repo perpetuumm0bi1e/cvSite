@@ -252,14 +252,14 @@ footer {
 
 .button-type-1 {
     font-family: 'Fira Code', sans-serif;
-    width: 450px;
-    height: 60px;
+    width: 400px;
+    height: 50px;
     padding-left: 30px;
     background: var(--green);
     border-radius: 35px;
     border-width: 0;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
     transition: all .3s ease;
 }
@@ -407,6 +407,21 @@ footer {
 
 
 /* Стиль страницы "Контакты" */
+#star-container{
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin: -150px 0px 100px 0px;
+    width: 80px;
+    height: 80px;
+    background-image: url(../img/star-2.svg);
+    background-size: cover;
+    background-repeat: repeat space;
+    background-attachment: fixed;
+    background-position: center top;
+    animation-name: rotation-animation;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
 .contacts-heading{
     justify-self: flex-start;
     align-self: flex-start;
