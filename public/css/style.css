@@ -2,16 +2,19 @@
 @import url('https://fonts.cdnfonts.com/css/soyuz-grotesk');
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/rozenssa');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 :root {
     --blue: #504CFF;
+    --dark-blue: #0000C4;
     --violet: #5955B3;
-    --green: #E3F265;
+    --green: #E7FF56;
     --white: #fefefe;
     --darkest-gray: #282828;
     --dark-gray: #666666;
     --gray: #C7C7C7;
     --light-gray: #E5E5E5;
     --lightest-gray: #EFEEEA;
+    --orange: #D35A18;
 }
 
 * {
@@ -61,17 +64,62 @@ li {
 .bottom-appearance-animation.appeared {
     opacity: 1;
     transform: translateY(0%);
-    transition: all 1s ease-in-out;
+    transition: all .8s ease;
 }
 
 .right-appearance-animation.appeared,
 .left-appearance-animation.appeared {
     opacity: 1;
     transform: translateX(0%);
-    transition: all 1s ease-in-out;
+    transition: all .8s ease;
 }
 
+/* Анимации */
 
+@keyframes shake-animaiton {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(1deg);
+    }
+    50% {
+        transform: rotate(-1deg);
+    }
+    75% {
+        transform: rotate(1deg);
+    }
+    100% {
+        transform: rotate(-1deg);
+    }
+}
+
+@keyframes shake-animaiton2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(.5deg);
+    }
+    50% {
+        transform: rotate(-.5deg);
+    }
+    75% {
+        transform: rotate(.5deg);
+    }
+    100% {
+        transform: rotate(-.5deg);
+    }
+}
+
+@keyframes rotation-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 /* Стили текста */
 
 .text {
@@ -89,10 +137,12 @@ li {
 }
 
 .text-style-2 {
-    font-size: 50px;
+    font-family: '../fonts/BASE_BLOOM.otf', sans-serif;
+    color: var(--dark-blue);
+    font-size: 100px;
+    text-align: left;
     font-weight: 600;
 }
-
 .text-style-3 {
     font-family: 'Unbounded', sans-serif;
     font-size: 35px;
@@ -111,12 +161,14 @@ li {
 }
 
 .text-style-6 {
-    font-size: 180px;
+    font-family: '../fonts/BASE_BLOOM.otf', sans-serif;
+    font-size: 150px;
     text-align: left;
     color: var(--blue);
 }
 
 footer {
+    z-index: 10;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -199,28 +251,31 @@ footer {
 }
 
 .button-type-1 {
+    font-family: 'Fira Code', sans-serif;
     width: 450px;
-    height: 65px;
+    height: 60px;
+    padding-left: 30px;
     background: var(--green);
-    border-radius: 30px;
+    border-radius: 35px;
     border-width: 0;
     font-weight: 600;
     font-size: 20px;
-    transition: all .3s ease-in-out;
+    text-align: left;
+    transition: all .3s ease;
 }
 
 .button-type-1:hover {
     transform: translate(-1px, -1px);
-    box-shadow: 5px 5px var(--blue);
+    box-shadow: 3px 3px var(--blue);
     cursor: pointer;
-    transition: all .3s ease-in-out;
+    transition: all .3s ease;
 }
 
 .button-type-1:active {
     transform: translate(1px, 1px);
     box-shadow: none;
     cursor: pointer;
-    transition: all .3s ease-in-out;
+    transition: all .3s ease;
 }
 
 
@@ -352,7 +407,16 @@ footer {
 
 
 /* Стиль страницы "Контакты" */
-
+.contacts-heading{
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin-top: -100px;
+}
+.contacts-heading:first-child{
+    font-size: 300px;
+    margin-top: -150px;
+    margin-bottom: -80px;
+}
 .content-contacts-page {
     max-width: 1300px;
     margin: 300px auto;
@@ -362,7 +426,10 @@ footer {
     align-items: center;
 }
 
-.contacts-cards {
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     max-width: 1300px;
     margin-top: 200px;
     margin-left: auto;
@@ -396,23 +463,6 @@ footer {
     transition: all .3s ease-in-out;
 }
 
-@keyframes shake-animaiton {
-    0% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(1deg);
-    }
-    50% {
-        transform: rotate(-1deg);
-    }
-    75% {
-        transform: rotate(1deg);
-    }
-    100% {
-        transform: rotate(-1deg);
-    }
-}
 
 .contsct-card:active {
     transform: translateY(7px);
@@ -435,21 +485,6 @@ footer {
     text-align: right;
 }
 
-#telegram {
-    background: rgba(135, 191, 215, 0.9);
-}
-
-#email {
-    background: rgba(231, 255, 86, 0.9);
-}
-
-#instagram {
-    background: rgba(238, 220, 250, 0.9);
-}
-
-#github {
-    background: rgba(254, 252, 3, 0.9);
-}
 
 
 /* Стиль страницы "Работы" */
@@ -549,23 +584,6 @@ footer {
     transition: all .3s ease-in-out;
 }
 
-@keyframes shake-animaiton2 {
-    0% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(.5deg);
-    }
-    50% {
-        transform: rotate(-.5deg);
-    }
-    75% {
-        transform: rotate(.5deg);
-    }
-    100% {
-        transform: rotate(-.5deg);
-    }
-}
 
 #first-work-main {
     background-image: url(../img/perfectPosture/mainNoBorder.svg);
