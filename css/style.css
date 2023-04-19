@@ -390,10 +390,11 @@ footer {
   }
   
 .menu-items {
+    visibility: hidden;
+    width: 0;
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 100%;
     background-color: var(--white);
     transform: translateX(100%);
     transition: transform 0.5s ease-in-out;
@@ -409,6 +410,8 @@ footer {
   
   .menu-container input[type="checkbox"]:checked ~ .menu-items {
     transform: translateX(0);
+    visibility: visible;
+    width: 100%;
   }
   
   .menu-container input[type="checkbox"]:checked ~ .hamburger-lines .line-1 {
