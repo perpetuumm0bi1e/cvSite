@@ -424,7 +424,9 @@ footer {
     display: none;
   }
 /* Стиль главной страницы */
-
+.content-main-page{
+    width: 100%;
+}
 #first-img-container {
     height: 1500px;
     width: 100%;
