@@ -61,6 +61,9 @@ html{
         padding: 90px 50px 50px 0px;
         height: 180px;
       }
+      .content-main-page{
+        max-width: 1024px
+      }
 }
 @media screen and (max-width: 768px) {
     .links {
@@ -81,6 +84,9 @@ html{
     .menu-items {
         padding: 90px 50px 50px 0px;
         height: 150px;
+      }
+      .content-main-page{
+        max-width: 768px;
       }
 }
 a {
