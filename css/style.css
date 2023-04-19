@@ -20,7 +20,9 @@
 html{
     font-family: 'Manrope', sans-serif;
     background: var(--white);
+    min-width: 100%;
     width: 100%;
+    max-width: 100%;
 }
 
 @media screen and (min-width: 1024px){
@@ -275,6 +277,7 @@ footer {
     top: 0;
     z-index: 10;
     height: 62px;
+    min-width: 100%;
     width: 100%;
     background: var(--white);
     box-shadow: 0px 0px 50px rgba(28, 28, 28, 0.05);
@@ -424,9 +427,7 @@ footer {
     display: none;
   }
 /* Стиль главной страницы */
-.content-main-page{
-    width: 100%;
-}
+
 #first-img-container {
     height: 1500px;
     width: 100%;
