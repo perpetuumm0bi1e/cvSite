@@ -5,6 +5,7 @@ function onEntry(entry) {
         }
     });
 }
+
 let options = { threshold: [0.5] };
 let observer = new IntersectionObserver(onEntry, options);
 let bottomAppearedElements = document.querySelectorAll('.bottom-appearance-animation'),
@@ -17,6 +18,7 @@ for (let elm of bottomAppearedElements) {
 }for (let elm of rightAppearedElements) {
     observer.observe(elm);
 }
+/*
 document.addEventListener('DOMContentLoaded', () => {
     const onScrollHeader = () => {
         const header = document.querySelector('.header');
@@ -40,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     onScrollHeader();
 });
-
+*/
 let worksCardFirst = document.getElementsByClassName('works-card-first');
 
 let firstWorkMain = document.getElementById('first-work-main');

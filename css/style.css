@@ -270,7 +270,7 @@ footer {
 /* Стиль хедера */
 
 .header {
-    position: sticky;
+   /* position: sticky;*/
     top: 0;
     z-index: 10;
     height: 62px;
