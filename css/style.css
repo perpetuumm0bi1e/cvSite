@@ -20,6 +20,7 @@
 html{
     font-family: 'Manrope', sans-serif;
     background: var(--white);
+    width: 100%;
 }
 
 @media screen and (min-width: 1024px){
@@ -426,6 +427,7 @@ footer {
 
 #first-img-container {
     height: 1500px;
+    width: 100%;
     background-image: url(../img/myPhoto2.jpg);
     background-size: cover;
     background-repeat: repeat space;
