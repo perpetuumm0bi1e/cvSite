@@ -15,6 +15,9 @@ checkboxNavBar.onclick = function(){
     }
 }
 
+let languageGroup1 = document.getElementById('language-group-1');
+let languageGroup2 = document.getElementById('language-group-2');
+languageGroup2.style.width = languageGroup1.style.width;
 
 function onEntry(entry) {
     entry.forEach(change => {

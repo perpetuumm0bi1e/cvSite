@@ -22,12 +22,6 @@ html {
     background: var(--white);
 }
 
-body {
-    min-width: 100vw;
-    width: 100vw;
-    max-width: 100vw;
-}
-
 @media screen and (min-width: 1024px) {
     html {
         font-size: 16px;
@@ -49,21 +43,19 @@ body {
         margin-bottom: 200px;
     }
     .circles {
-        width: 250px;
+        gap: 10px;
     }
     
     .filled-circle,
     .circle {
         width: 15px;
         height: 15px;
-        margin: 0px 10px;
     }
     .language-groups {
         gap: 50px;
     }
-    
     .language-group {
-        gap: 50px;
+        gap: 100px;
     }
 }
 
@@ -93,21 +85,19 @@ body {
         margin-bottom: 150px;
     }
     .circles {
-        width: 220px;
+        gap: 9px;
     }
     
     .filled-circle,
     .circle {
         width: 12px;
         height: 12px;
-        margin: 0px 9px;
     }
     .language-groups {
-        gap: 20px;
+        gap: 50px;
     }
-    
     .language-group {
-        gap: 30px;
+        gap: 50px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -136,21 +126,19 @@ body {
         margin-bottom: 100px;
     }
     .circles {
-        width: 180px;
+        gap: 7px;
     }
     
     .filled-circle,
     .circle {
         width: 10px;
         height: 10px;
-        margin: 0px 7px;
     }
     .language-groups {
-        gap: 10px;
+        gap: 40px;
     }
-    
     .language-group {
-        gap: 20px;
+        gap: 40px;
     }
 }
 
@@ -340,7 +328,7 @@ footer {
     align-items: center;
     text-align: center;
     height: 150px;
-    width: 100vw;
+    width: 100%;
     font-size: 0.875rem;
     color: var(--white);
     background-color: var(--darkest-gray);
@@ -414,8 +402,8 @@ footer {
     display: block;
     height: 32px;
     width: 32px;
-    top: 22px;
-    right: 30px;
+    top: 26px;
+    right: 35px;
     z-index: 5;
     opacity: 0;
     cursor: pointer;
@@ -426,8 +414,8 @@ footer {
     height: 26px;
     width: 32px;
     position: absolute;
-    top: 22px;
-    right: 30px;
+    top: 26px;
+    right: 35px;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -492,7 +480,6 @@ footer {
 /* Стиль главной страницы */
 
 .content-main-page {
-    min-width: 400px;
     max-width: 1300px;
     margin: 300px auto;
     display: flex;
@@ -532,6 +519,7 @@ footer {
 }
 
 .about-me-container {
+    padding: 0 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -539,7 +527,6 @@ footer {
     gap: 40px;
     max-width: 1300px;
     margin: 0px auto;
-    padding: 0px 40px;
 }
 
 .about-me-container>div {
@@ -588,18 +575,16 @@ footer {
     flex-grow: 2;
     width: 360px;
 }
-#language-box {
-    flex-grow: 2;
-    width: inherit;
+#languages-box {
+    flex-grow: 3;
 }
 .language-groups {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
-
 .language-group {
     display: flex;
     flex-direction: row;
@@ -607,7 +592,6 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 .circles {
     display: flex;
     flex-direction: row;
