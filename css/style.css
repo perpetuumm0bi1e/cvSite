@@ -165,17 +165,17 @@ li {
 
 .left-appearance-animation {
     opacity: 0;
-    transform: translateX(-25%);
+    transform: translateX(-20%);
 }
 
 .right-appearance-animation {
     opacity: 0;
-    transform: translateX(25%);
+    transform: translateX(20%);
 }
 
 .bottom-appearance-animation {
     opacity: 0;
-    transform: translateY(50%);
+    transform: translateY(40%);
 }
 
 .bottom-appearance-animation.appeared {
