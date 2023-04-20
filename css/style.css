@@ -58,11 +58,12 @@ body {
         height: 15px;
         margin: 0px 10px;
     }
-    .language-group {
-        width: 515px;
-    }
     .language-groups {
-        gap:190px;
+        gap: 50px;
+    }
+    
+    .language-group {
+        gap: 50px;
     }
 }
 
@@ -101,8 +102,12 @@ body {
         height: 12px;
         margin: 0px 9px;
     }
+    .language-groups {
+        gap: 20px;
+    }
+    
     .language-group {
-        width: 400px;
+        gap: 30px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -140,10 +145,13 @@ body {
         height: 10px;
         margin: 0px 7px;
     }
-    .language-group {
-        width: 350px;
+    .language-groups {
+        gap: 10px;
     }
     
+    .language-group {
+        gap: 20px;
+    }
 }
 
 a {
@@ -581,8 +589,8 @@ footer {
     width: 360px;
 }
 #language-box {
-    flex-grow: 1;
-    width: 100%;
+    flex-grow: 2;
+    width: inherit;
 }
 .language-groups {
     display: flex;
