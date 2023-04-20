@@ -44,11 +44,24 @@ body {
         height: 50px;
         padding-left: 40px;
     }
+    #first-img-container {
+        background-image: url(../img/myPhoto2.jpg);
+        height: 1500px;
+        background-size: cover;
+    }
+    .links a {
+        margin: 0px 30px;
+        width: 90px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .links {
         visibility: hidden;
+        width: 0px;
+    }
+    .links a {
+        margin: 0px;
         width: 0px;
     }
     .nav-container {
@@ -63,22 +76,33 @@ body {
         padding-left: 30px;
     }
     .menu-items {
+        visibility: hidden;
         width: 0px;
         padding: 0px;
         height: 0px;
     }
     .menu-container input[type="checkbox"]:checked~.menu-items {
+        visibility: visible;
         transform: translateY(0);
         width: 100%;
         padding: 90px 50px 50px 0px;
         height: 180px;
         transition: transform 0.5s ease-in-out;
     }
+    #first-img-container {
+        background-image: url(../img/myPhoto3.svg);
+        height: 1000px;
+        background-size: cover;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .links {
         visibility: hidden;
+        width: 0px;
+    }
+    .links a {
+        margin: 0px;
         width: 0px;
     }
     .nav-container {
@@ -92,17 +116,26 @@ body {
         height: 37.5px;
         padding-left: 30px;
     }
-    .menu-items {
+    .menu-container input[type="checkbox"]:not(:checked)~.menu-items {
+        transform: translateY(-100%);
+        visibility: hidden;
         width: 0px;
         padding: 0px;
         height: 0px;
+        transition: transform 0.5s ease-in-out;
     }
     .menu-container input[type="checkbox"]:checked~.menu-items {
+        visibility: visible;
         transform: translateY(0);
         width: 100%;
         padding: 90px 40px 40px 0px;
         height: 150px;
         transition: transform 0.5s ease-in-out;
+    }
+    #first-img-container {
+        background-image: url(../img/myPhoto3.svg);
+        height: 750px;
+        background-size: cover;
     }
 }
 
@@ -342,8 +375,6 @@ footer {
 }
 
 .links a {
-    margin: 0px 50px;
-    width: 90px;
     text-align: center;
     font-size: 1rem;
     font-weight: 500;
@@ -423,7 +454,6 @@ footer {
 }
 
 .menu-items {
-    width: 0;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -451,20 +481,12 @@ footer {
     transform: rotate(-45deg);
 }
 
-.menu-container input[type="checkbox"]:checked~#logo {
-    display: none;
-}
-
 
 /* Стиль главной страницы */
 
 #first-img-container {
-    height: 1500px;
-    width: 100vw;
-    background-image: url(../img/myPhoto2.jpg);
-    background-size: cover;
-    background-repeat: repeat space;
-    background-attachment: fixed;
+    width: 100%;
+    background-repeat: repeat;
     background-position: center top;
     display: flex;
     flex-direction: column;
@@ -493,7 +515,7 @@ footer {
     height: 914px;
     background-image: url(../img/myPhoto1.png);
     margin-bottom: 200px;
-    background-repeat: repeat space;
+    background-repeat: repeat;
     background-attachment: fixed;
     background-position: center top;
 }
