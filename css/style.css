@@ -436,6 +436,15 @@ footer {
   
 /* Стиль главной страницы */
 
+.content-main-page {
+    max-width: 1300px;
+    margin: 300px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #first-img-container {
     display: flex;
     flex-direction: column;
