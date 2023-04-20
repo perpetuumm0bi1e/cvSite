@@ -48,6 +48,20 @@ body {
         height: 580px;
         margin-bottom: 200px;
     }
+    .circles {
+        margin-left: 150px;
+        width: 250px;
+    }
+    
+    .filled-circle,
+    .circle {
+        width: 15px;
+        height: 15px;
+        margin: 0px 10px;
+    }
+    .language-group {
+        width: 515px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -75,8 +89,21 @@ body {
         height: 500px;
         margin-bottom: 150px;
     }
+    .circles {
+        margin-left: 150px;
+        width: 250px;
+    }
+    
+    .filled-circle,
+    .circle {
+        width: 12px;
+        height: 12px;
+        margin: 0px 9px;
+    }
+    .language-group {
+        width: 450px;
 }
-
+}
 @media screen and (max-width: 768px) {
     html {
         font-size: 12px;
@@ -102,6 +129,20 @@ body {
         height: 450px;
         margin-bottom: 100px;
     }
+    .circles {
+        margin-left: 150px;
+        width: 250px;
+    }
+    
+    .filled-circle,
+    .circle {
+        width: 10px;
+        height: 10px;
+        margin: 0px 7px;
+    }
+    .language-group {
+        width: 420px;
+}
 }
 
 a {
@@ -282,6 +323,7 @@ li {
 /* Стиль Футера */
 
 footer {
+    margin-top: 100px;
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -481,18 +523,19 @@ footer {
 }
 
 .about-me-container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(10, auto);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: stretch;
     gap: 40px;
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1300px;
+    margin: 0px auto;
+    padding: 0px 40px;
 }
 
 .about-me-container>div {
     background: var(--lightest-gray);
-    padding: 20px 60px 60px 60px;
+    padding: 40px;
     border-radius: 30px;
     box-shadow: none;
     transition: all .5s ease-in-out;
@@ -506,14 +549,12 @@ footer {
 .about-me-page-heading {
     font-family: 'Unbounded', sans-serif;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 1.5625rem;
     margin-bottom: 40px;
     color: var(--darkest-gray);
 }
-
 #about-me-box {
-    grid-column: 1 / 9;
-    grid-row: 1 / 4;
+    flex-grow: 2;
 }
 
 #about-me-box .description:not(:last-child) {
@@ -521,58 +562,48 @@ footer {
 }
 
 #main-info-box {
-    grid-column: 9 / 13;
-    grid-row: 1 / 4;
+    flex-grow: 1;
 }
-
 #education-box {
-    grid-column: 1 / 6;
-    grid-row: 4 / 6;
+    flex-grow: 1;
 }
 
-#experience-box {
-    grid-column: 1 / 6;
-    grid-row: 6;
-}
 
 #experience-box p:not(:first-child) {
     margin-top: 40px;
 }
 
 #courses-box {
-    grid-column: 6 / 13;
-    grid-row: 4 / 7;
+    flex-grow: 2;
 }
 
 #languages-box {
-    grid-column: 1 / 13;
-    grid-row: 7;
+    flex-grow: 3;
 }
 
-.language-grous {
+.language-groups {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 .language-group {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 .circles {
     display: flex;
     flex-direction: row;
-    margin-left: 150px;
-    width: 250px;
 }
 
 .filled-circle,
 .circle {
-    width: 15px;
-    height: 15px;
-    margin: 0px 10px;
     border-radius: 40px;
     border: 3px solid var(--blue);
 }
