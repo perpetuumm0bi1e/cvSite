@@ -318,7 +318,7 @@ footer {
     height: 62px;
   }
   
-  .logo {
+  .logo a{
     text-decoration: none;
     font-family: 'Rozenssa', sans-serif;
     letter-spacing: 5px;

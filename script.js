@@ -1,3 +1,21 @@
+let checkboxNavBar = document.getElementById('checkbox-nav-bar');
+let logoNavBar = document.getElementById('logo');
+let menuBox = document.getElementById('menu');
+let checkboxNavBarCounter = 0;
+
+checkboxNavBar.onclick = function(){
+    checkboxNavBarCounter++;
+    if(checkboxNavBarCounter % 2 == 1){
+        logoNavBar.style.visibility = 'hidden';
+        logoNavBar.style.width = '0px';
+        menuBox.style.width = '100%';
+    } else {
+        logoNavBar.style.visibility = 'visible';
+        logoNavBar.style.width = '100%';
+    }
+}
+
+
 function onEntry(entry) {
     entry.forEach(change => {
         if (change.isIntersecting) {
