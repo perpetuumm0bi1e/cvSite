@@ -165,12 +165,12 @@ li {
 
 .left-appearance-animation {
     opacity: 0;
-    transform: translateX(-50%);
+    transform: translateX(-25%);
 }
 
 .right-appearance-animation {
     opacity: 0;
-    transform: translateX(50%);
+    transform: translateX(25%);
 }
 
 .bottom-appearance-animation {
