@@ -296,6 +296,7 @@ footer {
 /* Стиль хедера */
 
 .navbar {
+    min-width: 400px;
     width: 100%;
     background: var(--white);
     box-shadow: 0px 0px 50px rgba(28, 28, 28, 0.05);
@@ -437,6 +438,7 @@ footer {
 /* Стиль главной страницы */
 
 .content-main-page {
+    min-width: 400px;
     max-width: 1300px;
     margin: 300px auto;
     display: flex;
@@ -444,7 +446,11 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
+.main-page-heading{
+    margin: 0px 30px;
+    margin-bottom: 100px;
+    text-align: center;
+}
 #first-img-container {
     display: flex;
     flex-direction: column;
