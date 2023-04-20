@@ -376,7 +376,7 @@ footer {
 
 .links a {
     text-decoration: none;
-    margin: 0px 40px;
+    margin: 0px 50px;
     text-align: center;
     font-size: 1rem;
     font-weight: 500;
@@ -596,6 +596,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
