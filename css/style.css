@@ -44,8 +44,9 @@ body {
         visibility: hidden;
         width: 0px;
     }
-    #first-img-container {
-        height: 1500px;
+    #second-img-container {
+        height: 580px;
+        margin-bottom: 200px;
     }
 }
 
@@ -66,12 +67,13 @@ body {
         visibility: visible;
         width: 100%;
     }
-    #first-img-container {
-        height: 1000px;
-    }
     .menu-items {
       padding-top: 250px;
       height: 200px;
+    }
+    #second-img-container {
+        height: 500px;
+        margin-bottom: 150px;
     }
 }
 
@@ -92,12 +94,13 @@ body {
         visibility: visible;
         width: 100%;
     }
-    #first-img-container {
-        height: 750px;
-    }
     .menu-items {
       padding-top: 250px;
       height: 150px;
+    }
+    #second-img-container {
+        height: 450px;
+        margin-bottom: 100px;
     }
 }
 
@@ -451,20 +454,17 @@ footer {
     margin-bottom: 100px;
     text-align: center;
 }
-#first-img-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+
+/*Стиль страницы "Обо мне"*/
+
+#second-img-container {
     width: 100%;
     background-size: cover;
     background-repeat: repeat;
     background-position: center top;
-    background-image: url(../img/myPhoto2.jpg);
+    background-image: url(../img/myPhoto1.png);
 }
-
-
-/*Стиль страницы "Обо мне"*/
 
 .subheading {
     margin: 20px 0px;
@@ -478,15 +478,6 @@ footer {
     font-weight: 400;
     font-size: 0.875rem;
     letter-spacing: .3px;
-}
-
-#second-img-container {
-    height: 914px;
-    margin-bottom: 200px;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-position: center top;
-    background-image: url(../img/myPhoto1.png);
 }
 
 .about-me-container {
