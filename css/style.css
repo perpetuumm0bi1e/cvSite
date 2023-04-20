@@ -94,7 +94,7 @@ html {
         height: 12px;
     }
     .language-groups {
-        gap: 50px;
+        gap: 35px;
     }
     .language-group {
         gap: 50px;
@@ -135,7 +135,7 @@ html {
         height: 10px;
     }
     .language-groups {
-        gap: 40px;
+        gap: 35px;
     }
     .language-group {
         gap: 40px;
@@ -519,27 +519,27 @@ footer {
 }
 
 .about-me-container {
-    padding: 0 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-items: stretch;
     gap: 40px;
-    max-width: 1300px;
+    padding: 0 35px;
     margin: 0px auto;
+    max-width: 1300px;
 }
 
 .about-me-container>div {
-    background: var(--lightest-gray);
     padding: 40px;
     border-radius: 30px;
     box-shadow: none;
+    background: var(--lightest-gray);
     transition: all .5s ease-in-out;
 }
 
 .about-me-container>div:hover {
-    transition: all .4s ease-in-out;
     box-shadow: 5px 5px var(--blue);
+    transition: all .4s ease-in-out;
 }
 
 .about-me-page-heading {
