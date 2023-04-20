@@ -16,7 +16,9 @@
     --lightest-gray: #EFEEEA;
     --orange: #D35A18;
 }
-
+img{
+    max-width: 100%;
+}
 html {
     font-family: 'Manrope', sans-serif;
     background: var(--white);
