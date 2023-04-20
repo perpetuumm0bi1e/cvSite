@@ -29,13 +29,6 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-    .nav-container {
-        visibility: hidden;
-        width: 0px;
-    }
-    .links {
-        visibility: visible;
-    }
     html {
         font-size: 16px;
     }
@@ -44,29 +37,19 @@ body {
         height: 50px;
         padding-left: 40px;
     }
-    #first-img-container {
-        background-image: url(../img/myPhoto2.jpg);
-        height: 1500px;
-        background-size: cover;
+    .nav-container {
+        visibility: hidden;
+        width: 0px;
     }
-    .links a {
-        margin: 0px 30px;
-        width: 90px;
+    .links {
+        visibility: visible;
+    }
+    #first-img-container {
+        height: 1500px;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .links {
-        visibility: hidden;
-        width: 0px;
-    }
-    .links a {
-        margin: 0px;
-        width: 0px;
-    }
-    .nav-container {
-        visibility: visible;
-    }
     html {
         font-size: 14px;
     }
@@ -74,6 +57,13 @@ body {
         width: 350px;
         height: 43.75px;
         padding-left: 30px;
+    }
+    .links {
+        visibility: hidden;
+        width: 0px;
+    }
+    .nav-container {
+        visibility: visible;
     }
     .menu-items {
         visibility: hidden;
@@ -90,24 +80,11 @@ body {
         transition: transform 0.5s ease-in-out;
     }
     #first-img-container {
-        background-image: url(../img/myPhoto3.svg);
         height: 1000px;
-        background-size: cover;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .links {
-        visibility: hidden;
-        width: 0px;
-    }
-    .links a {
-        margin: 0px;
-        width: 0px;
-    }
-    .nav-container {
-        visibility: visible;
-    }
     html {
         font-size: 12px;
     }
@@ -116,7 +93,14 @@ body {
         height: 37.5px;
         padding-left: 30px;
     }
-    .menu-container input[type="checkbox"]:not(:checked)~.menu-items {
+    .links {
+        visibility: hidden;
+        width: 0px;
+    }
+    .nav-container {
+        visibility: visible;
+    }
+    .menu-items {
         transform: translateY(-100%);
         visibility: hidden;
         width: 0px;
@@ -130,12 +114,11 @@ body {
         width: 100%;
         padding: 90px 40px 40px 0px;
         height: 150px;
+        margin-right: 50px;
         transition: transform 0.5s ease-in-out;
     }
     #first-img-container {
-        background-image: url(../img/myPhoto3.svg);
         height: 750px;
-        background-size: cover;
     }
 }
 
@@ -485,13 +468,15 @@ footer {
 /* Стиль главной страницы */
 
 #first-img-container {
-    width: 100%;
-    background-repeat: repeat;
-    background-position: center top;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center top;
+    background-image: url(../img/myPhoto2.jpg);
 }
 
 
@@ -513,11 +498,11 @@ footer {
 
 #second-img-container {
     height: 914px;
-    background-image: url(../img/myPhoto1.png);
     margin-bottom: 200px;
     background-repeat: repeat;
     background-attachment: fixed;
     background-position: center top;
+    background-image: url(../img/myPhoto1.png);
 }
 
 .about-me-container {
