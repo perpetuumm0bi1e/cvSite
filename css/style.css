@@ -338,8 +338,7 @@ footer {
 /* Стиль хедера */
 
 .navbar {
-    min-width: 400px;
-    width: 100%;
+    width: 90%;
     background: var(--white);
     box-shadow: 0px 0px 50px rgba(28, 28, 28, 0.05);
     border-radius: 0px 0px 15px 15px;
