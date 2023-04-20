@@ -21,6 +21,7 @@
     /* Делает падинги отступами внутрь родительского элемента */
     box-sizing: border-box;
     max-width: 100%;
+    overflow-x: hidden;
 }
 
 html {
