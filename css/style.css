@@ -49,7 +49,6 @@ body {
         margin-bottom: 200px;
     }
     .circles {
-        margin-left: 150px;
         width: 250px;
     }
     
@@ -90,7 +89,6 @@ body {
         margin-bottom: 150px;
     }
     .circles {
-        margin-left: 150px;
         width: 250px;
     }
     
@@ -101,8 +99,8 @@ body {
         margin: 0px 9px;
     }
     .language-group {
-        width: 450px;
-}
+        width: 470px;
+    }
 }
 @media screen and (max-width: 768px) {
     html {
@@ -130,7 +128,6 @@ body {
         margin-bottom: 100px;
     }
     .circles {
-        margin-left: 150px;
         width: 250px;
     }
     
@@ -141,8 +138,9 @@ body {
         margin: 0px 7px;
     }
     .language-group {
-        width: 420px;
-}
+        width: 450px;
+    }
+    
 }
 
 a {
@@ -553,12 +551,18 @@ footer {
     margin-bottom: 40px;
     color: var(--darkest-gray);
 }
-#about-me-box {
-    flex-grow: 2;
-}
 
 #about-me-box .description:not(:last-child) {
     margin-top: 0px;
+}
+
+#experience-box p:not(:first-child) {
+    margin-top: 40px;
+}
+
+#about-me-box {
+    flex-grow: 2;
+    width: 700px;
 }
 
 #main-info-box {
@@ -566,21 +570,17 @@ footer {
 }
 #education-box {
     flex-grow: 1;
-}
-
-
-#experience-box p:not(:first-child) {
-    margin-top: 40px;
+    width: 360px;
 }
 
 #courses-box {
     flex-grow: 2;
+    width: 360px;
 }
-
-#languages-box {
-    flex-grow: 2;
+#language-box {
+    flex-grow: 1;
+    width: 100%;
 }
-
 .language-groups {
     display: flex;
     flex-direction: row;
