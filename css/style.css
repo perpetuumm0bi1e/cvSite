@@ -17,13 +17,15 @@
     --orange: #D35A18;
 }
 
+* {
+    /* Делает падинги отступами внутрь родительского элемента */
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
 html {
     font-family: 'Manrope', sans-serif;
     background: var(--white);
-}
-
-body {
-    max-width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -530,6 +532,7 @@ footer {
     flex-wrap: wrap;
     justify-items: stretch;
     gap: 40px;
+    padding: 0px 25px;
     margin: 0px auto;
     max-width: 1300px;
 }
