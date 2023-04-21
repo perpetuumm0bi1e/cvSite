@@ -104,7 +104,6 @@ function windowSetting(){
         navbar.style.position = 'relative';
         linksNavBar.replaceWith(menuClone);
         if(document.body.clientWidth < 700){
-            console.log('qwertyuio');
             if (pageAdress.includes('aboutMePage')){
                 
             } else if (pageAdress.includes('worksPage')){
