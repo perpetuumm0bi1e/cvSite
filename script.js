@@ -27,14 +27,49 @@ let options = { threshold: [0.5] };
 let observer = new IntersectionObserver(onEntry, options);
 let bottomAppearedElements = document.querySelectorAll('.bottom-appearance-animation'),
     leftAppearedElements = document.querySelectorAll('.left-appearance-animation'),
-    rightAppearedElements = document.querySelectorAll('.right-appearance-animation');
+    rightAppearedElements = document.querySelectorAll('.right-appearance-animation'),
+    topAppearedElements = document.querySelectorAll('.top-appearance-animation');
 for (let elm of bottomAppearedElements) {
     observer.observe(elm);
-}for (let elm of leftAppearedElements) {
-    observer.observe(elm);
-}for (let elm of rightAppearedElements) {
+}
+for (let elm of leftAppearedElements) {
     observer.observe(elm);
 }
+for (let elm of rightAppearedElements) {
+    observer.observe(elm);
+}
+for (let elm of topAppearedElements) {
+    observer.observe(elm);
+}
+
+let windowInnerWidth = document.documentElement.clientWidth;
+console.log(windowInnerWidth);
+let linksDiv = document.getElementById('links');
+let clone = linksDiv;
+let logoDiv = document.getElementById('logo');
+if(windowInnerWidth > 1024){
+    clone.insertAfter(logoDiv);
+    console.log('change1 - clonned');
+} else if (windowInnerWidth < 1024 && windowInnerWidth > 768){
+    console.log('change2 - removed');
+    linksDiv.remove();
+} else if (windowInnerWidth < 768){
+    console.log('change3 - removed');
+    linksDiv.remove();
+}
+window.addEventListener('resize', function(event){
+    if(windowInnerWidth > 1024){
+        console.log('change11 - clonned');
+        clone.insertAfter(logoDiv);
+    } else if (windowInnerWidth < 1024 && windowInnerWidth > 768){
+        console.log('change22 - removed');
+        linksDiv.remove();
+    } else if (windowInnerWidth < 768){
+        console.log('change33 - removed');
+        linksDiv.remove();
+    }
+  });
+
 /*
 document.addEventListener('DOMContentLoaded', () => {
     const onScrollHeader = () => {
