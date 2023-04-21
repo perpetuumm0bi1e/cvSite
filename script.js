@@ -304,11 +304,11 @@ firstKasumiBoxNavigationRight.onclick = function() {
 }
 secondKasumiBoxNavigationLeft.onclick = function() {
     secondKasumiBoxNavigationClickCounter--;
-    boxImageChanger(secondKasumiBoxNavigationClickCounter, fourthWorkAlgorithmImages, kasumiSecondBoxImages, kasumiSecondBoxImagesSmall);
+    boxImageChanger(secondKasumiBoxNavigationClickCounter, fourthWorkAlgorithmImages, kasumiSecondBoxImages, kasumiSecondBoxImages);
 }
 secondKasumiBoxNavigationRight.onclick = function() {
     secondKasumiBoxNavigationClickCounter++;
-    boxImageChanger(secondKasumiBoxNavigationClickCounter, fourthWorkAlgorithmImages, kasumiSecondBoxImages, kasumiSecondBoxImagesSmall);
+    boxImageChanger(secondKasumiBoxNavigationClickCounter, fourthWorkAlgorithmImages, kasumiSecondBoxImages, kasumiSecondBoxImages);
 }
 basketballFlightModelingBoxNavigationLeft.onclick = function() {
     basketballFlightModelingNavigationClickCounter--;
