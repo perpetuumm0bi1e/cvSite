@@ -133,21 +133,21 @@ let mobilePhoneScreenShots = ['./img/perfectPosture/main.svg',
     './img/perfectPosture/statisticsCourse.svg'
 ];
 
-let kasumiFirstBoxImages = ['./img/kasumi/kasumiEncryption.svg',
-    './img/kasumi/kasumiDecryption.svg'
+let kasumiFirstBoxImages = ['https://i.ibb.co/C5PHd54/kasumi-Encryption.jpg',
+    'https://i.ibb.co/njcKYJq/kasumi-Decryption.jpg'
 ];
-let kasumiSecondBoxImages = ['./img/kasumi/kasumiAlgorithm.svg',
-    './img/kasumi/kasumiFI.svg',
-    './img/kasumi/kasumiFO.svg',
-    './img/kasumi/kasumiFL.svg'
+let kasumiSecondBoxImages = ['https://i.ibb.co/Bnrztbz/kasumi-Algorithm.jpg',
+    'https://i.ibb.co/gt20RP4/kasumiFI.jpg',
+    'https://i.ibb.co/cC00qZ2/kasumiFO.jpg',
+    'https://i.ibb.co/q5r8PXn/kasumiFL.jpg'
 ];
-let kasumiFirstBoxImagesSmall = ['https://i.ibb.co/Nr1Nbw2/kasumi-Encryption-small.png',
-    'https://i.ibb.co/pZP4P57/kasumi-Decryption-small.png'
+let kasumiFirstBoxImagesSmall = ['https://i.ibb.co/rFMpjmq/kasumi-Encryption-small.jpg',
+    'https://i.ibb.co/1bWVNFL/kasumi-Decryption-small.png'
 ];
-let kasumiSecondBoxImagesSmall = ['https://i.ibb.co/dc2WRfm/kasumi-Algorithm-small.png',
-    'https://i.ibb.co/Z8yNzR3/kasumi-FI-small.png',
-    'https://i.ibb.co/bzs2nnM/kasumi-FO-small.png',
-    'https://i.ibb.co/2q9p42x/kasumi-FL-small.png'
+let kasumiSecondBoxImagesSmall = ['https://i.ibb.co/JQ12ybH/kasumi-Algorithm-small.jpg',
+    'https://i.ibb.co/yY6qGDj/kasumi-FI-small.jpg',
+    'https://i.ibb.co/r58YBVT/kasumi-FO-small.jpg',
+    'https://i.ibb.co/rQYmpmj/kasumi-FL-small.jpg'
 ];
 
 let proCreditBoxImages = ['./img/proCredit/proCredit1.svg',
