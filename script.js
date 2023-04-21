@@ -141,13 +141,13 @@ let kasumiSecondBoxImages = ['./img/kasumi/kasumiAlgorithm.svg',
     './img/kasumi/kasumiFO.svg',
     './img/kasumi/kasumiFL.svg'
 ];
-let kasumiFirstBoxImagesSmall = ['./img/kasumi/kasumiEncryption-small.png',
-    './img/kasumi/kasumiDecryption-small.png'
+let kasumiFirstBoxImagesSmall = ['https://i.ibb.co/G7vd5KX/kasumi-Encryption-small.png',
+    'https://i.ibb.co/pZP4P57/kasumi-Decryption-small.png'
 ];
-let kasumiSecondBoxImagesSmall = ['./img/kasumi/kasumiAlgorithm-small.png',
-    './img/kasumi/kasumiFI-small.png',
-    './img/kasumi/kasumiFO-small.png',
-    './img/kasumi/kasumiFL-small.png'
+let kasumiSecondBoxImagesSmall = ['https://i.ibb.co/dc2WRfm/kasumi-Algorithm-small.png',
+    'https://i.ibb.co/Z8yNzR3/kasumi-FI-small.png',
+    'https://i.ibb.co/bzs2nnM/kasumi-FO-small.png',
+    'https://i.ibb.co/2q9p42x/kasumi-FL-small.png'
 ];
 
 let proCreditBoxImages = ['./img/proCredit/proCredit1.svg',
