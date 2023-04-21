@@ -150,76 +150,76 @@ let kasumiSecondBoxImagesSmall = ['https://i.ibb.co/JQ12ybH/kasumi-Algorithm-sma
     'https://i.ibb.co/rQYmpmj/kasumi-FL-small.jpg'
 ];
 
-let proCreditBoxImages = ['./img/proCredit/proCredit1.svg',
-    './img/proCredit/proCredit2.svg',
-    './img/proCredit/proCredit3.svg',
-    './img/proCredit/proCredit4.svg',
-    './img/proCredit/proCredit5.svg',
-    './img/proCredit/proCredit6.svg',
-    './img/proCredit/proCredit7.svg',
-    './img/proCredit/proCredit8.svg'
+let proCreditBoxImages = ['https://i.ibb.co/dfpgPhb/pro-Credit1.jpg',
+    'https://i.ibb.co/2F92zFb/pro-Credit2.jpg',
+    'https://i.ibb.co/XFNQZLN/pro-Credit3.jpg',
+    'https://i.ibb.co/HXn2Xw0/pro-Credit4.jpg',
+    'https://i.ibb.co/89Xg6TC/pro-Credit5.jpg',
+    'https://i.ibb.co/LrJtPHY/pro-Credit6.jpg',
+    'https://i.ibb.co/mqsNCmw/pro-Credit7.jpg',
+    'https://i.ibb.co/ct33vrS/pro-Credit8.jpg'
 ];
 
-let proCreditBoxImagesSmall = ['./img/proCredit/proCredit1-small.png',
-    './img/proCredit/proCredit2-small.png',
-    './img/proCredit/proCredit3-small.png',
-    './img/proCredit/proCredit4-small.png',
-    './img/proCredit/proCredit5-small.png',
-    './img/proCredit/proCredit6-small.png',
-    './img/proCredit/proCredit7-small.png',
-    './img/proCredit/proCredit8-small.png'
+let proCreditBoxImagesSmall = ['https://i.ibb.co/khp66W5/pro-Credit1-small.jpg',
+    'https://i.ibb.co/1JFZ0yM/pro-Credit2-small.jpg',
+    'https://i.ibb.co/ZTyXV01/pro-Credit3-small.jpg',
+    'https://i.ibb.co/M2cmp03/pro-Credit4-small.jpg',
+    'https://i.ibb.co/4Ym7NBx/pro-Credit5-small.jpg',
+    'https://i.ibb.co/r66XpF7/pro-Credit6-small.jpg',
+    'https://i.ibb.co/6sRp0b4/pro-Credit7-small.jpg',
+    'https://i.ibb.co/zQ4XZrj/pro-Credit8-small.jpg'
 ];
 
-let basketballFlightModelingBoxImages = ['./img/basketballFlightModeling/basketballFlightModeling1.svg',
-    './img/basketballFlightModeling/basketballFlightModeling2.svg',
-    './img/basketballFlightModeling/basketballFlightModeling3.svg',
-    './img/basketballFlightModeling/basketballFlightModeling4.svg',
-    './img/basketballFlightModeling/basketballFlightModeling5.svg',
-    './img/basketballFlightModeling/basketballFlightModeling6.svg',
-    './img/basketballFlightModeling/basketballFlightModeling7.svg',
-    './img/basketballFlightModeling/basketballFlightModeling8.svg',
-    './img/basketballFlightModeling/basketballFlightModeling9.svg',
-    './img/basketballFlightModeling/basketballFlightModeling10.svg'
+let basketballFlightModelingBoxImages = ['https://i.ibb.co/BjfZZLs/basketball-Flight-Modeling1.jpg',
+    'https://i.ibb.co/4mgg66T/basketball-Flight-Modeling2.jpg',
+    'https://i.ibb.co/N1s2JRb/basketball-Flight-Modeling3.jpg',
+    'https://i.ibb.co/TLvHZxT/basketball-Flight-Modeling4.jpg',
+    'https://i.ibb.co/r3DVr7F/basketball-Flight-Modeling5.jpg',
+    'https://i.ibb.co/0MtwPQz/basketball-Flight-Modeling6.jpg',
+    'https://i.ibb.co/cy6dFs5/basketball-Flight-Modeling7.jpg',
+    'https://i.ibb.co/fqNpjpV/basketball-Flight-Modeling8.jpg',
+    'https://i.ibb.co/5MWJjXZ/basketball-Flight-Modeling9.jpg',
+    'https://i.ibb.co/P1qvzzR/basketball-Flight-Modeling10.jpg'
 ];
 
-let basketballFlightModelingBoxImagesSmall = ['./img/basketballFlightModeling/basketballFlightModeling1-small.png',
-    './img/basketballFlightModeling/basketballFlightModeling2-small.png',
-    './img/basketballFlightModeling/basketballFlightModeling3-small.png',
-    './img/basketballFlightModeling/basketballFlightModeling4-small.png',
-    './img/basketballFlightModeling/basketballFlightModeling5-small.png',
-    './img/basketballFlightModeling/basketballFlightModeling6-small.png',
-    './img/basketballFlightModeling/basketballFlightModeling7-small.png',
-    './img/basketballFlightModeling/basketballFlightModeling8-small.png',
-    './img/basketballFlightModeling/basketballFlightModeling9-small.png',
-    './img/basketballFlightModeling/basketballFlightModeling10-small.png'
+let basketballFlightModelingBoxImagesSmall = ['https://i.ibb.co/hVvGs7z/basketball-Flight-Modeling1-small.jpg',
+    'https://i.ibb.co/1Z99hCh/basketball-Flight-Modeling2-small.jpg',
+    'https://i.ibb.co/f9nk1R8/basketball-Flight-Modeling3-small.jpg',
+    'https://i.ibb.co/gFfw74Z/basketball-Flight-Modeling4-small.jpg',
+    'https://i.ibb.co/8NN21KM/basketball-Flight-Modeling5-small.jpg',
+    'https://i.ibb.co/cQ1sMbZ/basketball-Flight-Modeling6-small.jpg',
+    'https://i.ibb.co/CM6ffjK/basketball-Flight-Modeling7-small.jpg',
+    'https://i.ibb.co/BfRhtvL/basketball-Flight-Modeling8-small.jpg',
+    'https://i.ibb.co/qnmkQYp/basketball-Flight-Modeling9-small.jpg',
+    'https://i.ibb.co/Z2cjG0w/basketball-Flight-Modeling10-small.jpg'
 ];
 
-let studentsKnowledgeControlBoxImages = ['./img/studentsKnowledgeControl/studentsKnowledgeControl1.svg',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl2.svg',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl3.svg',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl4.svg',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl5.svg',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl6.svg',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl7.svg',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl8.svg',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl9.svg',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl10.svg',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl11.svg',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl12.svg',
+let studentsKnowledgeControlBoxImages = ['https://i.ibb.co/7Cb90C8/students-Knowledge-Control1.jpg',
+    'https://i.ibb.co/DKRBDWF/students-Knowledge-Control2.jpg',
+    'https://i.ibb.co/Jy29cxR/students-Knowledge-Control3.jpg',
+    'https://i.ibb.co/pRMVqd8/students-Knowledge-Control4.jpg',
+    'https://i.ibb.co/mT0D3zn/students-Knowledge-Control5.jpg',
+    'https://i.ibb.co/RCpZ6Y9/students-Knowledge-Control6.jpg',
+    'https://i.ibb.co/rsxVv8P/students-Knowledge-Control7.jpg',
+    'https://i.ibb.co/M2VwhFL/students-Knowledge-Control8.jpg',
+    'https://i.ibb.co/FHW5WCJ/students-Knowledge-Control9.jpg',
+    'https://i.ibb.co/gRCPdFD/students-Knowledge-Control10.jpg',
+    'https://i.ibb.co/FwRRNhm/students-Knowledge-Control11.jpg',
+    'https://i.ibb.co/z4rHzTD/students-Knowledge-Control12.jpg'
 ];
 
-let studentsKnowledgeControlBoxImagesSmall = ['./img/studentsKnowledgeControl/studentsKnowledgeControl1-small.png',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl2-small.png',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl3-small.png',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl4-small.png',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl5-small.png',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl6-small.png',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl7-small.png',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl8-small.png',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl9-small.png',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl10-small.png',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl11-small.png',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl12-small.png',
+let studentsKnowledgeControlBoxImagesSmall = ['https://i.ibb.co/WkC5YZG/students-Knowledge-Control1-small.jpg',
+    'https://i.ibb.co/0Qs9t0s/students-Knowledge-Control2-small.jpg',
+    'https://i.ibb.co/YXb2yWg/students-Knowledge-Control3-small.jpg',
+    'https://i.ibb.co/C9741Tp/students-Knowledge-Control4-small.jpg',
+    'https://i.ibb.co/72vBbhY/students-Knowledge-Control5-small.jpg',
+    'https://i.ibb.co/C5td7ZT/students-Knowledge-Control6-small.jpg',
+    'https://i.ibb.co/rsWHrdL/students-Knowledge-Control7-small.jpg',
+    'https://i.ibb.co/8xJZbxT/students-Knowledge-Control8-small.jpg',
+    'https://i.ibb.co/2kjptMg/students-Knowledge-Control9-small.jpg',
+    'https://i.ibb.co/kKVZCn5/students-Knowledge-Control10-small.jpg',
+    'https://i.ibb.co/2ZYrryR/students-Knowledge-Control11-small.jpg',
+    'https://i.ibb.co/r0Kh2Wj/students-Knowledge-Control12-small.jpg'
 ];
 
 let worksCardFirst = document.getElementsByClassName('works-card-first'),
@@ -304,11 +304,11 @@ firstKasumiBoxNavigationRight.onclick = function() {
 }
 secondKasumiBoxNavigationLeft.onclick = function() {
     secondKasumiBoxNavigationClickCounter--;
-    boxImageChanger(secondKasumiBoxNavigationClickCounter, fourthWorkAlgorithmImages, kasumiSecondBoxImages, kasumiSecondBoxImages);
+    boxImageChanger(secondKasumiBoxNavigationClickCounter, fourthWorkAlgorithmImages, kasumiSecondBoxImages, kasumiSecondBoxImagesSmall);
 }
 secondKasumiBoxNavigationRight.onclick = function() {
     secondKasumiBoxNavigationClickCounter++;
-    boxImageChanger(secondKasumiBoxNavigationClickCounter, fourthWorkAlgorithmImages, kasumiSecondBoxImages, kasumiSecondBoxImages);
+    boxImageChanger(secondKasumiBoxNavigationClickCounter, fourthWorkAlgorithmImages, kasumiSecondBoxImages, kasumiSecondBoxImagesSmall);
 }
 basketballFlightModelingBoxNavigationLeft.onclick = function() {
     basketballFlightModelingNavigationClickCounter--;

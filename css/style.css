@@ -119,11 +119,11 @@ html {
         padding: 0px 70px;
     }
     #pro-credit-image {
-        background-image: url(../img/proCredit/proCredit1.svg);
+        background-image: url(https://i.ibb.co/dfpgPhb/pro-Credit1.jpg);
         width: 880px;
     }
     #students-knowledge-control-image {
-        background-image: url(../img/studentsKnowledgeControl/studentsKnowledgeControl1.svg);
+        background-image: url(https://i.ibb.co/7Cb90C8/students-Knowledge-Control1.jpg);
         width: 756px;
     }
     #kasumi-encryption-decryption-image {
@@ -135,7 +135,7 @@ html {
         width: 442px;
     }
     #basketball-flight-modeling-image {
-        background-image: url(../img/basketballFlightModeling/basketballFlightModeling1.svg);
+        background-image: url(https://i.ibb.co/BjfZZLs/basketball-Flight-Modeling1.jpg);
       width: 870px;
     }
 }
@@ -242,27 +242,27 @@ html {
     }
     
     #pro-credit-image {
-        background-image: url(../img/proCredit/proCredit1.svg);
+        background-image: url(https://i.ibb.co/dfpgPhb/pro-Credit1.jpg);
         height: 376px;
         width: 600px;
     }
     #students-knowledge-control-image {
-        background-image: url(../img/studentsKnowledgeControl/studentsKnowledgeControl1.svg);
+        background-image: url(https://i.ibb.co/7Cb90C8/students-Knowledge-Control1.jpg);
         height: 430px;
         width: 600px;
     }
     #kasumi-encryption-decryption-image {
-        background-image: url(../img/kasumi/kasumiEncryption.svg);
+        background-image: url(https://i.ibb.co/C5PHd54/kasumi-Encryption.jpg);
         height: 400px;
         width: 448px;
     }
     #kasumi-algorithm-image {
-        background-image: url(../img/kasumi/kasumiAlgorithm.svg);
+        background-image: url(https://i.ibb.co/Bnrztbz/kasumi-Algorithm.jpg);
         height: 550px;
         width: 448px;
     }
     #basketball-flight-modeling-image {
-        background-image: url(../img/basketballFlightModeling/basketballFlightModeling1.svg);
+        background-image: url(https://i.ibb.co/BjfZZLs/basketball-Flight-Modeling1.jpg);
         height: 376px;
         width: 600px;
     }
@@ -352,23 +352,23 @@ html {
         padding: 0px 30px;
     }
     #pro-credit-image {
-        background-image: url(../img/proCredit/proCredit1-small.png);
+        background-image: url(https://i.ibb.co/khp66W5/pro-Credit1-small.jpg);
         height: 200px;
     }
     #students-knowledge-control-image {
-        background-image: url(../img/studentsKnowledgeControl/studentsKnowledgeControl1-small.png);
+        background-image: url(https://i.ibb.co/WkC5YZG/students-Knowledge-Control1-small.jpg);
         height: 230px;
     }
     #kasumi-encryption-decryption-image {
-        background-image: url(https://i.ibb.co/rFMpjmq/kasumi-Encryption.jpg);
+        background-image: url(https://i.ibb.co/rFMpjmq/kasumi-Encryption-small.jpg);
         height: 290px;
     }
     #kasumi-algorithm-image {
-        background-image: url(https://i.ibb.co/JQ12ybH/kasumi-Algorithm.jpg);
+        background-image: url(https://i.ibb.co/JQ12ybH/kasumi-Algorithm-small.jpg);
         height: 400px;
     }
     #basketball-flight-modeling-image {
-        background-image: url(../img/basketballFlightModeling/basketballFlightModeling1-small.png);
+        background-image: url(https://i.ibb.co/hVvGs7z/basketball-Flight-Modeling1-small.jpg);
         height: 202px;
     }
 }
