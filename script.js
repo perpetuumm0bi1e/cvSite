@@ -29,7 +29,9 @@ for (let element of topAppearedElements) {
 let checkboxNavBar = document.getElementById('checkbox-nav-bar'),
     logoNavBar = document.getElementById('logo'),
     menuNavBar = document.getElementById('menu'),
-    linksNavBar = document.getElementById('links');
+    linksNavBar = document.getElementById('links'),
+    languageGroup1 = document.getElementById('language-group-1'),
+    languageGroup2 = document.getElementById('language-group-2');;
 
 let checkboxNavBarCounter = 0;
 
@@ -50,6 +52,7 @@ if(document.body.clientWidth >= 1024) {
 }
 
 window.addEventListener('resize', function(event){
+    languageGroup2.style.width = `${languageGroup1.offsetWidth}px`;
     (document.body.clientWidth >= 1024) ?  menuNavBar.replaceWith(linksClone) : linksNavBar.replaceWith(menuClone);
   });
 
