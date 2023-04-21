@@ -266,7 +266,6 @@ html {
         height: 376px;
         width: 600px;
     }
-    
 }
 
 @media screen and (max-width: 767px) {
@@ -370,6 +369,10 @@ html {
     #basketball-flight-modeling-image {
         background-image: url(https://i.ibb.co/hVvGs7z/basketball-Flight-Modeling1-small.jpg);
         height: 202px;
+    }
+    .mobile-nav{
+        margin-top: 50px;
+        margin-bottom: 60px;
     }
 }
 

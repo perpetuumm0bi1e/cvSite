@@ -55,7 +55,8 @@ let checkboxNavBarCounter = 0;
 
 let linksClone = document.querySelector('#links'),
     menuClone = document.querySelector('#menu'),
-    logoClone = logoNavBar;
+    logoClone = logoNavBar,
+    mobileNavigationButtons = document.querySelector('.mobile-nav');
 
 checkboxNavBar.addEventListener('click', function(){
     checkboxNavBarCounter++;
@@ -96,6 +97,7 @@ function windowSetting(){
         if (pageAdress.includes('aboutMePage')){
 
         } else if (pageAdress.includes('worksPage')){
+            mobileNavigationButtons.remove();
             mobilePhone.parentNode.prepend(screenshots1);
             mobilePhone.parentNode.append(screenshots2);
         }
@@ -106,6 +108,7 @@ function windowSetting(){
             if (pageAdress.includes('aboutMePage')){
                 
             } else if (pageAdress.includes('worksPage')){
+                mobilePhoneCard.parentNode.append(mobileNavigationButtons);
                 screenshots1.remove();
                 screenshots2.remove();
             }
@@ -231,6 +234,7 @@ let worksCardFirst = document.getElementsByClassName('works-card-first'),
     firstWorkStatisticsCourse = document.getElementById('first-work-statistics-course'),
     telegramButtonMain = document.getElementById('telegram-button'),
     mobilePhoneCard = document.getElementById('mobile-phone-card');
+
 let firstKasumiBoxNavigationLeft = document.getElementById('first-kasumi-box-navigation-left');
 let firstKasumiBoxNavigationRight = document.getElementById('first-kasumi-box-navigation-right');
 let firstKasumiBoxNavigationClickCounter = 0;
@@ -245,6 +249,10 @@ let fourthWorkAlgorithmImages = document.getElementById('kasumi-algorithm-image'
 let proCreditBoxNavigationLeft = document.getElementById('pro-credit-box-navigation-left');
 let proCreditBoxNavigationRight = document.getElementById('pro-credit-box-navigation-right');
 let proCreditBoxNavigationClickCounter = 0;
+
+let mobilePhoneNavigationLeft = document.getElementById('mobile-phone-navigation-left');
+let mobilePhoneNavigationRight = document.getElementById('mobile-phone-navigation-right');
+let mobilePhoneNavigationClickCounter = 0;
 
 let proCreditImage = document.getElementById('pro-credit-image');
 let basketballFlightModelingBoxNavigationLeft = document.getElementById('basketball-flight-modeling-box-navigation-left');
@@ -293,7 +301,14 @@ function boxImageChanger(clickCounter, imageBox, imagesArray, smallImagesArray) 
     ((document.body.clientWidth >= 1024) ? `url(${imagesArray[clickCounter % smallImagesArray.length]})` : `url(${smallImagesArray[clickCounter % smallImagesArray.length]})`);
    
 }
-
+mobilePhoneNavigationLeft.onclick = function() {
+    mobilePhoneNavigationClickCounter--;
+    boxImageChanger(mobilePhoneNavigationClickCounter, mobilePhoneCard, mobilePhoneScreenShots, mobilePhoneScreenShots);
+}
+mobilePhoneNavigationRight.onclick = function() {
+    mobilePhoneNavigationClickCounter++;
+    boxImageChanger(mobilePhoneNavigationClickCounter, mobilePhoneCard, mobilePhoneScreenShots, mobilePhoneScreenShots);
+}
 firstKasumiBoxNavigationLeft.onclick = function() {
     firstKasumiBoxNavigationClickCounter--;
     boxImageChanger(firstKasumiBoxNavigationClickCounter, fourthWorkEncryptionDecryption, kasumiFirstBoxImages, kasumiFirstBoxImagesSmall);
