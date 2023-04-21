@@ -31,7 +31,12 @@ let checkboxNavBar = document.getElementById('checkbox-nav-bar'),
     menuNavBar = document.getElementById('menu'),
     linksNavBar = document.getElementById('links'),
     languageGroup1 = document.getElementById('language-group-1'),
-    languageGroup2 = document.getElementById('language-group-2');;
+    languageGroup2 = document.getElementById('language-group-2'),
+    aboutMeBox = document.getElementById('about-me-box'),
+    mainInfoBox = document.getElementById('main-info-box'),
+    educationBox = document. getElementById('education-box'),
+    coursesBox = document.getElementById('courses-box'),
+    languagesBox = document.getElementById('languages-box');
 
 let checkboxNavBarCounter = 0;
 
@@ -44,17 +49,63 @@ checkboxNavBar.addEventListener('click', function(){
     (checkboxNavBarCounter % 2 == 1) ? setTimeout(() => logoNavBar.remove(), 200) : setTimeout(() => menuNavBar.parentNode.prepend(logoNavBar), 300);
 })
 
+window.onload = function() {
+    if(document.body.clientWidth >= 1024) {
+        menuNavBar.replaceWith(linksClone);
+        aboutMeBox.classList.toggle('top-appearance-animation');
+        aboutMeBox.classList.add('left-appearance-animation');
+        mainInfoBox.classList.toggle('top-appearance-animation');
+        mainInfoBox.classList.add('right-appearance-animation');
+        educationBox.classList.toggle('top-appearance-animation');
+        educationBox.classList.add('left-appearance-animation');
+        coursesBox.classList.toggle('top-appearance-animation');
+        coursesBox.classList.add('right-appearance-animation');
+        languagesBox.classList.toggle('top-appearance-animation');
+        languagesBox.classList.add('bottom-appearance-animation');
 
-if(document.body.clientWidth >= 1024) {
-    menuNavBar.replaceWith(linksClone);
-} else {
-    linksNavBar.replaceWith(menuClone);
+    } else {
+        linksNavBar.replaceWith(menuClone);
+        aboutMeBox.classList.toggle('left-appearance-animation');
+        aboutMeBox.classList.add('top-appearance-animation');
+        mainInfoBox.classList.toggle('right-appearance-animation');
+        mainInfoBox.classList.add('top-appearance-animation');
+        educationBox.classList.toggle('left-appearance-animation');
+        educationBox.classList.add('top-appearance-animation');
+        coursesBox.classList.toggle('right-appearance-animation');
+        coursesBox.classList.add('top-appearance-animation');
+        languagesBox.classList.toggle('bottom-appearance-animation');
+        languagesBox.classList.add('top-appearance-animation');
+    }
 }
-
 window.addEventListener('resize', function(event){
     languageGroup2.style.width = `${languageGroup1.offsetWidth}px`;
-    (document.body.clientWidth >= 1024) ?  menuNavBar.replaceWith(linksClone) : linksNavBar.replaceWith(menuClone);
-  });
+    if(document.body.clientWidth >= 1024) {
+        menuNavBar.replaceWith(linksClone);
+        aboutMeBox.classList.toggle('top-appearance-animation');
+        aboutMeBox.classList.add('left-appearance-animation');
+        mainInfoBox.classList.toggle('top-appearance-animation');
+        mainInfoBox.classList.add('right-appearance-animation');
+        educationBox.classList.toggle('top-appearance-animation');
+        educationBox.classList.add('left-appearance-animation');
+        coursesBox.classList.toggle('top-appearance-animation');
+        coursesBox.classList.add('right-appearance-animation');
+        languagesBox.classList.toggle('top-appearance-animation');
+        languagesBox.classList.add('bottom-appearance-animation');
+    
+    } else {
+        linksNavBar.replaceWith(menuClone);
+        aboutMeBox.classList.toggle('left-appearance-animation');
+        aboutMeBox.classList.add('top-appearance-animation');
+        mainInfoBox.classList.toggle('right-appearance-animation');
+        mainInfoBox.classList.add('top-appearance-animation');
+        educationBox.classList.toggle('left-appearance-animation');
+        educationBox.classList.add('top-appearance-animation');
+        coursesBox.classList.toggle('right-appearance-animation');
+        coursesBox.classList.add('top-appearance-animation');
+        languagesBox.classList.toggle('bottom-appearance-animation');
+        languagesBox.classList.add('top-appearance-animation');
+    }
+ });
 
 /*
 document.addEventListener('DOMContentLoaded', () => {
