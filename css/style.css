@@ -332,7 +332,7 @@ html {
         margin: 50px auto;
     }
     .preview-box-container{
-        margin: 50px auto;
+        margin: 80px auto;
     }
     .preview-box {
         border-radius: 20px;
@@ -360,7 +360,7 @@ html {
         height: 230px;
     }
     #kasumi-encryption-decryption-image {
-        background-image: url(../img/kasumi/kasumiEncryption-small.svg);
+        background-image: url(https://i.ibb.co/7X3JHdc/image-34.jpg);
         height: 290px;
     }
     #kasumi-algorithm-image {
