@@ -104,6 +104,10 @@ html {
         padding: 40px;
         gap: 40px;
     }
+    .preview-box:hover {
+        transform: scale(110%, 110%);
+        box-shadow: 5px 5px var(--blue);
+    }
     .preview-box-images {
         border-radius: 10px;
         height: 550px;
@@ -227,8 +231,8 @@ html {
         padding: 30px;
         gap: 40px;
     }
-    .preview-box-images {
-        border-radius: 10px;
+    .preview-box:hover {
+        box-shadow: 4px 4px var(--blue);
     }
     .image-box-navigation-buttons {
         gap: 100px;
@@ -335,8 +339,10 @@ html {
         padding: 20px;
         gap: 20px;
     }
+    .preview-box:hover {
+        box-shadow: 2.5px 2.5px var(--blue);
+    }
     .preview-box-images {
-        border-radius: 10px;
         width: 320px;
     }
     .image-box-navigation-buttons {
@@ -1014,10 +1020,6 @@ footer {
     transition: all .3s ease-in-out;
 }
 
-.preview-box:hover {
-    transform: scale(110%, 110%);
-    box-shadow: 5px 5px var(--blue);
-}
 
 .preview-box-images {
     background-position: center center;
