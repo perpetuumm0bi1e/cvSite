@@ -41,11 +41,11 @@ html {
     .links {
         visibility: visible;
     }
-    */
     .menu {
         visibility: hidden;
         width: 0px;
     }
+    */
     #second-img-container {
         height: 580px;
         margin-bottom: 200px;
@@ -80,11 +80,11 @@ html {
         visibility: hidden;
         width: 0px;
     }
-    */
     .menu {
         visibility: visible;
         width: 100%;
     }
+    */
     #second-img-container {
         height: 500px;
         margin-bottom: 150px;
@@ -119,11 +119,11 @@ html {
         visibility: hidden;
         width: 0px;
     }
-    */
     .menu {
         visibility: visible;
         width: 100%;
     }
+    */
     #second-img-container {
         height: 450px;
         margin-bottom: 100px;

@@ -1,20 +1,3 @@
-let checkboxNavBar = document.getElementById('checkbox-nav-bar');
-let logoNavBar = document.getElementById('logo');
-let menuBox = document.getElementById('menu');
-let checkboxNavBarCounter = 0;
-
-checkboxNavBar.onclick = function(){
-    checkboxNavBarCounter++;
-    if(checkboxNavBarCounter % 2 == 1){
-        logoNavBar.style.visibility = 'hidden';
-        logoNavBar.style.width = '0px';
-        menuBox.style.width = '100%';
-    } else {
-        logoNavBar.style.visibility = 'visible';
-        logoNavBar.style.width = '100%';
-    }
-}
-
 function onEntry(entry) {
     entry.forEach(change => {
         if (change.isIntersecting) {
@@ -41,33 +24,33 @@ for (let elm of rightAppearedElements) {
 for (let elm of topAppearedElements) {
     observer.observe(elm);
 }
-
-let windowInnerWidth = document.documentElement.clientWidth;
+let windowInnerWidth = document.body.clientWidth;
 console.log(windowInnerWidth);
-let linksDiv = document.getElementById('links');
-let clone = linksDiv;
-let logoDiv = document.getElementById('logo');
-if(windowInnerWidth > 1024){
-    clone.insertAfter(logoDiv);
-    console.log('change1 - clonned');
-} else if (windowInnerWidth < 1024 && windowInnerWidth > 768){
-    console.log('change2 - removed');
-    linksDiv.remove();
-} else if (windowInnerWidth < 768){
-    console.log('change3 - removed');
-    linksDiv.remove();
+let checkboxNavBar = document.getElementById('checkbox-nav-bar'),
+    logoNavBar = document.getElementById('logo'),
+    menuNavBar = document.getElementById('menu'),
+    linksNavBar = document.getElementById('links');
+
+let checkboxNavBarCounter = 0;
+
+let linksClone = linksNavBar,
+    menuClone = menuNavBar,
+    logoClone = logoNavBar;
+
+checkboxNavBar.onclick = function(){
+    checkboxNavBarCounter++;
+    (checkboxNavBarCounter % 2 == 1) ? logoNavBar.remove() : setTimeout(() => menuNavBar.parentNode.prepend(logoNavBar), 300);
 }
+
+
+if(document.body.clientWidth >= 1024) {
+    menuNavBar.replaceWith(linksClone);
+} else {
+    linksNavBar.replaceWith(menuClone);
+}
+
 window.addEventListener('resize', function(event){
-    if(windowInnerWidth > 1024){
-        console.log('change11 - clonned');
-        clone.insertAfter(logoDiv);
-    } else if (windowInnerWidth < 1024 && windowInnerWidth > 768){
-        console.log('change22 - removed');
-        linksDiv.remove();
-    } else if (windowInnerWidth < 768){
-        console.log('change33 - removed');
-        linksDiv.remove();
-    }
+    (document.body.clientWidth >= 1024) ?  menuNavBar.replaceWith(linksClone) : linksNavBar.replaceWith(menuClone);
   });
 
 /*
