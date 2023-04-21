@@ -298,11 +298,11 @@ function boxImageChanger(clickCounter, imageBox, imagesArray, smallImagesArray) 
 
 firstKasumiBoxNavigationLeft.onclick = function() {
     firstKasumiBoxNavigationClickCounter--;
-    boxImageChanger(secondKasumiBoxNavigationClickCounter, fourthWorkEncryptionDecryption, kasumiFirstBoxImages, kasumiFirstBoxImagesSmall);
+    boxImageChanger(firstKasumiBoxNavigationClickCounter, fourthWorkEncryptionDecryption, kasumiFirstBoxImages, kasumiFirstBoxImagesSmall);
 }
 firstKasumiBoxNavigationRight.onclick = function() {
     firstKasumiBoxNavigationClickCounter++;
-    boxImageChanger(secondKasumiBoxNavigationClickCounter, fourthWorkEncryptionDecryption, kasumiFirstBoxImages, kasumiFirstBoxImagesSmall);
+    boxImageChanger(firstKasumiBoxNavigationClickCounter, fourthWorkEncryptionDecryption, kasumiFirstBoxImages, kasumiFirstBoxImagesSmall);
 }
 secondKasumiBoxNavigationLeft.onclick = function() {
     secondKasumiBoxNavigationClickCounter--;
