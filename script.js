@@ -12,17 +12,18 @@ let bottomAppearedElements = document.querySelectorAll('.bottom-appearance-anima
     leftAppearedElements = document.querySelectorAll('.left-appearance-animation'),
     rightAppearedElements = document.querySelectorAll('.right-appearance-animation'),
     topAppearedElements = document.querySelectorAll('.top-appearance-animation');
-for (let elm of bottomAppearedElements) {
-    observer.observe(elm);
+
+for (let element of bottomAppearedElements) {
+    observer.observe(element);
 }
-for (let elm of leftAppearedElements) {
-    observer.observe(elm);
+for (let element of leftAppearedElements) {
+    observer.observe(element);
 }
-for (let elm of rightAppearedElements) {
-    observer.observe(elm);
+for (let element of rightAppearedElements) {
+    observer.observe(element);
 }
-for (let elm of topAppearedElements) {
-    observer.observe(elm);
+for (let element of topAppearedElements) {
+    observer.observe(element);
 }
 
 let checkboxNavBar = document.getElementById('checkbox-nav-bar'),
