@@ -8,6 +8,7 @@ function onEntry(element) {
 
 let options = { threshold: [0.5] };
 let observer = new IntersectionObserver(onEntry, options);
+
 let bottomAppearedElements = document.querySelectorAll('.bottom-appearance-animation'),
     leftAppearedElements = document.querySelectorAll('.left-large-appearance-animation'),
     rightAppearedElements = document.querySelectorAll('.right-large-appearance-animation'),
@@ -16,6 +17,14 @@ let bottomAppearedElements = document.querySelectorAll('.bottom-appearance-anima
 
 for (let element of bottomAppearedElements) {
     observer.observe(element);
+}
+for (let element of topAppearedElements) {
+    observer.observe(element);
+}
+for (let element of topMobileAppearedElements) {
+    if(document.body.clientWidth < 1024) {
+        observer.observe(element);
+    }
 }
 for (let element of leftAppearedElements) {
     if(document.body.clientWidth >= 1024) {
@@ -27,15 +36,6 @@ for (let element of rightAppearedElements) {
         observer.observe(element);
     }
 }
-for (let element of topAppearedElements) {
-    observer.observe(element);
-}
-for (let element of topMobileAppearedElements) {
-    if(document.body.clientWidth < 1024) {
-        observer.observe(element);
-    }
-}
-
 let navbar = document.querySelector('.navbar');
 
 let checkboxNavBar = document.querySelector('#checkbox-nav-bar'),
@@ -65,8 +65,8 @@ checkboxNavBar.addEventListener('click', function(){
 document.addEventListener('DOMContentLoaded', () => {
     const onScrollHeader = () => {
         const header = document.querySelector('.navbar');
-        let prevScroll = window.pageYOffset;
-        let currentScroll;
+        let prevScroll = window.pageYOffset,
+            currentScroll;
 
         window.addEventListener('scroll', () => {
             currentScroll = window.pageYOffset;
@@ -96,7 +96,6 @@ function windowSetting(){
         if (pageAdress.includes('aboutMePage')){
 
         } else if (pageAdress.includes('worksPage')){
-            secondKasumibox.style.width =  (firstKasumibox.getBoundingClientRect().top != secondKasumibox.getBoundingClientRect().top) ? `${firstKasumibox.offsetWidth}px` : 'auto';
             mobilePhone.parentNode.prepend(screenshots1);
             mobilePhone.parentNode.append(screenshots2);
         }
@@ -114,7 +113,9 @@ function windowSetting(){
     }
     if(pageAdress.includes('aboutMePage')){
         languageGroup2.style.width = `${languageGroup1.offsetWidth}px`
-    } 
+    } else if (pageAdress.includes('worksPage')){
+        secondKasumibox.style.width =  (firstKasumibox.getBoundingClientRect().top != secondKasumibox.getBoundingClientRect().top) ? `${firstKasumibox.offsetWidth}px` : 'auto';
+    }
 }
 window.onload = function() {
     windowSetting();
@@ -123,16 +124,6 @@ window.addEventListener('resize', function(event){
     windowSetting();
  });
 
-
-let worksCardFirst = document.getElementsByClassName('works-card-first'),
-    firstWorkMain = document.getElementById('first-work-main'),
-    firstWorkProfile = document.getElementById('first-work-profile'),
-    firstWorkSettings = document.getElementById('first-work-settings'),
-    firstWorkStatisticsDay = document.getElementById('first-work-statistics-day'),
-    firstWorkStatisticsWeek = document.getElementById('first-work-statistics-week'),
-    firstWorkStatisticsCourse = document.getElementById('first-work-statistics-course'),
-    telegramButtonMain = document.getElementById('telegram-button'),
-    mobilePhoneCard = document.getElementById('mobile-phone-card');
 
 let mobilePhoneScreenShots = ['./img/perfectPosture/main.svg',
     './img/perfectPosture/profile.svg',
@@ -158,22 +149,6 @@ let kasumiSecondBoxImagesSmall = ['./img/kasumi/kasumiAlgorithm-small.png',
     './img/kasumi/kasumiFO-small.png',
     './img/kasumi/kasumiFL-small.png'
 ];
-let firstKasumiBoxNavigationLeft = document.getElementById('first-kasumi-box-navigation-left');
-let firstKasumiBoxNavigationRight = document.getElementById('first-kasumi-box-navigation-right');
-let firstKasumiBoxNavigationClickCounter = 0;
-
-let secondKasumiBoxNavigationLeft = document.getElementById('second-kasumi-box-navigation-left');
-let secondKasumiBoxNavigationRight = document.getElementById('second-kasumi-box-navigation-right');
-let secondKasumiBoxNavigationClickCounter = 0;
-
-let fourthWorkEncryptionDecryption = document.getElementById('kasumi-encryption-decryption-image');
-let fourthWorkAlgorithmImages = document.getElementById('kasumi-algorithm-image');
-
-let proCreditBoxNavigationLeft = document.getElementById('pro-credit-box-navigation-left');
-let proCreditBoxNavigationRight = document.getElementById('pro-credit-box-navigation-right');
-let proCreditBoxNavigationClickCounter = 0;
-
-let proCreditImage = document.getElementById('pro-credit-image');
 
 let proCreditBoxImages = ['./img/proCredit/proCredit1.svg',
     './img/proCredit/proCredit2.svg',
@@ -219,12 +194,6 @@ let basketballFlightModelingBoxImagesSmall = ['./img/basketballFlightModeling/ba
     './img/basketballFlightModeling/basketballFlightModeling10-small.png'
 ];
 
-let basketballFlightModelingBoxNavigationLeft = document.getElementById('basketball-flight-modeling-box-navigation-left');
-let basketballFlightModelingBoxNavigationRight = document.getElementById('basketball-flight-modeling-box-navigation-right');
-let basketballFlightModelingNavigationClickCounter = 0;
-
-let basketballFlightModelingImage = document.getElementById('basketball-flight-modeling-image');
-
 let studentsKnowledgeControlBoxImages = ['./img/studentsKnowledgeControl/studentsKnowledgeControl1.svg',
     './img/studentsKnowledgeControl/studentsKnowledgeControl2.svg',
     './img/studentsKnowledgeControl/studentsKnowledgeControl3.svg',
@@ -253,6 +222,36 @@ let studentsKnowledgeControlBoxImagesSmall = ['./img/studentsKnowledgeControl/st
     './img/studentsKnowledgeControl/studentsKnowledgeControl12-small.png',
 ];
 
+let worksCardFirst = document.getElementsByClassName('works-card-first'),
+    firstWorkMain = document.getElementById('first-work-main'),
+    firstWorkProfile = document.getElementById('first-work-profile'),
+    firstWorkSettings = document.getElementById('first-work-settings'),
+    firstWorkStatisticsDay = document.getElementById('first-work-statistics-day'),
+    firstWorkStatisticsWeek = document.getElementById('first-work-statistics-week'),
+    firstWorkStatisticsCourse = document.getElementById('first-work-statistics-course'),
+    telegramButtonMain = document.getElementById('telegram-button'),
+    mobilePhoneCard = document.getElementById('mobile-phone-card');
+let firstKasumiBoxNavigationLeft = document.getElementById('first-kasumi-box-navigation-left');
+let firstKasumiBoxNavigationRight = document.getElementById('first-kasumi-box-navigation-right');
+let firstKasumiBoxNavigationClickCounter = 0;
+
+let secondKasumiBoxNavigationLeft = document.getElementById('second-kasumi-box-navigation-left');
+let secondKasumiBoxNavigationRight = document.getElementById('second-kasumi-box-navigation-right');
+let secondKasumiBoxNavigationClickCounter = 0;
+
+let fourthWorkEncryptionDecryption = document.getElementById('kasumi-encryption-decryption-image');
+let fourthWorkAlgorithmImages = document.getElementById('kasumi-algorithm-image');
+
+let proCreditBoxNavigationLeft = document.getElementById('pro-credit-box-navigation-left');
+let proCreditBoxNavigationRight = document.getElementById('pro-credit-box-navigation-right');
+let proCreditBoxNavigationClickCounter = 0;
+
+let proCreditImage = document.getElementById('pro-credit-image');
+let basketballFlightModelingBoxNavigationLeft = document.getElementById('basketball-flight-modeling-box-navigation-left');
+let basketballFlightModelingBoxNavigationRight = document.getElementById('basketball-flight-modeling-box-navigation-right');
+let basketballFlightModelingNavigationClickCounter = 0;
+
+let basketballFlightModelingImage = document.getElementById('basketball-flight-modeling-image');
 let studentsKnowledgeControlBoxNavigationLeft = document.getElementById('students-knowledge-control-box-navigation-left');
 let studentsKnowledgeControlBoxNavigationRight = document.getElementById('students-knowledge-control-box-navigation-right');
 let studentsKnowledgeControlClickCounter = 0;

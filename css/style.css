@@ -352,23 +352,23 @@ html {
         padding: 0px 30px;
     }
     #pro-credit-image {
-        background-image: url(../img/proCredit/proCredit1-small.svg);
+        background-image: url(../img/proCredit/proCredit1-small.png);
         height: 200px;
     }
     #students-knowledge-control-image {
-        background-image: url(../img/studentsKnowledgeControl/studentsKnowledgeControl1-small.svg);
+        background-image: url(../img/studentsKnowledgeControl/studentsKnowledgeControl1-small.png);
         height: 230px;
     }
     #kasumi-encryption-decryption-image {
-        background-image: url(../img/kasumi/image34.png);
+        background-image: url(../img/kasumi/kasumiEncryption-small.png);
         height: 290px;
     }
     #kasumi-algorithm-image {
-        background-image: url(../img/kasumi/kasumiAlgorithm-small.svg);
+        background-image: url(../img/kasumi/kasumiAlgorithm-small.png);
         height: 400px;
     }
     #basketball-flight-modeling-image {
-        background-image: url(../img/basketballFlightModeling/basketballFlightModeling1-small.svg);
+        background-image: url(../img/basketballFlightModeling/basketballFlightModeling1-small.png);
         height: 202px;
     }
 }
