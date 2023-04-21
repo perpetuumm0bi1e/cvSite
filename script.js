@@ -1,5 +1,5 @@
-function onEntry(entry) {
-    entry.forEach(change => {
+function onEntry(element) {
+    element.forEach(change => {
         if (change.isIntersecting) {
             change.target.classList.add('appeared');
         }
@@ -9,39 +9,52 @@ function onEntry(entry) {
 let options = { threshold: [0.5] };
 let observer = new IntersectionObserver(onEntry, options);
 let bottomAppearedElements = document.querySelectorAll('.bottom-appearance-animation'),
-    leftAppearedElements = document.querySelectorAll('.left-appearance-animation'),
-    rightAppearedElements = document.querySelectorAll('.right-appearance-animation'),
-    topAppearedElements = document.querySelectorAll('.top-appearance-animation');
+    leftAppearedElements = document.querySelectorAll('.left-large-appearance-animation'),
+    rightAppearedElements = document.querySelectorAll('.right-large-appearance-animation'),
+    topAppearedElements = document.querySelectorAll('.top-appearance-animation'),
+    topMobileAppearedElements = document.querySelectorAll('.top-mobile-appearance-animation');
 
 for (let element of bottomAppearedElements) {
     observer.observe(element);
 }
 for (let element of leftAppearedElements) {
-    observer.observe(element);
+    if(document.body.clientWidth >= 1024) {
+        observer.observe(element);
+    }
 }
 for (let element of rightAppearedElements) {
-    observer.observe(element);
+    if(document.body.clientWidth >= 1024) {
+        observer.observe(element);
+    }
 }
 for (let element of topAppearedElements) {
     observer.observe(element);
 }
+for (let element of topMobileAppearedElements) {
+    if(document.body.clientWidth < 1024) {
+        observer.observe(element);
+    }
+}
 
-let checkboxNavBar = document.getElementById('checkbox-nav-bar'),
-    logoNavBar = document.getElementById('logo'),
-    menuNavBar = document.getElementById('menu'),
-    linksNavBar = document.getElementById('links'),
-    languageGroup1 = document.getElementById('language-group-1'),
-    languageGroup2 = document.getElementById('language-group-2'),
-    aboutMeBox = document.getElementById('about-me-box'),
-    mainInfoBox = document.getElementById('main-info-box'),
-    educationBox = document. getElementById('education-box'),
-    coursesBox = document.getElementById('courses-box'),
-    languagesBox = document.getElementById('languages-box');
+let navbar = document.querySelector('.navbar');
+
+let checkboxNavBar = document.querySelector('#checkbox-nav-bar'),
+    logoNavBar = document.querySelector('#logo'),
+    menuNavBar = document.querySelector('.menu'),
+    linksNavBar = document.querySelector('.links'),
+    languageGroup1 = document.querySelector('#language-group-1'),
+    languageGroup2 = document.querySelector('#language-group-2'),
+    mobilePhone = document.querySelector('#mobile-phone'),
+    screenshots1 = document.querySelector('#screenshots-1'),
+    screenshots2 = document.querySelector('#screenshots-2'),
+    largeScreenElements = document.querySelector('.large-screen'),
+    firstKasumibox = document.querySelector('#first-kasumi-box'),
+    secondKasumibox = document.querySelector('#second-kasumi-box');
 
 let checkboxNavBarCounter = 0;
 
-let linksClone = linksNavBar,
-    menuClone = menuNavBar,
+let linksClone = document.querySelector('#links'),
+    menuClone = document.querySelector('#menu'),
     logoClone = logoNavBar;
 
 checkboxNavBar.addEventListener('click', function(){
@@ -49,81 +62,22 @@ checkboxNavBar.addEventListener('click', function(){
     (checkboxNavBarCounter % 2 == 1) ? setTimeout(() => logoNavBar.remove(), 200) : setTimeout(() => menuNavBar.parentNode.prepend(logoNavBar), 300);
 })
 
-window.onload = function() {
-    if(document.body.clientWidth >= 1024) {
-        menuNavBar.replaceWith(linksClone);
-        aboutMeBox.classList.toggle('top-appearance-animation');
-        aboutMeBox.classList.add('left-appearance-animation');
-        mainInfoBox.classList.toggle('top-appearance-animation');
-        mainInfoBox.classList.add('right-appearance-animation');
-        educationBox.classList.toggle('top-appearance-animation');
-        educationBox.classList.add('left-appearance-animation');
-        coursesBox.classList.toggle('top-appearance-animation');
-        coursesBox.classList.add('right-appearance-animation');
-        languagesBox.classList.toggle('top-appearance-animation');
-        languagesBox.classList.add('bottom-appearance-animation');
-
-    } else {
-        linksNavBar.replaceWith(menuClone);
-        aboutMeBox.classList.toggle('left-appearance-animation');
-        aboutMeBox.classList.add('top-appearance-animation');
-        mainInfoBox.classList.toggle('right-appearance-animation');
-        mainInfoBox.classList.add('top-appearance-animation');
-        educationBox.classList.toggle('left-appearance-animation');
-        educationBox.classList.add('top-appearance-animation');
-        coursesBox.classList.toggle('right-appearance-animation');
-        coursesBox.classList.add('top-appearance-animation');
-        languagesBox.classList.toggle('bottom-appearance-animation');
-        languagesBox.classList.add('top-appearance-animation');
-    }
-}
-window.addEventListener('resize', function(event){
-    languageGroup2.style.width = `${languageGroup1.offsetWidth}px`;
-    if(document.body.clientWidth >= 1024) {
-        menuNavBar.replaceWith(linksClone);
-        aboutMeBox.classList.toggle('top-appearance-animation');
-        aboutMeBox.classList.add('left-appearance-animation');
-        mainInfoBox.classList.toggle('top-appearance-animation');
-        mainInfoBox.classList.add('right-appearance-animation');
-        educationBox.classList.toggle('top-appearance-animation');
-        educationBox.classList.add('left-appearance-animation');
-        coursesBox.classList.toggle('top-appearance-animation');
-        coursesBox.classList.add('right-appearance-animation');
-        languagesBox.classList.toggle('top-appearance-animation');
-        languagesBox.classList.add('bottom-appearance-animation');
-    
-    } else {
-        linksNavBar.replaceWith(menuClone);
-        aboutMeBox.classList.toggle('left-appearance-animation');
-        aboutMeBox.classList.add('top-appearance-animation');
-        mainInfoBox.classList.toggle('right-appearance-animation');
-        mainInfoBox.classList.add('top-appearance-animation');
-        educationBox.classList.toggle('left-appearance-animation');
-        educationBox.classList.add('top-appearance-animation');
-        coursesBox.classList.toggle('right-appearance-animation');
-        coursesBox.classList.add('top-appearance-animation');
-        languagesBox.classList.toggle('bottom-appearance-animation');
-        languagesBox.classList.add('top-appearance-animation');
-    }
- });
-
-/*
 document.addEventListener('DOMContentLoaded', () => {
     const onScrollHeader = () => {
-        const header = document.querySelector('.header');
+        const header = document.querySelector('.navbar');
         let prevScroll = window.pageYOffset;
         let currentScroll;
 
         window.addEventListener('scroll', () => {
             currentScroll = window.pageYOffset;
 
-            const headerHidden = () => header.classList.contains('header_hidden');
+            const headerHidden = () => header.classList.contains('navbar_hidden');
 
             if (currentScroll > prevScroll && !headerHidden()) {
-                header.classList.add('header_hidden');
+                header.classList.add('navbar_hidden');
             }
             if (currentScroll < prevScroll && headerHidden()) {
-                header.classList.remove('header_hidden');
+                header.classList.remove('navbar_hidden');
             }
 
             prevScroll = currentScroll;
@@ -131,18 +85,56 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     onScrollHeader();
 });
-*/
-let worksCardFirst = document.getElementsByClassName('works-card-first');
 
-let firstWorkMain = document.getElementById('first-work-main');
-let firstWorkProfile = document.getElementById('first-work-profile');
-let firstWorkSettings = document.getElementById('first-work-settings');
-let firstWorkStatisticsDay = document.getElementById('first-work-statistics-day');
-let firstWorkStatisticsWeek = document.getElementById('first-work-statistics-week');
-let firstWorkStatisticsCourse = document.getElementById('first-work-statistics-course');
-let telegramButtonMain = document.getElementById('telegram-button');
-let mobilePhoneCard = document.getElementById('mobile-phone-card');
-let mobilePhoneCardCoord = mobilePhoneCard.getBoundingClientRect();
+function windowSetting(){
+    let pageAdress = location.pathname;
+    if(document.body.clientWidth >= 1024) {
+        navbar.style.position = 'sticky';
+
+        menuNavBar.replaceWith(linksClone);
+
+        if (pageAdress.includes('aboutMePage')){
+
+        } else if (pageAdress.includes('worksPage')){
+            secondKasumibox.style.width =  (firstKasumibox.getBoundingClientRect().top != secondKasumibox.getBoundingClientRect().top) ? `${firstKasumibox.offsetWidth}px` : 'auto';
+            mobilePhone.parentNode.prepend(screenshots1);
+            mobilePhone.parentNode.append(screenshots2);
+        }
+    } else {
+        navbar.style.position = 'relative';
+        linksNavBar.replaceWith(menuClone);
+        if(document.body.clientWidth < 700){
+            console.log('qwertyuio');
+            if (pageAdress.includes('aboutMePage')){
+                
+            } else if (pageAdress.includes('worksPage')){
+                screenshots1.remove();
+                screenshots2.remove();
+            }
+        }
+    }
+    if(pageAdress.includes('aboutMePage')){
+        languageGroup2.style.width = `${languageGroup1.offsetWidth}px`
+    } 
+}
+window.onload = function() {
+    windowSetting();
+}
+window.addEventListener('resize', function(event){
+    windowSetting();
+ });
+
+
+let worksCardFirst = document.getElementsByClassName('works-card-first'),
+    firstWorkMain = document.getElementById('first-work-main'),
+    firstWorkProfile = document.getElementById('first-work-profile'),
+    firstWorkSettings = document.getElementById('first-work-settings'),
+    firstWorkStatisticsDay = document.getElementById('first-work-statistics-day'),
+    firstWorkStatisticsWeek = document.getElementById('first-work-statistics-week'),
+    firstWorkStatisticsCourse = document.getElementById('first-work-statistics-course'),
+    telegramButtonMain = document.getElementById('telegram-button'),
+    mobilePhoneCard = document.getElementById('mobile-phone-card');
+
 let mobilePhoneScreenShots = ['./img/perfectPosture/main.svg',
     './img/perfectPosture/profile.svg',
     './img/perfectPosture/settings.svg',
@@ -255,11 +247,8 @@ gitButton4.onclick = function() {
 }
 
 function boxImageChanger(clickCounter, imageBox, imagesArray) {
-    if (clickCounter < 0) {
-        imageBox.style.backgroundImage = `url(${imagesArray[imagesArray.length - 1 + (clickCounter % imagesArray.length)]})`;
-    } else {
-        imageBox.style.backgroundImage = `url(${imagesArray[clickCounter % imagesArray.length]})`;
-    }
+    imageBox.style.backgroundImage = (clickCounter < 0) ? `url(${imagesArray[imagesArray.length - 1 + (clickCounter % imagesArray.length)]})` : `url(${imagesArray[clickCounter % imagesArray.length]})`;
+   
 }
 firstKasumiBoxNavigationLeft.onclick = function() {
     firstKasumiBoxNavigationClickCounter--;
@@ -301,9 +290,10 @@ proCreditBoxNavigationRight.onclick = function() {
     proCreditBoxNavigationClickCounter++;
     boxImageChanger(proCreditBoxNavigationClickCounter, proCreditImage, proCreditBoxImages);
 }
-let telegramButton = document.getElementById('telegram');
-let instagramButton = document.getElementById('instagram');
-let githubButton = document.getElementById('github');
+let telegramButton = document.getElementById('telegram'),
+    instagramButton = document.getElementById('instagram'),
+    githubButton = document.getElementById('github');
+
 telegramButtonMain.onclick = function() {
     window.location = "https://t.me/perpetuumm0bi1e";
 }

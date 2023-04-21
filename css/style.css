@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.cdnfonts.com/css/soyuz-grotesk');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/rozenssa');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
@@ -62,6 +62,71 @@ html {
     .main-page-heading {
         margin-bottom: 200px;
     }
+    #mobile-phone-card {
+        margin-top: -100px;
+        height: 700px;
+        width: 350px;
+    }
+    .big-blue-text {
+        font-size: 9rem;
+    }
+    
+    .preview-box-container{
+        margin: 100px auto;
+    }
+    .preview-box {
+        border-radius: 40px;
+        padding: 40px;
+        gap: 40px;
+    }
+    .preview-box-images {
+        border-radius: 10px;
+        height: 550px;
+    }
+    .image-box-navigation-buttons {
+        gap: 80px;
+    }
+    .image-box-navigation-button {
+        padding: 0px 70px;
+    }
+    .works-card-first {
+        height: 500px;
+        width: 250px;
+    }
+    
+    .works-card-first:hover {
+        margin-top: -20px;
+    }
+    .screenshots-container {
+        margin: 0px auto 150px auto;
+    }
+    .screenshots-1>.works-card-first:not(:last-child) {
+        margin-right: -120px;
+    }
+    
+    .screenshots-2>.works-card-first:not(:first-child) {
+        margin-left: -120px;
+    }
+    .work-name {
+        margin-bottom: 200px;
+    }
+    .work-number-odd,
+    .work-number-even{
+        height: 400px;
+    }
+    #students-knowledge-control-image {
+        width: 756px;
+    }
+    #basketball-flight-modeling-image {
+      width: 870px;
+    }
+    
+    #kasumi-encryption-decryption-image {
+        width: 615px;
+    }
+    #kasumi-algorithm-image {
+        width: 442px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -80,13 +145,13 @@ html {
     .checkbox {
         height: 32px;
         width: 32px;
-        top: 26px;
+        top: 18px;
     }
     
     .hamburger-lines {
         height: 26px;
         width: 32px;
-        top: 26px;
+        top: 18px;
     }
     
     .hamburger-lines .line {
@@ -114,9 +179,81 @@ html {
     .main-page-heading {
         margin-bottom: 150px;
     }
+    #mobile-phone-card {
+        margin-top: -50px;
+        height: 400px;
+        width: 200px;
+    }
+    .big-blue-text {
+        font-size: 8rem;
+    }
+    .preview-box-container{
+        margin: 100px auto;
+    }
+    .preview-box {
+        border-radius: 30px;
+        padding: 30px;
+        gap: 40px;
+    }
+    .preview-box-images {
+        border-radius: 10px;
+    }
+    .image-box-navigation-buttons {
+        gap: 100px;
+    }
+    .image-box-navigation-button {
+        padding: 0px 70px;
+    }
+    .works-card-first {
+        height: 300px;
+        width: 150px;
+    }
+    
+    .works-card-first:hover {
+        margin-top: -20px;
+    }
+    .screenshots-container {
+        margin: 0px auto 150px auto;
+    }
+    .screenshots-1>.works-card-first:not(:last-child) {
+        margin-right: -90px;
+    }
+    
+    .screenshots-2>.works-card-first:not(:first-child) {
+        margin-left: -90px;
+    }
+    .work-name {
+        margin-bottom: 100px;
+    }
+    .work-number-odd,
+    .work-number-even{
+        height: 350px;
+    }
+    
+    #students-knowledge-control-image {
+        height: 430px;
+        width: 600px;
+    }
+    #pro-credit-image {
+        height: 376px;
+        width: 600px;
+    }
+    #basketball-flight-modeling-image {
+        height: 376px;
+        width: 600px;
+    }
+    
+    #kasumi-encryption-decryption-image {
+        height: 400px;
+        width: 448px;
+    }
+    #kasumi-algorithm-image {
+        height: 550px;
+        width: 448px;
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     html {
         font-size: 12px;
     }
@@ -161,8 +298,56 @@ html {
     .contacts {
         margin-top: 100px;
     }
+    .work-number-odd,
+    .work-number-even{
+        height: 300px;
+    }
     .main-page-heading {
         margin-bottom: 50px;
+    }
+    #mobile-phone-card {
+        height: 400px;
+        width: 200px;
+    }
+    .big-blue-text {
+        font-size: 7rem;
+    }
+    .screenshots-container {
+        margin: 50px auto;
+    }
+    .preview-box-container{
+        margin: 50px auto;
+    }
+    .preview-box {
+        border-radius: 20px;
+        padding: 20px;
+        gap: 20px;
+    }
+    .preview-box-images {
+        border-radius: 10px;
+        width: 320px;
+    }
+    .image-box-navigation-buttons {
+        gap: 70px;
+    }
+    .image-box-navigation-button {
+        padding: 0px 30px;
+    }
+    #students-knowledge-control-image {
+        height: 230px;
+    }
+    #pro-credit-image {
+        height: 200px;
+    }
+    #basketball-flight-modeling-image {
+        height: 202px;
+    }
+    
+    #kasumi-encryption-decryption-image {
+        height: 290px;
+    }
+    #kasumi-algorithm-image {
+        height: 400px;
     }
 }
 
@@ -187,14 +372,14 @@ li {
 
 /* Анимация появления */
 
-.left-appearance-animation {
+.left-large-appearance-animation {
     opacity: 0;
-    transform: translateX(-20%);
+    transform: translateX(-30%);
 }
 
-.right-appearance-animation {
+.right-large-appearance-animation {
     opacity: 0;
-    transform: translateX(20%);
+    transform: translateX(30%);
 }
 
 .bottom-appearance-animation {
@@ -205,15 +390,22 @@ li {
     opacity: 0;
     transform: translateY(-10%);
 }
+.top-mobile-appearance-animation {
+    opacity: 0;
+    transform: translateY(-10%);
+}
 .bottom-appearance-animation.appeared,
-.top-appearance-animation.appeared {
+.top-appearance-animation.appeared,
+.top-mobile-appearance-animation.appeared {
     opacity: 1;
     transform: translateY(0%);
     transition: all .8s ease;
 }
 
 .right-appearance-animation.appeared,
-.left-appearance-animation.appeared {
+.left-appearance-animation.appeared,
+.left-large-appearance-animation.appeared,
+.right-large-appearance-animation.appeared {
     opacity: 1;
     transform: translateX(0%);
     transition: all .8s ease;
@@ -285,7 +477,7 @@ li {
 }
 
 .big-heading {
-    font-family: '../fonts/BASE_BLOOM.otf', sans-serif;
+    font-family: 'Unbounded', sans-serif;
     color: var(--dark-blue);
     font-size: 5rem;
     text-align: left;
@@ -306,17 +498,13 @@ li {
 .main-text {
     font-size: 1rem;
     font-weight: 400;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .big-blue-text {
-    font-family: '../fonts/BASE_BLOOM.otf', sans-serif;
-    font-size: 9rem;
     text-align: left;
     color: var(--blue);
 }
-
-
 /* Стили кнопок */
 
 .button-type-1 {
@@ -366,12 +554,18 @@ footer {
 /* Стиль хедера */
 
 .navbar {
+    top: 0px;
     width: 100%;
+    z-index: 10;
+    transform: translateY(-0);
     background: var(--white);
     box-shadow: 0px 0px 50px rgba(28, 28, 28, 0.05);
     border-radius: 0px 0px 15px 15px;
+    transition: all .6s ease-in-out;
 }
-
+.navbar_hidden{
+    transform: translateY(-100%);
+}
 .container {
     max-width: 1440px;
     width: 80%;
@@ -386,7 +580,7 @@ footer {
     text-decoration: none;
     font-family: 'Rozenssa', sans-serif;
     letter-spacing: 5px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--darkest-gray);
 }
@@ -401,7 +595,7 @@ footer {
     text-decoration: none;
     margin: 0px 50px;
     text-align: center;
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 500;
     color: var(--dark-gray);
 }
@@ -670,7 +864,7 @@ footer {
 
 .content-contacts-page {
     max-width: 1300px;
-    margin: 300px auto;
+    margin: 200px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -681,97 +875,33 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 50px auto;
+
 }
-
-.contact-card {
-    position: relative;
-    left: 0px;
-    width: 300px;
-    height: 500px;
-    background: var(--lightest-gray);
-    border: none;
-    border-radius: 20px;
-    padding: 40px;
-    font-family: sans-serif;
-    color: var(--darkest-gray);
-    font-size: 20px;
-    transition: all .3s ease-in-out;
-}
-
-.contact-card:not(:first-child) {
-    margin-left: -160px;
-}
-
-.contact-card:hover {
-    cursor: pointer;
-    transform: translateY(-30px);
-    box-shadow: none;
-    box-shadow: 7px 7px var(--gray);
-    transition: all .3s ease-in-out;
-}
-
-.contsct-card:active {
-    transform: translateY(7px);
-    transform: translateX(7px);
-    box-shadow: none;
-    transition: all .3s ease-in-out;
-}
-
-.contsct-card:hover~.contsct-card {
-    left: 40px;
-    transition: all .3s ease-in-out;
-}
-
-.contacts-cards button p:first-child {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 600;
-    margin-top: 200px;
-    margin-left: -180px;
-    transform: rotate(-90deg);
-    text-align: right;
-}
-
-
-/* Стиль страницы "Работы" */
+/* Стиль страницы "Проекты" */
 
 .work-containers {
+    max-width: 1300px;
     margin: 0px auto;
+    padding: 0px 10px;
 }
 
-.work-container {
-    padding: 250px 0px;
-}
-
-.work-description {
+.work-name {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: auto;
-    margin-bottom: 200px;
+    flex-direction: column;
+    align-items: center;
 }
-
-.work-name-odd {
-    margin-right: 300px;
+.work-number-odd,
+.work-number-even{
+    width: 100%;
 }
-
-.work-name-even {
-    margin-left: 300px;
+.work-number-odd{
+    display: flex;
+    justify-content: flex-start;
 }
-
-#number-1,
-#number-3,
-#number-5 {
-    width: 200px;
-    margin: -200px 95px 0px 0px;
-}
-
-#number-2,
-#number-4 {
-    width: 200px;
-    margin: -200px 0px 0px 130px;
+.work-number-even{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .screenshots-container {
@@ -779,9 +909,6 @@ footer {
     flex-direction: row;
     justify-content: center;
     height: auto;
-    max-width: 1900px;
-    margin: 0px auto 150px auto;
-    max-width: 1700px;
     transition: all .3s ease-in-out;
 }
 
@@ -792,40 +919,26 @@ footer {
     justify-content: start;
 }
 
-.screenshots-1>.works-card-first:not(:last-child) {
-    margin-right: -100px;
-}
-
-.screenshots-2>.works-card-first:not(:first-child) {
-    margin-left: -100px;
-}
-
 .mobile-phone {
     z-index: 5;
 }
 
 #mobile-phone-card {
-    margin-top: -100px;
     background-image: url(../img/perfectPosture/main.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 700px;
-    width: 360px;
 }
 
 .works-card-first {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 500px;
-    width: 250px;
     transition: all .3s ease-in-out;
 }
 
 .works-card-first:hover {
     z-index: 3;
-    margin-top: -20px;
     animation-name: shake-animaiton2;
     animation-duration: .3s;
     animation-iteration-count: 1;
@@ -849,16 +962,14 @@ footer {
     background-image: url(../img/perfectPosture/statisticsDayNoBorder.svg);
 }
 
-#first-work-statistics-day:hover {
-    z-index: 3;
-}
-
 #first-work-statistics-week {
     z-index: 1;
     background-image: url(../img/perfectPosture/statisticsWeekNoBorder.svg);
 }
 
-#first-work-statistics-week:hover {
+#first-work-statistics-week:hover,
+#first-work-statistics-course:hover,
+#first-work-statistics-day:hover {
     z-index: 3;
 }
 
@@ -867,21 +978,22 @@ footer {
     background-image: url(../img/perfectPosture/statisticsCourseNoBorder.svg);
 }
 
-#first-work-statistics-course:hover {
-    z-index: 3;
-}
 
-.work-button {
+.preview-box-container{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1300px;
 }
-
 .preview-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    border-radius: 40px;
+    height: auto;
+    width: auto;
     background-color: var(--lightest-gray);
     transition: all .3s ease-in-out;
 }
@@ -891,56 +1003,30 @@ footer {
     box-shadow: 5px 5px var(--blue);
 }
 
-.students-knowledge-control-preview,
-.basketball-flight-modeling-preview,
-.pro-credit-preview {
-    height: 750px;
-    width: 1050px;
-}
-
-.kasumi-preview {
-    margin: 0px 50px;
-    height: 750px;
-}
-
-#first-kasumi-box {
-    width: 750px;
-}
-
-#second-kasumi-box {
-    width: 550px;
-}
-
-#pro-credit-image {
-    width: 880px;
-    background-image: url(../img/proCredit/proCredit1.svg);
-}
-
-#basketball-flight-modeling-image {
-    width: 870px;
-    background-image: url(../img/basketballFlightModeling/basketballFlightModeling1.svg);
-}
-
-#students-knowledge-control-image {
-    width: 756px;
-    background-image: url(../img/studentsKnowledgeControl/studentsKnowledgeControl1.svg);
-}
-
 .preview-box-images {
-    height: 550px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
     transition: all .4s ease-in-out;
 }
 
+#pro-credit-image {
+    background-image: url(../img/proCredit/proCredit1.svg);
+}
+
+#basketball-flight-modeling-image {
+    background-image: url(../img/basketballFlightModeling/basketballFlightModeling1.svg);
+}
+
+#students-knowledge-control-image {
+    background-image: url(../img/studentsKnowledgeControl/studentsKnowledgeControl1.svg);
+}
+
 #kasumi-encryption-decryption-image {
-    width: 615px;
     background-image: url(../img/kasumi/kasumiEncryption.svg);
 }
 
 #kasumi-algorithm-image {
-    width: 442px;
     background-image: url(../img/kasumi/kasumiAlgorithm.svg);
 }
 
@@ -951,11 +1037,9 @@ footer {
 }
 
 .image-box-navigation-button {
-    padding: 0px 70px;
-    margin: 0px 30px;
     text-align: center;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 1.6rem;
     border: none;
     border-radius: 18px;
     color: var(--white);
@@ -971,4 +1055,8 @@ footer {
 .image-box-navigation-button:active {
     transform: translate(1px, 1px);
     cursor: pointer;
+}
+.work-button {
+    display: flex;
+    justify-content: center;
 }
