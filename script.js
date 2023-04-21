@@ -24,8 +24,7 @@ for (let elm of rightAppearedElements) {
 for (let elm of topAppearedElements) {
     observer.observe(elm);
 }
-let windowInnerWidth = document.body.clientWidth;
-console.log(windowInnerWidth);
+
 let checkboxNavBar = document.getElementById('checkbox-nav-bar'),
     logoNavBar = document.getElementById('logo'),
     menuNavBar = document.getElementById('menu'),
@@ -37,10 +36,10 @@ let linksClone = linksNavBar,
     menuClone = menuNavBar,
     logoClone = logoNavBar;
 
-checkboxNavBar.onclick = function(){
+checkboxNavBar.addEventListener('click', function(){
     checkboxNavBarCounter++;
-    (checkboxNavBarCounter % 2 == 1) ? logoNavBar.remove() : setTimeout(() => menuNavBar.parentNode.prepend(logoNavBar), 300);
-}
+    (checkboxNavBarCounter % 2 == 1) ? setTimeout(() => logoNavBar.remove(), 200) : setTimeout(() => menuNavBar.parentNode.prepend(logoNavBar), 300);
+})
 
 
 if(document.body.clientWidth >= 1024) {
