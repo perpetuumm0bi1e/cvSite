@@ -150,13 +150,13 @@ let kasumiSecondBoxImages = ['./img/kasumi/kasumiAlgorithm.svg',
     './img/kasumi/kasumiFO.svg',
     './img/kasumi/kasumiFL.svg'
 ];
-let kasumiFirstBoxImagesSmall = ['./img/kasumi/kasumiEncryption-small.svg',
-    './img/kasumi/kasumiDecryption-small.svg'
+let kasumiFirstBoxImagesSmall = ['./img/kasumi/kasumiEncryption-small.png',
+    './img/kasumi/kasumiDecryption-small.png'
 ];
-let kasumiSecondBoxImagesSmall = ['./img/kasumi/kasumiAlgorithm-small.svg',
-    './img/kasumi/kasumiFI-small.svg',
-    './img/kasumi/kasumiFO-small.svg',
-    './img/kasumi/kasumiFL-small.svg'
+let kasumiSecondBoxImagesSmall = ['./img/kasumi/kasumiAlgorithm-small.png',
+    './img/kasumi/kasumiFI-small.png',
+    './img/kasumi/kasumiFO-small.png',
+    './img/kasumi/kasumiFL-small.png'
 ];
 let firstKasumiBoxNavigationLeft = document.getElementById('first-kasumi-box-navigation-left');
 let firstKasumiBoxNavigationRight = document.getElementById('first-kasumi-box-navigation-right');
@@ -185,14 +185,14 @@ let proCreditBoxImages = ['./img/proCredit/proCredit1.svg',
     './img/proCredit/proCredit8.svg'
 ];
 
-let proCreditBoxImagesSmall = ['./img/proCredit/proCredit1-small.svg',
-    './img/proCredit/proCredit2-small.svg',
-    './img/proCredit/proCredit3-small.svg',
-    './img/proCredit/proCredit4-small.svg',
-    './img/proCredit/proCredit5-small.svg',
-    './img/proCredit/proCredit6-small.svg',
-    './img/proCredit/proCredit7-small.svg',
-    './img/proCredit/proCredit8-small.svg'
+let proCreditBoxImagesSmall = ['./img/proCredit/proCredit1-small.png',
+    './img/proCredit/proCredit2-small.png',
+    './img/proCredit/proCredit3-small.png',
+    './img/proCredit/proCredit4-small.png',
+    './img/proCredit/proCredit5-small.png',
+    './img/proCredit/proCredit6-small.png',
+    './img/proCredit/proCredit7-small.png',
+    './img/proCredit/proCredit8-small.png'
 ];
 
 let basketballFlightModelingBoxImages = ['./img/basketballFlightModeling/basketballFlightModeling1.svg',
@@ -207,16 +207,16 @@ let basketballFlightModelingBoxImages = ['./img/basketballFlightModeling/basketb
     './img/basketballFlightModeling/basketballFlightModeling10.svg'
 ];
 
-let basketballFlightModelingBoxImagesSmall = ['./img/basketballFlightModeling/basketballFlightModeling1-small.svg',
-    './img/basketballFlightModeling/basketballFlightModeling2-small.svg',
-    './img/basketballFlightModeling/basketballFlightModeling3-small.svg',
-    './img/basketballFlightModeling/basketballFlightModeling4-small.svg',
-    './img/basketballFlightModeling/basketballFlightModeling5-small.svg',
-    './img/basketballFlightModeling/basketballFlightModeling6-small.svg',
-    './img/basketballFlightModeling/basketballFlightModeling7-small.svg',
-    './img/basketballFlightModeling/basketballFlightModeling8-small.svg',
-    './img/basketballFlightModeling/basketballFlightModeling9-small.svg',
-    './img/basketballFlightModeling/basketballFlightModeling10-small.svg'
+let basketballFlightModelingBoxImagesSmall = ['./img/basketballFlightModeling/basketballFlightModeling1-small.png',
+    './img/basketballFlightModeling/basketballFlightModeling2-small.png',
+    './img/basketballFlightModeling/basketballFlightModeling3-small.png',
+    './img/basketballFlightModeling/basketballFlightModeling4-small.png',
+    './img/basketballFlightModeling/basketballFlightModeling5-small.png',
+    './img/basketballFlightModeling/basketballFlightModeling6-small.png',
+    './img/basketballFlightModeling/basketballFlightModeling7-small.png',
+    './img/basketballFlightModeling/basketballFlightModeling8-small.png',
+    './img/basketballFlightModeling/basketballFlightModeling9-small.png',
+    './img/basketballFlightModeling/basketballFlightModeling10-small.png'
 ];
 
 let basketballFlightModelingBoxNavigationLeft = document.getElementById('basketball-flight-modeling-box-navigation-left');
@@ -239,18 +239,18 @@ let studentsKnowledgeControlBoxImages = ['./img/studentsKnowledgeControl/student
     './img/studentsKnowledgeControl/studentsKnowledgeControl12.svg',
 ];
 
-let studentsKnowledgeControlBoxImagesSmall = ['./img/studentsKnowledgeControl/studentsKnowledgeControl1-small.svg',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl2-small.svg',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl3-small.svg',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl4-small.svg',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl5-small.svg',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl6-small.svg',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl7-small.svg',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl8-small.svg',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl9-small.svg',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl10-small.svg',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl11-small.svg',
-    './img/studentsKnowledgeControl/studentsKnowledgeControl12-small.svg',
+let studentsKnowledgeControlBoxImagesSmall = ['./img/studentsKnowledgeControl/studentsKnowledgeControl1-small.png',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl2-small.png',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl3-small.png',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl4-small.png',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl5-small.png',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl6-small.png',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl7-small.png',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl8-small.png',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl9-small.png',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl10-small.png',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl11-small.png',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl12-small.png',
 ];
 
 let studentsKnowledgeControlBoxNavigationLeft = document.getElementById('students-knowledge-control-box-navigation-left');
@@ -259,11 +259,11 @@ let studentsKnowledgeControlClickCounter = 0;
 
 let studentsKnowledgeControlImage = document.getElementById('students-knowledge-control-image');
 
-let interactiveLayoutButton1 = document.getElementById('interactive-layout-button-1');
-let gitButton1 = document.getElementById('git-button-1');
-let gitButton2 = document.getElementById('git-button-2');
-let gitButton3 = document.getElementById('git-button-3');
-let gitButton4 = document.getElementById('git-button-4');
+let interactiveLayoutButton1 = document.getElementById('interactive-layout-button-1'),
+    gitButton1 = document.getElementById('git-button-1'),
+    gitButton2 = document.getElementById('git-button-2'),
+    gitButton3 = document.getElementById('git-button-3'),
+    gitButton4 = document.getElementById('git-button-4');
 
 
 for (let i = 0; i < worksCardFirst.length; i++) {
