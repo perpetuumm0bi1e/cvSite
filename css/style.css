@@ -56,6 +56,9 @@ html {
     .language-group {
         gap: 100px;
     }
+    .contacts {
+        margin-top: 200px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -102,6 +105,9 @@ html {
     .language-group {
         gap: 50px;
     }
+    .contacts {
+        margin-top: 200px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -145,6 +151,9 @@ html {
     }
     .language-group {
         gap: 40px;
+    }
+    .contacts {
+        margin-top: 100px;
     }
 }
 
@@ -487,7 +496,7 @@ footer {
 
 .content-main-page {
     max-width: 1300px;
-    margin: 300px auto;
+    margin: 200px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -496,7 +505,7 @@ footer {
 
 .main-page-heading {
     margin: 0px 30px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -664,7 +673,6 @@ footer {
     flex-direction: column;
     gap: 30px;
     max-width: 1300px;
-    margin-top: 200px;
     margin-left: auto;
     margin-right: auto;
 }
