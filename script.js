@@ -141,7 +141,7 @@ let kasumiSecondBoxImages = ['./img/kasumi/kasumiAlgorithm.svg',
     './img/kasumi/kasumiFO.svg',
     './img/kasumi/kasumiFL.svg'
 ];
-let kasumiFirstBoxImagesSmall = ['https://i.ibb.co/G7vd5KX/kasumi-Encryption-small.png',
+let kasumiFirstBoxImagesSmall = ['https://i.ibb.co/Nr1Nbw2/kasumi-Encryption-small.png',
     'https://i.ibb.co/pZP4P57/kasumi-Decryption-small.png'
 ];
 let kasumiSecondBoxImagesSmall = ['https://i.ibb.co/dc2WRfm/kasumi-Algorithm-small.png',
