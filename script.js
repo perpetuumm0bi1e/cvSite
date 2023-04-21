@@ -73,10 +73,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const headerHidden = () => header.classList.contains('navbar_hidden');
 
-            if (currentScroll > prevScroll && !headerHidden()) {
+            if (currentScroll > prevScroll && !headerHidden() && document.body.clientWidth >= 1024) {
                 header.classList.add('navbar_hidden');
             }
-            if (currentScroll < prevScroll && headerHidden()) {
+            if (currentScroll < prevScroll && headerHidden() && document.body.clientWidth >= 1024) {
                 header.classList.remove('navbar_hidden');
             }
 
@@ -151,7 +151,14 @@ let kasumiSecondBoxImages = ['./img/kasumi/kasumiAlgorithm.svg',
     './img/kasumi/kasumiFO.svg',
     './img/kasumi/kasumiFL.svg'
 ];
-
+let kasumiFirstBoxImagesSmall = ['./img/kasumi/kasumiEncryption-small.svg',
+    './img/kasumi/kasumiDecryption-small.svg'
+];
+let kasumiSecondBoxImagesSmall = ['./img/kasumi/kasumiAlgorithm-small.svg',
+    './img/kasumi/kasumiFI-small.svg',
+    './img/kasumi/kasumiFO-small.svg',
+    './img/kasumi/kasumiFL-small.svg'
+];
 let firstKasumiBoxNavigationLeft = document.getElementById('first-kasumi-box-navigation-left');
 let firstKasumiBoxNavigationRight = document.getElementById('first-kasumi-box-navigation-right');
 let firstKasumiBoxNavigationClickCounter = 0;
@@ -179,6 +186,16 @@ let proCreditBoxImages = ['./img/proCredit/proCredit1.svg',
     './img/proCredit/proCredit8.svg'
 ];
 
+let proCreditBoxImagesSmall = ['./img/proCredit/proCredit1-small.svg',
+    './img/proCredit/proCredit2-small.svg',
+    './img/proCredit/proCredit3-small.svg',
+    './img/proCredit/proCredit4-small.svg',
+    './img/proCredit/proCredit5-small.svg',
+    './img/proCredit/proCredit6-small.svg',
+    './img/proCredit/proCredit7-small.svg',
+    './img/proCredit/proCredit8-small.svg'
+];
+
 let basketballFlightModelingBoxImages = ['./img/basketballFlightModeling/basketballFlightModeling1.svg',
     './img/basketballFlightModeling/basketballFlightModeling2.svg',
     './img/basketballFlightModeling/basketballFlightModeling3.svg',
@@ -189,6 +206,18 @@ let basketballFlightModelingBoxImages = ['./img/basketballFlightModeling/basketb
     './img/basketballFlightModeling/basketballFlightModeling8.svg',
     './img/basketballFlightModeling/basketballFlightModeling9.svg',
     './img/basketballFlightModeling/basketballFlightModeling10.svg'
+];
+
+let basketballFlightModelingBoxImagesSmall = ['./img/basketballFlightModeling/basketballFlightModeling1-small.svg',
+    './img/basketballFlightModeling/basketballFlightModeling2-small.svg',
+    './img/basketballFlightModeling/basketballFlightModeling3-small.svg',
+    './img/basketballFlightModeling/basketballFlightModeling4-small.svg',
+    './img/basketballFlightModeling/basketballFlightModeling5-small.svg',
+    './img/basketballFlightModeling/basketballFlightModeling6-small.svg',
+    './img/basketballFlightModeling/basketballFlightModeling7-small.svg',
+    './img/basketballFlightModeling/basketballFlightModeling8-small.svg',
+    './img/basketballFlightModeling/basketballFlightModeling9-small.svg',
+    './img/basketballFlightModeling/basketballFlightModeling10-small.svg'
 ];
 
 let basketballFlightModelingBoxNavigationLeft = document.getElementById('basketball-flight-modeling-box-navigation-left');
@@ -209,6 +238,20 @@ let studentsKnowledgeControlBoxImages = ['./img/studentsKnowledgeControl/student
     './img/studentsKnowledgeControl/studentsKnowledgeControl10.svg',
     './img/studentsKnowledgeControl/studentsKnowledgeControl11.svg',
     './img/studentsKnowledgeControl/studentsKnowledgeControl12.svg',
+];
+
+let studentsKnowledgeControlBoxImagesSmall = ['./img/studentsKnowledgeControl/studentsKnowledgeControl1-small.svg',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl2-small.svg',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl3-small.svg',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl4-small.svg',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl5-small.svg',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl6-small.svg',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl7-small.svg',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl8-small.svg',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl9-small.svg',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl10-small.svg',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl11-small.svg',
+    './img/studentsKnowledgeControl/studentsKnowledgeControl12-small.svg',
 ];
 
 let studentsKnowledgeControlBoxNavigationLeft = document.getElementById('students-knowledge-control-box-navigation-left');
@@ -246,49 +289,52 @@ gitButton4.onclick = function() {
     window.location = "https://github.com/perpetuumm0bi1e/BasketballFlightModeling";
 }
 
-function boxImageChanger(clickCounter, imageBox, imagesArray) {
-    imageBox.style.backgroundImage = (clickCounter < 0) ? `url(${imagesArray[imagesArray.length - 1 + (clickCounter % imagesArray.length)]})` : `url(${imagesArray[clickCounter % imagesArray.length]})`;
+function boxImageChanger(clickCounter, imageBox, imagesArray, smallImagesArray) {
+    imageBox.style.backgroundImage = (clickCounter < 0) ? 
+    ((document.body.clientWidth >= 1024) ? `url(${imagesArray[imagesArray.length - 1 + (clickCounter % imagesArray.length)]})` :  `url(${smallImagesArray[smallImagesArray.length - 1 + (clickCounter % smallImagesArray.length)]})`) : 
+    ((document.body.clientWidth >= 1024) ? `url(${imagesArray[clickCounter % smallImagesArray.length]})` : `url(${smallImagesArray[clickCounter % smallImagesArray.length]})`);
    
 }
+
 firstKasumiBoxNavigationLeft.onclick = function() {
     firstKasumiBoxNavigationClickCounter--;
-    boxImageChanger(firstKasumiBoxNavigationClickCounter, fourthWorkEncryptionDecryption, kasumiFirstBoxImages);
+    boxImageChanger(secondKasumiBoxNavigationClickCounter, fourthWorkEncryptionDecryption, kasumiFirstBoxImages, kasumiFirstBoxImagesSmall);
 }
 firstKasumiBoxNavigationRight.onclick = function() {
     firstKasumiBoxNavigationClickCounter++;
-    boxImageChanger(firstKasumiBoxNavigationClickCounter, fourthWorkEncryptionDecryption, kasumiFirstBoxImages);
+    boxImageChanger(secondKasumiBoxNavigationClickCounter, fourthWorkEncryptionDecryption, kasumiFirstBoxImages, kasumiFirstBoxImagesSmall);
 }
 secondKasumiBoxNavigationLeft.onclick = function() {
     secondKasumiBoxNavigationClickCounter--;
-    boxImageChanger(secondKasumiBoxNavigationClickCounter, fourthWorkAlgorithmImages, kasumiSecondBoxImages);
+    boxImageChanger(secondKasumiBoxNavigationClickCounter, fourthWorkAlgorithmImages, kasumiSecondBoxImages, kasumiSecondBoxImagesSmall);
 }
 secondKasumiBoxNavigationRight.onclick = function() {
     secondKasumiBoxNavigationClickCounter++;
-    boxImageChanger(secondKasumiBoxNavigationClickCounter, fourthWorkAlgorithmImages, kasumiSecondBoxImages);
+    boxImageChanger(secondKasumiBoxNavigationClickCounter, fourthWorkAlgorithmImages, kasumiSecondBoxImages, kasumiSecondBoxImagesSmall);
 }
 basketballFlightModelingBoxNavigationLeft.onclick = function() {
     basketballFlightModelingNavigationClickCounter--;
-    boxImageChanger(basketballFlightModelingNavigationClickCounter, basketballFlightModelingImage, basketballFlightModelingBoxImages);
+    boxImageChanger(basketballFlightModelingNavigationClickCounter, basketballFlightModelingImage, basketballFlightModelingBoxImages, basketballFlightModelingBoxImagesSmall);
 }
 basketballFlightModelingBoxNavigationRight.onclick = function() {
     basketballFlightModelingNavigationClickCounter++;
-    boxImageChanger(basketballFlightModelingNavigationClickCounter, basketballFlightModelingImage, basketballFlightModelingBoxImages);
+    boxImageChanger(basketballFlightModelingNavigationClickCounter, basketballFlightModelingImage, basketballFlightModelingBoxImages, basketballFlightModelingBoxImagesSmall);
 }
 studentsKnowledgeControlBoxNavigationLeft.onclick = function() {
     studentsKnowledgeControlClickCounter--;
-    boxImageChanger(studentsKnowledgeControlClickCounter, studentsKnowledgeControlImage, studentsKnowledgeControlBoxImages);
+    boxImageChanger(studentsKnowledgeControlClickCounter, studentsKnowledgeControlImage, studentsKnowledgeControlBoxImages, studentsKnowledgeControlBoxImagesSmall);
 }
 studentsKnowledgeControlBoxNavigationRight.onclick = function() {
     studentsKnowledgeControlClickCounter++;
-    boxImageChanger(studentsKnowledgeControlClickCounter, studentsKnowledgeControlImage, studentsKnowledgeControlBoxImages);
+    boxImageChanger(studentsKnowledgeControlClickCounter, studentsKnowledgeControlImage, studentsKnowledgeControlBoxImages, studentsKnowledgeControlBoxImagesSmall);
 }
 proCreditBoxNavigationLeft.onclick = function() {
     proCreditBoxNavigationClickCounter--;
-    boxImageChanger(proCreditBoxNavigationClickCounter, proCreditImage, proCreditBoxImages);
+    boxImageChanger(proCreditBoxNavigationClickCounter, proCreditImage, proCreditBoxImages, proCreditBoxImagesSmall);
 }
 proCreditBoxNavigationRight.onclick = function() {
     proCreditBoxNavigationClickCounter++;
-    boxImageChanger(proCreditBoxNavigationClickCounter, proCreditImage, proCreditBoxImages);
+    boxImageChanger(proCreditBoxNavigationClickCounter, proCreditImage, proCreditBoxImages, proCreditBoxImagesSmall);
 }
 let telegramButton = document.getElementById('telegram'),
     instagramButton = document.getElementById('instagram'),

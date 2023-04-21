@@ -71,23 +71,12 @@ html {
         font-size: 9rem;
     }
     
-    .preview-box-container{
-        margin: 100px auto;
+    .work-number-odd,
+    .work-number-even{
+        height: 400px;
     }
-    .preview-box {
-        border-radius: 40px;
-        padding: 40px;
-        gap: 40px;
-    }
-    .preview-box-images {
-        border-radius: 10px;
-        height: 550px;
-    }
-    .image-box-navigation-buttons {
-        gap: 80px;
-    }
-    .image-box-navigation-button {
-        padding: 0px 70px;
+    .work-name {
+        margin-bottom: 200px;
     }
     .works-card-first {
         height: 500px;
@@ -107,25 +96,43 @@ html {
     .screenshots-2>.works-card-first:not(:first-child) {
         margin-left: -120px;
     }
-    .work-name {
-        margin-bottom: 200px;
+    .preview-box-container{
+        margin: 100px auto;
     }
-    .work-number-odd,
-    .work-number-even{
-        height: 400px;
+    .preview-box {
+        border-radius: 40px;
+        padding: 40px;
+        gap: 40px;
+    }
+    .preview-box-images {
+        border-radius: 10px;
+        height: 550px;
+    }
+    .image-box-navigation-buttons {
+        gap: 80px;
+    }
+    .image-box-navigation-button {
+        padding: 0px 70px;
+    }
+    #pro-credit-image {
+        background-image: url(../img/proCredit/proCredit1.svg);
+        width: 880px;
     }
     #students-knowledge-control-image {
+        background-image: url(../img/studentsKnowledgeControl/studentsKnowledgeControl1.svg);
         width: 756px;
     }
-    #basketball-flight-modeling-image {
-      width: 870px;
-    }
-    
     #kasumi-encryption-decryption-image {
+        background-image: url(../img/kasumi/kasumiEncryption.svg);
         width: 615px;
     }
     #kasumi-algorithm-image {
+        background-image: url(../img/kasumi/kasumiAlgorithm.svg);
         width: 442px;
+    }
+    #basketball-flight-modeling-image {
+        background-image: url(../img/basketballFlightModeling/basketballFlightModeling1.svg);
+      width: 870px;
     }
 }
 
@@ -179,30 +186,20 @@ html {
     .main-page-heading {
         margin-bottom: 150px;
     }
+    .big-blue-text {
+        font-size: 8rem;
+    }
+    .work-number-odd,
+    .work-number-even{
+        height: 350px;
+    }
+    .work-name {
+        margin-bottom: 100px;
+    }
     #mobile-phone-card {
         margin-top: -50px;
         height: 400px;
         width: 200px;
-    }
-    .big-blue-text {
-        font-size: 8rem;
-    }
-    .preview-box-container{
-        margin: 100px auto;
-    }
-    .preview-box {
-        border-radius: 30px;
-        padding: 30px;
-        gap: 40px;
-    }
-    .preview-box-images {
-        border-radius: 10px;
-    }
-    .image-box-navigation-buttons {
-        gap: 100px;
-    }
-    .image-box-navigation-button {
-        padding: 0px 70px;
     }
     .works-card-first {
         height: 300px;
@@ -222,35 +219,50 @@ html {
     .screenshots-2>.works-card-first:not(:first-child) {
         margin-left: -90px;
     }
-    .work-name {
-        margin-bottom: 100px;
+    .preview-box-container{
+        margin: 100px auto;
     }
-    .work-number-odd,
-    .work-number-even{
-        height: 350px;
+    .preview-box {
+        border-radius: 30px;
+        padding: 30px;
+        gap: 40px;
+    }
+    .preview-box-images {
+        border-radius: 10px;
+    }
+    .image-box-navigation-buttons {
+        gap: 100px;
+    }
+    .image-box-navigation-button {
+        padding: 0px 70px;
     }
     
+    #pro-credit-image {
+        background-image: url(../img/proCredit/proCredit1.svg);
+        height: 376px;
+        width: 600px;
+    }
     #students-knowledge-control-image {
+        background-image: url(../img/studentsKnowledgeControl/studentsKnowledgeControl1.svg);
         height: 430px;
         width: 600px;
     }
-    #pro-credit-image {
-        height: 376px;
-        width: 600px;
-    }
-    #basketball-flight-modeling-image {
-        height: 376px;
-        width: 600px;
-    }
-    
     #kasumi-encryption-decryption-image {
+        background-image: url(../img/kasumi/kasumiEncryption.svg);
         height: 400px;
         width: 448px;
     }
     #kasumi-algorithm-image {
+        background-image: url(../img/kasumi/kasumiAlgorithm.svg);
         height: 550px;
         width: 448px;
     }
+    #basketball-flight-modeling-image {
+        background-image: url(../img/basketballFlightModeling/basketballFlightModeling1.svg);
+        height: 376px;
+        width: 600px;
+    }
+    
 }
 
 @media screen and (max-width: 767px) {
@@ -280,6 +292,9 @@ html {
     .hamburger-lines .line {
         height: 3px;
     }
+    .main-page-heading {
+        margin-bottom: 50px;
+    }
     .circles {
         gap: 7px;
     }
@@ -298,19 +313,16 @@ html {
     .contacts {
         margin-top: 100px;
     }
+    .big-blue-text {
+        font-size: 7rem;
+    }
     .work-number-odd,
     .work-number-even{
         height: 300px;
     }
-    .main-page-heading {
-        margin-bottom: 50px;
-    }
     #mobile-phone-card {
-        height: 400px;
-        width: 200px;
-    }
-    .big-blue-text {
-        font-size: 7rem;
+        height: 500px;
+        width: 250px;
     }
     .screenshots-container {
         margin: 50px auto;
@@ -333,21 +345,25 @@ html {
     .image-box-navigation-button {
         padding: 0px 30px;
     }
-    #students-knowledge-control-image {
-        height: 230px;
-    }
     #pro-credit-image {
+        background-image: url(../img/proCredit/proCredit1-small.svg);
         height: 200px;
     }
-    #basketball-flight-modeling-image {
-        height: 202px;
+    #students-knowledge-control-image {
+        background-image: url(../img/studentsKnowledgeControl/studentsKnowledgeControl1-small.svg);
+        height: 230px;
     }
-    
     #kasumi-encryption-decryption-image {
+        background-image: url(../img/kasumi/kasumiEncryption-small.svg);
         height: 290px;
     }
     #kasumi-algorithm-image {
+        background-image: url(../img/kasumi/kasumiAlgorithm-small.svg);
         height: 400px;
+    }
+    #basketball-flight-modeling-image {
+        background-image: url(../img/basketballFlightModeling/basketballFlightModeling1-small.svg);
+        height: 202px;
     }
 }
 
@@ -1008,26 +1024,6 @@ footer {
     background-repeat: no-repeat;
     background-size: contain;
     transition: all .4s ease-in-out;
-}
-
-#pro-credit-image {
-    background-image: url(../img/proCredit/proCredit1.svg);
-}
-
-#basketball-flight-modeling-image {
-    background-image: url(../img/basketballFlightModeling/basketballFlightModeling1.svg);
-}
-
-#students-knowledge-control-image {
-    background-image: url(../img/studentsKnowledgeControl/studentsKnowledgeControl1.svg);
-}
-
-#kasumi-encryption-decryption-image {
-    background-image: url(../img/kasumi/kasumiEncryption.svg);
-}
-
-#kasumi-algorithm-image {
-    background-image: url(../img/kasumi/kasumiAlgorithm.svg);
 }
 
 .image-box-navigation-buttons {
