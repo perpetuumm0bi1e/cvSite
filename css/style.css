@@ -27,22 +27,43 @@ html {
     font-family: 'Manrope', sans-serif;
     background: var(--white);
 }
+
 body{
     margin: 0rem;
     padding: 0rem;
 }
+
 main{
     min-height: 100vh;
 }
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+a:visited {
+    color: var(--violet);
+}
+
+li,
+p {
+    line-height: 200%;
+}
+
+li {
+    margin-left: -1.1255rem;
+}
+
 @media screen and (min-width: 1024px) {
     html {
         font-size: 15px;
     }
-    .screenshots-1>.works-card-first:not(:last-child) {
+    #screenshots-1>.works-card-first:not(:last-child) {
         margin-right: -120px;
     }
     
-    .screenshots-2>.works-card-first:not(:first-child) {
+    #screenshots-2>.works-card-first:not(:first-child) {
         margin-left: -120px;
     }
     .preview-box-images {
@@ -69,6 +90,10 @@ main{
         background-image: url(https://i.ibb.co/BjfZZLs/basketball-Flight-Modeling1.jpg);
       width: 870px;
     }
+    .preview-box video{
+        height: 550px;
+        width: 950px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -85,11 +110,11 @@ main{
         width: 28px;
     }
     
-    .screenshots-1>.works-card-first:not(:last-child) {
+    #screenshots-1>.works-card-first:not(:last-child) {
         margin-right: -90px;
     }
     
-    .screenshots-2>.works-card-first:not(:first-child) {
+    #screenshots-2>.works-card-first:not(:first-child) {
         margin-left: -90px;
     }
     #pro-credit-image {
@@ -116,6 +141,10 @@ main{
         background-image: url(https://i.ibb.co/BjfZZLs/basketball-Flight-Modeling1.jpg);
         height: 376px;
         width: 600px;
+    }
+    .preview-box video{
+        height: 400px;
+        width: 715px;
     }
 }
 
@@ -159,28 +188,14 @@ main{
         margin-top: 50px;
         margin-bottom: 60px;
     }
-}
-
-a {
-    text-decoration: none;
-    color: var(--blue);
-}
-
-a:visited {
-    color: var(--violet);
-}
-
-li,
-p {
-    line-height: 200%;
-}
-
-li {
-    margin-left: -1.1255rem;
+    .preview-box video{
+        height: 220px;
+        width: 385px;
+    }
 }
 
 
-/* Анимация появления */
+/* appearance animations */
 
 .left-large-appearance-animation {
     opacity: 0;
@@ -196,10 +211,7 @@ li {
     opacity: 0;
     transform: translateY(40%);
 }
-.top-appearance-animation {
-    opacity: 0;
-    transform: translateY(-10%);
-}
+.top-appearance-animation,
 .top-mobile-appearance-animation {
     opacity: 0;
     transform: translateY(-10%);
@@ -221,8 +233,7 @@ li {
     transition: all .8s ease;
 }
 
-
-/* Анимации */
+/* animations */
 
 @keyframes shake-animaiton {
     0% {
@@ -270,7 +281,7 @@ li {
 }
 
 
-/* Стили текста */
+/* texts style */
 
 .text {
     line-height: 160%;
@@ -659,7 +670,7 @@ footer {
 }
 
 
-/* Стиль страницы "Контакты" */
+/* contacts page style */
 
 #star-container {
     justify-self: flex-start;
@@ -709,20 +720,27 @@ footer {
 /* Стиль страницы "Проекты" */
 
 .work-containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 1400px;
     margin: 0rem auto;
-    padding: 2rem;
+    padding: 0rem 2rem;
 }
-
+.work-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+}
 .work-name {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 12.5rem;
 }
 .work-number-odd,
 .work-number-even{
-    height: 25rem;
+    height: 20rem;
     width: 100%;
 }
 .work-number-odd{
@@ -734,17 +752,17 @@ footer {
     justify-content: flex-end;
 }
 
-.screenshots-container {
+#screenshots-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: auto;
-    margin: 0rem auto 9.375rem auto;
     transition: all .3s ease-in-out;
+    margin-top: 2rem;
 }
 
-.screenshots-container>.screenshots-1,
-.screenshots-2 {
+#screenshots-container>#screenshots-1,
+#screenshots-2 {
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -823,7 +841,6 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 1.875rem;
-    margin: 6.25rem auto;
     max-width: 1400px;
 }
 .preview-box {
@@ -834,9 +851,12 @@ footer {
     width: auto;
     background-color: var(--lightest-gray);
     transition: all .3s ease-in-out;
-    border-radius: 2.5rem;
-    padding: 2.5rem;
+    border-radius: 2.2rem;
+    padding: 2rem;
     gap: 2.5rem;
+}
+.preview-box video{
+    border-radius: 1.2rem;
 }
 .preview-box:hover {
     transform: scale(110%, 110%);
@@ -878,8 +898,4 @@ footer {
 .image-box-navigation-button:active {
     transform: translate(0.0625rem, 0.0625rem);
     cursor: pointer;
-}
-.work-button {
-    display: flex;
-    justify-content: center;
 }

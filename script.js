@@ -43,7 +43,6 @@ let navbar = document.querySelector('.navbar'),
     mobilePhone = document.querySelector('#mobile-phone'),
     screenshots1 = document.querySelector('#screenshots-1'),
     screenshots2 = document.querySelector('#screenshots-2'),
-    largeScreenElements = document.querySelector('.large-screen'),
     firstKasumibox = document.querySelector('#first-kasumi-box'),
     secondKasumibox = document.querySelector('#second-kasumi-box'),
     linksClone = document.querySelector('#links'),
@@ -93,10 +92,10 @@ window.onload = function() {
     windowSetting();
 
     let bottomAppearedElements = document.querySelectorAll('.bottom-appearance-animation'),
-        leftAppearedElements = document.querySelectorAll('.left-large-appearance-animation'),
-        rightAppearedElements = document.querySelectorAll('.right-large-appearance-animation'),
         topAppearedElements = document.querySelectorAll('.top-appearance-animation'),
-        topMobileAppearedElements = document.querySelectorAll('.top-mobile-appearance-animation');
+        topMobileAppearedElements = document.querySelectorAll('.top-mobile-appearance-animation'),
+        leftAppearedElements = document.querySelectorAll('.left-large-appearance-animation'),
+        rightAppearedElements = document.querySelectorAll('.right-large-appearance-animation');
 
     for (let element of bottomAppearedElements) {
         observer.observe(element);
@@ -104,17 +103,17 @@ window.onload = function() {
     for (let element of topAppearedElements) {
         observer.observe(element);
     }
-    for (let element of topMobileAppearedElements) {
+    for (let element of topMobileAppearedElements) { 
         if(document.body.clientWidth < 1024) {
-            observer.observe(element);
+        observer.observe(element); 
         }
     }
-    for (let element of leftAppearedElements) {
+    for (let element of rightAppearedElements) { 
         if(document.body.clientWidth >= 1024) {
             observer.observe(element);
         }
     }
-    for (let element of rightAppearedElements) {
+    for (let element of leftAppearedElements) {
         if(document.body.clientWidth >= 1024) {
             observer.observe(element);
         }
@@ -240,12 +239,7 @@ window.onload = function() {
         basketballFlightModelingImage = document.getElementById('basketball-flight-modeling-image'),
         studentsKnowledgeControlBoxNavigationLeft = document.getElementById('students-knowledge-control-box-navigation-left'),
         studentsKnowledgeControlBoxNavigationRight = document.getElementById('students-knowledge-control-box-navigation-right'),
-        studentsKnowledgeControlImage = document.getElementById('students-knowledge-control-image'),
-        interactiveLayoutButton1 = document.getElementById('interactive-layout-button-1'),
-        gitButton1 = document.getElementById('git-button-1'),
-        gitButton2 = document.getElementById('git-button-2'),
-        gitButton3 = document.getElementById('git-button-3'),
-        gitButton4 = document.getElementById('git-button-4');;
+        studentsKnowledgeControlImage = document.getElementById('students-knowledge-control-image');
 
     let firstKasumiBoxNavigationClickCounter = 0,
         secondKasumiBoxNavigationClickCounter = 0,
@@ -260,20 +254,23 @@ window.onload = function() {
         }
         worksCardFirst[i].onmouseleave = function() {}
     }
-    interactiveLayoutButton1.onclick = function() {
+    document.getElementById('interactive-layout-button-1').onclick = function() {
         window.location.href = "https://www.figma.com/proto/1l01NZ1BpN7Q5N1txMbLT4/PerfectPosture?page-id=0%3A1&node-id=202-344&viewport=-269%2C450%2C0.07&scaling=scale-down&starting-point-node-id=202%3A344";
     }
-    gitButton1.onclick = function() {
+    document.getElementById('git-button-1').onclick = function() {
         window.location.href = "https://github.com/perpetuumm0bi1e/StudentsKnowledgeControl";
     }
-    gitButton2.onclick = function() {
+    document.getElementById('git-button-2').onclick = function() {
         window.location.href = "https://github.com/perpetuumm0bi1e/ProCredit";
     }
-    gitButton3.onclick = function() {
+    document.getElementById('git-button-3').onclick = function() {
         window.location.href = "https://github.com/perpetuumm0bi1e/Kasumi";
     }
-    gitButton4.onclick = function() {
+    document.getElementById('git-button-4').onclick = function() {
         window.location.href = "https://github.com/perpetuumm0bi1e/BasketballFlightModeling";
+    }
+    document.getElementById('visit-site-1').onclick = function() {
+        window.location.href = "https://perpetuumm0bi1e.github.io/Mark/";
     }
     function boxImageChanger(clickCounter, imageBox, imagesArray, smallImagesArray) {
         imageBox.style.backgroundImage = (clickCounter < 0) ? 
