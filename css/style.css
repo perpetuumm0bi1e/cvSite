@@ -18,8 +18,8 @@
 }
 
 * {
-    /* Делает падинги отступами внутрь родительского элемента */
     box-sizing: border-box;
+    outline: none;
     max-width: 100%;
 }
 
@@ -27,67 +27,16 @@ html {
     font-family: 'Manrope', sans-serif;
     background: var(--white);
 }
-
+body{
+    margin: 0rem;
+    padding: 0rem;
+}
+main{
+    min-height: 100vh;
+}
 @media screen and (min-width: 1024px) {
     html {
-        font-size: 16px;
-    }
-    .button-type-1 {
-        width: 400px;
-        height: 50px;
-        padding-left: 40px;
-    }
-    #second-img-container {
-        height: 580px;
-        margin-bottom: 200px;
-    }
-    .circles {
-        gap: 10px;
-    }
-    .filled-circle,
-    .circle {
-        width: 15px;
-        height: 15px;
-        border: 3px solid var(--blue);
-    }
-    .language-groups {
-        gap: 50px;
-    }
-    .language-group {
-        gap: 100px;
-    }
-    .contacts {
-        margin-top: 200px;
-    }
-    .main-page-heading {
-        margin-bottom: 200px;
-    }
-    #mobile-phone-card {
-        margin-top: -100px;
-        height: 700px;
-        width: 350px;
-    }
-    .big-blue-text {
-        font-size: 9rem;
-    }
-    
-    .work-number-odd,
-    .work-number-even{
-        height: 400px;
-    }
-    .work-name {
-        margin-bottom: 200px;
-    }
-    .works-card-first {
-        height: 500px;
-        width: 250px;
-    }
-    
-    .works-card-first:hover {
-        margin-top: -20px;
-    }
-    .screenshots-container {
-        margin: 0px auto 150px auto;
+        font-size: 15px;
     }
     .screenshots-1>.works-card-first:not(:last-child) {
         margin-right: -120px;
@@ -96,27 +45,9 @@ html {
     .screenshots-2>.works-card-first:not(:first-child) {
         margin-left: -120px;
     }
-    .preview-box-container{
-        margin: 100px auto;
-    }
-    .preview-box {
-        border-radius: 40px;
-        padding: 40px;
-        gap: 40px;
-    }
-    .preview-box:hover {
-        transform: scale(110%, 110%);
-        box-shadow: 5px 5px var(--blue);
-    }
     .preview-box-images {
         border-radius: 10px;
         height: 550px;
-    }
-    .image-box-navigation-buttons {
-        gap: 80px;
-    }
-    .image-box-navigation-button {
-        padding: 0px 70px;
     }
     #pro-credit-image {
         background-image: url(https://i.ibb.co/dfpgPhb/pro-Credit1.jpg);
@@ -142,80 +73,18 @@ html {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     html {
-        font-size: 14px;
-    }
-    .button-type-1 {
-        width: 350px;
-        height: 43.75px;
-        padding-left: 30px;
-    }
-    #second-img-container {
-        height: 500px;
-        margin-bottom: 150px;
+        font-size: 13px;
     }
     .checkbox {
-        height: 32px;
-        width: 32px;
-        top: 18px;
+        height: 28px;
+        width: 28px;
     }
     
     .hamburger-lines {
-        height: 26px;
-        width: 32px;
-        top: 18px;
+        height: 23px;
+        width: 28px;
     }
     
-    .hamburger-lines .line {
-        height: 4px;
-        border-radius: 10px;
-    }
-    .circles {
-        gap: 9px;
-    }
-    .filled-circle,
-    .circle {
-        width: 12px;
-        height: 12px;
-        border: 2px solid var(--blue);
-    }
-    .language-groups {
-        gap: 35px;
-    }
-    .language-group {
-        gap: 50px;
-    }
-    .contacts {
-        margin-top: 200px;
-    }
-    .main-page-heading {
-        margin-bottom: 150px;
-    }
-    .big-blue-text {
-        font-size: 8rem;
-    }
-    .work-number-odd,
-    .work-number-even{
-        height: 350px;
-    }
-    .work-name {
-        margin-bottom: 100px;
-    }
-    #mobile-phone-card {
-        margin-top: -50px;
-        height: 400px;
-        width: 200px;
-    }
-    .works-card-first {
-        height: 300px;
-        width: 150px;
-    }
-    
-    .works-card-first:hover {
-        margin-top: -20px;
-    }
-    .screenshots-container {
-        margin: 0px auto 150px auto;
-    }
     .screenshots-1>.works-card-first:not(:last-child) {
         margin-right: -90px;
     }
@@ -223,24 +92,6 @@ html {
     .screenshots-2>.works-card-first:not(:first-child) {
         margin-left: -90px;
     }
-    .preview-box-container{
-        margin: 100px auto;
-    }
-    .preview-box {
-        border-radius: 30px;
-        padding: 30px;
-        gap: 40px;
-    }
-    .preview-box:hover {
-        box-shadow: 4px 4px var(--blue);
-    }
-    .image-box-navigation-buttons {
-        gap: 100px;
-    }
-    .image-box-navigation-button {
-        padding: 0px 70px;
-    }
-    
     #pro-credit-image {
         background-image: url(https://i.ibb.co/dfpgPhb/pro-Credit1.jpg);
         height: 376px;
@@ -270,89 +121,23 @@ html {
 
 @media screen and (max-width: 767px) {
     html {
-        font-size: 12px;
-    }
-    .button-type-1 {
-        width: 300px;
-        height: 37.5px;
-        padding-left: 30px;
-    }
-    #second-img-container {
-        height: 450px;
-        margin-bottom: 100px;
+        font-size: 11px;
     }
     .checkbox {
-        height: 25px;
-        width: 25px;
-        top: 21px;
+        height: 22px;
+        width: 22px;
     }
     .hamburger-lines {
-        height: 20px;
-        width: 25px;
-        top: 21px;
+        height: 18px;
+        width: 22px;
     }
     
-    .hamburger-lines .line {
-        height: 3px;
-    }
-    .main-page-heading {
-        margin-bottom: 50px;
-    }
-    .circles {
-        gap: 7px;
-    }
-    .filled-circle,
-    .circle {
-        width: 10px;
-        height: 10px;
-        border: 2px solid var(--blue);
-    }
-    .language-groups {
-        gap: 35px;
-    }
-    .language-group {
-        gap: 40px;
-    }
-    .contacts {
-        margin-top: 100px;
-    }
-    .big-blue-text {
-        font-size: 7rem;
-    }
-    .work-number-odd,
-    .work-number-even{
-        height: 300px;
-    }
-    #mobile-phone-card {
-        height: 500px;
-        width: 250px;
-    }
-    .screenshots-container {
-        margin: 50px auto;
-    }
-    .preview-box-container{
-        margin: 80px auto;
-    }
-    .preview-box {
-        border-radius: 20px;
-        padding: 20px;
-        gap: 20px;
-    }
-    .preview-box:hover {
-        box-shadow: 2.5px 2.5px var(--blue);
-    }
     .preview-box-images {
-        width: 320px;
-    }
-    .image-box-navigation-buttons {
-        gap: 70px;
-    }
-    .image-box-navigation-button {
-        padding: 0px 30px;
+        width: 350px;
     }
     #pro-credit-image {
         background-image: url(https://i.ibb.co/khp66W5/pro-Credit1-small.jpg);
-        height: 200px;
+        height: 230px;
     }
     #students-knowledge-control-image {
         background-image: url(https://i.ibb.co/WkC5YZG/students-Knowledge-Control1-small.jpg);
@@ -391,7 +176,7 @@ p {
 }
 
 li {
-    margin-left: -18px;
+    margin-left: -1.1255rem;
 }
 
 
@@ -494,10 +279,10 @@ li {
 }
 
 .biggest-heading {
-    margin-top: 200px;
+    margin-top: 12.5rem;
     font-size: 5rem;
-    margin-top: -50px;
-    margin-bottom: 200px;
+    margin-top: -3.125rem;
+    margin-bottom: 12.5rem;
     color: var(--white);
 }
 
@@ -523,20 +308,25 @@ li {
 .main-text {
     font-size: 1rem;
     font-weight: 400;
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 
 .big-blue-text {
+    font-size: 9rem;
     text-align: left;
     color: var(--blue);
 }
+
 /* Стили кнопок */
 
 .button-type-1 {
     font-family: 'Fira Code', sans-serif;
     background: var(--green);
     border-width: 0;
-    border-radius: 35px;
+    border-radius: 2.1875rem;
+    width: 25rem;
+    height: 3.125rem;
+    padding-left: 2.5rem;
     font-weight: 600;
     font-size: 1.125rem;
     text-align: left;
@@ -544,14 +334,14 @@ li {
 }
 
 .button-type-1:hover {
-    transform: translate(-1px, -1px);
-    box-shadow: 3px 3px var(--blue);
+    transform: translate(-0.0625rem, -0.0625rem);
+    box-shadow: 0.1875rem 0.1875rem var(--blue);
     cursor: pointer;
     transition: all .3s ease;
 }
 
 .button-type-1:active {
-    transform: translate(1px, 1px);
+    transform: translate(0.0625rem, 0.0625rem);
     box-shadow: none;
     cursor: pointer;
     transition: all .3s ease;
@@ -561,14 +351,14 @@ li {
 /* Стиль Футера */
 
 footer {
-    margin-top: 200px;
+    margin-top: 12.5rem;
     z-index: 10;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 150px;
+    height: 9.375rem;
     width: 100%;
     font-size: 0.875rem;
     color: var(--white);
@@ -579,13 +369,12 @@ footer {
 /* Стиль хедера */
 
 .navbar {
-    top: 0px;
+    top: 0rem;
     width: 100%;
     z-index: 10;
-    transform: translateY(-0);
     background: var(--white);
-    box-shadow: 0px 0px 50px rgba(28, 28, 28, 0.05);
-    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0rem 0rem 3rem rgba(28, 28, 28, 0.05);
+    border-radius: 0rem 0rem 0.9375rem 0.9375rem;
     transition: all .6s ease-in-out;
 }
 .navbar_hidden{
@@ -598,13 +387,13 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 62px;
+    height: 4rem;
 }
 
 .logo a {
     text-decoration: none;
     font-family: 'Rozenssa', sans-serif;
-    letter-spacing: 5px;
+    letter-spacing: 0.3125rem;
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--darkest-gray);
@@ -618,7 +407,7 @@ footer {
 
 .links a {
     text-decoration: none;
-    margin: 0px 50px;
+    margin: 0rem 3.125rem;
     text-align: center;
     font-size: .9rem;
     font-weight: 500;
@@ -636,9 +425,9 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 320px;
-    padding-bottom: 80px;
-    height: 300px;
+    padding-top: 20rem;
+    padding-bottom: 5rem;
+    height: 18.75rem;
     text-align: center;
     transform: translateY(-100%);
     background-color: var(--white);
@@ -647,7 +436,7 @@ footer {
 
 .menu-items li {
     list-style: none;
-    margin-left: 0px;
+    margin-left: 0rem;
     margin-bottom: 1.5rem;
     font-size: 1rem;
 }
@@ -665,7 +454,8 @@ footer {
 .checkbox {
     position: absolute;
     display: block;
-    right: 35px;
+    top: 1rem;
+    right: 4rem;
     z-index: 5;
     opacity: 0;
     cursor: pointer;
@@ -674,7 +464,8 @@ footer {
 .hamburger-lines {
     position: absolute;
     display: block;
-    right: 35px;
+    top: 1.2rem;
+    right: 3.5rem;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -683,8 +474,9 @@ footer {
 
 .hamburger-lines .line {
     display: block;
+    height: 0.25rem;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0.775rem;
     background: var(--darkest-gray)
 }
 
@@ -723,24 +515,28 @@ footer {
 /* Стиль главной страницы */
 
 .content-main-page {
-    max-width: 1300px;
-    margin: 200px auto;
+    max-width: 1400px;
+    margin: 12.5rem auto;
     display: flex;
+    padding: 2rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .main-page-heading {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
     text-align: center;
+    margin-bottom: 12.5rem;
 }
 
 
 /*Стиль страницы "Обо мне"*/
 
 #second-img-container {
+    height: 36.25rem;
+    margin-bottom: 12.5rem;
     width: 100%;
     max-width: 100%;
     background-size: cover;
@@ -750,17 +546,17 @@ footer {
 }
 
 .subheading {
-    margin: 20px 0px;
+    margin: 1.25rem 0rem;
     font-weight: 700;
     font-size: 1rem;
 }
 
 .description {
-    margin-top: -15px;
-    margin-bottom: 10px;
+    margin-top: -0.9375rem;
+    margin-bottom: 0.625rem;
     font-weight: 400;
     font-size: 0.875rem;
-    letter-spacing: .3px;
+    letter-spacing: 0.01875rem;
 }
 
 .about-me-container {
@@ -768,22 +564,22 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-items: stretch;
-    gap: 40px;
-    padding: 0px 25px;
-    margin: 0px auto;
+    gap: 2.5rem;
+    padding: 0rem 1.56rem;
+    margin: 0rem auto;
     max-width: 1300px;
 }
 
 .about-me-container>div {
-    padding: 40px;
-    border-radius: 30px;
+    padding: 2.5rem;
+    border-radius: 1.875rem;
     box-shadow: none;
     background: var(--lightest-gray);
     transition: all .5s ease-in-out;
 }
 
 .about-me-container>div:hover {
-    box-shadow: 5px 5px var(--blue);
+    box-shadow: 0.3125rem 0.3125rem var(--blue);
     transition: all .4s ease-in-out;
 }
 
@@ -791,21 +587,21 @@ footer {
     font-family: 'Unbounded', sans-serif;
     font-weight: 500;
     font-size: 1.5625rem;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     color: var(--darkest-gray);
 }
 
 #about-me-box .description:not(:last-child) {
-    margin-top: 0px;
+    margin-top: 0rem;
 }
 
 #experience-box p:not(:first-child) {
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 
 #about-me-box {
     flex-grow: 2;
-    width: 700px;
+    width: 43.75rem;
 }
 
 #main-info-box {
@@ -814,12 +610,12 @@ footer {
 
 #education-box {
     flex-grow: 1;
-    width: 360px;
+    width: 22.5rem;
 }
 
 #courses-box {
     flex-grow: 2;
-    width: 360px;
+    width: 22.5rem;
 }
 
 #languages-box {
@@ -832,6 +628,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    gap: 3.125rem;
 }
 
 .language-group {
@@ -840,16 +637,21 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 6.25rem;
 }
 
 .circles {
+    gap: 0.625rem;
     display: flex;
     flex-direction: row;
 }
 
 .filled-circle,
 .circle {
-    border-radius: 40px;
+    border-radius: 2.5rem;
+    width: 0.9375rem;
+    height:  0.9375rem;
+    border: 0.1875rem solid var(--blue);
 }
 
 .filled-circle {
@@ -862,9 +664,9 @@ footer {
 #star-container {
     justify-self: flex-start;
     align-self: flex-start;
-    margin: -150px 0px 100px 0px;
-    width: 80px;
-    height: 80px;
+    margin: -9.375rem 0rem 6.25rem 0rem;
+    width: 5rem;
+    height: 5rem;
     background-image: url(../img/star-2.svg);
     background-size: cover;
     background-repeat: repeat space;
@@ -878,18 +680,19 @@ footer {
 .contacts-heading {
     justify-self: flex-start;
     align-self: flex-start;
-    margin-top: -100px;
+    margin-top: -6.25rem;
 }
 
 .contacts-heading:first-child {
-    font-size: 300px;
-    margin-top: -150px;
-    margin-bottom: -80px;
+    font-size: 18.75rem;
+    margin-top: -9.375rem;
+    margin-bottom: -5rem;
 }
 
 .content-contacts-page {
-    max-width: 1300px;
-    margin: 200px auto;
+    max-width: 1400px;
+    margin: 12.5rem auto;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -899,25 +702,27 @@ footer {
 .contacts {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin: 50px auto;
-
+    gap: 1.875rem;
+    margin: 3.125rem auto;
+    margin-top: 12.5rem;
 }
 /* Стиль страницы "Проекты" */
 
 .work-containers {
-    max-width: 1300px;
-    margin: 0px auto;
-    padding: 0px 10px;
+    max-width: 1400px;
+    margin: 0rem auto;
+    padding: 2rem;
 }
 
 .work-name {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 12.5rem;
 }
 .work-number-odd,
 .work-number-even{
+    height: 25rem;
     width: 100%;
 }
 .work-number-odd{
@@ -934,6 +739,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     height: auto;
+    margin: 0rem auto 9.375rem auto;
     transition: all .3s ease-in-out;
 }
 
@@ -953,6 +759,9 @@ footer {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    margin: -6.25rem auto 0rem auto;
+    height: 43.75rem;
+    width: 21.875rem;
 }
 
 .works-card-first {
@@ -960,10 +769,13 @@ footer {
     background-repeat: no-repeat;
     background-size: contain;
     transition: all .3s ease-in-out;
+    height: 31.25rem;
+    width: 15.6rem;
 }
 
 .works-card-first:hover {
     z-index: 3;
+    margin-top: -1.25rem;
     animation-name: shake-animaiton2;
     animation-duration: .3s;
     animation-iteration-count: 1;
@@ -1010,8 +822,9 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    max-width: 1300px;
+    gap: 1.875rem;
+    margin: 6.25rem auto;
+    max-width: 1400px;
 }
 .preview-box {
     display: flex;
@@ -1021,40 +834,49 @@ footer {
     width: auto;
     background-color: var(--lightest-gray);
     transition: all .3s ease-in-out;
+    border-radius: 2.5rem;
+    padding: 2.5rem;
+    gap: 2.5rem;
 }
-
+.preview-box:hover {
+    transform: scale(110%, 110%);
+    box-shadow: 0.3125rem 0.3125rem var(--blue);
+}
 
 .preview-box-images {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
     transition: all .4s ease-in-out;
+    border-radius: 0.625rem;
 }
 
 .image-box-navigation-buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 5rem;
 }
 
 .image-box-navigation-button {
     text-align: center;
     font-weight: 300;
     font-size: 1.6rem;
+    padding: 0rem 4.275rem;
     border: none;
-    border-radius: 18px;
+    border-radius: 1.125rem;
     color: var(--white);
     background-color: rgba(80, 76, 255);
     transition: all .4s ease-in-out;
 }
 
 .image-box-navigation-button:hover {
-    transform: translate(-1px, -1px);
+    transform: translate(-0.0625rem, -0.0625rem);
     cursor: pointer;
 }
 
 .image-box-navigation-button:active {
-    transform: translate(1px, 1px);
+    transform: translate(0.0625rem, 0.0625rem);
     cursor: pointer;
 }
 .work-button {
