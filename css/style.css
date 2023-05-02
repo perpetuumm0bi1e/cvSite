@@ -28,12 +28,12 @@ html {
     background: var(--white);
 }
 
-body{
+body {
     margin: 0rem;
     padding: 0rem;
 }
 
-main{
+main {
     min-height: 100vh;
 }
 
@@ -46,12 +46,8 @@ a:visited {
     color: var(--violet);
 }
 
-li,
-p {
-    line-height: 200%;
-}
-
 li {
+    line-height: 200%;
     margin-left: -1.1255rem;
 }
 
@@ -59,11 +55,10 @@ li {
     html {
         font-size: 15px;
     }
-    #screenshots-1>.works-card-first:not(:last-child) {
+    #screenshots-1>.screenshot:not(:last-child) {
         margin-right: -120px;
     }
-    
-    #screenshots-2>.works-card-first:not(:first-child) {
+    #screenshots-2>.screenshot:not(:first-child) {
         margin-left: -120px;
     }
     .preview-box-images {
@@ -74,7 +69,7 @@ li {
         background-image: url(https://i.ibb.co/dfpgPhb/pro-Credit1.jpg);
         width: 880px;
     }
-    #students-knowledge-control-image {
+    #students-image {
         background-image: url(https://i.ibb.co/7Cb90C8/students-Knowledge-Control1.jpg);
         width: 756px;
     }
@@ -86,11 +81,11 @@ li {
         background-image: url(https://i.ibb.co/Bnrztbz/kasumi-Algorithm.jpg);
         width: 442px;
     }
-    #basketball-flight-modeling-image {
+    #basketball-image {
         background-image: url(https://i.ibb.co/BjfZZLs/basketball-Flight-Modeling1.jpg);
-      width: 870px;
+        width: 870px;
     }
-    .preview-box video{
+    .preview-box video {
         height: 550px;
         width: 950px;
     }
@@ -104,17 +99,14 @@ li {
         height: 28px;
         width: 28px;
     }
-    
     .hamburger-lines {
         height: 23px;
         width: 28px;
     }
-    
-    #screenshots-1>.works-card-first:not(:last-child) {
+    #screenshots-1>.screenshot:not(:last-child) {
         margin-right: -90px;
     }
-    
-    #screenshots-2>.works-card-first:not(:first-child) {
+    #screenshots-2>.screenshot:not(:first-child) {
         margin-left: -90px;
     }
     #pro-credit-image {
@@ -137,12 +129,12 @@ li {
         height: 550px;
         width: 448px;
     }
-    #basketball-flight-modeling-image {
+    #basketball-image {
         background-image: url(https://i.ibb.co/BjfZZLs/basketball-Flight-Modeling1.jpg);
         height: 376px;
         width: 600px;
     }
-    .preview-box video{
+    .preview-box video {
         height: 400px;
         width: 715px;
     }
@@ -160,7 +152,6 @@ li {
         height: 18px;
         width: 22px;
     }
-    
     .preview-box-images {
         width: 350px;
     }
@@ -180,15 +171,15 @@ li {
         background-image: url(https://i.ibb.co/JQ12ybH/kasumi-Algorithm-small.jpg);
         height: 400px;
     }
-    #basketball-flight-modeling-image {
+    #basketball-image {
         background-image: url(https://i.ibb.co/hVvGs7z/basketball-Flight-Modeling1-small.jpg);
         height: 202px;
     }
-    .mobile-nav{
+    .mobile-nav {
         margin-top: 50px;
         margin-bottom: 60px;
     }
-    .preview-box video{
+    .preview-box video {
         height: 220px;
         width: 385px;
     }
@@ -197,45 +188,48 @@ li {
 
 /* appearance animations */
 
-.left-large-appearance-animation {
+.left-large-appearance {
     opacity: 0;
     transform: translateX(-30%);
 }
 
-.right-large-appearance-animation {
+.right-large-appearance {
     opacity: 0;
     transform: translateX(30%);
 }
 
-.bottom-appearance-animation {
+.bottom-appearance {
     opacity: 0;
     transform: translateY(40%);
 }
-.top-appearance-animation,
-.top-mobile-appearance-animation {
+
+.top-appearance,
+.top-mobile-appearance {
     opacity: 0;
     transform: translateY(-10%);
 }
-.bottom-appearance-animation.appeared,
-.top-appearance-animation.appeared,
-.top-mobile-appearance-animation.appeared {
+
+.bottom-appearance.appeared,
+.top-appearance.appeared,
+.top-mobile-appearance.appeared {
     opacity: 1;
     transform: translateY(0%);
     transition: all .8s ease;
 }
 
-.right-appearance-animation.appeared,
-.left-appearance-animation.appeared,
-.left-large-appearance-animation.appeared,
-.right-large-appearance-animation.appeared {
+.right-appearance.appeared,
+.left-appearance.appeared,
+.left-large-appearance.appeared,
+.right-large-appearance.appeared {
     opacity: 1;
     transform: translateX(0%);
     transition: all .8s ease;
 }
 
+
 /* animations */
 
-@keyframes shake-animaiton {
+@keyframes shake-animation {
     0% {
         transform: rotate(0deg);
     }
@@ -253,7 +247,7 @@ li {
     }
 }
 
-@keyframes shake-animaiton2 {
+@keyframes shake-animation2 {
     0% {
         transform: rotate(0deg);
     }
@@ -289,19 +283,17 @@ li {
     color: var(--darkest-gray);
 }
 
-.biggest-heading {
-    margin-top: 12.5rem;
-    font-size: 5rem;
-    margin-top: -3.125rem;
-    margin-bottom: 12.5rem;
-    color: var(--white);
+.big-blue-text {
+    line-height: 100%;
+    font-size: 9rem;
+    color: var(--blue);
 }
 
 .big-heading {
     font-family: 'Unbounded', sans-serif;
     color: var(--dark-blue);
     font-size: 5rem;
-    text-align: left;
+    text-align: center;
     font-weight: 600;
 }
 
@@ -309,6 +301,12 @@ li {
     font-family: 'Unbounded', sans-serif;
     font-size: 1.875rem;
     font-weight: 500;
+}
+
+.subheading {
+    margin: 1.25rem 0rem;
+    font-weight: 700;
+    font-size: 1rem;
 }
 
 .subheading-2 {
@@ -319,14 +317,18 @@ li {
 .main-text {
     font-size: 1rem;
     font-weight: 400;
+    line-height: 200%;
     margin-top: 3.125rem;
 }
 
-.big-blue-text {
-    font-size: 9rem;
-    text-align: left;
-    color: var(--blue);
+.description {
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 200%;
+    letter-spacing: 0.02rem;
 }
+
 
 /* Стили кнопок */
 
@@ -388,9 +390,11 @@ footer {
     border-radius: 0rem 0rem 0.9375rem 0.9375rem;
     transition: all .6s ease-in-out;
 }
-.navbar_hidden{
+
+.navbar_hidden {
     transform: translateY(-100%);
 }
+
 .container {
     max-width: 1440px;
     width: 80%;
@@ -428,9 +432,11 @@ footer {
 .links>a:hover {
     color: var(--darkest-gray);
 }
+
 .menu {
     width: 100%;
 }
+
 .menu-items {
     display: flex;
     flex-direction: column;
@@ -451,6 +457,7 @@ footer {
     margin-bottom: 1.5rem;
     font-size: 1rem;
 }
+
 .menu-items a {
     color: var(--darkest-gray);
     font-weight: 500;
@@ -505,7 +512,6 @@ footer {
     transition: transform 0.4s ease-in-out;
 }
 
-
 .nav-container input[type="checkbox"]:checked~.menu-items {
     transform: translateY(0);
 }
@@ -525,21 +531,15 @@ footer {
 
 /* Стиль главной страницы */
 
-.content-main-page {
-    max-width: 1400px;
-    margin: 12.5rem auto;
+.page-content {
     display: flex;
-    padding: 2rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.main-page-heading {
-    margin-left: 1.875rem;
-    margin-right: 1.875rem;
-    text-align: center;
-    margin-bottom: 12.5rem;
+    gap: 7rem;
+    margin: 0rem auto;
+    padding: 2rem;
+    max-width: 1300px;
 }
 
 
@@ -554,20 +554,6 @@ footer {
     background-repeat: repeat;
     background-position: center top;
     background-image: url(../img/myPhoto1.png);
-}
-
-.subheading {
-    margin: 1.25rem 0rem;
-    font-weight: 700;
-    font-size: 1rem;
-}
-
-.description {
-    margin-top: -0.9375rem;
-    margin-bottom: 0.625rem;
-    font-weight: 400;
-    font-size: 0.875rem;
-    letter-spacing: 0.01875rem;
 }
 
 .about-me-container {
@@ -612,21 +598,22 @@ footer {
 
 #about-me-box {
     flex-grow: 2;
-    width: 43.75rem;
+    width: 44rem;
 }
 
 #main-info-box {
     flex-grow: 1;
+    width: 20rem;
 }
 
 #education-box {
     flex-grow: 1;
-    width: 22.5rem;
+    width: 23rem;
 }
 
 #courses-box {
     flex-grow: 2;
-    width: 22.5rem;
+    width: 23rem;
 }
 
 #languages-box {
@@ -661,7 +648,7 @@ footer {
 .circle {
     border-radius: 2.5rem;
     width: 0.9375rem;
-    height:  0.9375rem;
+    height: 0.9375rem;
     border: 0.1875rem solid var(--blue);
 }
 
@@ -673,9 +660,8 @@ footer {
 /* contacts page style */
 
 #star-container {
-    justify-self: flex-start;
     align-self: flex-start;
-    margin: -9.375rem 0rem 6.25rem 0rem;
+    margin-top: 1rem;
     width: 5rem;
     height: 5rem;
     background-image: url(../img/star-2.svg);
@@ -688,66 +674,38 @@ footer {
     animation-duration: 1.5s;
 }
 
-.contacts-heading {
-    justify-self: flex-start;
-    align-self: flex-start;
-    margin-top: -6.25rem;
-}
-
-.contacts-heading:first-child {
-    font-size: 18.75rem;
-    margin-top: -9.375rem;
-    margin-bottom: -5rem;
-}
-
-.content-contacts-page {
-    max-width: 1400px;
-    margin: 12.5rem auto;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .contacts {
     display: flex;
     flex-direction: column;
     gap: 1.875rem;
-    margin: 3.125rem auto;
-    margin-top: 12.5rem;
 }
-/* Стиль страницы "Проекты" */
 
-.work-containers {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1400px;
-    margin: 0rem auto;
-    padding: 0rem 2rem;
-}
-.work-container{
+
+/* projects page style */
+
+.work-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 7rem;
 }
-.work-name {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.work-container button {
+    margin-top: 1rem;
 }
+
 .work-number-odd,
-.work-number-even{
+.work-number-even {
     height: 20rem;
     width: 100%;
 }
-.work-number-odd{
+
+.work-number-odd {
     display: flex;
     justify-content: flex-start;
 }
-.work-number-even{
+
+.work-number-even {
     display: flex;
     justify-content: flex-end;
 }
@@ -772,77 +730,76 @@ footer {
     z-index: 5;
 }
 
-#mobile-phone-card {
-    background-image: url(../img/perfectPosture/main.svg);
+.bg-image {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+#mobile-phone-card {
+    background-image: url(../img/perfectPosture/main.svg);
     margin: -6.25rem auto 0rem auto;
     height: 43.75rem;
     width: 21.875rem;
 }
 
-.works-card-first {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
+.screenshot {
     transition: all .3s ease-in-out;
     height: 31.25rem;
     width: 15.6rem;
 }
 
-.works-card-first:hover {
+.screenshot:hover {
     z-index: 3;
     margin-top: -1.25rem;
-    animation-name: shake-animaiton2;
+    animation-name: shake-animation2;
     animation-duration: .3s;
     animation-iteration-count: 1;
     transition: all .3s ease-in-out;
 }
 
-#first-work-main {
+#screenshot-main {
     background-image: url(../img/perfectPosture/mainNoBorder.svg);
 }
 
-#first-work-profile {
+#screenshot-profile {
     background-image: url(../img/perfectPosture/profileNoBorder.svg);
 }
 
-#first-work-settings {
+#screenshot-settings {
     background-image: url(../img/perfectPosture/settingsNoBorder.svg);
 }
 
-#first-work-statistics-day {
+#screenshot-statistics-day {
     z-index: 2;
     background-image: url(../img/perfectPosture/statisticsDayNoBorder.svg);
 }
 
-#first-work-statistics-week {
+#screenshot-statistics-week {
     z-index: 1;
     background-image: url(../img/perfectPosture/statisticsWeekNoBorder.svg);
 }
 
-#first-work-statistics-week:hover,
-#first-work-statistics-course:hover,
-#first-work-statistics-day:hover {
+#screenshot-statistics-week:hover,
+#screenshot-statistics-course:hover,
+#screenshot-statistics-day:hover {
     z-index: 3;
 }
 
-#first-work-statistics-course {
+#screenshot-statistics-course {
     z-index: 0;
     background-image: url(../img/perfectPosture/statisticsCourseNoBorder.svg);
 }
 
-
-.preview-box-container{
+.preview-box-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 1.875rem;
-    max-width: 1400px;
 }
+
 .preview-box {
     display: flex;
     flex-direction: column;
@@ -855,30 +812,29 @@ footer {
     padding: 2rem;
     gap: 2.5rem;
 }
-.preview-box video{
+
+.preview-box video {
     border-radius: 1.2rem;
 }
+
 .preview-box:hover {
     transform: scale(110%, 110%);
     box-shadow: 0.3125rem 0.3125rem var(--blue);
 }
 
 .preview-box-images {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
     transition: all .4s ease-in-out;
     border-radius: 0.625rem;
 }
 
-.image-box-navigation-buttons {
+.image-box-navigation {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 5rem;
 }
 
-.image-box-navigation-button {
+.navigation-button {
     text-align: center;
     font-weight: 300;
     font-size: 1.6rem;
@@ -890,12 +846,12 @@ footer {
     transition: all .4s ease-in-out;
 }
 
-.image-box-navigation-button:hover {
+.navigation-button:hover {
     transform: translate(-0.0625rem, -0.0625rem);
     cursor: pointer;
 }
 
-.image-box-navigation-button:active {
+.navigation-button:active {
     transform: translate(0.0625rem, 0.0625rem);
     cursor: pointer;
 }
