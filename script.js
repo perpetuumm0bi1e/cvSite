@@ -64,9 +64,19 @@ function windowSetting() {
     } else if (location.pathname.includes('projects')) {
         let kasumiBox1Position = kasumiBox1.getBoundingClientRect(),
             kasumiBox2Position = kasumiBox2.getBoundingClientRect(),
-            proCreditImage = document.getElementById('pro-credit-image');
+            proCreditImage = document.getElementById('pro-credit-image'),
+            studentsImage = document.getElementById('students-image'),
+            basketballImage = document.getElementById('basketball-image'),
+            kasumi1Image = document.getElementById('kasumi-encryption-decryption-image'),
+            kasumi2Image = document.getElementById('kasumi-algorithm-image'),
+            markVideo = document.getElementById('mark-video');
 
         proCreditImage.style.height = `${proCreditImage.offsetWidth * 0.626}px`;
+        studentsImage.style.height = `${studentsImage.offsetWidth * 0.727}px`;
+        basketballImage.style.height = `${basketballImage.offsetWidth * 0.63}px`;
+        kasumi1Image.style.height = `${kasumi1Image.offsetWidth * 0.89}px`;
+;        kasumi2Image.style.height = `${kasumi2Image.offsetWidth * 1.25}px`;
+        markVideo.style.height = `${markVideo.offsetWidth * 0.58}px`;
 
 
         kasumiBox2.style.width = (kasumiBox1Position.top > kasumiBox2Position.top) ? `${kasumiBox1.offsetWidth}px` : 'auto';
@@ -111,6 +121,7 @@ window.onload = function() {
     for (let element of bottomMobileAppearedElements) {
         observer.observe(element);
     }
+
     for (let element of topAppearedElements) {
         observer.observe(element);
     }
@@ -238,8 +249,8 @@ window.onload = function() {
             kasumiBox1NavRight = document.getElementById('first-kasumi-navigation-right'),
             kasumiBox2NavLeft = document.getElementById('second-kasumi-navigation-left'),
             kasumiBox2NavRight = document.getElementById('second-kasumi-navigation-right'),
-            fourthWorkEncryptionDecryption = document.getElementById('kasumi-encryption-decryption-image'),
-            fourthWorkAlgorithmImages = document.getElementById('kasumi-algorithm-image'),
+            kasumi1Image = document.getElementById('kasumi-encryption-decryption-image'),
+            kasumi2Image = document.getElementById('kasumi-algorithm-image'),
             proCreditNavLeft = document.getElementById('pro-credit-navigation-left'),
             proCreditNavRight = document.getElementById('pro-credit-navigation-right'),
             mobilePhoneNavLeft = document.getElementById('mobile-phone-navigation-left'),
@@ -316,22 +327,22 @@ window.onload = function() {
 
         kasumiBox1NavLeft.onclick = function() {
             kasumiBox1ClickCounter--;
-            boxImageChanger(kasumiBox1ClickCounter, fourthWorkEncryptionDecryption, kasumiImages1, kasumiImages1Small);
+            boxImageChanger(kasumiBox1ClickCounter, kasumi1Image, kasumiImages1, kasumiImages1Small);
         }
 
         kasumiBox1NavRight.onclick = function() {
             kasumiBox1ClickCounter++;
-            boxImageChanger(kasumiBox1ClickCounter, fourthWorkEncryptionDecryption, kasumiImages1, kasumiImages1Small);
+            boxImageChanger(kasumiBox1ClickCounter, kasumi1Image, kasumiImages1, kasumiImages1Small);
         }
 
         kasumiBox2NavLeft.onclick = function() {
             kasumiBox2ClickCounter--;
-            boxImageChanger(kasumiBox2ClickCounter, fourthWorkAlgorithmImages, kasumiImages2, kasumiImages2Small);
+            boxImageChanger(kasumiBox2ClickCounter, kasumi2Image, kasumiImages2, kasumiImages2Small);
         }
 
         kasumiBox2NavRight.onclick = function() {
             kasumiBox2ClickCounter++;
-            boxImageChanger(kasumiBox2ClickCounter, fourthWorkAlgorithmImages, kasumiImages2, kasumiImages2Small);
+            boxImageChanger(kasumiBox2ClickCounter, kasumi2Image, kasumiImages2, kasumiImages2Small);
         }
 
         basketballNavLeft.onclick = function() {

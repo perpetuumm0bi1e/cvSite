@@ -61,33 +61,20 @@ li {
     #screenshots-2>.screenshot:not(:first-child) {
         margin-left: -120px;
     }
-    .preview-box-images {
-        width: 66rem;
-    }
     #pro-credit-image {
         background-image: url(https://i.ibb.co/dfpgPhb/pro-Credit1.jpg);
     }
     #students-image {
         background-image: url(https://i.ibb.co/7Cb90C8/students-Knowledge-Control1.jpg);
-        height: 48rem;
     }
     #kasumi-encryption-decryption-image {
         background-image: url(https://i.ibb.co/C5PHd54/kasumi-Encryption.jpg);
-        width: 36.6rem;
-        height: 41.046rem;
     }
     #kasumi-algorithm-image {
         background-image: url(https://i.ibb.co/Bnrztbz/kasumi-Algorithm.jpg);
-        width: 29.37rem;
-        height: 41.046rem;
     }
     #basketball-image {
         background-image: url(https://i.ibb.co/BjfZZLs/basketball-Flight-Modeling1.jpg);
-        height: 41.7rem;
-    }
-    .preview-box video {
-        width: 66rem;
-        height: 38.3rem;
     }
 }
 
@@ -109,34 +96,20 @@ li {
     #screenshots-2>.screenshot:not(:first-child) {
         margin-left: -90px;
     }
-    .preview-box-images {
-        width: 66rem;
-    }
     #pro-credit-image {
         background-image: url(https://i.ibb.co/dfpgPhb/pro-Credit1.jpg);
-        height: 41.33rem;
     }
     #students-image {
         background-image: url(https://i.ibb.co/7Cb90C8/students-Knowledge-Control1.jpg);
-        height: 48rem;
     }
     #kasumi-encryption-decryption-image {
         background-image: url(https://i.ibb.co/C5PHd54/kasumi-Encryption.jpg);
-        width: 36.6rem;
-        height: 41.046rem;
     }
     #kasumi-algorithm-image {
         background-image: url(https://i.ibb.co/Bnrztbz/kasumi-Algorithm.jpg);
-        width: 29.37rem;
-        height: 41.046rem;
     }
     #basketball-image {
         background-image: url(https://i.ibb.co/BjfZZLs/basketball-Flight-Modeling1.jpg);
-        height: 41.7rem;
-    }
-    .preview-box video {
-        width: 66rem;
-        height: 38.3rem;
     }
 }
 
@@ -152,36 +125,24 @@ li {
         height: 18px;
         width: 22px;
     }
-    .preview-box-images {
-        width: 500px;
-    }
     #pro-credit-image {
         background-image: url(https://i.ibb.co/khp66W5/pro-Credit1-small.jpg);
-        height: 350px;
     }
     #students-image {
         background-image: url(https://i.ibb.co/WkC5YZG/students-Knowledge-Control1-small.jpg);
-        height: 350px;
     }
     #kasumi-encryption-decryption-image {
         background-image: url(https://i.ibb.co/rFMpjmq/kasumi-Encryption-small.jpg);
-        height: 290px;
     }
     #kasumi-algorithm-image {
         background-image: url(https://i.ibb.co/JQ12ybH/kasumi-Algorithm-small.jpg);
-        height: 400px;
     }
     #basketball-image {
         background-image: url(https://i.ibb.co/hVvGs7z/basketball-Flight-Modeling1-small.jpg);
-        height: 350px;
     }
     .mobile-nav {
         margin-top: 50px;
         margin-bottom: 60px;
-    }
-    .preview-box video {
-        height: auto;
-        width: 385px;
     }
 }
 
@@ -584,7 +545,7 @@ footer {
     align-items: center;
     gap: 7rem;
     margin: 0rem auto;
-    padding: 2rem;
+    padding: 1rem;
     max-width: 1300px;
 }
 
@@ -861,18 +822,25 @@ footer {
 
 .preview-box video {
     border-radius: 1.2rem;
+    width: 66rem;
 }
 
 .preview-box:hover {
-    transform: scale(110%, 110%);
+    transform: scale(105%, 105%);
     box-shadow: 0.3125rem 0.3125rem var(--blue);
 }
 
 .preview-box-images {
     transition: all .4s ease-in-out;
     border-radius: 0.625rem;
+    width: 66rem;
 }
-
+#kasumi-encryption-decryption-image {
+    width: 36.6rem;
+}
+#kasumi-algorithm-image {
+    width: 29.37rem;
+}
 .image-box-navigation {
     display: flex;
     flex-direction: row;
