@@ -1,7 +1,7 @@
 function onEntry(element) {
     element.forEach(change => {
         if (change.isIntersecting) {
-            change.target.classList.add('appeared');
+            (document.body.clientWidth < 1024) ? change.target.classList.add('appeared'): change.target.classList.add('large-appeared');
         }
     });
 }
@@ -93,6 +93,7 @@ window.onload = function() {
     windowSetting();
 
     let bottomAppearedElements = document.querySelectorAll('.bottom-appearance'),
+        bottomMobileAppearedElements = document.querySelectorAll('.bottom-mobile-appearance'),
         topAppearedElements = document.querySelectorAll('.top-appearance'),
         topMobileAppearedElements = document.querySelectorAll('.top-mobile-appearance'),
         leftAppearedElements = document.querySelectorAll('.left-large-appearance'),
@@ -102,26 +103,23 @@ window.onload = function() {
         observer.observe(element);
     }
 
+    for (let element of bottomMobileAppearedElements) {
+        observer.observe(element);
+    }
     for (let element of topAppearedElements) {
         observer.observe(element);
     }
 
     for (let element of topMobileAppearedElements) {
-        if (document.body.clientWidth < 1024) {
-            observer.observe(element);
-        }
+        observer.observe(element);
     }
 
     for (let element of rightAppearedElements) {
-        if (document.body.clientWidth >= 1024) {
-            observer.observe(element);
-        }
+        observer.observe(element);
     }
 
     for (let element of leftAppearedElements) {
-        if (document.body.clientWidth >= 1024) {
-            observer.observe(element);
-        }
+        observer.observe(element);
     }
 
     if (location.pathname.includes('index') || location.pathname.split('').pop() == '/') {
