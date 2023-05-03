@@ -62,32 +62,32 @@ li {
         margin-left: -120px;
     }
     .preview-box-images {
-        border-radius: 10px;
-        height: 550px;
+        width: 66rem;
     }
     #pro-credit-image {
         background-image: url(https://i.ibb.co/dfpgPhb/pro-Credit1.jpg);
-        width: 880px;
     }
     #students-image {
         background-image: url(https://i.ibb.co/7Cb90C8/students-Knowledge-Control1.jpg);
-        width: 756px;
+        height: 48rem;
     }
     #kasumi-encryption-decryption-image {
         background-image: url(https://i.ibb.co/C5PHd54/kasumi-Encryption.jpg);
-        width: 615px;
+        width: 36.6rem;
+        height: 41.046rem;
     }
     #kasumi-algorithm-image {
         background-image: url(https://i.ibb.co/Bnrztbz/kasumi-Algorithm.jpg);
-        width: 442px;
+        width: 29.37rem;
+        height: 41.046rem;
     }
     #basketball-image {
         background-image: url(https://i.ibb.co/BjfZZLs/basketball-Flight-Modeling1.jpg);
-        width: 870px;
+        height: 41.7rem;
     }
     .preview-box video {
-        height: 550px;
-        width: 950px;
+        width: 66rem;
+        height: 38.3rem;
     }
 }
 
@@ -109,34 +109,34 @@ li {
     #screenshots-2>.screenshot:not(:first-child) {
         margin-left: -90px;
     }
+    .preview-box-images {
+        width: 66rem;
+    }
     #pro-credit-image {
         background-image: url(https://i.ibb.co/dfpgPhb/pro-Credit1.jpg);
-        height: auto;
-        width: 600px;
+        height: 41.33rem;
     }
     #students-image {
         background-image: url(https://i.ibb.co/7Cb90C8/students-Knowledge-Control1.jpg);
-        height: auto;
-        width: 700px;
+        height: 48rem;
     }
     #kasumi-encryption-decryption-image {
         background-image: url(https://i.ibb.co/C5PHd54/kasumi-Encryption.jpg);
-        height: 400px;
-        width: 448px;
+        width: 36.6rem;
+        height: 41.046rem;
     }
     #kasumi-algorithm-image {
         background-image: url(https://i.ibb.co/Bnrztbz/kasumi-Algorithm.jpg);
-        height: 550px;
-        width: 448px;
+        width: 29.37rem;
+        height: 41.046rem;
     }
     #basketball-image {
         background-image: url(https://i.ibb.co/BjfZZLs/basketball-Flight-Modeling1.jpg);
-        height: 376px;
-        width: 600px;
+        height: 41.7rem;
     }
     .preview-box video {
-        height: 400px;
-        width: 715px;
+        width: 66rem;
+        height: 38.3rem;
     }
 }
 
@@ -856,7 +856,7 @@ footer {
     transition: all .3s ease-in-out;
     border-radius: 2.2rem;
     padding: 2rem;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .preview-box video {

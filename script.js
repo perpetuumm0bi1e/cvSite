@@ -63,8 +63,13 @@ function windowSetting() {
         languageGroup2.style.width = `${languageGroup1.offsetWidth}px`
     } else if (location.pathname.includes('projects')) {
         let kasumiBox1Position = kasumiBox1.getBoundingClientRect(),
-            kasumiBox2Position = kasumiBox2.getBoundingClientRect();
-        kasumiBox2.style.width = (kasumiBox1Position.top != kasumiBox2Position.top) ? `${kasumiBox1.offsetWidth}px` : 'auto';
+            kasumiBox2Position = kasumiBox2.getBoundingClientRect(),
+            proCreditImage = document.getElementById('pro-credit-image');
+
+        proCreditImage.style.height = `${proCreditImage.offsetWidth * 0.626}px`;
+
+
+        kasumiBox2.style.width = (kasumiBox1Position.top > kasumiBox2Position.top) ? `${kasumiBox1.offsetWidth}px` : 'auto';
     }
 
     if (document.body.clientWidth >= 1024) {
