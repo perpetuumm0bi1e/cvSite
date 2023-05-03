@@ -32,10 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
     onScrollHeader();
 });
 
-let navbar = document.querySelector('.navbar'),
-    checkboxNavBar = document.getElementById('checkbox-nav-bar'),
-    logoNavBar = document.getElementById('logo'),
-    menuNavBar = document.querySelector('.menu'),
+
+
+function windowSetting() {
+    
+    let navbar = document.querySelector('.navbar'),
     linksNavBar = document.querySelector('.links'),
     languageGroup1 = document.getElementById('language-group-1'),
     languageGroup2 = document.getElementById('language-group-2'),
@@ -47,18 +48,8 @@ let navbar = document.querySelector('.navbar'),
     kasumiBox1 = document.getElementById('first-kasumi-box'),
     kasumiBox2 = document.getElementById('second-kasumi-box'),
     linksClone = document.getElementById('links'),
-    menuClone = document.getElementById('menu'),
-    logoClone = logoNavBar;
+    menuClone = document.getElementById('menu');
 
-let checkboxNavBarCounter = 0;
-
-checkboxNavBar.addEventListener('click', function() {
-    checkboxNavBarCounter++;
-    (checkboxNavBarCounter % 2 == 1) ? setTimeout(() => logoNavBar.remove(), 200):
-        setTimeout(() => menuNavBar.parentNode.prepend(logoNavBar), 300);
-})
-
-function windowSetting() {
     if (location.pathname.includes('about')) {
         languageGroup2.style.width = `${languageGroup1.offsetWidth}px`
     } else if (location.pathname.includes('projects')) {
@@ -75,9 +66,8 @@ function windowSetting() {
         studentsImage.style.height = `${studentsImage.offsetWidth * 0.727}px`;
         basketballImage.style.height = `${basketballImage.offsetWidth * 0.63}px`;
         kasumi1Image.style.height = `${kasumi1Image.offsetWidth * 0.89}px`;
-;        kasumi2Image.style.height = `${kasumi2Image.offsetWidth * 1.25}px`;
+        kasumi2Image.style.height = `${kasumi2Image.offsetWidth * 1.25}px`;
         markVideo.style.height = `${markVideo.offsetWidth * 0.58}px`;
-
 
         kasumiBox2.style.width = (kasumiBox1Position.top > kasumiBox2Position.top) ? `${kasumiBox1.offsetWidth}px` : 'auto';
     }
@@ -106,7 +96,19 @@ function windowSetting() {
 }
 window.onload = function() {
     windowSetting();
+    
+    let checkboxNavBar = document.getElementById('checkbox-nav-bar'),
+        logoNavBar = document.getElementById('logo'),
+        menuNavBar = document.querySelector('.menu');
 
+    let checkboxNavBarCounter = 0;
+
+    checkboxNavBar.addEventListener('click', function() {
+        checkboxNavBarCounter++;
+        (checkboxNavBarCounter % 2 == 1) ? setTimeout(() => logoNavBar.remove(), 200):
+            setTimeout(() => menuNavBar.parentNode.prepend(logoNavBar), 300);
+    })
+    
     let bottomAppearedElements = document.querySelectorAll('.bottom-appearance'),
         bottomMobileAppearedElements = document.querySelectorAll('.bottom-mobile-appearance'),
         topAppearedElements = document.querySelectorAll('.top-appearance'),
