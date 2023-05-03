@@ -1,125 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png" />
+		<link rel="manifest" href="./site.webmanifest" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<title>perpetuumm0bi1e</title>
+	</head>
 
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png" />
-    <link rel="manifest" href="./site.webmanifest" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <title>perpetuumm0bi1e</title>
-</head>
-
-<body>
-    <main>
-        <div class="navbar">
-            <div class="container nav-container">
-                <div class="logo" id="logo">
-                    <a href="index.html">perpetuummobi1e</a>
-                </div>
-                <div class="links" id="links">
-                    <a id="about-me-page" href="about.html">Обо мне</a>
-                    <a id="works-page" href="projects.html">Проекты</a>
-                    <a id="contacts-page" href="contacts.html">Контакты</a>
-                </div>
-                <div class="menu" id="menu">
-                    <input class="checkbox" type="checkbox" id="checkbox-nav-bar" />
-                    <div class="hamburger-lines">
-                        <span class="line line-1"></span>
-                        <span class="line line-2"></span>
-                        <span class="line line-3"></span>
-                    </div>
-                    <div class="menu-items">
-                        <li>
-                            <a id="about-me-page" href="about.html">Обо мне</a>
-                        </li>
-                        <li><a id="works-page" href="projects.html">Проекты</a></li>
-                        <li>
-                            <a id="contacts-page" href="contacts.html">Контакты</a>
-                        </li>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="content-about-me-page">
-            <div id="second-img-container"></div>
-            <div class="about-me-container">
-                <div id="about-me-box" class="top-mobile-appearance left-large-appearance">
-                    <p class="about-me-page-heading">О себе</p>
-                    <p class="description">
-                        Интересуюсь технологиями и программированием, начиная с 2018 года. Этот интерес привел меня сначала в инженерный класс, затем - в технический ВУЗ.
-                    </p>
-                    <p class="description">
-                        Основы программирования я изучала в ОЧУ “Специалист” при МГТУ им. Баумана. В 10 классе занималась робототехникой, посетила инженерный лагерь “Город будущего” от МГТУ Станкин, заняв там 3 место. В 2019 году стала призером конференции “Инженеры будущего”
-                        с учебным проектом - сайтом, созданным на курсах в РТУ МИРЭА. После этого пробовала себя в Desktop-разработке на C++, для чего посещала курсы в МИЭМ НИУ ВШЭ.
-                    </p>
-                    <p class="description">
-                        В ВУЗе с наибольшим интересом изучала сетевые технологии, принципы работы с БД, язык программирования C# и разработку клиент-серверных приложений на PHP. Именно благодаря знакомству с Web-разработкой в стенах вуза, в 2022 году я начала погружаться в данную
-                        сферу уже из-за личного интереса.
-                    </p>
-                    <p class="description">
-                        На сегодняшний день я активно развиваюсь в сфере разработки и UI/UX проектировании: ищу новую информацию, учусь и экспериментирую. Свободное от учебы время посвящаю занятиям спортом, изучению иностранных языков (английского и немецкого) и чтению - особенно
-                        люблю труды Айн Рэнд.
-                    </p>
-                    <p class="subheading">В учебных целях я создавала проекты следующих типов:</p>
-                    <ul class="description">
-                        <li>Desktop-приложения с использованием фреймворка WPF на C#</li>
-                        <li>Web-приложения на PHP с БД phpMyAdmin</li>
-                        <li>Web-приложения на Node.js с БД SQLite</li>
-                        <li>Frontend на HTML5, CSS3 и JavaScript</li>
-                        <li>Frontend на базе фреймворка Bootstrap</li>
-                        <li>Интерактивные интерфейсы в Figma</li>
-                    </ul>
-                </div>
-                <div id="main-info-box" class="top-mobile-appearance right-large-appearance">
-                    <p class="about-me-page-heading">Основное</p>
-                    <p class="subheading">Дата рождения</p>
-                    <p class="description">21 февраля 2003</p>
-                    <p class="subheading">Гражданство</p>
-                    <p class="description">Россия</p>
-                    <p class="subheading">Город</p>
-                    <p class="description">Москва</p>
-                    <p class="subheading">Занятость</p>
-                    <ul class="description">
-                        <li>Стажировка</li>
-                        <li>Частичная</li>
-                        <li>Проектная</li>
-                    </ul>
-                    <p class="subheading">График работы</p>
-                    <ul class="description">
-                        <li>Удаленная работа</li>
-                        <li>Гибкий график</li>
-                    </ul>
-                </div>
-                <div id="education-box" class="top-mobile-appearance left-large-appearance">
-                    <p class="about-me-page-heading">Образование</p>
-                    <p class="subheading">Университет МИСИС (2020-2024)</p>
-                    <p class="subheading">Факультет</p>
-                    <p class="description">Институт информационных технологий и компьютерных наук</p>
-                    <p class="subheading">Специальность</p>
-                    <p class="description">Информационные системы и технологии</p>
-                    <p class="subheading">Форма обучения</p>
-                    <p class="description">Очная</p>
-                </div>
-                <div id="courses-box" class="top-mobile-appearance right-large-appearance">
-                    <p class="about-me-page-heading">Дополнительное обучение</p>
-                    <div class="cources-lists">
-                        <div>
-                            <p class="subheading">Платформа SoloLearn</p>
-                            <ul class="description">
-                                <li>
-                                    <a href="https://www.sololearn.com/certificates/CT-BILAMOBA">HTML (2023)</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.sololearn.com/certificates/CT-QFQYWB1P">CSS (2023)</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.sololearn.com/certificates/CC-DMYSSARQ">Introduction to JavaScript (2023)</a
+	<body>
+		<main>
+			<div class="navbar">
+				<div class="container nav-container">
+					<div class="logo" id="logo">
+						<a href="index.html">perpetuummobi1e</a>
+					</div>
+				</div>
+			</div>
+			<div class="content-about-me-page">
+				<div id="second-img-container"></div>
+				<div class="about-me-container">
+					<div id="about-me-box" class="top-mobile-appearance left-large-appearance">
+						<p class="about-me-page-heading">О себе</p>
+						<p class="description">
+							Интересуюсь технологиями и программированием, начиная с 2018 года. Этот интерес привел
+							меня сначала в инженерный класс, затем - в технический ВУЗ.
+						</p>
+						<p class="description">
+							Основы программирования я изучала в ОЧУ “Специалист” при МГТУ им. Баумана. В 10 классе
+							занималась робототехникой, посетила инженерный лагерь “Город будущего” от МГТУ
+							Станкин, заняв там 3 место. В 2019 году стала призером конференции “Инженеры будущего”
+							с учебным проектом - сайтом, созданным на курсах в РТУ МИРЭА. После этого пробовала
+							себя в Desktop-разработке на C++, для чего посещала курсы в МИЭМ НИУ ВШЭ.
+						</p>
+						<p class="description">
+							В ВУЗе с наибольшим интересом изучала сетевые технологии, принципы работы с БД, язык
+							программирования C# и разработку клиент-серверных приложений на PHP. Именно благодаря
+							знакомству с Web-разработкой в стенах вуза, в 2022 году я начала погружаться в данную
+							сферу уже из-за личного интереса.
+						</p>
+						<p class="description">
+							На сегодняшний день я активно развиваюсь в сфере разработки и UI/UX проектировании:
+							ищу новую информацию, учусь и экспериментирую. Свободное от учебы время посвящаю
+							занятиям спортом, изучению иностранных языков (английского и немецкого) и чтению -
+							особенно люблю труды Айн Рэнд.
+						</p>
+						<p class="subheading">В учебных целях я создавала проекты следующих типов:</p>
+						<ul class="description">
+							<li>Desktop-приложения с использованием фреймворка WPF на C#</li>
+							<li>Web-приложения на PHP с БД phpMyAdmin</li>
+							<li>Web-приложения на Node.js с БД SQLite</li>
+							<li>Frontend на HTML5, CSS3 и JavaScript</li>
+							<li>Frontend на базе фреймворка Bootstrap</li>
+							<li>Интерактивные интерфейсы в Figma</li>
+						</ul>
+					</div>
+					<div id="main-info-box" class="top-mobile-appearance right-large-appearance">
+						<p class="about-me-page-heading">Основное</p>
+						<p class="subheading">Дата рождения</p>
+						<p class="description">21 февраля 2003</p>
+						<p class="subheading">Гражданство</p>
+						<p class="description">Россия</p>
+						<p class="subheading">Город</p>
+						<p class="description">Москва</p>
+						<p class="subheading">Занятость</p>
+						<ul class="description">
+							<li>Стажировка</li>
+							<li>Частичная</li>
+							<li>Проектная</li>
+						</ul>
+						<p class="subheading">График работы</p>
+						<ul class="description">
+							<li>Удаленная работа</li>
+							<li>Гибкий график</li>
+						</ul>
+					</div>
+					<div id="education-box" class="top-mobile-appearance left-large-appearance">
+						<p class="about-me-page-heading">Образование</p>
+						<p class="subheading">Университет МИСИС (2020-2024)</p>
+						<p class="subheading">Факультет</p>
+						<p class="description">Институт информационных технологий и компьютерных наук</p>
+						<p class="subheading">Специальность</p>
+						<p class="description">Информационные системы и технологии</p>
+						<p class="subheading">Форма обучения</p>
+						<p class="description">Очная</p>
+					</div>
+					<div id="courses-box" class="top-mobile-appearance right-large-appearance">
+						<p class="about-me-page-heading">Дополнительное обучение</p>
+						<div class="cources-lists">
+							<div>
+								<p class="subheading">Платформа SoloLearn</p>
+								<ul class="description">
+									<li>
+										<a href="https://www.sololearn.com/certificates/CT-BILAMOBA">HTML (2023)</a>
+									</li>
+									<li>
+										<a href="https://www.sololearn.com/certificates/CT-QFQYWB1P">CSS (2023)</a>
+									</li>
+									<li>
+										<a href="https://www.sololearn.com/certificates/CC-DMYSSARQ"
+											>Introduction to JavaScript (2023)</a
 										>
 									</li>
 									<li>
@@ -139,9 +125,10 @@
 								<ul class="description">
 									<li>
 										<a href="https://stepik.org/cert/1552213">JavaScript для начинающих (2022)</a>
-                                </li>
-                                <li>
-                                    <a href="https://stepik.org/cert/1446630">Web-технологии: начальный уровень (2022)</a
+									</li>
+									<li>
+										<a href="https://stepik.org/cert/1446630"
+											>Web-технологии: начальный уровень (2022)</a
 										>
 									</li>
 									<li>
@@ -172,9 +159,7 @@
 							</ul>
 						</div>
 					</div>
-					<div
-						id="languages-box"
-						class="top-mobile-appearance bottom-appearance">
+					<div id="languages-box" class="top-mobile-appearance bottom-appearance">
 						<p class="about-me-page-heading">Иностранные языки</p>
 						<div class="language-groups">
 							<div class="language-group" id="language-group-1">
