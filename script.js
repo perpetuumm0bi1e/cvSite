@@ -92,27 +92,54 @@ function windowSetting() {
 	let menuNavBar = document.querySelector(".menu"),
 		linksNavBar = document.querySelector(".links");
 
+	let aboutMePage = document.getElementById("about-me-page");
+	let itemsBefore = document.getElementById("items-before");
+	let itemsAfter = document.getElementById("items-after");
+	let width = (aboutMePage.offsetHeight - 5) * 9 + 10;
+
+	console.log(aboutMePage.style);
+	console.log(aboutMePage.offsetHeight);
+
+	let pageWidth = document.body.clientWidth;
+	let count = Math.round(pageWidth / width);
+	console.log(count);
+
+	itemsBefore.innerHTML = "";
+	itemsAfter.innerHTML = "";
+
+	for (let i = 0; i < count - 1; i++) {
+		let p = document.createElement("p");
+		p.className = "item";
+		p.innerHTML = "perpetuumm0bi1e";
+		itemsBefore.append(p);
+		let p2 = document.createElement("p");
+		p2.className = "item";
+		p2.innerHTML = "perpetuumm0bi1e";
+		itemsAfter.append(p2);
+		//console.log(i);
+	}
+
 	if (document.body.clientWidth >= 1024) {
 		navbar.style.position = "sticky";
-		if (menuNavBar) {
-			menuNavBar.replaceWith(linksElement);
-		}
+		// if (menuNavBar) {
+		// 	menuNavBar.replaceWith(linksElement);
+		// }
 	} else {
 		navbar.style.position = "relative";
-		if (linksNavBar) {
-			linksNavBar.replaceWith(menuElement);
-		}
+		// if (linksNavBar) {
+		// 	linksNavBar.replaceWith(menuElement);
+		// }
 
-		let checkboxNavBar = document.querySelector("#checkbox-nav-bar"),
-			logoNavBar = document.querySelector("#logo"),
-			checkboxNavBarCounter = 0;
+		// let checkboxNavBar = document.querySelector("#checkbox-nav-bar"),
+		// 	logoNavBar = document.querySelector("#logo"),
+		// 	checkboxNavBarCounter = 0;
 
-		checkboxNavBar.addEventListener("click", function () {
-			checkboxNavBarCounter++;
-			checkboxNavBarCounter % 2 == 1
-				? setTimeout(() => logoNavBar.remove(), 200)
-				: setTimeout(() => menuNavBar.parentNode.prepend(logoNavBar), 300);
-		});
+		// checkboxNavBar.addEventListener("click", function () {
+		// 	checkboxNavBarCounter++;
+		// 	checkboxNavBarCounter % 2 == 1
+		// 		? setTimeout(() => logoNavBar.remove(), 200)
+		// 		: setTimeout(() => menuNavBar.parentNode.prepend(logoNavBar), 300);
+		// });
 	}
 
 	if (location.pathname.includes("about")) {
@@ -160,13 +187,17 @@ function windowSetting() {
 
 window.onload = function () {
 	if (document.body.clientWidth >= 1024) {
-		navbar.style.position = "sticky";
-		navContainer.append(linksElement);
+		//navbar.style.position = "sticky";
+		//navContainer.append(linksElement);
 	} else {
-		navbar.style.position = "relative";
-		navContainer.append(menuElement);
+		//navbar.style.position = "relative";
+		//navContainer.append(menuElement);
 	}
 
+	let wrapLine = document.getElementById("wrap-line");
+	wrapLine.onclick = function () {
+		window.location.href = "./contacts.html";
+	};
 	windowSetting();
 
 	let bottomAppearedElements = document.querySelectorAll(".bottom-appearance"),
