@@ -644,11 +644,18 @@ footer {
 
 /*Стиль страницы "Обо мне"*/
 
+.content-about-me-page .big-heading {
+    text-align: right;
+    margin: -20rem 3rem 15rem 0rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
 #img-container {
     height: 45rem;
     margin-bottom: 12.5rem;
     width: 100%;
-    max-width: 100%;
+    max-width: 1512px;
     background-attachment: fixed;
     background-size: contain;
     background-repeat: repeat;
