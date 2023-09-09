@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.cdnfonts.com/css/rozenssa");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+@import url("fonts/neue-machina/stylesheet.css");
 :root {
 	--blue: #504cff;
 	--dark-blue: #0000c4;
@@ -315,10 +316,11 @@ li {
 }
 
 .big-heading {
-	font-family: "Unbounded", sans-serif;
+	font-family: "Neue Machina", sans-serif;
+	line-height: 100%;
 	color: var(--dark-blue);
 	font-size: 5rem;
-	text-align: center;
+	text-align: left;
 	font-weight: 600;
 }
 
@@ -329,9 +331,8 @@ li {
 }
 
 .subheading {
-	margin: 1.25rem 0rem;
-	font-weight: 700;
-	font-size: 1rem;
+	font-weight: 600;
+	font-size: 1.1rem;
 }
 
 .subheading-2 {
@@ -347,9 +348,8 @@ li {
 }
 
 .description {
-	margin-bottom: 1rem;
 	font-weight: 400;
-	font-size: 0.875rem;
+	font-size: 1rem;
 	line-height: 200%;
 	letter-spacing: 0.02rem;
 }
@@ -360,12 +360,11 @@ li {
 	font-family: "Fira Code", sans-serif;
 	background: var(--green);
 	border-width: 0;
-	border-radius: 2.1875rem;
-	width: 25rem;
-	height: 3.125rem;
-	padding-left: 2.5rem;
-	font-weight: 600;
-	font-size: 1.125rem;
+	width: 20rem;
+	height: auto;
+	padding: 0.2rem 1rem;
+	font-weight: 400;
+	font-size: 1.3rem;
 	color: var(--darkest-gray);
 	text-align: left;
 	transition: all 0.3s ease;
@@ -412,6 +411,11 @@ footer {
 	/* gap: 1rem; */
 	background: #e7ff56;
 }
+
+.items-wrap:hover {
+	cursor: pointer;
+}
+
 .items {
 	flex-shrink: 0;
 	display: flex;
@@ -458,38 +462,31 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 4rem;
-}
-
-.logo a {
-	text-decoration: none;
-	font-family: "Rozenssa", sans-serif;
-	letter-spacing: 0.3125rem;
-	font-size: 1.2rem;
-	font-weight: 600;
-	color: var(--darkest-gray);
+	height: 3.5rem;
 }
 
 .links {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 4rem;
+	gap: 6rem;
 }
 
 .links a {
+	font-family: 'Fira Code', sans-serif;
 	text-decoration: none;
 	text-align: center;
 	font-size: 1rem;
-	font-weight: 500;
+	font-weight: 400;
 	color: var(--darkest-gray);
 }
 
 .links > a:hover {
-	font-weight: 700;
+	font-weight: 500;
+	text-decoration: underline;
 }
 
-.menu {
+/* .menu {
 	width: 100%;
 }
 
@@ -582,19 +579,51 @@ footer {
 
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line-3 {
 	transform: rotate(-45deg);
-}
+} */
 
 /* Стиль главной страницы */
+/* .main-page-heading{
+	align-self: flex-start;
+} */
+
+.page-heading-1{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content:space-between
+}
+.page-heading-1 div:not(:first-child){
+	margin-bottom: 0rem;
+}
+
+#arrow-container {
+	height: 50rem;
+	width: 10rem;
+	background-image: url(../img/arrow.svg);
+	background-size: contain;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.page-heading-2 h1{
+	display: inline;
+	font-size: 11rem;
+}
+
+.page-heading-2 h1:first-child{
+	color:#d9d9d9;
+}
 
 .page-content {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: start;
 	align-items: center;
-	gap: 7rem;
+	gap: 8rem;
 	margin: 0rem auto;
-	padding: 1rem;
-	max-width: 1300px;
+	padding: 0rem;
+	max-width: 1512px;
 }
 
 /*Стиль страницы "Обо мне"*/
@@ -616,14 +645,13 @@ footer {
 	flex-wrap: wrap;
 	justify-items: stretch;
 	gap: 2.5rem;
-	padding: 0rem 1.56rem;
+	padding: 0rem 1rem;
 	margin: 0rem auto;
 	max-width: 1300px;
 }
 
 .about-me-container > div {
-	padding: 2.5rem;
-	border-radius: 1.875rem;
+	padding: 0rem 1rem;
 	box-shadow: none;
 	background: var(--lightest-gray);
 	transition: all 0.5s ease-in-out;
@@ -635,11 +663,16 @@ footer {
 }
 
 .about-me-page-heading {
-	font-family: "Unbounded", sans-serif;
-	font-weight: 500;
-	font-size: 1.5625rem;
-	margin-bottom: 2.5rem;
+	padding: 0.1rem 0rem;
+	margin-bottom: 1.5rem;
+	width:fit-content;
+	height: auto;
+	text-align: left;
+	font-family: "Fira Code", sans-serif;
+	font-weight: 400;
+	font-size: 1.3rem;
 	color: var(--darkest-gray);
+	background: var(--green);
 }
 
 #about-me-box .description:not(:last-child) {
@@ -713,10 +746,9 @@ footer {
 /* contacts page style */
 
 #star-container {
-	align-self: flex-start;
 	margin-top: 1rem;
-	width: 5rem;
-	height: 5rem;
+	width: 7rem;
+	height: 7rem;
 	background-image: url(../img/star-2.svg);
 	background-size: cover;
 	background-repeat: repeat space;
@@ -730,9 +762,12 @@ footer {
 .contacts {
 	display: flex;
 	flex-direction: column;
-	gap: 1.875rem;
+	gap: 1.5rem;
 }
 
+#contacts-page-heading{
+	padding: 15rem 0rem;
+}
 /* projects page style */
 
 .work-container {

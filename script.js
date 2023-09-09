@@ -236,6 +236,8 @@ window.onload = function() {
             window.location.href = "https://t.me/perpetuumm0bi1e";
         };
     } else if (location.pathname.includes("projects")) {
+        document.getElementById("works-page").style.textDecoration="underline";
+        document.getElementById("works-page").style.fontWeight="500";
         let mobilePhoneImages = [
             "./img/perfectPosture/main.svg",
             "./img/perfectPosture/profile.svg",
@@ -502,6 +504,9 @@ window.onload = function() {
             boxImageChanger(proCreditClickCounter, proCreditImage, proCreditImages, proCreditImagesSmall);
         };
     } else if (location.pathname.includes("contacts")) {
+    document.getElementById("contacts-page").style.textDecoration="underline";
+    document.getElementById("contacts-page").style.fontWeight="500";
+
         document.getElementById("telegram").onclick = function() {
             window.location.href = "https://t.me/perpetuumm0bi1e";
         };
@@ -517,6 +522,9 @@ window.onload = function() {
         document.getElementById("email").onclick = function() {
             window.location.href = "mailto:kat.kus@mail.ru";
         };
+    } else if (location.pathname.includes("about")){
+        document.getElementById("about-me-page").style.textDecoration="underline";
+        document.getElementById("about-me-page").style.fontWeight="500";
     }
 };
 window.addEventListener("resize", function(event) {
