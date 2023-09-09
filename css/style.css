@@ -580,7 +580,7 @@ footer {
 }
 
 #img-container {
-    height: 45rem;
+    min-height: 45rem;
     margin: 0rem auto;
     margin-bottom: 12.5rem;
     width: 100%;
