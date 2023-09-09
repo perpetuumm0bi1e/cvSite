@@ -352,7 +352,7 @@ li {
 
 .description {
     font-weight: 300;
-    font-size: .9rem;
+    font-size: 1rem;
     line-height: 200%;
     letter-spacing: 0.05rem;
     /* margin-bottom: 2.5rem; */
@@ -537,6 +537,7 @@ footer {
     gap: 20rem;
     margin: 0rem auto;
     padding: 0rem;
+    margin-bottom: 20rem;
     max-width: 1512px;
 }
 
@@ -580,13 +581,13 @@ footer {
 
 #img-container {
     height: 45rem;
+    margin: 0rem auto;
     margin-bottom: 12.5rem;
     width: 100%;
-    max-width: 1512px;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: 100% auto;
     background-repeat: repeat;
-    background-position: center top;
+    /* background-position: center top; */
     background-image: url(../img/myPhoto1.png);
 }
 
