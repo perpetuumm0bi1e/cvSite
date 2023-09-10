@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Manrope:wght@200;300;400;500;600;700;800&family=Unbounded:wght@300;400&display=swap');
 @import url("https://fonts.cdnfonts.com/css/rozenssa");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
 @import url("fonts/neue-machina/stylesheet.css");
-:root {
+@import url('https://fonts.cdnfonts.com/css/soyuz-grotesk');
+ :root {
     --blue: #504cff;
     --dark-blue: #0000c4;
     --violet: #5955b3;
@@ -574,31 +573,143 @@ footer {
 
 .recent-work div:first-child {
     margin: 1rem;
-    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: inherit;
 }
 
-.recent-work div:first-child p{
+.recent-work-name p {
     margin: 0;
     font-weight: 400;
 }
 
-.recent-work div:first-child p:first-child{
+.recent-work-name p:first-child {
     font-size: 2rem;
     color: #ffffff;
 }
 
-.recent-work div:first-child p:last-child{
+.recent-work-name p:not(:first-child) {
     color: #d9d9d9;
     margin-top: .7rem;
 }
 
+#recent-work-1 .recent-work-name p:first-child {
+    font-family: 'Unbounded', sans-serif;
+}
+
+.recent-work-type {
+    position: absolute;
+    margin: -.6rem -.6rem;
+    padding: .1rem;
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Fira Code', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--darkest-gray);
+    background: var(--green);
+}
+
+#preview-logo-1 {
+    background-image: url(../img/worterbuch/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 2.1rem;
+    height: 2.1rem;
+    margin-top: 4.3rem;
+}
+
 #preview-img-1 {
     background-image: url(../img/worterbuch/mockup-1.svg);
-    background-repeat: no-repeat;
     width: 11rem;
     height: 11rem;
     align-self: flex-end;
     margin-left: -6.5rem;
+}
+
+#recent-work-2 .recent-work-name p:first-child {
+    font-family: 'Neue Machina', sans-serif;
+    transform: rotateZ(-90deg);
+    margin: 3.5rem 0rem -.7rem -1.5rem;
+}
+
+#preview-logo-2 {
+    background-image: url(../img/quotes/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 2.1rem;
+    height: 2.1rem;
+    margin-top: 4.3rem;
+}
+
+#preview-img-2 {
+    background-image: url(../img/quotes/mockup-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10rem;
+    height: 15rem;
+    margin: 3rem 0rem 0rem -1rem;
+}
+
+#preview-img-3 {
+    background-image: url(../img/quotes/mockup-2.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 6rem;
+    height: 12rem;
+    margin: 1rem 1rem 0rem 0rem;
+}
+
+#recent-work-3 .recent-work-name p:first-child {
+    position: absolute;
+    font-family: 'Soyuz Grotesk', sans-serif;
+    font-size: 1.9rem;
+    transform: rotateZ(-90deg);
+    margin: 5.5rem 0rem 0rem -3.8rem;
+}
+
+#preview-img-4 {
+    background-image: url(../img/kasumi/mockup-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15rem;
+    height: 10rem;
+    margin: 0rem 0rem 0rem -5rem;
+}
+
+#preview-img-5 {
+    background-image: url(../img/kasumi/mockup-2.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15rem;
+    height: 10rem;
+    margin: -4rem 0rem 0rem -4rem;
+}
+
+#preview-img-6 {
+    background-image: url(../img/kasumi/kasumiDecryption.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem 0rem 0rem -6rem;
+}
+
+#recent-work-4 .recent-work-name p:first-child {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.7rem;
+}
+
+#preview-img-7 {
+    background-image: url(../img/studentsKnowledgeControl/mockup-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18rem;
+    height: 15rem;
+    margin-left: 3.5rem;
+    position: absolute;
 }
 
 
