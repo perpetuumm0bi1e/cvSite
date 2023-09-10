@@ -55,115 +55,17 @@ li {
     html {
         font-size: 15px;
     }
-    #mobile-phone-card {
-        height: 43.75rem;
-        width: 21.875rem;
-    }
-    .screenshot {
-        transition: all 0.3s ease-in-out;
-        height: 31.25rem;
-        width: 15.6rem;
-    }
-    #screenshots-1>.screenshot:not(:last-child) {
-        margin-right: -8.5rem;
-    }
-    #screenshots-2>.screenshot:not(:first-child) {
-        margin-left: -8.5rem;
-    }
-    #pro-credit-image {
-        background-image: url(https://i.ibb.co/dfpgPhb/pro-Credit1.jpg);
-    }
-    #students-image {
-        background-image: url(https://i.ibb.co/7Cb90C8/students-Knowledge-Control1.jpg);
-    }
-    #kasumi-encryption-decryption-image {
-        background-image: url(https://i.ibb.co/C5PHd54/kasumi-Encryption.jpg);
-    }
-    #kasumi-algorithm-image {
-        background-image: url(https://i.ibb.co/Bnrztbz/kasumi-Algorithm.jpg);
-    }
-    #basketball-image {
-        background-image: url(https://i.ibb.co/BjfZZLs/basketball-Flight-Modeling1.jpg);
-    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     html {
         font-size: 13px;
     }
-    .checkbox {
-        height: 28px;
-        width: 28px;
-    }
-    .hamburger-lines {
-        height: 23px;
-        width: 28px;
-    }
-    #mobile-phone-card {
-        height: 35rem;
-        width: 17.5rem;
-    }
-    .screenshot {
-        height: 25rem;
-        width: 12.48rem;
-    }
-    #screenshots-1>.screenshot:not(:last-child) {
-        margin-right: -7rem;
-    }
-    #screenshots-2>.screenshot:not(:first-child) {
-        margin-left: -7rem;
-    }
-    #pro-credit-image {
-        background-image: url(https://i.ibb.co/dfpgPhb/pro-Credit1.jpg);
-    }
-    #students-image {
-        background-image: url(https://i.ibb.co/7Cb90C8/students-Knowledge-Control1.jpg);
-    }
-    #kasumi-encryption-decryption-image {
-        background-image: url(https://i.ibb.co/C5PHd54/kasumi-Encryption.jpg);
-    }
-    #kasumi-algorithm-image {
-        background-image: url(https://i.ibb.co/Bnrztbz/kasumi-Algorithm.jpg);
-    }
-    #basketball-image {
-        background-image: url(https://i.ibb.co/BjfZZLs/basketball-Flight-Modeling1.jpg);
-    }
 }
 
 @media screen and (max-width: 767px) {
     html {
         font-size: 11px;
-    }
-    .checkbox {
-        height: 22px;
-        width: 22px;
-    }
-    .hamburger-lines {
-        height: 18px;
-        width: 22px;
-    }
-    #mobile-phone-card {
-        height: 43.75rem;
-        width: 21.875rem;
-    }
-    #pro-credit-image {
-        background-image: url(https://i.ibb.co/khp66W5/pro-Credit1-small.jpg);
-    }
-    #students-image {
-        background-image: url(https://i.ibb.co/WkC5YZG/students-Knowledge-Control1-small.jpg);
-    }
-    #kasumi-encryption-decryption-image {
-        background-image: url(https://i.ibb.co/rFMpjmq/kasumi-Encryption-small.jpg);
-    }
-    #kasumi-algorithm-image {
-        background-image: url(https://i.ibb.co/JQ12ybH/kasumi-Algorithm-small.jpg);
-    }
-    #basketball-image {
-        background-image: url(https://i.ibb.co/hVvGs7z/basketball-Flight-Modeling1-small.jpg);
-    }
-    .mobile-nav {
-        margin-top: 50px;
-        margin-bottom: 60px;
     }
 }
 
@@ -257,65 +159,8 @@ li {
     }
 }
 
-@keyframes shake-animation {
-    0% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(1deg);
-    }
-    50% {
-        transform: rotate(-1deg);
-    }
-    75% {
-        transform: rotate(1deg);
-    }
-    100% {
-        transform: rotate(-1deg);
-    }
-}
-
-@keyframes shake-animation2 {
-    0% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(0.5deg);
-    }
-    50% {
-        transform: rotate(-0.5deg);
-    }
-    75% {
-        transform: rotate(0.5deg);
-    }
-    100% {
-        transform: rotate(-0.5deg);
-    }
-}
-
-@keyframes rotation-animation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 
 /* texts style */
-
-.text {
-    line-height: 160%;
-    text-align: center;
-    color: var(--darkest-gray);
-}
-
-.big-blue-text {
-    line-height: 100%;
-    font-size: 9rem;
-    color: var(--blue);
-}
 
 .big-heading {
     font-family: "Neue Machina", sans-serif;
@@ -337,24 +182,11 @@ li {
     font-size: 1.1rem;
 }
 
-.subheading-2 {
-    font-size: 1.25rem;
-    font-weight: 400;
-}
-
-.main-text {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 200%;
-    margin-top: 3.125rem;
-}
-
 .description {
     font-weight: 300;
     font-size: 1rem;
     line-height: 200%;
     letter-spacing: 0.05rem;
-    /* margin-bottom: 2.5rem; */
 }
 
 
@@ -415,7 +247,6 @@ footer {
     display: flex;
     overflow: hidden;
     user-select: none;
-    /* gap: 1rem; */
     background: #e7ff56;
 }
 
@@ -456,7 +287,6 @@ footer {
     z-index: 10;
     background: #d9d9d9;
     box-shadow: 0rem 0rem 3rem rgba(28, 28, 28, 0.05);
-    /* border-radius: 0rem 0rem 0.9375rem 0.9375rem; */
     transition: all 0.6s ease-in-out;
 }
 
@@ -960,7 +790,10 @@ footer {
     margin: 15rem auto -10rem auto;
     display: flex;
     flex-direction: row;
-    gap: 2.5rem;
+    column-gap: 2.5rem;
+    row-gap: .5rem;
+    width: fit-content;
+    flex-wrap: wrap;
 }
 
 .project-category {
@@ -990,26 +823,67 @@ footer {
 
 .projects-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 2rem;
-    row-gap: 3rem;
-    max-width: 94rem;
+    flex-direction: column;
+    column-gap: 1.5rem;
+    row-gap: 2rem;
     margin: 0rem auto;
+    padding: 0rem 1rem;
+    width: 100%;
 }
 
 .project-container {
-    width: 46rem;
-    height: 26rem;
-    transition: all 0.3s ease-in-out;
+    width: 100%;
+    height: fit-content;
     overflow: hidden;
+    flex-grow: 1;
 }
 
-.project-container:hover {
+.project-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 10rem 0rem 10rem 0rem;
+}
+
+.project-descriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+/* 
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 11px;
+    }
+} */
+
+
+/* .project-container:hover {
     transform: translate(-0.1rem, -0.1rem);
     box-shadow: 0.3rem 0.3rem var(--light-gray);
     cursor: pointer;
-}
+} */
 
 #project-container-1 {
     background-color: #afb696;
@@ -1060,32 +934,35 @@ footer {
 }
 
 .project-header {
-    margin: 9rem 0rem 0rem 1.5rem;
+    color: var(--darkest-gray);
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .project-description {
-    margin: 4rem 0rem 0rem 1.5rem;
     font-size: 1rem;
     font-family: 'Manrope', sans-serif;
     color: #2d2d2d;
     font-weight: 300;
     line-height: 160%;
-    max-width: 17rem;
+    max-width: 23rem;
 }
 
 #project-container-1 .project-header {
     font-family: 'Unbounded', sans-serif;
-    color: #50593d;
 }
 
 #project-container-2 .project-header {
     font-family: 'Neue Machina', sans-serif;
-    color: #4f6808;
 }
 
-#project-container-3 .project-header {
+#project-container-2 .project-content,
+#project-container-4 .project-content {
+    justify-content: end;
+    gap: 4rem;
+}
+
+#project-container-3 .project-headerб {
     font-family: 'Manrope', sans-serif;
     font-weight: 500;
     color: #3b3882;
@@ -1104,7 +981,6 @@ footer {
 #project-container-6 .project-header {
     font-family: 'Inter', sans-serif;
     color: #013a71;
-    margin-top: 6.5rem;
     font-weight: 500;
 }
 
@@ -1128,29 +1004,109 @@ footer {
     color: #757e00;
 }
 
+#project-logo-1 {
+    background-image: url(../img/worterbuch/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 3rem;
+    height: 3rem;
+    margin: 2rem 0rem 0rem 1.5rem;
+}
+
+#images-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+#project-img-1 {
+    background-image: url(../img/worterbuch/mockup-3.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15rem;
+    height: 30rem;
+    align-self: center;
+}
+
+#project-img-2 {
+    background-image: url(../img/worterbuch/mockup-4.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 13rem;
+    height: 26rem;
+    align-self: center;
+}
+
+#project-img-3 {
+    background-image: url(../img/worterbuch/mockup-5.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 11rem;
+    height: 22rem;
+    align-self: center;
+}
+
+#images-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
 #project-logo-2 {
     background-image: url(../img/quotes/logo-2.svg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 3rem;
     height: 3rem;
-    margin: 5rem 0rem 0rem 1rem;
 }
 
 #project-img-4 {
-    background-image: url(../img/quotes/mockup-1.svg);
+    background-image: url(../img/quotes/mockup-3.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 20rem;
-    height: 25rem;
-    margin: -18rem 0rem 0rem 20rem;
+    width: 60rem;
+    height: 35rem;
+    align-self: center;
+}
+
+#images-3 {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
 }
 
 #project-img-5 {
-    background-image: url(../img/quotes/mockup-2.svg);
+    background-image: url(../img/perfectPosture/mockup-3.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 20rem;
-    height: 25rem;
-    margin: -30rem 0rem 0rem 33rem;
+    width: 40rem;
+    height: 48rem;
+    align-self: center;
+}
+
+#project-img-6 {
+    background-image: url(../img/basketballFlightModeling/mockup-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60rem;
+    height: 39rem;
+    align-self: flex-end;
+}
+
+#project-img-7 {
+    background-image: url(../img/proCredit/mockup-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 55rem;
+    height: 35rem;
+    align-self: center;
+}
+
+#project-img-8 {
+    background-image: url(../img/studentsKnowledgeControl/mockup-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 57rem;
+    height: 40rem;
+    align-self: center;
 }
