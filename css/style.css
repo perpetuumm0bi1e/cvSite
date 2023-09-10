@@ -564,9 +564,25 @@ footer {
 }
 
 .recent-work {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 21rem;
     height: 13rem;
     background-color: #2d2d2d;
+    overflow: hidden;
+}
+
+.recent-work div:first-child {
+    align-self: flex-start;
+}
+
+#preview-img-1 {
+    background-image: url(../img/worterbuch/mockup-1.svg);
+    background-repeat: no-repeat;
+    width: 11rem;
+    height: 11rem;
+    align-self: flex-end;
 }
 
 
