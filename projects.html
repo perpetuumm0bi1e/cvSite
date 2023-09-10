@@ -1,244 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png" />
-		<link rel="manifest" href="./site.webmanifest" />
-		<link rel="stylesheet" href="./css/style.css" />
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>perpetuumm0bi1e</title>
-	</head>
 
-	<body>
-		<main>
-			<div class="navbar">
-				<div class="container nav-container">
-					<div class="links" id="links">
-						<a id="about-me-page" href="about.html">Обо мне</a>
-						<a id="works-page" href="projects.html">Проекты</a>
-						<a id="contacts-page" href="contacts.html">Контакты</a>
-					</div>
-				</div>
-				<div class="items-wrap" id="wrap-line">
-					<div class="items" id="items-before"></div>
-					<div aria-hidden="true" class="items" id="items-after"></div>
-				</div>
-			</div>
-			<div class="page-content">
-				<div class="work-container">
-					<div class="work-number-odd">
-						<p class="big-blue-text top-mobile-appearance left-large-appearance" id="number-1">
-							(1)
-						</p>
-					</div>
-					<div>
-						<h3 class="heading text">Дизайн интерфейса</h3>
-						<h4 class="subheading-2 text">мобильного приложения для контроля за осанкой</h4>
-						<p class="main-text text">
-							<b>Назначение приложения</b> - отображение показаний датчиков и отслеживание
-							статистики. <br />
-							Кроме того, оно позволяет изменять учетную запись пользователя и параметры датчиков
-							<br /><br />
-							Макет разработан в <b>Figma</b>
-						</p>
-					</div>
-					<div id="screenshots-container">
-						<div class="mobile-phone top-appearance top-mobile-appearance" id="mobile-phone">
-							<div class="bg-image" id="mobile-phone-card"></div>
-						</div>
-					</div>
-					<button
-						class="button-type-1 bottom-mobile-appearance left-large-appearance"
-						id="interactive-layout-button-1">
-						> интерактивный макет
-					</button>
-				</div>
-				<div class="work-container">
-					<div class="work-number-even">
-						<p
-							class="big-blue-text sugardays-font top-mobile-appearance right-large-appearance"
-							id="number-2">
-							(2)
-						</p>
-					</div>
-					<div>
-						<h3 class="heading text">Mark - таск менеджер</h3>
-						<h4 class="subheading-2 text">для контроля списка задач</h4>
-						<p class="main-text text">
-							Отображает дату и хранит список добавленных задач с их статусом. Есть встроенный
-							таймер Pomodoro для лучшей фокусировки во время работы
-							<br />Присутствует возможность изменения данных пользователя и настройки внешнего вида
-							<br />Оптимизирован для всех типов устройств <br /><br />
-							Написан на чистом <b>JavaScript</b>. Вёрстка - <b>HTML5</b> и <b>CSS3</b>
-						</p>
-					</div>
-					<div class="preview-box">
-						<video id="mark-video" playsinline controls autoplay loop>
-							<source src="./video/mark_video.mov" />
-						</video>
-					</div>
-					<button
-						class="button-type-1 bottom-mobile-appearance right-large-appearance"
-						id="visit-site-1">
-						> посетить сайт
-					</button>
-				</div>
-				<div class="work-container">
-					<div class="work-number-odd">
-						<p class="big-blue-text top-mobile-appearance left-large-appearance" id="number-3">
-							(3)
-						</p>
-					</div>
-					<div>
-						<h3 class="heading text">Клиент-серверное приложение</h3>
-						<h4 class="subheading-2 text">для тестирования знаний студентов</h4>
-						<p class="main-text text">
-							Главная функция приложения - создание тестов с несколькими вариантами ответов и их
-							последующее прохождение<br />
-							Настроена возможность авторизации двух типов пользователей: администраторов и
-							студентов, обладающих разными правами доступа к функциям<br />
-							Администраторы могут создавать, удалять и редактировать тесты. Студенты - проходить
-							их, отслеживая свой прогресс в личном кабинете (там представлена история тестирований
-							с полученными баллами и данными ответами) <br /><br />
-							<b>Серверная часть реализована на PHP</b>. В создании фронтенда задействован фреймворк
-							<b>Bootstrap</b>.
-						</p>
-					</div>
-					<div class="preview-box">
-						<div class="bg-image preview-box-images" id="students-image"></div>
-						<div class="image-box-navigation">
-							<button class="navigation-button" id="students-navigation-left"><</button>
-							<button class="navigation-button" id="students-navigation-right">></button>
-						</div>
-					</div>
-					<button
-						class="button-type-1 bottom-mobile-appearance left-large-appearance"
-						id="git-button-1">
-						> git репозиторий
-					</button>
-				</div>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>perpetuumm0bi1e</title>
+</head>
 
-				<div class="work-container">
-					<div class="work-number-even">
-						<p class="big-blue-text top-mobile-appearance right-large-appearance" id="number-4">
-							(4)
-						</p>
-					</div>
-					<div>
-						<h3 class="heading text">Клиент-серверное приложение</h3>
-						<h4 class="subheading-2 text">для оформления заявок на кредит</h4>
-						<p class="main-text text">
-							Настроены сценарии для авторизации пользователей, редактирования личных данных и
-							удаления аккаунта<br />
-							Далее - создание заявок на кредиты разных категорий<br /><br />
-							Серверная часть написана на <b>Node.js</b>. Для хранения данных используется локальная
-							БД посредством <b>SQLite3</b>. <br />Фронтенд - <b>JavaScript</b>, <b>HTML5</b> и
-							<b>CSS3</b>. Задействован шаблонизатор <b>EJS</b>
-						</p>
-					</div>
-					<div class="preview-box">
-						<div class="bg-image preview-box-images" id="pro-credit-image"></div>
-						<div class="image-box-navigation">
-							<button class="navigation-button" id="pro-credit-navigation-left"><</button>
-							<button class="navigation-button" id="pro-credit-navigation-right">></button>
-						</div>
-					</div>
-					<button
-						class="button-type-1 bottom-mobile-appearance right-large-appearance"
-						id="git-button-2">
-						> git репозиторий
-					</button>
-				</div>
+<body>
+    <main>
+        <div class="navbar">
+            <div class="container nav-container">
+                <div class="links" id="links">
+                    <a id="about-me-page" href="about.html">Обо мне</a>
+                    <a id="works-page" href="projects.html">Проекты</a>
+                    <a id="contacts-page" href="contacts.html">Контакты</a>
+                </div>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="project-categories-line">
+                <div class="project-category active">> все проекты</div>
+                <div class="project-category inactive">> дизайн</div>
+                <div class="project-category inactive">> desktop-приложения</div>
+                <div class="project-category inactive">> web</div>
+            </div>
+            <div class="projects-container">
+                <div class="project-container" id='project-container-1'>
+                    <div class="project-category-label">> дизайн</div>
+                    <div class="project-header">Wörterbuch</div>
+                    <div class="project-description">приложение с флеш-карточками для изучения иностранных слов</div>
+                </div>
+                <div class="project-container" id='project-container-2'>
+                    <div class="project-category-label">> дизайн</div>
+                    <div class="project-header">Quotes</div>
+                    <div class="project-description">библиотека ваших любимых цитат</div>
+                    <div id="project-logo-2"></div>
+                    <div id="project-img-4"></div>
+                    <div id="project-img-5"></div>
+                </div>
+                <div class="project-container" id='project-container-3'>
+                    <div class="project-category-label">> дизайн</div>
+                    <div class="project-header">Perfect Posture</div>
+                    <div class="project-description">приложение для взаимодействия с датчиками контроля осанки</div>
 
-				<div class="work-container">
-					<div class="work-number-odd">
-						<p class="big-blue-text top-mobile-appearance left-large-appearance" id="number-5">
-							(5)
-						</p>
-					</div>
-					<div>
-						<h3 class="heading text">Desktop-приложение</h3>
-						<h4 class="subheading-2 text">для кодирования сообщений с помощью алгоритма Касуми</h4>
-						<p class="main-text text">
-							Разработано для кодирования/декодирования сообщений, введенных или загруженных
-							пользователем <br />
-							Присутствует возможность перевода сообщений между системами счисления и генерации
-							ключей <br />
-							В разделе справка можно ознакомиться с принципами кодирования и основными функциями,
-							хадействованными в алгоритме <br /><br />
-							Приложение <b>написано на C#</b> с использованием системы для построения клиентских
-							приложений <b>WPF</b>. Вёрстка - <b>XAML</b>
-						</p>
-					</div>
-					<div class="preview-box-container">
-						<div class="preview-box" id="first-kasumi-box">
-							<div
-								class="bg-image preview-box-images"
-								id="kasumi-encryption-decryption-image"></div>
-							<div class="image-box-navigation">
-								<button class="navigation-button" id="first-kasumi-navigation-left"><</button>
-								<button class="navigation-button" id="first-kasumi-navigation-right">></button>
-							</div>
-						</div>
-						<div class="preview-box" id="second-kasumi-box">
-							<div class="bg-image preview-box-images" id="kasumi-algorithm-image"></div>
-							<div class="image-box-navigation">
-								<button class="navigation-button" id="second-kasumi-navigation-left"><</button>
-								<button class="navigation-button" id="second-kasumi-navigation-right">></button>
-							</div>
-						</div>
-					</div>
-					<button
-						class="button-type-1 bottom-mobile-appearance left-large-appearance"
-						id="git-button-3">
-						> git репозиторий
-					</button>
-				</div>
+                </div>
+                <div class="project-container" id='project-container-4'>
+                    <div class="project-category-label">> desktop-приложение</div>
+                    <div class="project-header">Basketball<br>modeling</div>
+                    <div class="project-description">моделирование поета баскетбольного мяча</div>
 
-				<div class="work-container">
-					<div class="work-number-even">
-						<p class="big-blue-text top-mobile-appearance right-large-appearance" id="number-2">
-							(6)
-						</p>
-					</div>
-					<div>
-						<h3 class="heading text">Desktop-приложение</h3>
-						<h4 class="subheading-2 text">
-							для математического моделирования полета баскетбольного мяча
-						</h4>
-						<p class="main-text text">
-							Осуществляет построение траектории в трех измерениях, отображает показатели полета и,
-							в конечном счете, детектирует попадание<br />
-							В разделе "Подробности" можно ознакомиться с описанием объекта моделирования,
-							окружения и некоторой дополнительной информацией о модели в целом.<br /><br />
-							Приложение <b>написано на C#</b> с использованием системы для построения клиентских
-							приложений <b>WPF</b>. Вёрстка - <b>XAML</b>
-						</p>
-					</div>
-					<div class="preview-box">
-						<div class="bg-image preview-box-images" id="basketball-image"></div>
-						<div class="image-box-navigation">
-							<button class="navigation-button" id="basketball-navigation-left"><</button>
-							<button class="navigation-button" id="basketball-navigation-right">></button>
-						</div>
-					</div>
-					<button
-						class="button-type-1 bottom-mobile-appearance right-large-appearance"
-						id="git-button-4">
-						> git репозиторий
-					</button>
-				</div>
-			</div>
-		</main>
-		<footer>
-			designed by @perpetuumm0bi1e<br />
-			Moscow <br />2023
-		</footer>
-	</body>
-	<script type="text/javascript" src="script.js"></script>
+                </div>
+                <div class="project-container" id='project-container-5'>
+                    <div class="project-category-label">> web</div>
+                    <div class="project-header">Pro Credit</div>
+                    <div class="project-description">сайт для оформления заявок на кредит</div>
+
+                </div>
+                <div class="project-container" id='project-container-6'>
+                    <div class="project-category-label">> web</div>
+                    <div class="project-header">Students<br>knowledge<br>control</div>
+                    <div class="project-description">портал для тестирования знаний студентов</div>
+                </div>
+                <div class="project-container" id='project-container-7'>
+                    <div class="project-category-label">> desktop-приложение</div>
+                    <div class="project-header">kasumi cipher</div>
+                    <div class="project-description">приложение для шифрования/дешифрования текста с помощью алгоритма Касуми</div>
+
+                </div>
+                <div class="project-container" id='project-container-8'>
+                    <div class="project-category-label">> web</div>
+                    <div class="project-header">Mark</div>
+                    <div class="project-description">таск-менеджер с помодоро таймером</div>
+                </div>
+                <div class="project-container" id='project-container-9'>
+                    <div class="project-category-label">> дизайн</div>
+                    <div class="project-header">Бункер-42</div>
+                    <div class="project-description">альтернативный макет сайта музея</div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </main>
+    <footer>
+        designed by @perpetuumm0bi1e<br /> Moscow <br />2023
+    </footer>
+</body>
+<script type="text/javascript" src="script.js"></script>
+
 </html>
