@@ -151,7 +151,7 @@ li {
 @keyframes bottom-appearance {
     0% {
         opacity: 0;
-        transform: translateY(10%);
+        transform: translateY(20%);
     }
     100% {
         opacity: 1;
@@ -328,17 +328,24 @@ footer {
 
 /* стиль главной страницы */
 
-/* .page-heading-1 {
+.page-heading-1 {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.page-heading-1 div:not(:first-child) {
-    margin-bottom: 0rem;
-} */
+.page-heading-1 h1 {
+    word-wrap: break-word;
+    font-size: 13rem;
+    margin: 0rem;
+}
+
+.page-heading-1 h1:first-child,
+.page-heading-1 h1:last-child {
+    color:#d9d9d9;
+    margin-top: 10rem;
+}
 
 #arrow-container {
     height: 50rem;
@@ -387,46 +394,50 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     max-width: 88.5rem;
     column-gap: 1.5rem;
-    row-gap: 4rem;
+    row-gap: 3rem;
+    padding: 0rem 1rem;
 }
 
 .recent-work {
     display: flex;
-    flex-direction: row;
-    width: 21rem;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    gap: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+.recent-work:hover {
+    transform: scale(99%);
+}
+
+
+.recent-work:hover .recent-work-image{
+    transform: scale(105%);
+}
+
+.recent-work-content {
+    width: 23rem;
     height: 13rem;
     background-color: #2d2d2d;
     overflow: hidden;
-}
-
-.recent-work div:first-child {
-    margin: 1rem;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: inherit;
+    flex-direction: row;
 }
 
-.recent-work-name p {
-    margin: 0;
+.recent-work-name{
+    font-family: 'Fira Code', monospace;
     font-weight: 400;
+    transition: all .3s ease-in-out;
 }
 
-.recent-work-name p:first-child {
-    font-size: 2rem;
-    color: #ffffff;
-}
-
-.recent-work-name p:not(:first-child) {
-    color: #d9d9d9;
-    margin-top: .7rem;
-}
-
-#recent-work-1 .recent-work-name p:first-child {
-    font-family: 'Unbounded', sans-serif;
+.recent-work:hover .recent-work-name,
+.recent-work-name:hover{
+    text-decoration: underline;
+    font-weight: 500;
 }
 
 .recent-work-type {
@@ -443,203 +454,93 @@ footer {
     background: var(--green);
 }
 
-#preview-logo-1 {
-    background-image: url(../img/worterbuch/logo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 2.1rem;
-    height: 2.1rem;
-    margin-top: 4.3rem;
-}
-
-#preview-img-1 {
-    background-image: url(../img/worterbuch/mockup-1.svg);
-    width: 11rem;
-    height: 11rem;
-    align-self: flex-end;
-    margin-left: -6.5rem;
-}
-
-#recent-work-2 .recent-work-name p:first-child {
-    font-family: 'Neue Machina', sans-serif;
-    transform: rotateZ(-90deg);
-    margin: 3.5rem 0rem -.7rem -1.5rem;
-}
-
-#preview-logo-2 {
-    background-image: url(../img/quotes/logo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 2.1rem;
-    height: 2.1rem;
-    margin-top: 4.3rem;
-}
-
-#preview-img-2 {
-    background-image: url(../img/quotes/mockup-1.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 10rem;
+#recent-work-img-1{
+    background-image: url(../img/worterbuch/mockup-1.png);
+    width: 15rem;
     height: 15rem;
-    margin: 3rem 0rem 0rem -1rem;
+    margin: 1rem auto 0rem auto;
 }
 
-#preview-img-3 {
-    background-image: url(../img/quotes/mockup-2.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 6rem;
-    height: 12rem;
-    margin: 1rem 1rem 0rem 0rem;
-}
-
-#recent-work-3 .recent-work-name p:first-child {
-    position: absolute;
-    font-family: 'Soyuz Grotesk', sans-serif;
-    font-size: 1.9rem;
-    transform: rotateZ(-90deg);
-    margin: 5.5rem 0rem 0rem -3.8rem;
-}
-
-#preview-img-4 {
-    background-image: url(../img/kasumi/mockup-1.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+#recent-work-img-2{
+    background-image: url(../img/quotes/mockup-1.png);
     width: 15rem;
-    height: 10rem;
-    margin: 0rem 0rem 0rem -5rem;
+    height: 20rem;
+    transform: rotate(-5deg);
 }
 
-#preview-img-5 {
-    background-image: url(../img/kasumi/mockup-2.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+#recent-work-img-3{
+    background-image: url(../img/quotes/mockup-2.png);
     width: 15rem;
-    height: 10rem;
-    margin: -4rem 0rem 0rem -4rem;
+    height: 16rem;
+    transform: rotate(-5deg);
 }
 
-#preview-img-6 {
-    background-image: url(../img/kasumi/kasumiDecryption.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 10rem;
-    height: 10rem;
-    margin: 2rem 0rem 0rem -6rem;
-}
-
-#recent-work-4 .recent-work-name p:first-child {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.7rem;
-}
-
-#preview-img-7 {
-    background-image: url(../img/studentsKnowledgeControl/mockup-1.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 18rem;
-    height: 15rem;
-    margin-left: 3.5rem;
-    position: absolute;
-}
-
-#recent-work-5 .recent-work-name p:first-child {
-    position: absolute;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.7rem;
-    margin: .7rem 0rem 0rem -12.5rem;
-}
-
-#preview-img-8 {
-    background-image: url(../img/perfectPosture/mockup-1.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 15rem;
-    height: 18rem;
-    margin: 1rem 0rem 0rem 0rem;
-}
-
-#preview-img-9 {
-    background-image: url(../img/perfectPosture/mockup-2.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+#recent-work-img-4{
+    background-image: url(../img/kasumi/mockup-1.png);
     width: 18rem;
     height: 18rem;
-    margin: 3rem 0rem 0rem -1rem;
 }
 
-#recent-work-6 .recent-work-name p:first-child {
-    font-family: 'Inter', sans-serif;
-    font-size: 2rem;
+#recent-work-img-5{
+    background-image: url(../img/studentsKnowledgeControl/mockup-1.png);
+    width: 20rem;
+    height: 20rem;
 }
 
-#preview-img-10 {
-    background-image: url(../img/basketballFlightModeling/mockup-1.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 15rem;
-    height: 15rem;
-    margin: 1.1rem 0rem 0rem 6rem;
+#recent-work-img-6{
+    background-image: url(../img/perfectPosture/mockup-2.png);
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem 0rem 0rem -2rem;
 }
 
-#recent-work-7 .recent-work-name p:first-child {
-    position: absolute;
-    font-family: 'Unbounded', sans-serif;
-    font-size: 1.7rem;
-    transform: rotateZ(-90deg);
-    margin: 4.5rem 0rem 0rem -4rem;
+#recent-work-img-7{
+    background-image: url(../img/perfectPosture/mockup-3.png);
+    width: 30rem;
+    height: 30rem;
+    margin: 1rem -3rem 0rem 0rem;
 }
 
-#preview-img-11 {
-    background-image: url(../img/proCredit/mockup-1.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 15rem;
-    height: 15rem;
-    margin: -.5rem 0rem 0rem 6rem;
+#recent-work-img-8{
+    background-image: url(../img/basketballFlightModeling/mockup-1.png);
+    width: 30rem;
+    height: 30rem;
+    margin-top: 1.3rem;
 }
 
-#recent-work-8 .recent-work-name {
-    flex-direction: row;
-    gap: 1rem;
-    align-items: baseline;
+#recent-work-img-9{
+    background-image: url(../img/proCredit/mockup-1.png);
+    width: 25rem;
+    height: 20rem;
+    margin: 1rem 0rem 0rem 2rem;
 }
 
-#recent-work-8 .recent-work-name p:first-child {
-    font-family: 'Manrope', sans-serif;
-    font-size: 1.5rem;
+#recent-work-img-10{
+    background-image: url(../img/mark/mockup-2.png);
+    width: 30rem;
+    height: 30rem;
 }
 
-#preview-img-12 {
-    background-image: url(../img/mark/mockup-1.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 13rem;
-    height: 13rem;
-    margin: 2.9rem 0rem 0rem -.5rem;
+#recent-work-img-11{
+    background-image: url(../img/mark/mockup-3.png);
+    width: 18rem;
+    height: 20rem;
+    margin: 2rem -2rem 0rem 0rem;
 }
 
-#preview-img-13 {
-    background-image: url(../img/mark/mockup-2.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 6rem;
-    height: 13rem;
-    margin: 4rem 0rem 0rem 10.5rem;
+#recent-work-img-12{
+    background-image: url(../img/bunker-42/slide-1.png);
+    width: 20rem;
+    height: 70rem;
+    margin: 2rem 0rem 0rem 3rem;
 }
 
-#preview-img-14 {
-    background-image: url(../img/mark/mockup-3.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 8rem;
-    height: 15rem;
-    margin: -1rem 0rem 0rem 13rem;
+#recent-work-img-13{
+    background-image: url(../img/bunker-42/slide-2.png);
+    width: 20rem;
+    height: 50rem;
+    margin: 0rem 0rem 0rem 1rem;
+    transform: rotate(10deg);
 }
 
 
@@ -660,7 +561,6 @@ footer {
     background-attachment: fixed;
     background-size: 100% auto;
     background-repeat: repeat;
-    /* background-position: center top; */
     background-image: url(../img/myPhoto1.png);
 }
 
@@ -858,7 +758,9 @@ footer {
     align-content: center;
 }
 
-.project-image{
+.project-image,
+.recent-work-image{
+    pointer-events: none;
     background-repeat: no-repeat;
     background-size: contain;
     transition: all .3s ease-in-out;
@@ -869,7 +771,7 @@ footer {
 }
 
 .project-container:hover .project-content{
-    transform: scale(99.5%);
+    transform: scale(99%);
 }
 
 #project-container-1 .project-content{
