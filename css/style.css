@@ -79,7 +79,7 @@ li {
 .top-appearance,
 .top-mobile-appearance {
     visibility: hidden;
-    transition: all 0.8s ease;
+    transition: all 0.8 ease-in-out;
 }
 
 .left-large-appearance.large-appeared,
@@ -328,7 +328,7 @@ footer {
 
 /* стиль главной страницы */
 
-.page-heading-1 {
+/* .page-heading-1 {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -338,7 +338,7 @@ footer {
 
 .page-heading-1 div:not(:first-child) {
     margin-bottom: 0rem;
-}
+} */
 
 #arrow-container {
     height: 50rem;
@@ -352,6 +352,7 @@ footer {
 .page-heading-2 h1 {
     display: inline;
     font-size: 11rem;
+    word-wrap: break-word;
 }
 
 .page-heading-2 h1:first-child {
@@ -647,7 +648,7 @@ footer {
 .content-about-me-page .big-heading {
     text-align: right;
     margin: -20rem 3rem 15rem 0rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 400;
 }
 
@@ -922,7 +923,7 @@ footer {
     font-family: 'Fira Code', sans-serif;
     color: var(--darkest-gray);
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     transition: all .3s ease-in-out;
 }
 

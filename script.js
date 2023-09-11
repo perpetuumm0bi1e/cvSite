@@ -44,7 +44,6 @@ let navbar = document.querySelector(".navbar"),
 
 
 function windowSetting() {
-
     let aboutMePage = document.getElementById("about-me-page");
     let itemsBefore = document.getElementById("items-before");
     let itemsAfter = document.getElementById("items-after");
@@ -73,7 +72,6 @@ function windowSetting() {
 
     if (document.body.clientWidth >= 1024) {
         navbar.style.position = "sticky";
-        // }
     } else {
         navbar.style.position = "relative";
     }
@@ -81,19 +79,11 @@ function windowSetting() {
 }
 
 window.onload = function() {
-    if (document.body.clientWidth >= 1024) {
-        //navbar.style.position = "sticky";
-        //navContainer.append(linksElement);
-    } else {
-        //navbar.style.position = "relative";
-        //navContainer.append(menuElement);
-    }
 
     let wrapLine = document.getElementById("wrap-line");
     wrapLine.onclick = function() {
         window.location.href = "./index.html";
     };
-    windowSetting();
 
     let bottomAppearedElements = document.querySelectorAll(".bottom-appearance"),
         bottomMobileAppearedElements = document.querySelectorAll(".bottom-mobile-appearance"),
@@ -125,6 +115,8 @@ window.onload = function() {
     for (let element of leftAppearedElements) {
         observer.observe(element);
     }
+
+    windowSetting();
 
     if (location.pathname.includes("index") || location.pathname.split("").pop() == "/") {
         document.getElementById("telegram-button").onclick = function() {
