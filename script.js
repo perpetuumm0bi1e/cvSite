@@ -78,47 +78,6 @@ function windowSetting() {
         navbar.style.position = "relative";
     }
 
-    if (location.pathname.includes("about")) {
-        let languageGroup1 = document.getElementById("language-group-1"),
-            languageGroup2 = document.getElementById("language-group-2");
-
-        languageGroup2.style.width = `${languageGroup1.offsetWidth}px`;
-    } else if (location.pathname.includes("projects")) {
-        let kasumiBox1 = document.getElementById("first-kasumi-box"),
-            kasumiBox2 = document.getElementById("second-kasumi-box"),
-            proCreditImage = document.getElementById("pro-credit-image"),
-            studentsImage = document.getElementById("students-image"),
-            basketballImage = document.getElementById("basketball-image"),
-            kasumi1Image = document.getElementById("kasumi-encryption-decryption-image"),
-            kasumi2Image = document.getElementById("kasumi-algorithm-image"),
-            markVideo = document.getElementById("mark-video");
-
-        proCreditImage.style.height = `${proCreditImage.offsetWidth * 0.626}px`;
-        studentsImage.style.height = `${studentsImage.offsetWidth * 0.727}px`;
-        basketballImage.style.height = `${basketballImage.offsetWidth * 0.63}px`;
-        kasumi1Image.style.height = `${kasumi1Image.offsetWidth * 0.89}px`;
-        kasumi2Image.style.height = `${kasumi2Image.offsetWidth * 1.25}px`;
-        markVideo.style.height = `${markVideo.offsetWidth * 0.58}px`;
-
-        kasumiBox2.style.width =
-            kasumiBox1.getBoundingClientRect().top != kasumiBox2.getBoundingClientRect().top ?
-            `${kasumiBox1.offsetWidth}px` :
-            "auto";
-
-        let mobilePhone = document.getElementById("mobile-phone");
-
-        if (document.body.clientWidth >= 768) {
-            if (mobilePhoneCardNav) {
-                mobilePhoneCardNav.remove();
-                mobilePhone.parentNode.prepend(screenshots1);
-                mobilePhone.parentNode.append(screenshots2);
-            }
-        } else if (document.body.clientWidth < 768) {
-            mobilePhone.append(mobilePhoneCardNav);
-            screenshots1.remove();
-            screenshots2.remove();
-        }
-    }
 }
 
 window.onload = function() {

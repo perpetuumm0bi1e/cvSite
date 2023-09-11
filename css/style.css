@@ -705,7 +705,6 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
-    /* flex-grow: 1; */
 }
 
 #about-me-box .description:not(:last-child) {
@@ -783,7 +782,6 @@ footer {
     margin-top: 10rem;
 }
 
-
 /* projects page style */
 
 .project-categories-line {
@@ -837,7 +835,7 @@ footer {
 .project-container {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     flex-grow: 1;
     width: 46rem;
 }
