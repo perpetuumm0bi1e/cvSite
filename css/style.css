@@ -823,250 +823,137 @@ footer {
 
 .projects-container {
     display: flex;
-    flex-direction: column;
-    column-gap: 1.5rem;
-    row-gap: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2rem;
+    row-gap: 4rem;
     margin: 0rem auto;
     padding: 0rem 1rem;
     width: 100%;
+    max-width: 96rem;
 }
 
 .project-container {
-    width: 100%;
-    height: fit-content;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     flex-grow: 1;
+    width: 46rem;
 }
 
 .project-content {
+    width: 100%;
+    height: 26rem;
+    overflow: hidden;
+    padding: 1.5rem;
+    transition: all .3s ease-in-out;
+}
+
+.project-images{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.project-text-content {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    margin: 10rem 0rem 10rem 0rem;
-}
-
-.project-descriptions {
-    display: flex;
-    flex-direction: column;
     gap: 2rem;
+    margin-top: 3rem;
+    justify-content: center;
+    align-content: center;
 }
 
-
-/* 
-@media screen and (min-width: 1024px) {
-    html {
-        font-size: 15px;
-    }
+.project-image{
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .3s ease-in-out;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    html {
-        font-size: 13px;
-    }
+.project-container:hover .project-image{
+    transform: scale(105%);
 }
 
-@media screen and (max-width: 767px) {
-    html {
-        font-size: 11px;
-    }
-} */
+.project-container:hover .project-content{
+    transform: scale(99.5%);
+}
 
-
-/* .project-container:hover {
-    transform: translate(-0.1rem, -0.1rem);
-    box-shadow: 0.3rem 0.3rem var(--light-gray);
-    cursor: pointer;
-} */
-
-#project-container-1 {
+#project-container-1 .project-content{
     background-color: #afb696;
 }
 
-#project-container-2 {
+#project-container-2 .project-content{
     background-color: #c1d545;
 }
 
-#project-container-3 {
+#project-container-3 .project-content{
     background-color: #ada5bf;
 }
 
-#project-container-4 {
+#project-container-4 .project-content{
     background-color: #e2d240;
 }
 
-#project-container-5 {
+#project-container-5 .project-content{
     background-color: #abbbe3;
 }
 
-#project-container-6 {
+#project-container-6 .project-content{
     background-color: #73a7ae;
 }
 
-#project-container-7 {
+#project-container-7 .project-content{
     background-color: #4060e9;
 }
 
-#project-container-8 {
+#project-container-8 .project-content{
     background-color: #cee3ab;
 }
 
-#project-container-9 {
+#project-container-9 .project-content{
     background-color: #e7eb20;
 }
 
 .project-category-label {
     position: absolute;
-    margin: 1.5rem;
     width: fit-content;
     height: fit-content;
     background-color: #d9d9d9;
     font-family: 'Fira Code', monospace;
     font-size: 1.3rem;
     color: var(--darkest-gray);
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .project-header {
+    font-family: 'Neue Machina', monospace;
     color: var(--darkest-gray);
-    font-weight: 400;
-    font-size: 3rem;
-}
-
-.project-description {
-    font-size: 1rem;
-    font-family: 'Manrope', sans-serif;
-    color: #2d2d2d;
-    font-weight: 300;
-    line-height: 160%;
-    max-width: 23rem;
-}
-
-#project-container-1 .project-header {
-    font-family: 'Unbounded', sans-serif;
-}
-
-#project-container-2 .project-header {
-    font-family: 'Neue Machina', sans-serif;
-}
-
-#project-container-2 .project-content,
-#project-container-4 .project-content {
-    justify-content: end;
-    gap: 4rem;
-}
-
-#project-container-3 .project-headerб {
-    font-family: 'Manrope', sans-serif;
     font-weight: 500;
-    color: #3b3882;
-}
+    font-size: 1.5rem;
 
-#project-container-4 .project-header {
-    font-family: 'Inter', sans-serif;
-    color: #706503;
-}
-
-#project-container-5 .project-header {
-    font-family: 'Unbounded', sans-serif;
-    color: #394ea6;
-}
-
-#project-container-6 .project-header {
-    font-family: 'Inter', sans-serif;
-    color: #013a71;
-    font-weight: 500;
-}
-
-#project-container-7 .project-header {
-    font-family: 'Soyuz Grotesk', sans-serif;
-    color: #ffffff;
-}
-
-#project-container-7 .project-description {
-    color: #ffffff;
-}
-
-#project-container-8 .project-header {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    color: #476a0d;
-}
-
-#project-container-9 .project-header {
-    font-family: 'Neue Machina', sans-serif;
-    color: #757e00;
-}
-
-#project-logo-1 {
-    background-image: url(../img/worterbuch/logo.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 3rem;
-    height: 3rem;
-    margin: 2rem 0rem 0rem 1.5rem;
-}
-
-#images-1 {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
 }
 
 #project-img-1 {
-    background-image: url(../img/worterbuch/mockup-3.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: url(../img/worterbuch/mockup-3.png);
     width: 15rem;
     height: 30rem;
     align-self: center;
 }
 
 #project-img-2 {
-    background-image: url(../img/worterbuch/mockup-4.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: url(../img/worterbuch/mockup-4.png);
     width: 13rem;
     height: 26rem;
     align-self: center;
 }
 
 #project-img-3 {
-    background-image: url(../img/worterbuch/mockup-5.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: url(../img/worterbuch/mockup-5.png);
     width: 11rem;
     height: 22rem;
     align-self: center;
 }
 
-#images-2 {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-}
-
-#project-logo-2 {
-    background-image: url(../img/quotes/logo-2.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 3rem;
-    height: 3rem;
-}
-
 #project-img-4 {
-    background-image: url(../img/quotes/mockup-3.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 60rem;
-    height: 35rem;
-    align-self: center;
+    background-image: url(../img/quotes/mockup-frames.png);
+    width: 45rem;
+    height: 25rem;
+    margin-top: -3rem;
 }
 
 #images-3 {
@@ -1076,37 +963,71 @@ footer {
 }
 
 #project-img-5 {
-    background-image: url(../img/perfectPosture/mockup-3.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 40rem;
-    height: 48rem;
-    align-self: center;
+    background-image: url(../img/perfectPosture/mockup-1.png);
+    width: 35rem;
+    height: 38rem;
+    margin-top: -5rem;
 }
 
 #project-img-6 {
-    background-image: url(../img/basketballFlightModeling/mockup-1.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 60rem;
-    height: 39rem;
-    align-self: flex-end;
+    background-image: url(../img/basketballFlightModeling/mockup-1.png);
+    width: 50rem;
+    height: 30rem;
 }
 
 #project-img-7 {
-    background-image: url(../img/proCredit/mockup-1.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 55rem;
-    height: 35rem;
-    align-self: center;
+    background-image: url(../img/proCredit/mockup-1.png);
+    width: 35rem;
+    height: 30rem
 }
 
 #project-img-8 {
-    background-image: url(../img/studentsKnowledgeControl/mockup-1.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 57rem;
-    height: 40rem;
-    align-self: center;
+    background-image: url(../img/studentsKnowledgeControl/mockup-1.png);
+    width: 50rem;
+    height: 30rem;
+    margin-top: -3rem;
+}
+
+#project-img-9 {
+    background-image: url(../img/kasumi/mockup-1.png);
+    width: 20rem;
+    height: 20rem;
+}
+
+#container-7-images{
+    display: flex;
+    flex-direction: column;
+    
+}
+#project-img-10 {
+    background-image: url(../img/kasumi/mockup-2.png);
+    width: 10rem;
+    height: 10rem;
+}
+
+#project-img-11 {
+    background-image: url(../img/kasumi/mockup-3.png);
+    width: 10rem;
+    height: 10rem;
+}
+
+#project-img-12 {
+    background-image: url(../img/mark/mockup-1.png);
+    width: 30rem;
+    height: 21.5rem;
+}
+
+#project-img-13 {
+    background-image: url(../img/bunker-42/slide-1.png);
+    width: 30rem;
+    height: 100rem;
+    transform: rotate(-10deg);
+}
+
+#project-img-14 {
+    background-image: url(../img/bunker-42/slide-2.png);
+    width: 30rem;
+    height: 100rem;
+    margin-top: -12rem;
+    transform: rotate(-10deg);
 }
