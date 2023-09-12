@@ -703,13 +703,9 @@ footer {
     height: fit-content;
     width: fit-content;
     padding: 0rem .1rem;
+    border: none;
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
-/* input[type='radio']{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-} */
 
 .project-category.active {
     background: var(--green);

@@ -66,7 +66,7 @@ function windowSetting() {
         itemsBefore.append(p);
         let p2 = document.createElement("p");
         p2.className = "item";
-        p2.innerHTML = "perpetuumm0bi1e";
+        p2.innerHTML = "peretuumm0bi1e";
         itemsAfter.append(p2);
     }
 
@@ -126,66 +126,105 @@ window.onload = function() {
         document.getElementById("works-page").style.textDecoration="underline";
         document.getElementById("works-page").style.fontWeight="500";
 
-        let changeCategoryStatus=function(thisRadio, allRadio){
-            console.log(thisRadio.parentNode);
-            for(let radio of allRadio){
-                try{
-                    radio.parentNode.classList.Remove("active");
-                    radio.parentNode.classList.Add("inactive");
-                } catch{
+        let allProjectsCategory = document.getElementById('category-all-projects'),
+        designCategory = document.getElementById('category-design'),
+        desktopCategory = document.getElementById('category-desktop'),
+        webCategory = document.getElementById('category-web'),
+        androidCategory = document.getElementById('category-android'),
+        allCatgories = document.getElementsByClassName('project-category');
 
+        let activeCategory = 0, activeCategoryName;
+
+        let projectsContainer = document.getElementsByClassName('projects-container'),
+            nodesArr = projectsContainer[0].children;
+
+        for(category of allCatgories){
+            for (categoryClass of category.classList){
+                if(categoryClass == 'active'){
+                    activeCategory++;
                 }
             }
-
-            try{
-                thisRadio.parentNode.classList.Add("active");
-            } catch{
-
-            }
         }
-        let allProjectsRadio = document.getElementById('category-all-projects'),
-        designRadio = document.getElementById('categoty-design'),
-        desktopRadio = document.getElementById('category-desktop'),
-        webRadio = document.getElementById('category-web'),
-        androidRadio = document.getElementById('categpry-android'),
-        allRadio = document.getElementsByClassName('project-category-radio');
 
-        // allProjectsRadio.checked = function(){
-        //     changeCategoryStatus(allProjectsRadio, allRadio);
-        // }
-        
-        // designRadio.checked = function(){
-        //     changeCategoryStatus(allProjectsRadio, allRadio);
-        // }
+        if(activeCategory == 0){
+            for(category of allCatgories){
+                (category == allProjectsCategory) ? 
+                category.classList.add('active') : 
+                category.classList.add('inactive');
+            }
+            activeCategoryName = allProjectsCategory.id;
+        }
 
-        
-        // desktopRadio.checked = function(){
-        //     changeCategoryStatus(allProjectsRadio, allRadio);
-        // }
+        let changeCategoriesOrder = function(elem){
+            let order = 0;
+            elem.style.order = `${order}`;
+            order++;
 
-        
-        // webRadio.checked = function(){
-        //     changeCategoryStatus(allProjectsRadio, allRadio);
-        // }
-
-        
-        // androidRadio.checked = function(){
-        //     changeCategoryStatus(allProjectsRadio, allRadio);
-        // }
-
-        console.log(allRadio.length);
-        console.log(allRadio);
-
-        for(radio of allRadio){
-            console.log(radio);
-            if(radio.checked){
-                
-            console.log(radio);
-            console.log(radio.parentNode);
+            for(category of allCatgories){
+                if(category != elem){
+                    category.style.order = `${order}`;
+                    order++;
+                }
             }
         }
 
-       
+        let changeVisibility = function(){
+            if(activeCategoryName == 'category-all-projects'){
+                for(child of nodesArr){
+                    console.log(child);
+                    child.style.display ='block';
+                }
+            } else {
+                for(child of nodesArr){
+                    child.style.display = (child.classList.contains(`${activeCategoryName}`)) ? 'block' : 'none';
+                }
+            }
+        }
+
+        let changeCategory = function(elem){
+            activeCategoryName = elem.id;
+
+            for(category of allCatgories){
+                if(category == elem){
+                    try{
+                        category.classList.remove('inactive');
+                        category.classList.add('active');
+                    } catch{
+                        break;
+                    }
+                } else {
+                    try{
+                        category.classList.remove('active');
+                        category.classList.add('inactive');
+                    } catch{
+
+                    }
+                }
+            }
+            changeCategoriesOrder(elem);
+            changeVisibility();
+        }
+
+        allProjectsCategory.onclick = function (){
+            changeCategory(allProjectsCategory);
+        }
+
+        designCategory.onclick = function (){
+            changeCategory(designCategory);
+        }
+
+        desktopCategory.onclick = function (){
+            changeCategory(desktopCategory);
+        }
+
+        webCategory.onclick = function (){
+            changeCategory(webCategory);
+        }
+
+        androidCategory.onclick = function (){
+            changeCategory(androidCategory);
+        }
+        
     } else if (location.pathname.includes("contacts")) {
     document.getElementById("contacts-page").style.textDecoration="underline";
     document.getElementById("contacts-page").style.fontWeight="500";
