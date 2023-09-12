@@ -738,7 +738,6 @@ footer {
 .project-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
     flex-grow: 1;
     width: 46rem;
 }
@@ -829,6 +828,7 @@ footer {
     font-weight: 400;
     font-size: 1.3rem;
     transition: all .3s ease-in-out;
+    margin-top: 1.5rem;
 }
 
 .project-header:hover,
