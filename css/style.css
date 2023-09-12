@@ -705,6 +705,12 @@ footer {
     padding: 0rem .1rem;
 }
 
+/* input[type='radio']{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+} */
+
 .project-category.active {
     background: var(--green);
     text-decoration: underline;

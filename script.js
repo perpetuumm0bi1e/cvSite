@@ -49,12 +49,12 @@ function windowSetting() {
     let itemsAfter = document.getElementById("items-after");
     let width = (aboutMePage.offsetHeight - 5) * 9 + 10;
 
-    console.log(aboutMePage.style);
-    console.log(aboutMePage.offsetHeight);
+    //console.log(aboutMePage.style);
+    //console.log(aboutMePage.offsetHeight);
 
     let pageWidth = document.body.clientWidth;
     let count = Math.round(pageWidth / width);
-    console.log(count);
+    //console.log(count);
 
     itemsBefore.innerHTML = "";
     itemsAfter.innerHTML = "";
@@ -125,6 +125,66 @@ window.onload = function() {
     } else if (location.pathname.includes("projects")) {
         document.getElementById("works-page").style.textDecoration="underline";
         document.getElementById("works-page").style.fontWeight="500";
+
+        let changeCategoryStatus=function(thisRadio, allRadio){
+            console.log(thisRadio.parentNode);
+            for(let radio of allRadio){
+                try{
+                    radio.parentNode.classList.Remove("active");
+                    radio.parentNode.classList.Add("inactive");
+                } catch{
+
+                }
+            }
+
+            try{
+                thisRadio.parentNode.classList.Add("active");
+            } catch{
+
+            }
+        }
+        let allProjectsRadio = document.getElementById('category-all-projects'),
+        designRadio = document.getElementById('categoty-design'),
+        desktopRadio = document.getElementById('category-desktop'),
+        webRadio = document.getElementById('category-web'),
+        androidRadio = document.getElementById('categpry-android'),
+        allRadio = document.getElementsByClassName('project-category-radio');
+
+        // allProjectsRadio.checked = function(){
+        //     changeCategoryStatus(allProjectsRadio, allRadio);
+        // }
+        
+        // designRadio.checked = function(){
+        //     changeCategoryStatus(allProjectsRadio, allRadio);
+        // }
+
+        
+        // desktopRadio.checked = function(){
+        //     changeCategoryStatus(allProjectsRadio, allRadio);
+        // }
+
+        
+        // webRadio.checked = function(){
+        //     changeCategoryStatus(allProjectsRadio, allRadio);
+        // }
+
+        
+        // androidRadio.checked = function(){
+        //     changeCategoryStatus(allProjectsRadio, allRadio);
+        // }
+
+        console.log(allRadio.length);
+        console.log(allRadio);
+
+        for(radio of allRadio){
+            console.log(radio);
+            if(radio.checked){
+                
+            console.log(radio);
+            console.log(radio.parentNode);
+            }
+        }
+
        
     } else if (location.pathname.includes("contacts")) {
     document.getElementById("contacts-page").style.textDecoration="underline";
