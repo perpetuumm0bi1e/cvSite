@@ -224,7 +224,7 @@ window.onload = function() {
         androidCategory.onclick = function (){
             changeCategory(androidCategory);
         }
-        
+
     } else if (location.pathname.includes("contacts")) {
     document.getElementById("contacts-page").style.textDecoration="underline";
     document.getElementById("contacts-page").style.fontWeight="500";
