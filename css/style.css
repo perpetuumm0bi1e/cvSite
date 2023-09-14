@@ -1227,11 +1227,12 @@ footer {
 
 #worterbuch-img-3{
     background-image: url(../img/worterbuch/registration-screenshots-group.png);
-    height: 50rem;
-    width: 110rem;
+    height: 100vh;
+    width: 100%;
     background-size: cover;
     background-position: center;
-    margin: 0px auto;
+    background-attachment: fixed;
+    
 }
 
 #worterbuch-img-4{

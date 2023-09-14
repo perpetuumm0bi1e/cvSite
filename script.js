@@ -224,7 +224,6 @@ window.onload = function() {
         androidCategory.onclick = function (){
             changeCategory(androidCategory);
         }
-
     } else if (location.pathname.includes("contacts")) {
     document.getElementById("contacts-page").style.textDecoration="underline";
     document.getElementById("contacts-page").style.fontWeight="500";
@@ -247,6 +246,12 @@ window.onload = function() {
     } else if (location.pathname.includes("about")){
         document.getElementById("about-me-page").style.textDecoration="underline";
         document.getElementById("about-me-page").style.fontWeight="500";
+    } else if (location.pathname.includes("worterbuch")) {
+        let worterbuchButton = document.getElementById('worterbuch-figma');
+
+        worterbuchButton.onclick = function(){
+            window.location.href = "https://www.figma.com/proto/RveA3fRKOUjhkkb0ifM75q/W%C3%B6rterbuch?page-id=0%3A1&type=design&node-id=298-1556&viewport=2005%2C1058%2C0.19&t=XfE9TT8cst7rFkqG-1&scaling=min-zoom&starting-point-node-id=3%3A7&mode=design";
+        }
     }
 };
 window.addEventListener("resize", function(event) {
