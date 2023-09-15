@@ -87,6 +87,12 @@ li {
         height: 73rem;
         width: 21rem;
     }
+    
+    #worterbuch-img-2{
+        background-image: url(../img/worterbuch/scheme.png);
+        width: 90rem;
+        height: 29rem;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -131,6 +137,12 @@ li {
         height: 30rem;
         width: 15rem;
     }
+
+    #worterbuch-img-2{
+        background-image: url(../img/worterbuch/scheme.png);
+        width: 90vw;
+        height: 35vw;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -150,7 +162,7 @@ li {
     .worterbuch-block-header,
     #worterbuch-settings-text,
     #worterbuch-education-text{
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
     }
 
     .worterbuch-color{
@@ -176,6 +188,12 @@ li {
     #worterbuch-settings-text{
         order: -1;
         width: 100%;
+    }
+
+    #worterbuch-img-2{
+        background-image: url(../img/worterbuch/scheme-mobile.png);
+        width: 95vw;
+        height: 60vw;
     }
     /* #worterbuch-img-1{
         width: 40vw;
@@ -1312,12 +1330,6 @@ footer {
 
 #worterbuch-background p{
     color: #7c816b;
-}
-
-#worterbuch-img-2{
-    background-image: url(../img/worterbuch/scheme.png);
-    width: 90rem;
-    height: 29rem;
 }
 
 #worterbuch-navigation-block,
