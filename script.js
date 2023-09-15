@@ -119,9 +119,9 @@ window.onload = function() {
     windowSetting();
 
     if (location.pathname.includes("index") || location.pathname.split("").pop() == "/") {
-        document.getElementById("telegram-button").onclick = function() {
-            window.location.href = "https://t.me/perpetuumm0bi1e";
-        };
+        // document.getElementById("telegram-button").onclick = function() {
+        //     window.location.href = "https://t.me/perpetuumm0bi1e";
+        // };
     } else if (location.pathname.includes("projects")) {
         document.getElementById("works-page").style.textDecoration="underline";
         document.getElementById("works-page").style.fontWeight="500";
