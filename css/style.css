@@ -620,7 +620,7 @@ footer {
 
 .recent-work-content {
     width: 100%;
-    height: 15rem;
+    height: 17rem;
     background-color: #2d2d2d;
     overflow: hidden;
     display: flex;
@@ -654,10 +654,9 @@ footer {
 }
 
 #recent-work-img-1{
-    background-image: url(../img/worterbuch/mockup-1.png);
-    width: 100%;
-    height: 15rem;
-    margin: 1rem auto 0rem auto;
+    background-image: url(../img/worterbuch/card.png);
+    background-size: cover;
+    background-position: center top;
 }
 
 #recent-work-img-2{
@@ -689,16 +688,14 @@ footer {
 
 #recent-work-img-6{
     background-image: url(../img/perfectPosture/mockup-2.png);
-    width: 20rem;
+    width: 100%;
     height: 20rem;
-    margin: 1rem 0rem 0rem -2rem;
 }
 
 #recent-work-img-7{
     background-image: url(../img/perfectPosture/mockup-3.png);
-    width: 30rem;
-    height: 30rem;
-    margin: 1rem -3rem 0rem 0rem;
+    width: 100%;
+    height: 25rem;
 }
 
 #recent-work-img-8{
@@ -711,38 +708,36 @@ footer {
 #recent-work-img-9{
     background-image: url(../img/proCredit/mockup-1.png);
     width: 100%;
-    height: 12rem;
+    height: 13rem;
     margin: 1rem 0rem 0rem 2rem;
 }
 
 #recent-work-img-10{
     background-image: url(../img/mark/mockup-2.png);
-    width: 30rem;
-    height: 30rem;
+    width: 100%;
+    height: 20rem;
 }
 
 #recent-work-img-11{
     background-image: url(../img/mark/mockup-3.png);
-    width: 18rem;
-    height: 20rem;
-    margin: 2rem -2rem 0rem 0rem;
+    width: 100%;
+    height: 15rem;
 }
 
 #recent-work-img-12{
-    background-image: url(../img/bunker-42/slide-1.png);
-    width: 20rem;
-    height: 70rem;
-    margin: 2rem 0rem 0rem 3rem;
+    background-image: url(../img/bunker-42/card.png);
+    /* width: 100%;
+    height: 19.8rem; */
+    background-size: cover;
+    background-position: center top;
 }
 
 #recent-work-img-13{
     background-image: url(../img/bunker-42/slide-2.png);
-    width: 20rem;
-    height: 50rem;
-    margin: 0rem 0rem 0rem 1rem;
+    width: 100%;
+    height: 30rem;
     transform: rotate(10deg);
 }
-
 
 /*Стиль страницы "Обо мне"*/
 
