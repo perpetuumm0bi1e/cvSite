@@ -119,9 +119,47 @@ window.onload = function() {
     windowSetting();
 
     if (location.pathname.includes("index") || location.pathname.split("").pop() == "/") {
-        // document.getElementById("telegram-button").onclick = function() {
-        //     window.location.href = "https://t.me/perpetuumm0bi1e";
-        // };
+
+        let typingText = document.getElementsByClassName('typing-text');
+
+        for(text of typingText){
+            text.style.width = '0rem';
+        }
+        
+        typingText[0].style.width = '10ch';
+        typingText[0].style.borderRight = '.4rem solid';
+
+        setTimeout(function() {
+            typingText[0].style.borderRight = 'none';
+            typingText[1].style.width = '5ch';
+            typingText[1].style.borderRight = '.4rem solid';
+
+            setTimeout(function() {
+                typingText[1].style.borderRight = 'none';
+                typingText[2].style.width = '10ch';
+                typingText[2].style.borderRight = '.4rem solid';
+
+                setTimeout(function() {
+                typingText[2].style.borderRight = 'none';
+                typingText[3].style.width = '5ch';
+                typingText[3].style.borderRight = '.4rem solid';
+
+                    setTimeout(function() {
+                        typingText[3].style.borderRight = 'none';
+                        typingText[4].style.width = '9ch';
+                        typingText[4].style.borderRight = '.4rem solid';
+
+                        setTimeout(function() {
+                            typingText[4].style.borderRight = 'none';
+                            typingText[5].style.width = '11ch';
+                            typingText[5].style.borderRight = '.4rem solid';
+                            
+                        }, 1300);                        
+                    }, 1300);
+                }, 1300);
+            }, 1300);
+        }, 1300);
+
     } else if (location.pathname.includes("projects")) {
         document.getElementById("works-page").style.textDecoration="underline";
         document.getElementById("works-page").style.fontWeight="500";
@@ -243,6 +281,30 @@ window.onload = function() {
         document.getElementById("email").onclick = function() {
             window.location.href = "mailto:kat.kus@mail.ru";
         };
+
+        
+        let typingText = document.getElementsByClassName('typing-text');
+
+        for(text of typingText){
+            text.style.width = '0rem';
+        }
+        
+        typingText[0].style.width = '9ch';
+        typingText[0].style.borderRight = '.4rem solid';
+
+        setTimeout(function() {
+            typingText[0].style.borderRight = 'none';
+            typingText[1].style.width = '11ch';
+            typingText[1].style.borderRight = '.4rem solid';
+
+            setTimeout(function() {
+                typingText[1].style.borderRight = 'none';
+                typingText[2].style.width = '10ch';
+                typingText[2].style.borderRight = '.4rem solid';
+
+            }, 1300);
+        }, 1300);
+
     } else if (location.pathname.includes("about")){
         document.getElementById("about-me-page").style.textDecoration="underline";
         document.getElementById("about-me-page").style.fontWeight="500";
