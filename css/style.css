@@ -78,16 +78,22 @@ li {
     
     #worterbuch-img-4,
     #worterbuch-img-7{
-        height: 73rem;
-        width: 36rem;
+        height: 60rem;
+        width: 30rem;
     }
 
     #worterbuch-img-5,
     #worterbuch-img-6{
-        height: 73rem;
-        width: 21rem;
+        height: 60rem;
+        width: 20rem;
     }
     
+
+    #worterbuch-img-8,
+    #worterbuch-img-9{
+        height: 50rem;
+        width: 25rem;
+    }
     #worterbuch-img-2{
         background-image: url(../img/worterbuch/scheme.png);
         width: 90rem;
@@ -196,14 +202,14 @@ li {
         height: 60vw;
     }
 
-    #worterbuch-img-3{
+    /* #worterbuch-img-3{
         background-image: url(../img/worterbuch/registration-screenshots-group.png);
         height: 30vh;
         width: 100vw;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-    }
+    } */
 
     /* #worterbuch-img-1{
         width: 40vw;
@@ -1417,14 +1423,14 @@ footer {
     height: fit-content;
 }
 
-/* #worterbuch-img-3{
+#worterbuch-img-3{
     background-image: url(../img/worterbuch/registration-screenshots-group.png);
     height: 100vh;
     width: 100%;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-} */
+}
 
 #worterbuch-img-4{
     background-image: url(../img/worterbuch/mockup-3.png);
