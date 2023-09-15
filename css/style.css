@@ -971,6 +971,10 @@ footer {
     background-image: url(../img/bunker-42/project-card.png);
 }
 
+#project-img-10 {
+    background-image: url(../img/soon/project-card.png);
+}
+
 /* страница проекта */
 
 .single-project-page{
