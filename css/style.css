@@ -609,6 +609,10 @@ footer {
     transition: all .3s ease-in-out;
 }
 
+.recent-work a{
+    color: var(--darkest-gray)
+}
+
 .recent-work:hover {
     transform: scale(99%);
 }
@@ -655,39 +659,39 @@ footer {
 }
 
 #recent-work-img-1{
-    background-image: url(../img/worterbuch/card.png);
+    background-image: url(../img/worterbuch/card-1.png);
 }
 
 #recent-work-img-2{
-    background-image: url(../img/quotes/card.png);
+    background-image: url(../img/quotes/card-1.png);
 }
 
 #recent-work-img-3{
-    background-image: url(../img/kasumi/card.png);
+    background-image: url(../img/kasumi/card-1.png);
 }
 
 #recent-work-img-4{
-    background-image: url(../img/studentsKnowledgeControl/card.png);
+    background-image: url(../img/studentsKnowledgeControl/card-1.png);
 }
 
 #recent-work-img-5{
-    background-image: url(../img/perfectPosture/card.png);
+    background-image: url(../img/perfectPosture/card-1.png);
 }
 
 #recent-work-img-6{
-    background-image: url(../img/basketballFlightModeling/card.png);
+    background-image: url(../img/basketballFlightModeling/card-1.png);
 }
 
 #recent-work-img-7{
-    background-image: url(../img/proCredit/card.png);
+    background-image: url(../img/proCredit/card-1.png);
 }
 
 #recent-work-img-8{
-    background-image: url(../img/mark/card.png);
+    background-image: url(../img/mark/card-1.png);
 }
 
 #recent-work-img-9{
-    background-image: url(../img/bunker-42/card.png);
+    background-image: url(../img/bunker-42/card-1.png);
 }
 
 /*Стиль страницы "Обо мне"*/
@@ -927,6 +931,14 @@ footer {
     transition: all .3s ease-in-out;
     background-position: center;
     width: 100%;
+}
+
+.recent-work-image{
+    background-size: cover;
+}
+
+.project-image{
+    background-size: contain;
 }
 
 .project-container:hover .project-image{

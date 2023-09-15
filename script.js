@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", () => {
             currentScroll = window.pageYOffset;
             const headerHidden = () => header.classList.contains("navbar_hidden");
 
-            // if (currentScroll > prevScroll && !headerHidden() && document.body.clientWidth >= 1024) {
-            if (currentScroll > prevScroll && !headerHidden()) {
+            if (currentScroll > prevScroll && !headerHidden() && document.body.clientWidth >= 1024) {
+            // if (currentScroll > prevScroll && !headerHidden()) {
                 header.classList.add("navbar_hidden");
             }
-            // if (currentScroll < prevScroll && headerHidden() && document.body.clientWidth >= 1024) {
+            if (currentScroll < prevScroll && headerHidden() && document.body.clientWidth >= 1024) {
                 
-            if (currentScroll < prevScroll && headerHidden()) {
+            // if (currentScroll < prevScroll && headerHidden()) {
                 header.classList.remove("navbar_hidden");
             }
 
