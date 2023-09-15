@@ -88,16 +88,21 @@ li {
         width: 18rem;
     }
     
-
     #worterbuch-img-8,
     #worterbuch-img-9{
-        height: 50rem;
-        width: 25rem;
+        height: 44rem;
+        width: 22rem;
     }
+
     #worterbuch-img-2{
         background-image: url(../img/worterbuch/scheme.png);
         width: 90rem;
         height: 29rem;
+    }
+
+    #worterbuch-img-10{
+        height: 45rem;
+        width: 56rem;
     }
 }
 
@@ -140,14 +145,19 @@ li {
 
     #worterbuch-img-8,
     #worterbuch-img-9{
-        height: 30rem;
-        width: 15rem;
+        height: 36rem;
+        width: 18rem;
     }
 
     #worterbuch-img-2{
         background-image: url(../img/worterbuch/scheme.png);
         width: 90vw;
         height: 35vw;
+    }
+
+    #worterbuch-img-10{
+        height: calc(90vw*.8);
+        width: 90vw;
     }
 }
 
@@ -202,6 +212,10 @@ li {
         height: 60vw;
     }
 
+    #worterbuch-img-10{
+        height: calc(90vw*.8);
+        width: 90vw;
+    }
     /* #worterbuch-img-3{
         background-image: url(../img/worterbuch/registration-screenshots-group.png);
         height: 30vh;
@@ -1264,6 +1278,10 @@ footer {
     color: #2d2d2d;
 }
 
+/* #worterbuch-page:first-child{
+    margin-bottom: 0rem;
+} */
+
 #worterbuch-header{
     font-family: 'Unbounded', sans-serif;
     font-weight: 400;
@@ -1489,8 +1507,6 @@ footer {
 
 #worterbuch-img-10{
     background-image: url(../img/worterbuch/educatioin-screenshots-group.png);
-    height: 45rem;
-    width: 56rem;
 }
   
 
