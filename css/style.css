@@ -933,6 +933,7 @@ footer {
 .project-container:hover .project-header{
     text-decoration: underline;
     font-weight: 500;
+    cursor: pointer;
 }
 
 #project-img-1 {
