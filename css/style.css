@@ -683,6 +683,14 @@ footer {
     background-image: url(../img/bunker-42/recent-card.png);
 }
 
+#recent-work-img-10{
+    background-image: url(../img/yudaev/recent-card-1.png);
+}
+
+#recent-work-img-11{
+    background-image: url(../img/yudaev/recent-card-2.png);
+}
+
 /*Стиль страницы "Обо мне"*/
 
 .content-about-me-page .big-heading {
@@ -973,6 +981,14 @@ footer {
 }
 
 #project-img-10 {
+    background-image: url(../img/yudaev/project-card-1.png);
+}
+
+#project-img-11 {
+    background-image: url(../img/yudaev/project-card-2.png);
+}
+
+#project-img-12 {
     background-image: url(../img/soon/project-card.png);
 }
 
