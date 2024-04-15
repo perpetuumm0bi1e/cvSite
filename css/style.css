@@ -55,52 +55,43 @@ li {
     html {
         font-size: 15px;
     }
-
     .page-heading-1 div {
-        font-size: 10rem;
+        font-size: 7rem;
     }
-
     .project-page-block-content.horizontal-direction,
-    .worterbuch-colors{
+    .worterbuch-colors {
         gap: 2rem;
     }
-
-    #worterbuch-img-1{
+    #worterbuch-img-1 {
         width: 19rem;
         height: 47rem;
     }
-
-    .worterbuch-color{
+    .worterbuch-color {
         padding: 2rem;
         width: 18rem;
         height: 11rem;
     }
-    
     #worterbuch-img-4,
-    #worterbuch-img-7{
+    #worterbuch-img-7 {
         height: 50rem;
         width: 25rem;
     }
-
     #worterbuch-img-5,
-    #worterbuch-img-6{
+    #worterbuch-img-6 {
         height: 50rem;
         width: 18rem;
     }
-    
     #worterbuch-img-8,
-    #worterbuch-img-9{
+    #worterbuch-img-9 {
         height: 45rem;
         width: 22rem;
     }
-
-    #worterbuch-img-2{
+    #worterbuch-img-2 {
         background-image: url(../img/worterbuch/scheme.png);
         width: 90rem;
         height: 29rem;
     }
-
-    #worterbuch-img-10{
+    #worterbuch-img-10 {
         height: 45rem;
         width: 56rem;
     }
@@ -110,52 +101,43 @@ li {
     html {
         font-size: 13px;
     }
-
     .page-heading-1 div {
         font-size: 15vw;
     }
-
     .project-page-block-content.horizontal-direction,
-    .worterbuch-colors{
+    .worterbuch-colors {
         gap: 1.5rem;
     }
-
-    #worterbuch-img-1{
+    #worterbuch-img-1 {
         width: 30vw;
         height: 60vw;
     }
-    
-    .worterbuch-color{
+    .worterbuch-color {
         padding: 2rem;
         width: 30vw;
         height: 11rem;
     }
-    
     #worterbuch-img-4,
-    #worterbuch-img-7{
+    #worterbuch-img-7 {
         width: 45vw;
         height: 90vw;
     }
-
     #worterbuch-img-5,
-    #worterbuch-img-6{
+    #worterbuch-img-6 {
         height: 135vw;
         width: 45vw;
     }
-
     #worterbuch-img-8,
-    #worterbuch-img-9{
+    #worterbuch-img-9 {
         height: 36rem;
         width: 18rem;
     }
-
-    #worterbuch-img-2{
+    #worterbuch-img-2 {
         background-image: url(../img/worterbuch/scheme.png);
         width: 90vw;
         height: 35vw;
     }
-
-    #worterbuch-img-10{
+    #worterbuch-img-10 {
         height: calc(90vw*.8);
         width: 90vw;
     }
@@ -165,54 +147,45 @@ li {
     html {
         font-size: 11px;
     }
-
     .page-heading-1 div {
         font-size: 15vw;
     }
-
     .project-page-block-content.horizontal-direction,
-    .worterbuch-colors{
+    .worterbuch-colors {
         gap: 1.5rem;
     }
-    
     .worterbuch-block-header,
     #worterbuch-settings-text,
-    #worterbuch-education-text{
+    #worterbuch-education-text {
         margin-bottom: 2rem;
     }
-
-    .worterbuch-color{
+    .worterbuch-color {
         padding: 1rem;
         width: 27vw;
         height: 11rem;
     }
-    
     #worterbuch-img-4,
     #worterbuch-img-7,
     #worterbuch-img-8,
-    #worterbuch-img-9{
+    #worterbuch-img-9 {
         width: 45vw;
         height: 90vw;
     }
-
     #worterbuch-img-5,
-    #worterbuch-img-6{
+    #worterbuch-img-6 {
         height: 135vw;
         width: 45vw;
     }
-    
-    #worterbuch-settings-text{
+    #worterbuch-settings-text {
         order: -1;
         width: 100%;
     }
-
-    #worterbuch-img-2{
+    #worterbuch-img-2 {
         background-image: url(../img/worterbuch/scheme-mobile.png);
         width: 95vw;
         height: 60vw;
     }
-
-    #worterbuch-img-10{
+    #worterbuch-img-10 {
         height: calc(90vw*.8);
         width: 90vw;
     }
@@ -224,7 +197,6 @@ li {
         background-position: center;
         background-attachment: fixed;
     } */
-
     /* #worterbuch-img-1{
         width: 40vw;
         height: 80vw;
@@ -497,59 +469,59 @@ footer {
     font-family: 'Fira Code', monospace;
     font-size: 5rem;
     color: #0000c4;
-  }
+}
 
-  .typing-text:first-child,
-  .typing-text:last-child{
+.typing-text:first-child,
+.typing-text:last-child {
     color: #d9d9d9;
-  }
+}
 
-  .typing-text:first-child{
+.typing-text:first-child {
     margin-top: 6rem;
-  }
+}
 
-  @keyframes typing {
+@keyframes typing {
     from {
-      width: 0
+        width: 0
     }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
+}
 
-  #typing-text-1{
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+#typing-text-1 {
     animation: typing 1s steps(10), blink .5s step-end 6 alternate;
-  }
-  
-  #typing-text-2{
+}
+
+#typing-text-2 {
     animation: typing 1s steps(5), blink .5s step-end 3 alternate;
     animation-delay: 1.3s;
-  }
-  
-  #typing-text-3{
+}
+
+#typing-text-3 {
     animation: typing 1s steps(10), blink .5s step-end 6 alternate;
     animation-delay: 2.6s;
-  }
-  
-  #typing-text-4{
+}
+
+#typing-text-4 {
     animation: typing 1s steps(5), blink .5s step-end 3 alternate;
     animation-delay: 3.9s;
-  }
-  
-  #typing-text-5{
+}
+
+#typing-text-5 {
     animation: typing 1s steps(9), blink .5s step-end 5 alternate;
     animation-delay: 5.2s;
-  }
-  
-  #typing-text-6{
+}
+
+#typing-text-6 {
     animation: typing 1s steps(11), blink .5s step-end infinite alternate;
     animation-delay: 6.5s;
-  }
+}
 
-.page-heading-1 div{
+.page-heading-1 div {
     word-wrap: break-word;
     margin: 0rem;
     line-height: 120%;
@@ -560,7 +532,7 @@ footer {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    gap: 20rem;
+    gap: 10rem;
     margin: 0rem auto;
     padding: 0rem .5rem;
     margin-bottom: 20rem;
@@ -600,7 +572,7 @@ footer {
     transition: all .3s ease-in-out;
 }
 
-.recent-work a{
+.recent-work a {
     color: var(--darkest-gray)
 }
 
@@ -608,8 +580,7 @@ footer {
     transform: scale(99%);
 }
 
-
-.recent-work:hover .recent-work-image{
+.recent-work:hover .recent-work-image {
     transform: scale(105%);
 }
 
@@ -620,14 +591,14 @@ footer {
     overflow: hidden;
 }
 
-.recent-work-name{
+.recent-work-name {
     font-family: 'Fira Code', monospace;
     font-weight: 400;
     transition: all .3s ease-in-out;
 }
 
 .recent-work:hover .recent-work-name,
-.recent-work-name:hover{
+.recent-work-name:hover {
     text-decoration: underline;
     font-weight: 500;
 }
@@ -647,49 +618,50 @@ footer {
     z-index: 2;
 }
 
-#recent-work-img-1{
+#recent-work-img-1 {
     background-image: url(../img/worterbuch/recent-card.png);
 }
 
-#recent-work-img-2{
+#recent-work-img-2 {
     background-image: url(../img/quotes/recent-card.png);
 }
 
-#recent-work-img-3{
+#recent-work-img-3 {
     background-image: url(../img/kasumi/recent-card.png);
 }
 
-#recent-work-img-4{
+#recent-work-img-4 {
     background-image: url(../img/studentsKnowledgeControl/recent-card.png);
 }
 
-#recent-work-img-5{
+#recent-work-img-5 {
     background-image: url(../img/perfectPosture/recent-card.png);
 }
 
-#recent-work-img-6{
+#recent-work-img-6 {
     background-image: url(../img/basketballFlightModeling/recent-card.png);
 }
 
-#recent-work-img-7{
+#recent-work-img-7 {
     background-image: url(../img/proCredit/recent-card.png);
 }
 
-#recent-work-img-8{
+#recent-work-img-8 {
     background-image: url(../img/mark/recent-card.png);
 }
 
-#recent-work-img-9{
+#recent-work-img-9 {
     background-image: url(../img/bunker-42/recent-card.png);
 }
 
-#recent-work-img-10{
+#recent-work-img-10 {
     background-image: url(../img/yudaev/recent-card-1.png);
 }
 
-#recent-work-img-11{
+#recent-work-img-11 {
     background-image: url(../img/yudaev/recent-card-2.png);
 }
+
 
 /*Стиль страницы "Обо мне"*/
 
@@ -816,19 +788,20 @@ footer {
     margin-top: 10rem;
 }
 
-#typing-text-7{
+#typing-text-7 {
     animation: typing 1s steps(9), blink .5s step-end 5 alternate;
-  }
-  
-  #typing-text-8{
+}
+
+#typing-text-8 {
     animation: typing 1s steps(11), blink .5s step-end 6 alternate;
     animation-delay: 1.3s;
-  }
-  
-  #typing-text-9{
+}
+
+#typing-text-9 {
     animation: typing 1s steps(10), blink .5s step-end infinite alternate;
     animation-delay: 2.6s;
-  }
+}
+
 
 /* projects page style */
 
@@ -897,7 +870,7 @@ footer {
 }
 
 .project-image,
-.recent-work-image{
+.recent-work-image {
     pointer-events: none;
     background-repeat: no-repeat;
     background-size: cover;
@@ -907,11 +880,11 @@ footer {
     height: 100%;
 }
 
-.project-container:hover .project-image{
+.project-container:hover .project-image {
     transform: scale(105%);
 }
 
-.project-container:hover .project-content{
+.project-container:hover .project-content {
     transform: scale(99%);
 }
 
@@ -938,7 +911,7 @@ footer {
 }
 
 .project-header:hover,
-.project-container:hover .project-header{
+.project-container:hover .project-header {
     text-decoration: underline;
     font-weight: 500;
     cursor: pointer;
@@ -992,9 +965,10 @@ footer {
     background-image: url(../img/soon/project-card.png);
 }
 
+
 /* страница проекта */
 
-.single-project-page{
+.single-project-page {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -1003,33 +977,36 @@ footer {
     height: fit-content;
 }
 
-.project-page-block-content{
-    padding: 10rem 1rem;
+.project-page-block-content {
+    padding: 5rem 1rem;
 }
 
-#project-category-block{
+#project-category-block {
     padding-bottom: 0rem;
     align-items: flex-start;
 }
+
+
 /* 
 #worterbuch-name-block{
     padding-top: 0rem;
 } */
-.project-page-block-content{
+
+.project-page-block-content {
     max-width: 1440px;
     margin: 0rem auto;
     overflow: hidden;
 }
 
-.project-page-block-content.vertical-direction{
+.project-page-block-content.vertical-direction {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10rem;
+    align-items: left;
+    gap: 1rem;
 }
 
 .project-page-block-content.horizontal-direction,
-.worterbuch-colors{
+.worterbuch-colors {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1038,98 +1015,101 @@ footer {
     /* gap: 2rem; */
 }
 
-.vertical-flex-block{
+.vertical-flex-block {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-.vertical-flex-block .description{
+.vertical-flex-block .description {
     font-weight: 400;
     font-size: 1.1rem;
 }
 
-.horizontal-divider{
+.horizontal-divider {
     width: 100%;
     height: 1px;
     margin: 0rem auto;
     background-color: #2d2d2d;
 }
 
-.size-36{
+.size-36 {
     font-size: 36px;
 }
 
-.size-32{
+.size-32 {
     font-size: 32px;
 }
 
-.size-24{
+.size-24 {
     font-size: 24px;
 }
 
-.size-20{
+.size-20 {
     font-size: 20px;
 }
 
-.size-15{
+.size-15 {
     font-size: 15px;
 }
 
-.size-13{
+.size-13 {
     font-size: 13px;
 }
 
-.size-10{
+.size-10 {
     font-size: 10px;
 }
 
-.semi-bold-text{
+.semi-bold-text {
     font-weight: 600;
 }
 
-.medium-text{
+.medium-text {
     font-weight: 500;
 }
 
-.regulat-text{
+.regulat-text {
     font-weight: 400;
 }
 
-.header-comment{
+.header-comment {
     font-family: 'Fira code', monospace;
     font-size: 1.5rem;
     font-weight: 400;
     color: #d9d9d9;
 }
+
+
 /* worterbuch */
 
-#worterbuch-page{
+#worterbuch-page {
     color: #2d2d2d;
 }
+
 
 /* #worterbuch-page:first-child{
     margin-bottom: 0rem;
 } */
 
-#worterbuch-header{
+#worterbuch-header {
     font-family: 'Unbounded', sans-serif;
     font-weight: 400;
     font-size: 4rem;
     color: var(--darkest-gray);
 }
 
-.worterbuch-block-header{
+.worterbuch-block-header {
     font-size: 2.5rem;
     font-weight: 500;
     font-family: "Manrope", sans-serif;
 }
 
-#worterbuch-img-1{
+#worterbuch-img-1 {
     background-image: url(../img/worterbuch/mockup-2.png);
 }
 
-.worterbuch-tipography{
+.worterbuch-tipography {
     width: fit-content;
     height: fit-content;
     background: var(--green);
@@ -1139,7 +1119,7 @@ footer {
     padding: 0rem 1rem;
 }
 
-#worterbuch-tepography-block{
+#worterbuch-tepography-block {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -1148,34 +1128,35 @@ footer {
     width: 100%
 }
 
-#unbounded-font p{
+#unbounded-font p {
     font-family: 'Unbounded', sans-serif;
     line-height: 160%;
     margin: 0rem;
 }
 
 #unbounded-font-header,
-#inter-font-header{
+#inter-font-header {
     font-size: 2.5rem;
     font-weight: 600;
 }
 
-#inter-font p{
+#inter-font p {
     font-family: 'Inter', sans-serif;
     line-height: 160%;
     margin: 0rem;
 }
 
-.worterbuch-tipography div{
+.worterbuch-tipography div {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     gap: 1.5rem;
 }
 
-.worterbuch-colors-group{
+.worterbuch-colors-group {
     gap: 1rem;
 }
+
 
 /* .worterbuch-color{
     padding: 2rem;
@@ -1183,95 +1164,94 @@ footer {
     height: 11rem;
 } */
 
-
-.worterbuch-color p{
+.worterbuch-color p {
     line-height: 100%;
     margin: 0rem;
 }
 
-.worterbuch-color p:first-child{
+.worterbuch-color p:first-child {
     font-size: 1.25rem;
 }
 
-.worterbuch-color p:not(:first-child){
+.worterbuch-color p:not(:first-child) {
     font-size: 1rem;
 }
 
-#worterbuch-black{
+#worterbuch-black {
     background: #222222;
 }
 
-#worterbuch-black p{
+#worterbuch-black p {
     color: #989898;
 }
 
-#worterbuch-dark-gray{
+#worterbuch-dark-gray {
     background: #707070;
 }
 
-#worterbuch-dark-gray p{
+#worterbuch-dark-gray p {
     color: #2f2f2f;
 }
 
-#worterbuch-gray{
+#worterbuch-gray {
     background: #BCBCBC;
 }
 
-#worterbuch-gray p{
+#worterbuch-gray p {
     color: #2C2C2C;
 }
 
-#worterbuch-red{
+#worterbuch-red {
     background: #CD5353;
 }
 
-#worterbuch-red p{
+#worterbuch-red p {
     color: #722D2D;
 }
 
-#worterbuch-green{
+#worterbuch-green {
     background: #e7fe54;
 }
 
-#worterbuch-green p{
+#worterbuch-green p {
     color: #69751e;
 }
 
-#worterbuch-light-gray{
+#worterbuch-light-gray {
     background: #f5f5f5;
 }
 
-#worterbuch-light-gray p{
+#worterbuch-light-gray p {
     color: #737373;
 }
 
-#worterbuch-white{
+#worterbuch-white {
     background: #ffffff;
 }
 
-#worterbuch-white p{
+#worterbuch-white p {
     color: #444444;
 }
 
-#worterbuch-background{
+#worterbuch-background {
     background: #eeefea;
 }
 
-#worterbuch-background p{
+#worterbuch-background p {
     color: #7c816b;
 }
 
 #worterbuch-navigation-block,
-#worterbuch-main-block{
+#worterbuch-main-block {
     background-color: #E7FE54;
 }
 
-#worterbuch-registration-block{
+#worterbuch-registration-block {
     background-color: #2d2d2d;
     height: fit-content;
 }
 
-#worterbuch-img-3{
+#worterbuch-img-3 {
     background-image: url(../img/worterbuch/registration-screenshots-group.png);
     height: 100vh;
     width: 100%;
@@ -1280,63 +1260,61 @@ footer {
     background-attachment: fixed;
 }
 
-#worterbuch-img-4{
+#worterbuch-img-4 {
     background-image: url(../img/worterbuch/mockup-3.png);
 }
 
-#worterbuch-img-5{
+#worterbuch-img-5 {
     background-image: url(../img/worterbuch/main.png);
 }
-    
-.worterbuch-horizontal-images{
+
+.worterbuch-horizontal-images {
     display: flex;
     flex-direction: row;
     gap: 2rem;
 }
 
-#worterbuch-dictionary-block{
+#worterbuch-dictionary-block {
     background-color: #2d2d2d;
 }
 
-#worterbuch-dictionary-block p{
+#worterbuch-dictionary-block p {
     color: #ffffff;
 }
 
-#worterbuch-img-7{
+#worterbuch-img-7 {
     background-image: url(../img/worterbuch/mockup-5.png);
 }
 
-#worterbuch-img-6{
+#worterbuch-img-6 {
     background-image: url(../img/worterbuch/dictionary.png);
 }
 
-#worterbuch-settings-text p:first-child{
+#worterbuch-settings-text p:first-child {
     text-align: center;
 }
 
-#worterbuch-settings-text p:last-child{
-    margin-left:auto;
+#worterbuch-settings-text p:last-child {
+    margin-left: auto;
     margin-right: auto;
 }
 
-#worterbuch-img-8{
+#worterbuch-img-8 {
     background-image: url(../img/worterbuch/settings-1.png);
 }
 
-#worterbuch-img-9{
+#worterbuch-img-9 {
     background-image: url(../img/worterbuch/settings-2.png);
 }
 
-#worterbuch-education-block{
+#worterbuch-education-block {
     background-color: #eeefea;
 }
 
-#worterbuch-education-text p:not(:first-child){
+#worterbuch-education-text p:not(:first-child) {
     width: 13rem;
 }
 
-#worterbuch-img-10{
+#worterbuch-img-10 {
     background-image: url(../img/worterbuch/educatioin-screenshots-group.png);
 }
-  
-
