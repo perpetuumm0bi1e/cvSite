@@ -358,12 +358,15 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    gap: .5rem;
     height: 9.375rem;
     width: 100%;
     font-size: 0.875rem;
     color: var(--white);
     background-color: var(--darkest-gray);
+    p{
+        margin: 0;
+    }
 }
 
 
@@ -848,8 +851,8 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 2rem;
-    row-gap: 4rem;
-    margin: 0rem auto;
+    row-gap: 2.5rem;
+    margin: 4rem auto;
     padding: 0rem .5rem;
     width: 100%;
     max-width: 96rem;
