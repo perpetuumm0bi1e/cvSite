@@ -989,11 +989,11 @@ footer {
     align-items: flex-start;
 }
 
-
-/* 
 #worterbuch-name-block{
-    padding-top: 0rem;
-} */
+    width: 100%;
+    align-content: center;
+    justify-content: space-between;
+}
 
 .project-page-block-content {
     max-width: 1440px;
@@ -1017,7 +1017,6 @@ footer {
     align-items: center;
     /* gap: 2rem; */
 }
-
 .vertical-flex-block {
     display: flex;
     flex-direction: column;
@@ -1090,10 +1089,22 @@ footer {
     color: #2d2d2d;
 }
 
-
-/* #worterbuch-page:first-child{
-    margin-bottom: 0rem;
-} */
+#worterbuch-top-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    padding-top: 40px;
+    background-color: #EEEFEA;
+    border-radius: 0 0 3rem 3rem;
+    #worterbuch-img-0 {
+            background-image: url(../img/worterbuch/worterbuch-phones.svg);
+            
+            width: 47.3rem;
+            height: 39.5rem;
+    }
+}
 
 #worterbuch-header {
     font-family: 'Unbounded', sans-serif;
