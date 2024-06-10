@@ -641,7 +641,7 @@ footer {
 }
 
 #recent-work-img-5 {
-    background-image: url(../img/perfectPosture/recent-card.png);
+    background-image: url(../img/perfectPosture/recent-card2.svg);
 }
 
 #recent-work-img-6 {
@@ -668,6 +668,9 @@ footer {
     background-image: url(../img/yudaev/recent-card-2.png);
 }
 
+#recent-work-img-12 {
+    background-image: url(../img/funnymouse/recent-card.png);
+}
 
 /*Стиль страницы "Обо мне"*/
 
@@ -700,8 +703,8 @@ footer {
     max-width: 1400px;
 }
 
-.about-me-container>div:not(#double-box),
-#double-box>div {
+.about-me-container>div:not(.double-box),
+.double-box>div {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -712,8 +715,8 @@ footer {
     
 }
 
-.about-me-container>div:hover:not(#double-box),
-#double-box>div:hover {
+.about-me-container>div:hover:not(.double-box),
+.double-box>div:hover {
     box-shadow: 0.3125rem 0.3125rem var(--blue);
     transition: all 0.4s ease-in-out;
 }
@@ -731,10 +734,11 @@ footer {
     background: var(--green);
 }
 
-#double-box {
+.double-box {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: space-between;
 }
 
 /* #about-me-box .description:not(:last-child) {
@@ -1063,6 +1067,9 @@ footer {
     background-image: url(../img/soon/project-card.png);
 }
 
+#project-img-13 {
+    background-image: url(../img/funnymouse/project-card.svg);
+}
 
 /* страница проекта */
 
