@@ -625,55 +625,55 @@ footer {
 }
 
 #recent-work-img-1 {
-    background-image: url(../img/worterbuch/recent-card.svg);
+    background-image: url(../img/worterbuch/recent-card.png);
 }
 
 #recent-work-img-2 {
-    background-image: url(../img/quotes/recent-card.svg);
+    background-image: url(../img/quotes/recent-card.png);
 }
 
 #recent-work-img-3 {
-    background-image: url(../img/kasumi/recent-card.svg);
+    background-image: url(../img/kasumi/recent-card.png);
 }
 
 #recent-work-img-4 {
-    background-image: url(../img/studentsKnowledgeControl/recent-card.svg);
+    background-image: url(../img/studentsKnowledgeControl/recent-card.png);
 }
 
 #recent-work-img-5 {
-    background-image: url(../img/perfectPosture/recent-card.svg);
+    background-image: url(../img/perfectPosture/recent-card.png);
 }
 
 #recent-work-img-6 {
-    background-image: url(../img/basketballFlightModeling/recent-card.svg);
+    background-image: url(../img/basketballFlightModeling/recent-card.png);
 }
 
 #recent-work-img-7 {
-    background-image: url(../img/proCredit/recent-card.svg);
+    background-image: url(../img/proCredit/recent-card.png);
 }
 
 #recent-work-img-8 {
-    background-image: url(../img/mark/recent-card.svg);
+    background-image: url(../img/mark/recent-card.png);
 }
 
 #recent-work-img-9 {
-    background-image: url(../img/bunker-42/recent-card.svg);
+    background-image: url(../img/bunker-42/recent-card.png);
 }
 
 #recent-work-img-10 {
-    background-image: url(../img/yudaev/recent-card.svg);
+    background-image: url(../img/yudaev/recent-card.png);
 }
 
 #recent-work-img-11 {
-    background-image: url(../img/funnymouse/recent-card.svg);
+    background-image: url(../img/funnymouse/recent-card.png);
 }
 
 #recent-work-img-12 {
-    background-image: url(../img/allrooms/mobile/recent-card.svg);
+    background-image: url(../img/allrooms/mobile/recent-card.png);
 }
 
 #recent-work-img-13 {
-    background-image: url(../img/allrooms/web/recent-card.svg);
+    background-image: url(../img/allrooms/web/recent-card.png);
 }
 
 
@@ -835,7 +835,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 5rem;
+    /* gap: 6rem; */
 }
 
 .language-group {
@@ -844,7 +844,7 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 .circles {
@@ -1008,55 +1008,55 @@ footer {
 }
 
 #project-img-1 {
-    background-image: url(../img/worterbuch/project-card.svg);
+    background-image: url(../img/worterbuch/project-card.png);
 }
 
 #project-img-2 {
-    background-image: url(../img/quotes/project-card.svg);
+    background-image: url(../img/quotes/project-card.png);
 }
 
 #project-img-3 {
-    background-image: url(../img/perfectPosture/project-card.svg);
+    background-image: url(../img/perfectPosture/project-card.png);
 }
 
 #project-img-4 {
-    background-image: url(../img/basketballFlightModeling/project-card.svg);
+    background-image: url(../img/basketballFlightModeling/project-card.png);
 }
 
 #project-img-5 {
-    background-image: url(../img/proCredit/project-card.svg);
+    background-image: url(../img/proCredit/project-card.png);
 }
 
 #project-img-6 {
-    background-image: url(../img/studentsKnowledgeControl/project-card.svg);
+    background-image: url(../img/studentsKnowledgeControl/project-card.png);
 }
 
 #project-img-7 {
-    background-image: url(../img/kasumi/project-card.svg);
+    background-image: url(../img/kasumi/project-card.png);
 }
 
 #project-img-8 {
-    background-image: url(../img/mark/project-card.svg);
+    background-image: url(../img/mark/project-card.png);
 }
 
 #project-img-9 {
-    background-image: url(../img/bunker-42/project-card.svg);
+    background-image: url(../img/bunker-42/project-card.png);
 }
 
 #project-img-10 {
-    background-image: url(../img/yudaev/project-card.svg);
+    background-image: url(../img/yudaev/project-card.png);
 }
 
 #project-img-11 {
-    background-image: url(../img/funnymouse/project-card.svg);
+    background-image: url(../img/funnymouse/project-card.png);
 }
 
 #project-img-12 {
-    background-image: url(../img/allrooms/mobile/project-card.svg);
+    background-image: url(../img/allrooms/mobile/project-card.png);
 }
 
 #project-img-13 {
-    background-image: url(../img/allrooms/web/project-card.svg);
+    background-image: url(../img/allrooms/web/project-card.png);
 }
 
 

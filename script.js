@@ -24,12 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
             const headerHidden = () => header.classList.contains("navbar_hidden");
 
             if (currentScroll > prevScroll && !headerHidden() && document.body.clientWidth >= 1024) {
-            // if (currentScroll > prevScroll && !headerHidden()) {
+                // if (currentScroll > prevScroll && !headerHidden()) {
                 header.classList.add("navbar_hidden");
             }
             if (currentScroll < prevScroll && headerHidden() && document.body.clientWidth >= 1024) {
-                
-            // if (currentScroll < prevScroll && headerHidden()) {
+
+                // if (currentScroll < prevScroll && headerHidden()) {
                 header.classList.remove("navbar_hidden");
             }
 
@@ -48,13 +48,8 @@ function windowSetting() {
     let itemsBefore = document.getElementById("items-before");
     let itemsAfter = document.getElementById("items-after");
     let width = (aboutMePage.offsetHeight - 5) * 9 + 10;
-
-    //console.log(aboutMePage.style);
-    //console.log(aboutMePage.offsetHeight);
-
     let pageWidth = document.body.clientWidth;
     let count = Math.round(pageWidth / width);
-    //console.log(count);
 
     itemsBefore.innerHTML = "";
     itemsAfter.innerHTML = "";
@@ -76,6 +71,27 @@ function windowSetting() {
         navbar.style.position = "relative";
     }
 
+    if (location.pathname.includes("about")) {
+        let engBlock = document.getElementById('english-block');
+        let gerBlock = document.getElementById('german-block');
+        let langGroups = document.getElementsByClassName('language-group');
+        let langGroupsCont = document.getElementById('language-groups');
+
+        gerBlock.style.width = engBlock.offsetWidth + 'px';
+
+        if (document.body.clientWidth > 600) {
+            for (let group of langGroups) {
+                group.style.width = '100%';
+                group.style.maxWidth = '44%';
+                langGroupsCont.style.gap = '6rem';
+            }
+        } else {
+            for (let group of langGroups) {
+                group.style.maxWidth = '100%';
+                langGroupsCont.style.gap = '3rem';
+            }
+        }
+    }
 }
 
 window.onload = function() {
@@ -122,10 +138,10 @@ window.onload = function() {
 
         let typingText = document.getElementsByClassName('typing-text');
 
-        for(text of typingText){
+        for (text of typingText) {
             text.style.width = '0rem';
         }
-        
+
         typingText[0].style.width = '10ch';
         typingText[0].style.borderRight = '.4rem solid';
 
@@ -140,9 +156,9 @@ window.onload = function() {
                 typingText[2].style.borderRight = '.4rem solid';
 
                 setTimeout(function() {
-                typingText[2].style.borderRight = 'none';
-                typingText[3].style.width = '5ch';
-                typingText[3].style.borderRight = '.4rem solid';
+                    typingText[2].style.borderRight = 'none';
+                    typingText[3].style.width = '5ch';
+                    typingText[3].style.borderRight = '.4rem solid';
 
                     setTimeout(function() {
                         typingText[3].style.borderRight = 'none';
@@ -153,88 +169,89 @@ window.onload = function() {
                             typingText[4].style.borderRight = 'none';
                             typingText[5].style.width = '11ch';
                             typingText[5].style.borderRight = '.4rem solid';
-                            
-                        }, 1300);                        
+
+                        }, 1300);
                     }, 1300);
                 }, 1300);
             }, 1300);
         }, 1300);
 
     } else if (location.pathname.includes("projects")) {
-        document.getElementById("works-page").style.textDecoration="underline";
-        document.getElementById("works-page").style.fontWeight="500";
+        document.getElementById("works-page").style.textDecoration = "underline";
+        document.getElementById("works-page").style.fontWeight = "500";
 
         let allProjectsCategory = document.getElementById('category-all-projects'),
-        designCategory = document.getElementById('category-design'),
-        desktopCategory = document.getElementById('category-desktop'),
-        webCategory = document.getElementById('category-web'),
-        androidCategory = document.getElementById('category-android'),
-        allCatgories = document.getElementsByClassName('project-category');
+            designCategory = document.getElementById('category-design'),
+            desktopCategory = document.getElementById('category-desktop'),
+            webCategory = document.getElementById('category-web'),
+            androidCategory = document.getElementById('category-android'),
+            allCatgories = document.getElementsByClassName('project-category');
 
-        let activeCategory = 0, activeCategoryName;
+        let activeCategory = 0,
+            activeCategoryName;
 
         let projectsContainer = document.getElementsByClassName('projects-container'),
             nodesArr = projectsContainer[0].children;
 
-        for(category of allCatgories){
-            for (categoryClass of category.classList){
-                if(categoryClass == 'active'){
+        for (category of allCatgories) {
+            for (categoryClass of category.classList) {
+                if (categoryClass == 'active') {
                     activeCategory++;
                 }
             }
         }
 
-        if(activeCategory == 0){
-            for(category of allCatgories){
-                (category == allProjectsCategory) ? 
-                category.classList.add('active') : 
-                category.classList.add('inactive');
+        if (activeCategory == 0) {
+            for (category of allCatgories) {
+                (category == allProjectsCategory) ?
+                category.classList.add('active'):
+                    category.classList.add('inactive');
             }
             activeCategoryName = allProjectsCategory.id;
         }
 
-        let changeCategoriesOrder = function(elem){
+        let changeCategoriesOrder = function(elem) {
             let order = 0;
             elem.style.order = `${order}`;
             order++;
 
-            for(category of allCatgories){
-                if(category != elem){
+            for (category of allCatgories) {
+                if (category != elem) {
                     category.style.order = `${order}`;
                     order++;
                 }
             }
         }
 
-        let changeVisibility = function(){
-            if(activeCategoryName == 'category-all-projects'){
-                for(child of nodesArr){
+        let changeVisibility = function() {
+            if (activeCategoryName == 'category-all-projects') {
+                for (child of nodesArr) {
                     console.log(child);
-                    child.style.display ='block';
+                    child.style.display = 'block';
                 }
             } else {
-                for(child of nodesArr){
+                for (child of nodesArr) {
                     child.style.display = (child.classList.contains(`${activeCategoryName}`)) ? 'block' : 'none';
                 }
             }
         }
 
-        let changeCategory = function(elem){
+        let changeCategory = function(elem) {
             activeCategoryName = elem.id;
 
-            for(category of allCatgories){
-                if(category == elem){
-                    try{
+            for (category of allCatgories) {
+                if (category == elem) {
+                    try {
                         category.classList.remove('inactive');
                         category.classList.add('active');
-                    } catch{
+                    } catch {
                         break;
                     }
                 } else {
-                    try{
+                    try {
                         category.classList.remove('active');
                         category.classList.add('inactive');
-                    } catch{
+                    } catch {
 
                     }
                 }
@@ -243,36 +260,36 @@ window.onload = function() {
             changeVisibility();
         }
 
-        allProjectsCategory.onclick = function (){
+        allProjectsCategory.onclick = function() {
             changeCategory(allProjectsCategory);
         }
 
-        designCategory.onclick = function (){
+        designCategory.onclick = function() {
             changeCategory(designCategory);
         }
 
-        desktopCategory.onclick = function (){
+        desktopCategory.onclick = function() {
             changeCategory(desktopCategory);
         }
 
-        webCategory.onclick = function (){
+        webCategory.onclick = function() {
             changeCategory(webCategory);
         }
 
-        androidCategory.onclick = function (){
+        androidCategory.onclick = function() {
             changeCategory(androidCategory);
         }
     } else if (location.pathname.includes("contacts")) {
-    document.getElementById("contacts-page").style.textDecoration="underline";
-    document.getElementById("contacts-page").style.fontWeight="500";
+        document.getElementById("contacts-page").style.textDecoration = "underline";
+        document.getElementById("contacts-page").style.fontWeight = "500";
 
-        
+
         let typingText = document.getElementsByClassName('typing-text');
 
-        for(text of typingText){
+        for (text of typingText) {
             text.style.width = '0rem';
         }
-        
+
         typingText[0].style.width = '9ch';
         typingText[0].style.borderRight = '.4rem solid';
 
@@ -289,13 +306,34 @@ window.onload = function() {
             }, 1300);
         }, 1300);
 
-    } else if (location.pathname.includes("about")){
-        document.getElementById("about-me-page").style.textDecoration="underline";
-        document.getElementById("about-me-page").style.fontWeight="500";
+    } else if (location.pathname.includes("about")) {
+        document.getElementById("about-me-page").style.textDecoration = "underline";
+        document.getElementById("about-me-page").style.fontWeight = "500";
+
+        let engBlock = document.getElementById('english-block');
+        let gerBlock = document.getElementById('german-block');
+        let langGroups = document.getElementsByClassName('language-group');
+        let langGroupsCont = document.getElementById('language-groups');
+
+        gerBlock.style.width = engBlock.offsetWidth + 'px';
+
+        if (document.body.clientWidth > 600) {
+            for (let group of langGroups) {
+                group.style.width = '100%';
+                group.style.maxWidth = '44%';
+                langGroupsCont.style.gap = '6rem';
+            }
+        } else {
+            for (let group of langGroups) {
+                group.style.maxWidth = '100%';
+                langGroupsCont.style.gap = '3rem';
+            }
+        }
+
     } else if (location.pathname.includes("worterbuch")) {
         let worterbuchButton = document.getElementById('worterbuch-figma');
 
-        worterbuchButton.onclick = function(){
+        worterbuchButton.onclick = function() {
             window.location.href = "https://www.figma.com/proto/RveA3fRKOUjhkkb0ifM75q/W%C3%B6rterbuch?page-id=0%3A1&type=design&node-id=298-1556&viewport=2005%2C1058%2C0.19&t=XfE9TT8cst7rFkqG-1&scaling=min-zoom&starting-point-node-id=3%3A7&mode=design";
         }
     }
