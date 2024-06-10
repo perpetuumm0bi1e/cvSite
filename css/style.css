@@ -367,7 +367,7 @@ footer {
     font-size: 0.875rem;
     color: var(--white);
     background-color: var(--darkest-gray);
-    p{
+    p {
         margin: 0;
     }
 }
@@ -625,19 +625,19 @@ footer {
 }
 
 #recent-work-img-1 {
-    background-image: url(../img/worterbuch/recent-card.png);
+    background-image: url(../img/worterbuch/recent-card.svg);
 }
 
 #recent-work-img-2 {
-    background-image: url(../img/quotes/recent-card.png);
+    background-image: url(../img/quotes/recent-card.svg);
 }
 
 #recent-work-img-3 {
-    background-image: url(../img/kasumi/recent-card.png);
+    background-image: url(../img/kasumi/recent-card.svg);
 }
 
 #recent-work-img-4 {
-    background-image: url(../img/studentsKnowledgeControl/recent-card.png);
+    background-image: url(../img/studentsKnowledgeControl/recent-card.svg);
 }
 
 #recent-work-img-5 {
@@ -645,32 +645,37 @@ footer {
 }
 
 #recent-work-img-6 {
-    background-image: url(../img/basketballFlightModeling/recent-card.png);
+    background-image: url(../img/basketballFlightModeling/recent-card.svg);
 }
 
 #recent-work-img-7 {
-    background-image: url(../img/proCredit/recent-card.png);
+    background-image: url(../img/proCredit/recent-card.svg);
 }
 
 #recent-work-img-8 {
-    background-image: url(../img/mark/recent-card.png);
+    background-image: url(../img/mark/recent-card.svg);
 }
 
 #recent-work-img-9 {
-    background-image: url(../img/bunker-42/recent-card.png);
+    background-image: url(../img/bunker-42/recent-card.svg);
 }
 
 #recent-work-img-10 {
-    background-image: url(../img/yudaev/recent-card-1.png);
+    background-image: url(../img/yudaev/recent-card.svg);
 }
 
 #recent-work-img-11 {
-    background-image: url(../img/yudaev/recent-card-2.png);
+    background-image: url(../img/funnymouse/recent-card.svg);
 }
 
 #recent-work-img-12 {
-    background-image: url(../img/funnymouse/recent-card.png);
+    background-image: url(../img/allrooms/mobile/recent-card.svg);
 }
+
+#recent-work-img-13 {
+    background-image: url(../img/allrooms/web/recent-card.svg);
+}
+
 
 /*Стиль страницы "Обо мне"*/
 
@@ -707,12 +712,12 @@ footer {
 .double-box>div {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     gap: 1.5rem;
     padding: 0rem 1.5rem 1.5rem 1.5rem;
     box-shadow: none;
     background: var(--lightest-gray);
     transition: all 0.5s ease-in-out;
-    
 }
 
 .about-me-container>div:hover:not(.double-box),
@@ -741,14 +746,11 @@ footer {
     justify-content: space-between;
 }
 
-/* #about-me-box .description:not(:last-child) {
-    margin-top: 0rem;
-} */
-.sub-and-desc{
+.sub-and-desc {
     display: flex;
 }
 
-.sub-and-desc.horizontal{
+.sub-and-desc.horizontal {
     flex-direction: row;
     gap: 2rem;
 }
@@ -758,24 +760,18 @@ footer {
     gap: .5rem;
 }
 
-#about-me-box {
-    flex-grow: 1;
-    /* max-width: 100%; */
-}
-
-.timeline{
+.timeline {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     width: 100%;
 }
 
-.timeline-line{
+.timeline-line {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-
-    .timeline-year{
+    .timeline-year {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -783,12 +779,12 @@ footer {
     }
 }
 
-.timeline-boxes{
+.timeline-boxes {
     display: flex;
     flex-wrap: wrap;
     gap: .5rem;
     width: 100%;
-    div{
+    div {
         flex: 1;
         flex-grow: 1;
     }
@@ -798,18 +794,21 @@ footer {
     background: var(--white);
     padding: .5rem 1rem;
     width: fit-content;
+    p {
+        display: inline;
+    }
 }
 
-#timeline-line-1 .timeline-boxes{
+#timeline-line-1 .timeline-boxes {
     flex-direction: column;
 }
 
 #timeline-line-2 .timeline-boxes,
-#timeline-line-3 .timeline-boxes{
+#timeline-line-3 .timeline-boxes {
     flex-direction: row;
 }
 
-.dies-box{
+.dies-box {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -817,29 +816,18 @@ footer {
     gap: 1rem;
 }
 
-.cources-list{
+.cources-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 1.5rem;
-    
-    .cources-list-part{
+    .cources-list-part {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-        flex: 1;
         flex-grow: 1;
     }
-}
-
-#main-info-box,
-#education-box,
-#courses-box,
-#languages-box,
-#work-with-box,
-#educational-projects-box {
-    flex-grow: 1;
 }
 
 .language-groups {
@@ -847,7 +835,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 5rem;
 }
 
 .language-group {
@@ -856,7 +844,7 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 6rem;
+    gap: 4rem;
 }
 
 .circles {
@@ -1020,56 +1008,57 @@ footer {
 }
 
 #project-img-1 {
-    background-image: url(../img/worterbuch/project-card.png);
+    background-image: url(../img/worterbuch/project-card.svg);
 }
 
 #project-img-2 {
-    background-image: url(../img/quotes/project-card.png);
+    background-image: url(../img/quotes/project-card.svg);
 }
 
 #project-img-3 {
-    background-image: url(../img/perfectPosture/project-card.png);
+    background-image: url(../img/perfectPosture/project-card.svg);
 }
 
 #project-img-4 {
-    background-image: url(../img/basketballFlightModeling/project-card.png);
+    background-image: url(../img/basketballFlightModeling/project-card.svg);
 }
 
 #project-img-5 {
-    background-image: url(../img/proCredit/project-card.png);
+    background-image: url(../img/proCredit/project-card.svg);
 }
 
 #project-img-6 {
-    background-image: url(../img/studentsKnowledgeControl/project-card.png);
+    background-image: url(../img/studentsKnowledgeControl/project-card.svg);
 }
 
 #project-img-7 {
-    background-image: url(../img/kasumi/project-card.png);
+    background-image: url(../img/kasumi/project-card.svg);
 }
 
 #project-img-8 {
-    background-image: url(../img/mark/project-card.png);
+    background-image: url(../img/mark/project-card.svg);
 }
 
 #project-img-9 {
-    background-image: url(../img/bunker-42/project-card.png);
+    background-image: url(../img/bunker-42/project-card.svg);
 }
 
 #project-img-10 {
-    background-image: url(../img/yudaev/project-card-1.png);
+    background-image: url(../img/yudaev/project-card.svg);
 }
 
 #project-img-11 {
-    background-image: url(../img/yudaev/project-card-2.png);
+    background-image: url(../img/funnymouse/project-card.svg);
 }
 
 #project-img-12 {
-    background-image: url(../img/soon/project-card.png);
+    background-image: url(../img/allrooms/mobile/project-card.svg);
 }
 
 #project-img-13 {
-    background-image: url(../img/funnymouse/project-card.svg);
+    background-image: url(../img/allrooms/web/project-card.svg);
 }
+
 
 /* страница проекта */
 
@@ -1091,7 +1080,7 @@ footer {
     align-items: flex-start;
 }
 
-#worterbuch-name-block{
+#worterbuch-name-block {
     width: 100%;
     align-content: center;
     justify-content: space-between;
@@ -1119,6 +1108,7 @@ footer {
     align-items: center;
     /* gap: 2rem; */
 }
+
 .vertical-flex-block {
     display: flex;
     flex-direction: column;
@@ -1191,7 +1181,7 @@ footer {
     color: #2d2d2d;
 }
 
-#worterbuch-top-block{
+#worterbuch-top-block {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1201,10 +1191,9 @@ footer {
     background-color: #EEEFEA;
     border-radius: 0 0 3rem 3rem;
     #worterbuch-img-0 {
-            background-image: url(../img/worterbuch/worterbuch-phones.svg);
-            
-            width: 47.3rem;
-            height: 39.5rem;
+        background-image: url(../img/worterbuch/worterbuch-phones.svg);
+        width: 47.3rem;
+        height: 39.5rem;
     }
 }
 
