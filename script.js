@@ -79,7 +79,7 @@ function windowSetting() {
 
         gerBlock.style.width = engBlock.offsetWidth + 'px';
 
-        if (document.offsetWidth > 600) {
+        if (document.body.clientWidth > 600) {
             for (let group of langGroups) {
                 group.style.width = '100%';
                 group.style.maxWidth = '44%';
@@ -317,7 +317,7 @@ window.onload = function() {
 
         gerBlock.style.width = engBlock.offsetWidth + 'px';
 
-        if (document.offsetWidth > 600) {
+        if (document.body.clientWidth > 600) {
             for (let group of langGroups) {
                 group.style.width = '100%';
                 group.style.maxWidth = '44%';
