@@ -26,6 +26,7 @@
 html {
     font-family: "Manrope", sans-serif;
     background: var(--white);
+    min-width: 393px;
 }
 
 body {
@@ -308,13 +309,15 @@ li {
 .subheading {
     font-weight: 500;
     font-size: 1.1rem;
+    margin: 0;
 }
 
 .description {
     font-weight: 300;
     font-size: 1rem;
-    line-height: 200%;
+    line-height: 160%;
     letter-spacing: 0.05rem;
+    margin: 0;
 }
 
 
@@ -676,7 +679,7 @@ footer {
 }
 
 #img-container {
-    min-height: 45rem;
+    min-height: 40rem;
     margin: 0rem auto;
     margin-bottom: 12.5rem;
     width: 100%;
@@ -691,7 +694,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-items: stretch;
-    gap: 2.5rem;
+    gap: 2rem;
     padding: 0rem 1rem;
     margin: 0rem auto;
     max-width: 1400px;
@@ -699,10 +702,14 @@ footer {
 
 .about-me-container>div:not(#double-box),
 #double-box>div {
-    padding: 0rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
     box-shadow: none;
     background: var(--lightest-gray);
     transition: all 0.5s ease-in-out;
+    
 }
 
 .about-me-container>div:hover:not(#double-box),
@@ -713,7 +720,7 @@ footer {
 
 .about-me-page-heading {
     padding: 0rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     width: fit-content;
     height: auto;
     text-align: left;
@@ -727,28 +734,116 @@ footer {
 #double-box {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
-#about-me-box .description:not(:last-child) {
+/* #about-me-box .description:not(:last-child) {
     margin-top: 0rem;
+} */
+.sub-and-desc{
+    display: flex;
+}
+
+.sub-and-desc.horizontal{
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.sub-and-desc.vertical {
+    flex-direction: column;
+    gap: .5rem;
 }
 
 #about-me-box {
-    flex-grow: 2;
-    max-width: 60rem;
+    flex-grow: 1;
+    /* max-width: 100%; */
+}
+
+.timeline{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.timeline-line{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    .timeline-year{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 12rem;
+    }
+}
+
+.timeline-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    width: 100%;
+    div{
+        flex: 1;
+        flex-grow: 1;
+    }
+}
+
+.white-box {
+    background: var(--white);
+    padding: .5rem 1rem;
+    width: fit-content;
+}
+
+#timeline-line-1 .timeline-boxes{
+    flex-direction: column;
+}
+
+#timeline-line-2 .timeline-boxes,
+#timeline-line-3 .timeline-boxes{
+    flex-direction: row;
+}
+
+.dies-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.cources-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    
+    .cources-list-part{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        flex: 1;
+        flex-grow: 1;
+    }
 }
 
 #main-info-box,
 #education-box,
 #courses-box,
-#languages-box {
+#languages-box,
+#work-with-box,
+#educational-projects-box {
     flex-grow: 1;
 }
 
 .language-groups {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
 }
 
 .language-group {

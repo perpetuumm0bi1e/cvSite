@@ -266,22 +266,6 @@ window.onload = function() {
     document.getElementById("contacts-page").style.textDecoration="underline";
     document.getElementById("contacts-page").style.fontWeight="500";
 
-        document.getElementById("telegram").onclick = function() {
-            window.location.href = "https://t.me/perpetuumm0bi1e";
-        };
-
-        document.getElementById("instagram").onclick = function() {
-            window.location.href = "https://instagram.com/perpetuumm0bi1e";
-        };
-
-        document.getElementById("github").onclick = function() {
-            window.location.href = "https://github.com/perpetuumm0bi1e";
-        };
-
-        document.getElementById("email").onclick = function() {
-            window.location.href = "mailto:kat.kus@mail.ru";
-        };
-
         
         let typingText = document.getElementsByClassName('typing-text');
 
