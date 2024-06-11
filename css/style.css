@@ -743,9 +743,12 @@ footer {
 .double-box {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     gap: 1.5rem;
     justify-content: space-between;
+}
+
+.double-box.wrap {
+    flex-wrap: wrap;
 }
 
 .sub-and-desc {
