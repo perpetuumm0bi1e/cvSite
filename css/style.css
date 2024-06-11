@@ -63,10 +63,6 @@ li {
     .worterbuch-colors {
         gap: 2rem;
     }
-    #worterbuch-img-1 {
-        width: 19rem;
-        height: 47rem;
-    }
     .worterbuch-color {
         padding: 2rem;
         width: 18rem;
@@ -74,26 +70,25 @@ li {
     }
     #worterbuch-img-4,
     #worterbuch-img-7 {
-        height: 50rem;
         width: 25rem;
     }
     #worterbuch-img-5,
     #worterbuch-img-6 {
-        height: 50rem;
         width: 18rem;
     }
     #worterbuch-img-8,
     #worterbuch-img-9 {
-        height: 45rem;
         width: 22rem;
+    }
+    #worterbuch-img-0 {
+        width: 47.3rem;
     }
     #worterbuch-img-2 {
         background-image: url(../img/worterbuch/scheme.png);
-        width: 90rem;
-        height: 29rem;
+        width: 100%;
+        aspect-ratio: 3.168/1;
     }
     #worterbuch-img-10 {
-        height: 45rem;
         width: 56rem;
     }
 }
@@ -109,10 +104,6 @@ li {
     .worterbuch-colors {
         gap: 1.5rem;
     }
-    #worterbuch-img-1 {
-        width: 30vw;
-        height: 60vw;
-    }
     .worterbuch-color {
         padding: 2rem;
         width: 30vw;
@@ -121,25 +112,24 @@ li {
     #worterbuch-img-4,
     #worterbuch-img-7 {
         width: 45vw;
-        height: 90vw;
     }
     #worterbuch-img-5,
     #worterbuch-img-6 {
-        height: 135vw;
         width: 45vw;
     }
     #worterbuch-img-8,
     #worterbuch-img-9 {
-        height: 36rem;
         width: 18rem;
+    }
+    #worterbuch-img-0 {
+        width: 500px;
     }
     #worterbuch-img-2 {
         background-image: url(../img/worterbuch/scheme.png);
-        width: 90vw;
-        height: 35vw;
+        width: 100%;
+        aspect-ratio: 3.168/1;
     }
     #worterbuch-img-10 {
-        height: calc(90vw*.8);
         width: 90vw;
     }
 }
@@ -170,38 +160,26 @@ li {
     #worterbuch-img-8,
     #worterbuch-img-9 {
         width: 45vw;
-        height: 90vw;
     }
     #worterbuch-img-5,
     #worterbuch-img-6 {
-        height: 135vw;
         width: 45vw;
     }
     #worterbuch-settings-text {
         order: -1;
         width: 100%;
     }
+    #worterbuch-img-0 {
+        width: 330px;
+    }
     #worterbuch-img-2 {
         background-image: url(../img/worterbuch/scheme-mobile.png);
-        width: 95vw;
-        height: 60vw;
+        width: 100%;
+        aspect-ratio: 1.67/1;
     }
     #worterbuch-img-10 {
-        height: calc(90vw*.8);
         width: 90vw;
     }
-    /* #worterbuch-img-3{
-        background-image: url(../img/worterbuch/registration-screenshots-group.png);
-        height: 30vh;
-        width: 100vw;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    } */
-    /* #worterbuch-img-1{
-        width: 40vw;
-        height: 80vw;
-    } */
 }
 
 
@@ -1082,11 +1060,10 @@ footer {
     align-content: center;
     justify-content: center;
     width: 100%;
-    height: fit-content;
 }
 
 .project-page-block-content {
-    padding: 5rem 1rem;
+    padding: 10rem 1rem;
 }
 
 #project-category-block {
@@ -1097,7 +1074,13 @@ footer {
 #worterbuch-name-block {
     width: 100%;
     align-content: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    div {
+        gap: 3rem;
+        p:first-child {
+            margin: 0;
+        }
+    }
 }
 
 .project-page-block-content {
@@ -1206,8 +1189,7 @@ footer {
     border-radius: 0 0 3rem 3rem;
     #worterbuch-img-0 {
         background-image: url(../img/worterbuch/worterbuch-phones.svg);
-        width: 47.3rem;
-        height: 39.5rem;
+        aspect-ratio: 1.192/1;
     }
 }
 
@@ -1222,6 +1204,7 @@ footer {
     font-size: 2.5rem;
     font-weight: 500;
     font-family: "Manrope", sans-serif;
+    margin: 0 0 5rem 0;
 }
 
 #worterbuch-img-1 {
@@ -1275,13 +1258,6 @@ footer {
 .worterbuch-colors-group {
     gap: 1rem;
 }
-
-
-/* .worterbuch-color{
-    padding: 2rem;
-    width: 18rem;
-    height: 11rem;
-} */
 
 .worterbuch-color p {
     line-height: 100%;
@@ -1379,18 +1355,46 @@ footer {
     background-attachment: fixed;
 }
 
+.worterbuch-horizontal-images {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
 #worterbuch-img-4 {
     background-image: url(../img/worterbuch/mockup-3.png);
 }
 
 #worterbuch-img-5 {
     background-image: url(../img/worterbuch/main.png);
+    aspect-ratio: 0.28774994/1;
 }
 
-.worterbuch-horizontal-images {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
+#worterbuch-img-6 {
+    background-image: url(../img/worterbuch/dictionary.png);
+    aspect-ratio: 0.28781609/1;
+}
+
+#worterbuch-img-7 {
+    background-image: url(../img/worterbuch/mockup-5.png);
+}
+
+#worterbuch-img-8 {
+    background-image: url(../img/worterbuch/settings-1.png);
+}
+
+#worterbuch-img-9 {
+    background-image: url(../img/worterbuch/settings-2.png);
+}
+
+#worterbuch-img-4,
+#worterbuch-img-7 {
+    aspect-ratio: 0.48925781/1;
+}
+
+#worterbuch-img-8,
+#worterbuch-img-9 {
+    aspect-ratio: 0.46131172/1;
 }
 
 #worterbuch-dictionary-block {
@@ -1401,29 +1405,13 @@ footer {
     color: #ffffff;
 }
 
-#worterbuch-img-7 {
-    background-image: url(../img/worterbuch/mockup-5.png);
-}
-
-#worterbuch-img-6 {
-    background-image: url(../img/worterbuch/dictionary.png);
-}
-
-#worterbuch-settings-text p:first-child {
+#worterbuch-settings-text p {
     text-align: center;
 }
 
 #worterbuch-settings-text p:last-child {
     margin-left: auto;
     margin-right: auto;
-}
-
-#worterbuch-img-8 {
-    background-image: url(../img/worterbuch/settings-1.png);
-}
-
-#worterbuch-img-9 {
-    background-image: url(../img/worterbuch/settings-2.png);
 }
 
 #worterbuch-education-block {
@@ -1436,4 +1424,5 @@ footer {
 
 #worterbuch-img-10 {
     background-image: url(../img/worterbuch/educatioin-screenshots-group.png);
+    aspect-ratio: 3338/2656;
 }
