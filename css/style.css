@@ -1768,7 +1768,7 @@ footer {
 
 .allrooms-theme {
     flex-grow: 1;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .allrooms-color-usage {
