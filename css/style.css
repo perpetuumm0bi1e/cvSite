@@ -100,6 +100,7 @@ li {
     }
     #allrooms-goal-text {
         margin-bottom: 4rem;
+        font-size: 1.2rem;
     }
     .allrooms-block-content {
         gap: 3rem;
@@ -202,6 +203,7 @@ li {
     }
     #allrooms-goal-text {
         margin-bottom: 3rem;
+        font-size: 1.2rem;
     }
     .allrooms-block-content {
         gap: 2rem;
