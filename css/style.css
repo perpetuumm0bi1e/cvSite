@@ -3,7 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
 @import url('https://fonts.cdnfonts.com/css/soyuz-grotesk');
 @import url(https://db.onlinewebfonts.com/c/1d81cdaee5e55acbcf50ccbfc8b94122?family=Vela+Sans);
- :root {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
     --blue: #504cff;
     --dark-blue: #0000c4;
     --violet: #5955b3;
@@ -82,7 +83,8 @@ li {
     }
     #worterbuch-img-0,
     #allrooms-web-img-cover,
-    #allrooms-mobile-img-cover {
+    #allrooms-mobile-img-cover,
+    #funny-mouse-img-cover {
         width: 47.3rem;
     }
     #worterbuch-img-2 {
@@ -96,6 +98,7 @@ li {
     .project-page-block-content {
         padding: 10rem 1rem;
     }
+    #funny-mouse-header,
     #allrooms-header {
         font-size: 4rem;
     }
@@ -103,17 +106,21 @@ li {
         margin-bottom: 4rem;
         font-size: 1.2rem;
     }
-    .allrooms-block-content {
+    .allrooms-block-content,
+    .funny-mouse-block-content {
         gap: 3rem;
     }
-    .allrooms-block-header {
+    .allrooms-block-header,
+    .funny-mouse-block-header {
         font-size: 2.5rem;
     }
+    .funny-mouse-blocks,
     .allrooms-blocks {
         gap: 2rem;
         margin: 2rem 0;
         padding: 0 1rem;
     }
+    .funny-mouse-block,
     .allrooms-block {
         gap: 6rem;
         padding: 2rem;
@@ -194,7 +201,8 @@ li {
     }
     #worterbuch-img-0,
     #allrooms-web-img-cover,
-    #allrooms-mobile-img-cover {
+    #allrooms-mobile-img-cover,
+    #funny-mouse-img-cover {
         width: 500px;
     }
     #worterbuch-img-2 {
@@ -208,6 +216,7 @@ li {
     .project-page-block-content {
         padding: 8rem 1rem;
     }
+    #funny-mouse-header,
     #allrooms-header {
         font-size: 3.5rem;
     }
@@ -215,17 +224,21 @@ li {
         margin-bottom: 3rem;
         font-size: 1.2rem;
     }
-    .allrooms-block-content {
+    .allrooms-block-content,
+    .funny-mouse-block-content {
         gap: 2rem;
     }
-    .allrooms-block-header {
+    .allrooms-block-header,
+    .funny-mouse-block-header {
         font-size: 2rem;
     }
+    .funny-mouse-blocks,
     .allrooms-blocks {
         gap: 2rem;
         margin: 2rem 0;
         padding: 0 1rem;
     }
+    .funny-mouse-block,
     .allrooms-block {
         gap: 4rem;
         padding: 2rem;
@@ -312,7 +325,8 @@ li {
     }
     #worterbuch-img-0,
     #allrooms-web-img-cover,
-    #allrooms-mobile-img-cover {
+    #allrooms-mobile-img-cover,
+    #funny-mouse-img-cover {
         width: 330px;
     }
     #worterbuch-img-2 {
@@ -326,23 +340,28 @@ li {
     .project-page-block-content {
         padding: 6rem 1rem;
     }
+    #funny-mouse-header,
     #allrooms-header {
         font-size: 3rem;
     }
     #allrooms-goal-text {
         margin-bottom: 2rem;
     }
-    .allrooms-block-content {
+    .allrooms-block-content,
+    .funny-mouse-block-content {
         gap: 1rem;
     }
-    .allrooms-block-header {
+    .allrooms-block-header,
+    .funny-mouse-block-header {
         font-size: 1.5rem;
     }
+    .funny-mouse-blocks,
     .allrooms-blocks {
         gap: 1rem;
         margin: 1rem 0;
         padding: 0 .5rem;
     }
+    .funny-mouse-block,
     .allrooms-block {
         gap: 2rem;
         padding: 1rem;
@@ -1581,11 +1600,8 @@ footer {
     color: #404040;
 }
 
-#allrooms-web-page {
+#allrooms-page {
     background-color: #F5F4F2;
-}
-
-#allrooms-web-page {
     color: #404040;
     font-family: "Vela Sans", sans-serif;
 }
@@ -1598,6 +1614,7 @@ footer {
     }
 }
 
+.funny-mouse-block,
 .allrooms-block {
     display: flex;
     flex-direction: column;
@@ -1613,7 +1630,8 @@ footer {
     }
 }
 
-.allrooms-block-content {
+.allrooms-block-content,
+.funny-mouse-block-content {
     justify-content: center;
     align-items: center;
 }
@@ -1925,4 +1943,113 @@ footer {
 #allrooms-project-category {
     background-color: #404040;
     color: #F5F4F2;
+}
+
+
+/* FUNNY MOUSE */
+
+#funny-mouse-page {
+    background-color: #EAEDF4;
+    color: #2D2D2D;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.funny-mouse-tech-die {
+    background-color: #D8DEEB;
+    border-radius: 10rem;
+    padding: .15rem 1.2rem;
+    margin-top: -1.5rem;
+    font-size: 1rem;
+    width: fit-content;
+}
+
+.funny-mouse-block-header {
+    font-weight: 600;
+    margin: 0;
+}
+
+#funny-mouse-img-cover {
+    background-image: url(../img/funnymouse/cover.png);
+    aspect-ratio: 1.49652778/1;
+    margin: 3rem auto 0 auto;
+}
+
+.funny-mouse-color {
+    flex: 1;
+    flex-grow: 1;
+    border-radius: 1.3rem;
+    padding: 2rem;
+    height: 13rem;
+    .vertical-flex {
+        gap: .75rem;
+        p {
+            margin: 0;
+        }
+    }
+}
+
+#funny-mouse-color-1 {
+    background-color: #292929;
+    color: #E0E0E0;
+}
+
+#funny-mouse-color-2 {
+    background-color: #9c9c9c;
+    color: #303030;
+}
+
+#funny-mouse-color-3 {
+    background-color: #F6F6F6;
+    color: #252525;
+}
+
+#funny-mouse-color-4 {
+    background-color: #EAEDF4;
+    color: #3E3E3E;
+}
+
+#funny-mouse-color-5 {
+    background-color: #F6F7F9;
+    color: #252525;
+}
+
+#funny-mouse-color-6 {
+    background-color: #FFFFFF;
+    color: #252525;
+}
+
+.funny-mouse-color-row,
+.funny-mouse-colors {
+    gap: 1.3rem;
+}
+
+#funny-mouse-header {
+    font-weight: 600;
+}
+
+#funny-mouse-typography-block {
+    width: 100%;
+    padding: 0;
+    gap: 2rem;
+    .project-page-block-content {
+        flex: 1;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-page-block-content:first-child {
+        background-color: #D8DEEB;
+        flex-direction: row;
+    }
+}
+
+#funny-mouse-font-example {
+    text-decoration: underline;
+    font-size: 5rem;
+}
+
+#funny-mouse-font-name {
+    p {
+        font-size: 3.5rem;
+    }
 }
