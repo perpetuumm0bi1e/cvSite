@@ -80,7 +80,8 @@ li {
     #worterbuch-img-9 {
         width: 22rem;
     }
-    #worterbuch-img-0 {
+    #worterbuch-img-0,
+    #allrooms-web-img-0 {
         width: 47.3rem;
     }
     #worterbuch-img-2 {
@@ -121,7 +122,8 @@ li {
     #worterbuch-img-9 {
         width: 18rem;
     }
-    #worterbuch-img-0 {
+    #worterbuch-img-0,
+    #allrooms-web-img-0 {
         width: 500px;
     }
     #worterbuch-img-2 {
@@ -169,7 +171,8 @@ li {
         order: -1;
         width: 100%;
     }
-    #worterbuch-img-0 {
+    #worterbuch-img-0,
+    #allrooms-web-img-0 {
         width: 330px;
     }
     #worterbuch-img-2 {
@@ -1067,20 +1070,8 @@ footer {
 }
 
 #project-category-block {
-    padding-bottom: 0rem;
+    padding: 5rem 0rem 0rem 0rem;
     align-items: flex-start;
-}
-
-#worterbuch-name-block {
-    width: 100%;
-    align-content: center;
-    justify-content: flex-start;
-    div {
-        gap: 3rem;
-        p:first-child {
-            margin: 0;
-        }
-    }
 }
 
 .project-page-block-content {
@@ -1101,9 +1092,24 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     align-items: center;
-    /* gap: 2rem; */
+}
+
+.worterbuch-colors {
+    justify-content: space-evenly;
+}
+
+.single-project-name-block {
+    padding-top: 5rem;
+    width: 100%;
+    align-content: center;
+    justify-content: flex-start;
+    div {
+        gap: 2rem;
+        p:first-child {
+            margin: 0;
+        }
+    }
 }
 
 .vertical-flex-block {
@@ -1174,19 +1180,23 @@ footer {
 
 /* worterbuch */
 
-#worterbuch-page {
-    color: #2d2d2d;
-}
-
-#worterbuch-top-block {
+.single-project-top-block {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
     height: fit-content;
     padding-top: 40px;
-    background-color: #EEEFEA;
     border-radius: 0 0 3rem 3rem;
+    background-color: var(--white);
+}
+
+#worterbuch-page {
+    color: #2d2d2d;
+}
+
+#worterbuch-top-block {
+    background-color: #EEEFEA;
     #worterbuch-img-0 {
         background-image: url(../img/worterbuch/worterbuch-phones.svg);
         aspect-ratio: 1.192/1;
@@ -1425,4 +1435,191 @@ footer {
 #worterbuch-img-10 {
     background-image: url(../img/worterbuch/educatioin-screenshots-group.png);
     aspect-ratio: 3338/2656;
+}
+
+
+/* ALLROOMS */
+
+
+/* web */
+
+#allrooms-web-page {
+    background-color: #F5F4F2;
+}
+
+#allrooms-web-page {
+    color: #404040;
+}
+
+#allrooms-web-top-block {
+    background-color: #ffffff;
+    #allrooms-web-img-0 {
+        background-image: url(../img/allrooms/web/cover.png);
+        aspect-ratio: 1.4973822/1;
+    }
+}
+
+.allrooms-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.allrooms-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 6rem;
+    padding: 2rem;
+    border-radius: 1.33rem;
+    background-color: var(--white);
+}
+
+.allrooms-block.dark-allrooms-block {
+    background-color: #404040;
+}
+
+.allrooms-block-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.allrooms-block-content.horizontal-direction {
+    flex-direction: row;
+}
+
+.allrooms-block-content.vertical-direction {
+    flex-direction: column;
+}
+
+.allrooms-block-header {
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: "Manrope", sans-serif;
+    margin: 0;
+}
+
+#allrooms-web-img-2 {
+    background-image: url(../img/allrooms/logo-1.png);
+}
+
+#allrooms-web-img-3 {
+    background-image: url(../img/allrooms/logo-2.png);
+}
+
+#allrooms-web-img-2,
+#allrooms-web-img-3 {
+    aspect-ratio: 2.06260297/1;
+    width: 45%;
+}
+
+#allrooms-goal-text {
+    margin-bottom: 4rem;
+}
+
+#allrooms-web-img-4 {
+    background-image: url(../img/allrooms/icons.png);
+    aspect-ratio: 2.38461538/1;
+    width: 70%;
+    margin-bottom: 4rem;
+}
+
+#allrooms-web-img-5 {
+    background-image: url(../img/allrooms/web/scheme-1.png);
+    aspect-ratio: 2.38454462/1;
+    width: 90%;
+}
+
+#allrooms-web-img-6 {
+    background-image: url(../img/allrooms/web/scheme-2.png);
+    aspect-ratio: 1.71968709/1;
+    width: 50%;
+}
+
+#allrooms-web-img-mockup-2 {
+    background-image: url(../img/allrooms/web/mockup-2.png);
+}
+
+#allrooms-web-img-mockup-1 {
+    background-image: url(../img/allrooms/web/mockup-1.png);
+}
+
+#allrooms-web-img-mockup-1,
+#allrooms-web-img-mockup-2 {
+    aspect-ratio: 2.96228571/1;
+    width: 100%;
+}
+
+#allrooms-web-img-result-1 {
+    background-image: url(../img/allrooms/web/result-1.png);
+    aspect-ratio: 1.58726271/1;
+    width: 100%;
+}
+
+#allrooms-web-img-result-2 {
+    background-image: url(../img/allrooms/web/result-2.png);
+    aspect-ratio: 1.59889773/1;
+    width: 100%;
+}
+
+#allrooms-web-img-result-3 {
+    background-image: url(../img/allrooms/web/result-3.png);
+    aspect-ratio: 1.99923136/1;
+    width: 100%;
+}
+
+#allrooms-web-img-result-4 {
+    background-image: url(../img/allrooms/web/result-4.png);
+    aspect-ratio: 2/1;
+    width: 100%;
+}
+
+#allrooms-web-res-1,
+#allrooms-web-res-2,
+#allrooms-web-res-3,
+#allrooms-web-res-4,
+#allrooms-web-wireframe-1,
+#allrooms-web-wireframe-2,
+#allrooms-web-wireframe-3,
+#allrooms-web-wireframe-4 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#allrooms-web-img-uikit-1 {
+    background-image: url(../img/allrooms/web/ui-kit-1.png);
+    aspect-ratio: 1.94157303/1;
+    width: 100%;
+}
+
+#allrooms-web-img-uikit-2 {
+    background-image: url(../img/allrooms/web/ui-kit-2.png);
+    aspect-ratio: 1.94887218/1;
+    width: 100%;
+}
+
+#allrooms-web-img-wireframe-1 {
+    background-image: url(../img/allrooms/web/wireframe-1.png);
+    aspect-ratio: 1.55725658/1;
+    width: 100%;
+}
+
+#allrooms-web-img-wireframe-2 {
+    background-image: url(../img/allrooms/web/wireframe-2.png);
+    aspect-ratio: 1.59032456/1;
+    width: 100%;
+}
+
+#allrooms-web-img-wireframe-3 {
+    background-image: url(../img/allrooms/web/wireframe-3.png);
+    aspect-ratio: 1.58787508/1;
+    width: 100%;
+}
+
+#allrooms-web-img-wireframe-4 {
+    background-image: url(../img/allrooms/web/wireframe-4.png);
+    aspect-ratio: 1.90065741/1;
+    width: 100%;
 }
