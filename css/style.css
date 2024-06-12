@@ -1598,16 +1598,16 @@ footer {
     margin: 0;
 }
 
-#allrooms-web-logo-1 {
+#allrooms-logo-1 {
     background-image: url(../img/allrooms/logo-1.png);
 }
 
-#allrooms-web-logo-2 {
+#allrooms-logo-2 {
     background-image: url(../img/allrooms/logo-2.png);
 }
 
-#allrooms-web-logo-1,
-#allrooms-web-logo-2 {
+#allrooms-logo-1,
+#allrooms-logo-2 {
     aspect-ratio: 2.06260297/1;
     width: 45%;
 }
@@ -1711,6 +1711,12 @@ footer {
     background-image: url(../img/allrooms/web/wireframe-4.png);
 }
 
+#allrooms-img-colors {
+    background-image: url(../img/allrooms/colors.png);
+    aspect-ratio: 2.64489796/1;
+    width: 100%;
+}
+
 #allrooms-web-typography-block {
     width: 100%;
     padding: 0;
@@ -1737,4 +1743,105 @@ footer {
 
 #allrooms-goal-text {
     text-align: center;
+}
+
+.allrooms-colors-block {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+
+.allrooms-colors-stack {
+    align-items: center;
+}
+
+.allrooms-theme {
+    flex-grow: 1;
+    gap: 2rem;
+}
+
+.allrooms-color-header {
+    font-size: 1.8rem;
+}
+
+.allrooms-color-usage {
+    color: #9c9c9c;
+    text-align: right;
+}
+
+.allrooms-color {
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 1rem;
+    border: .1rem solid #7d7d7d;
+    transform: rotateX(55deg) rotateZ(45deg);
+}
+
+#allrooms-color-1 {
+    background-color: #FFFFFF;
+    z-index: 6;
+}
+
+#allrooms-color-2 {
+    background-color: #F5F4F2;
+    z-index: 5;
+}
+
+#allrooms-color-3 {
+    background-color: #D0CFCD;
+    z-index: 4;
+}
+
+#allrooms-color-4,
+#allrooms-color-11 {
+    background-color: #9C9C9C;
+    z-index: 3;
+}
+
+#allrooms-color-5 {
+    background-color: #404040;
+    z-index: 2;
+}
+
+#allrooms-color-6 {
+    background-color: #222222;
+    z-index: 1;
+}
+
+#allrooms-color-7,
+#allrooms-color-14 {
+    background-color: #CC5050;
+    z-index: 0;
+}
+
+#allrooms-color-8 {
+    background-color: #202125;
+    z-index: 6;
+}
+
+#allrooms-color-9 {
+    background-color: #35363a;
+    z-index: 5;
+}
+
+#allrooms-color-10 {
+    background-color: #d0cfcd;
+    z-index: 4;
+}
+
+#allrooms-color-12 {
+    background-color: #2a2b2f;
+    z-index: 2;
+}
+
+#allrooms-color-13 {
+    background-color: #e9e9e9;
+    z-index: 1;
+}
+
+.allrooms-color-description {
+    gap: 5rem;
+    height: 3.5rem;
+    align-items: center;
 }
