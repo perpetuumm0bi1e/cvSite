@@ -98,6 +98,12 @@ li {
     #allrooms-header {
         font-size: 4rem;
     }
+    #allrooms-goal-text {
+        margin-bottom: 4rem;
+    }
+    .allrooms-block-content {
+        gap: 3rem;
+    }
     .allrooms-block-header {
         font-size: 2.5rem;
     }
@@ -155,6 +161,12 @@ li {
     }
     #allrooms-header {
         font-size: 3.5rem;
+    }
+    #allrooms-goal-text {
+        margin-bottom: 3rem;
+    }
+    .allrooms-block-content {
+        gap: 2rem;
     }
     .allrooms-block-header {
         font-size: 2rem;
@@ -216,10 +228,16 @@ li {
         width: 90vw;
     }
     .project-page-block-content {
-        padding: 60rem 1rem;
+        padding: 6rem 1rem;
     }
     #allrooms-header {
         font-size: 3rem;
+    }
+    #allrooms-goal-text {
+        margin-bottom: 2rem;
+    }
+    .allrooms-block-content {
+        gap: 1rem;
     }
     .allrooms-block-header {
         font-size: 1.5rem;
@@ -1530,7 +1548,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
 }
 
 .allrooms-block-content.horizontal-direction {
@@ -1559,10 +1576,6 @@ footer {
 #allrooms-web-img-3 {
     aspect-ratio: 2.06260297/1;
     width: 45%;
-}
-
-#allrooms-goal-text {
-    margin-bottom: 4rem;
 }
 
 #allrooms-web-img-4 {
