@@ -1552,13 +1552,13 @@ footer {
 #allrooms-web-img-5 {
     background-image: url(../img/allrooms/web/scheme-1.png);
     aspect-ratio: 2.38454462/1;
-    width: 90%;
+    width: 100%;
 }
 
 #allrooms-web-img-6 {
     background-image: url(../img/allrooms/web/scheme-2.png);
     aspect-ratio: 1.71968709/1;
-    width: 50%;
+    width: 60%;
 }
 
 #allrooms-web-img-mockup-2 {
