@@ -92,6 +92,12 @@ li {
     #worterbuch-img-10 {
         width: 56rem;
     }
+    #allrooms-header {
+        font-size: 4rem;
+    }
+    .allrooms-block-header {
+        font-size: 2.5rem;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -133,6 +139,12 @@ li {
     }
     #worterbuch-img-10 {
         width: 90vw;
+    }
+    #allrooms-header {
+        font-size: 3.5rem;
+    }
+    .allrooms-block-header {
+        font-size: 2rem;
     }
 }
 
@@ -182,6 +194,12 @@ li {
     }
     #worterbuch-img-10 {
         width: 90vw;
+    }
+    #allrooms-header {
+        font-size: 3rem;
+    }
+    .allrooms-block-header {
+        font-size: 1.5rem;
     }
 }
 
@@ -1443,6 +1461,12 @@ footer {
 
 /* web */
 
+#allrooms-header {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    color: #404040;
+}
+
 #allrooms-web-page {
     background-color: #F5F4F2;
 }
@@ -1495,7 +1519,6 @@ footer {
 }
 
 .allrooms-block-header {
-    font-size: 2.5rem;
     font-weight: 500;
     font-family: "Manrope", sans-serif;
     margin: 0;
