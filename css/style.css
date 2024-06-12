@@ -143,6 +143,15 @@ li {
             height: 50rem;
         }
     }
+    #allrooms-web-typography-block {
+        div {
+            div {
+                p:first-child {
+                    padding: 2rem;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -236,6 +245,15 @@ li {
             height: 50rem;
         }
     }
+    #allrooms-web-typography-block {
+        div {
+            div {
+                p:first-child {
+                    padding: 2rem;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -320,6 +338,15 @@ li {
     #allrooms-web-img-5 {
         background-image: url(../img/allrooms/web/scheme-1-mobile.png);
         aspect-ratio: 1.18181818/1;
+    }
+    #allrooms-web-typography-block {
+        div {
+            div {
+                p:first-child {
+                    padding: 1rem;
+                }
+            }
+        }
     }
 }
 
@@ -1689,9 +1716,6 @@ footer {
         gap: 1rem;
         div {
             padding: 0;
-            p:first-child {
-                padding: 2rem;
-            }
         }
     }
 }
