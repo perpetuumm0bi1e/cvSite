@@ -81,7 +81,8 @@ li {
         width: 22rem;
     }
     #worterbuch-img-0,
-    #allrooms-web-img-cover {
+    #allrooms-web-img-cover,
+    #allrooms-mobile-img-cover {
         width: 47.3rem;
     }
     #worterbuch-img-2 {
@@ -136,7 +137,8 @@ li {
     #allrooms-web-wireframe-1,
     #allrooms-web-wireframe-2,
     #allrooms-web-wireframe-3,
-    #allrooms-web-wireframe-4 {
+    #allrooms-web-wireframe-4,
+    #allrooms-mobile-wireframe {
         div {
             background-attachment: fixed;
             background-size: cover;
@@ -155,6 +157,10 @@ li {
     }
     .allrooms-color-header {
         font-size: 1.8rem;
+    }
+    #allrooms-mobile-scheme {
+        background-image: url(../img/allrooms/mobile/scheme.png);
+        aspect-ratio: 2.7475068/1;
     }
 }
 
@@ -187,7 +193,8 @@ li {
         width: 18rem;
     }
     #worterbuch-img-0,
-    #allrooms-web-img-cover {
+    #allrooms-web-img-cover,
+    #allrooms-mobile-img-cover {
         width: 500px;
     }
     #worterbuch-img-2 {
@@ -262,6 +269,10 @@ li {
     .allrooms-color-header {
         font-size: 1.5rem;
     }
+    #allrooms-mobile-scheme {
+        background-image: url(../img/allrooms/mobile/scheme.png);
+        aspect-ratio: 2.7475068/1;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -300,7 +311,8 @@ li {
         width: 100%;
     }
     #worterbuch-img-0,
-    #allrooms-web-img-cover {
+    #allrooms-web-img-cover,
+    #allrooms-mobile-img-cover {
         width: 330px;
     }
     #worterbuch-img-2 {
@@ -358,6 +370,10 @@ li {
     }
     .allrooms-color-header {
         font-size: 1.3rem;
+    }
+    #allrooms-mobile-scheme {
+        background-image: url(../img/allrooms/mobile/scheme-mobile.png);
+        aspect-ratio: 0.97870641/1;
     }
 }
 
@@ -1683,7 +1699,8 @@ footer {
 #allrooms-web-wireframe-1,
 #allrooms-web-wireframe-2,
 #allrooms-web-wireframe-3,
-#allrooms-web-wireframe-4 {
+#allrooms-web-wireframe-4,
+#allrooms-mobile-wireframe {
     padding: 0;
     border-radius: 0%;
     div {
@@ -1851,4 +1868,69 @@ footer {
     gap: 5rem;
     height: 3.5rem;
     align-items: center;
+}
+
+#allrooms-mobile-img-cover {
+    background-image: url(../img/allrooms/mobile/cover.png);
+    aspect-ratio: 1.38435374/1;
+}
+
+#allrooms-mobile-img-wireframe {
+    background-image: url(../img/allrooms/mobile/wireframe.png);
+    aspect-ratio: 1.50214329/1;
+}
+
+#allrooms-mobile-scheme {
+    width: 100%;
+}
+
+#allrooms-mobile-img-uikit-1 {
+    background-image: url(../img/allrooms/mobile/ui-kit-1.png);
+    aspect-ratio: 2.06443914/1;
+    width: 100%;
+}
+
+#allrooms-mobile-img-uikit-2 {
+    background-image: url(../img/allrooms/mobile/ui-kit-2.png);
+    aspect-ratio: 2.07102953/1;
+    width: 100%;
+}
+
+#allrooms-mobile-img-mockup-1 {
+    background-image: url(../img/allrooms/mobile/mockup-1.png);
+}
+
+#allrooms-mobile-img-mockup-2 {
+    background-image: url(../img/allrooms/mobile/mockup-2.png);
+}
+
+#allrooms-mobile-img-mockup-3 {
+    background-image: url(../img/allrooms/mobile/mockup-3.png);
+}
+
+#allrooms-mobile-img-mockup-4 {
+    background-image: url(../img/allrooms/mobile/mockup-4.png);
+}
+
+#allrooms-mobile-img-mockup-1,
+#allrooms-mobile-img-mockup-2,
+#allrooms-mobile-img-mockup-3,
+#allrooms-mobile-img-mockup-4 {
+    aspect-ratio: 2.56324111/1;
+    width: 100%;
+}
+
+.allrooms-tech-die {
+    background-color: #404040;
+    color: #F5F4F2;
+    border-radius: 10rem;
+    padding: .2rem 1.5rem;
+    margin-top: -1.5rem;
+    font-size: 1rem;
+    width: fit-content;
+}
+
+#allrooms-project-category {
+    background-color: #404040;
+    color: #F5F4F2;
 }
