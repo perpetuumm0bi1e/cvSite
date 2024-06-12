@@ -109,10 +109,24 @@ li {
     }
     .allrooms-blocks {
         gap: 2rem;
+        margin: 2rem 0;
+        padding: 0 1rem;
     }
     .allrooms-block {
         gap: 6rem;
         padding: 2rem;
+    }
+    #allrooms-font-example {
+        font-size: 15rem;
+    }
+    #allrooms-font-name {
+        p {
+            font-size: 5rem;
+        }
+    }
+    #allrooms-web-img-5 {
+        background-image: url(../img/allrooms/web/scheme-1.png);
+        aspect-ratio: 2.10694087/1;
     }
 }
 
@@ -173,10 +187,24 @@ li {
     }
     .allrooms-blocks {
         gap: 2rem;
+        margin: 2rem 0;
+        padding: 0 1rem;
     }
     .allrooms-block {
         gap: 4rem;
         padding: 2rem;
+    }
+    #allrooms-font-example {
+        font-size: 10rem;
+    }
+    #allrooms-font-name {
+        p {
+            font-size: 3.5rem;
+        }
+    }
+    #allrooms-web-img-5 {
+        background-image: url(../img/allrooms/web/scheme-1.png);
+        aspect-ratio: 2.10694087/1;
     }
 }
 
@@ -244,10 +272,24 @@ li {
     }
     .allrooms-blocks {
         gap: 1rem;
+        margin: 1rem 0;
+        padding: 0 .5rem;
     }
     .allrooms-block {
         gap: 2rem;
         padding: 1rem;
+    }
+    #allrooms-font-example {
+        font-size: 6rem;
+    }
+    #allrooms-font-name {
+        p {
+            font-size: 2.5rem;
+        }
+    }
+    #allrooms-web-img-5 {
+        background-image: url(../img/allrooms/web/scheme-1-mobile.png);
+        aspect-ratio: 1.18181818/1;
     }
 }
 
@@ -1519,8 +1561,6 @@ footer {
 }
 
 #allrooms-web-img-5 {
-    background-image: url(../img/allrooms/web/scheme-1.png);
-    aspect-ratio: 2.38454462/1;
     width: 100%;
 }
 
@@ -1579,10 +1619,11 @@ footer {
     padding: 0;
     border-radius: 0%;
     div {
+        background-attachment: fixed;
         background-size: cover;
         background-position: center;
-        background-attachment: fixed;
-        height: 100vh;
+        width: 100%;
+        height: 50rem;
     }
 }
 
@@ -1632,7 +1673,6 @@ footer {
 #allrooms-font-example {
     margin: 10rem 0 0 0;
     line-height: 75%;
-    font-size: 15rem;
 }
 
 #allrooms-font-name {
@@ -1640,7 +1680,6 @@ footer {
     justify-content: center;
     p {
         margin: 0;
-        font-size: 5rem;
     }
 }
 
