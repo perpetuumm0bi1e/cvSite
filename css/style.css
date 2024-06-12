@@ -128,6 +128,21 @@ li {
         background-image: url(../img/allrooms/web/scheme-1.png);
         aspect-ratio: 2.10694087/1;
     }
+    #allrooms-web-res-1,
+    #allrooms-web-res-2,
+    #allrooms-web-res-3,
+    #allrooms-web-res-4,
+    #allrooms-web-wireframe-1,
+    #allrooms-web-wireframe-2,
+    #allrooms-web-wireframe-3,
+    #allrooms-web-wireframe-4 {
+        div {
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            height: 50rem;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -205,6 +220,21 @@ li {
     #allrooms-web-img-5 {
         background-image: url(../img/allrooms/web/scheme-1.png);
         aspect-ratio: 2.10694087/1;
+    }
+    #allrooms-web-res-1,
+    #allrooms-web-res-2,
+    #allrooms-web-res-3,
+    #allrooms-web-res-4,
+    #allrooms-web-wireframe-1,
+    #allrooms-web-wireframe-2,
+    #allrooms-web-wireframe-3,
+    #allrooms-web-wireframe-4 {
+        div {
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            height: 50rem;
+        }
     }
 }
 
@@ -1619,11 +1649,7 @@ footer {
     padding: 0;
     border-radius: 0%;
     div {
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
         width: 100%;
-        height: 50rem;
     }
 }
 
