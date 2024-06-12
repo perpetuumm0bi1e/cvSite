@@ -1750,6 +1750,7 @@ footer {
     justify-content: space-between;
     width: 100%;
     gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 .allrooms-colors-stack {
