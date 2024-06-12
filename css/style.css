@@ -1582,20 +1582,18 @@ footer {
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        width: 100%;
+        height: 100vh;
     }
 }
 
 #allrooms-web-img-uikit-1 {
     background-image: url(../img/allrooms/web/ui-kit-1.png);
     aspect-ratio: 1.94157303/1;
-    width: 100%;
 }
 
 #allrooms-web-img-uikit-2 {
     background-image: url(../img/allrooms/web/ui-kit-2.png);
     aspect-ratio: 1.94887218/1;
-    width: 100%;
 }
 
 #allrooms-web-img-wireframe-1 {
@@ -1615,7 +1613,6 @@ footer {
 
 #allrooms-web-img-wireframe-4 {
     background-image: url(../img/allrooms/web/wireframe-4.png);
-    aspect-ratio: 1.90065741/1;
 }
 
 #allrooms-web-typography-block {
