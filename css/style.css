@@ -1768,6 +1768,7 @@ footer {
 .allrooms-color-usage {
     color: #9c9c9c;
     text-align: right;
+    white-space: none;
 }
 
 .allrooms-color {

@@ -97,10 +97,14 @@ function windowSetting() {
 
         for (text of colorUsageText) {
             if (text.offsetWidth > maxWidth) maxWidth = text.offsetWidth;
+            let otherText = text.parentNode.childNodes[5];
+            if (otherText.offsetWidth > maxWidth) maxWidth = text.offsetWidth;
         }
 
         for (text of colorUsageText) {
+            let otherText = text.parentNode.childNodes[5];
             text.style.width = maxWidth + 'px';
+            otherText.style.width = maxWidth + 'px';
         }
     }
 }
