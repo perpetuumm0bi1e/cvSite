@@ -1623,18 +1623,10 @@ footer {
     margin: 0;
 }
 
-#allrooms-logo-1 {
-    background-image: url(../img/allrooms/logo-1.png);
-}
-
-#allrooms-logo-2 {
-    background-image: url(../img/allrooms/logo-2.png);
-}
-
-#allrooms-logo-1,
-#allrooms-logo-2 {
-    aspect-ratio: 2.06260297/1;
-    width: 45%;
+#allrooms-logo {
+    background-image: url(../img/allrooms/logo.png);
+    aspect-ratio: 4.18616145/1;
+    width: 100%;
 }
 
 #allrooms-web-img-4 {
