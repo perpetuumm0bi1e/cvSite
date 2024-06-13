@@ -2096,6 +2096,8 @@ footer {
     background-image: url(../img/funnymouse/pages.png);
     aspect-ratio: 1.38863287/1;
     width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 #funny-mouse-pages-block {
