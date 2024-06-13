@@ -2082,6 +2082,7 @@ footer {
 }
 
 #funny-mouse-font-example {
+    font-weight: 400;
     text-decoration: underline;
 }
 
