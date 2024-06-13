@@ -27,7 +27,6 @@
 html {
     font-family: "Manrope", sans-serif;
     background: var(--white);
-    min-width: 393px;
 }
 
 body {
@@ -128,6 +127,7 @@ li {
     #allrooms-font-example {
         font-size: 15rem;
     }
+    #funny-mouse-font-name,
     #allrooms-font-name {
         p {
             font-size: 5rem;
@@ -168,6 +168,18 @@ li {
     #allrooms-mobile-scheme {
         background-image: url(../img/allrooms/mobile/scheme.png);
         aspect-ratio: 2.7475068/1;
+    }
+    .funny-mouse-colors {
+        gap: 1.3rem;
+    }
+    #funny-mouse-typography-block {
+        gap: 2rem;
+        .project-page-block-content {
+            gap: 2rem;
+        }
+    }
+    #funny-mouse-font-example {
+        font-size: 5rem;
     }
 }
 
@@ -246,6 +258,7 @@ li {
     #allrooms-font-example {
         font-size: 10rem;
     }
+    #funny-mouse-font-name,
     #allrooms-font-name {
         p {
             font-size: 3.5rem;
@@ -285,6 +298,18 @@ li {
     #allrooms-mobile-scheme {
         background-image: url(../img/allrooms/mobile/scheme.png);
         aspect-ratio: 2.7475068/1;
+    }
+    .funny-mouse-colors {
+        gap: 1.3rem;
+    }
+    #funny-mouse-typography-block {
+        gap: 2rem;
+        .project-page-block-content {
+            gap: 2rem;
+        }
+    }
+    #funny-mouse-font-example {
+        font-size: 3.5rem;
     }
 }
 
@@ -369,9 +394,10 @@ li {
     #allrooms-font-example {
         font-size: 6rem;
     }
+    #funny-mouse-font-name,
     #allrooms-font-name {
         p {
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
     }
     #allrooms-web-img-5 {
@@ -393,6 +419,21 @@ li {
     #allrooms-mobile-scheme {
         background-image: url(../img/allrooms/mobile/scheme-mobile.png);
         aspect-ratio: 0.97870641/1;
+    }
+    .funny-mouse-colors {
+        gap: 1rem;
+    }
+    #funny-mouse-typography-block {
+        gap: 1rem;
+        .project-page-block-content {
+            gap: 1rem;
+        }
+    }
+    #funny-mouse-font-example {
+        font-size: 2rem;
+    }
+    #funny-mouse-font-example-header {
+        font-size: 1.2rem;
     }
 }
 
@@ -1964,7 +2005,7 @@ footer {
 }
 
 .funny-mouse-block-header {
-    font-weight: 600;
+    font-weight: 500;
     margin: 0;
 }
 
@@ -1980,6 +2021,8 @@ footer {
     border-radius: 1.3rem;
     padding: 2rem;
     height: 13rem;
+    width: fit-content;
+    min-width: 30%;
     .vertical-flex {
         gap: .75rem;
         p {
@@ -2018,19 +2061,13 @@ footer {
     color: #252525;
 }
 
-.funny-mouse-color-row,
 .funny-mouse-colors {
-    gap: 1.3rem;
-}
-
-#funny-mouse-header {
-    font-weight: 600;
+    flex-wrap: wrap;
 }
 
 #funny-mouse-typography-block {
     width: 100%;
     padding: 0;
-    gap: 2rem;
     .project-page-block-content {
         flex: 1;
         flex-grow: 1;
@@ -2039,17 +2076,74 @@ footer {
     }
     .project-page-block-content:first-child {
         background-color: #D8DEEB;
-        flex-direction: row;
+        gap: 1rem;
     }
 }
 
 #funny-mouse-font-example {
     text-decoration: underline;
-    font-size: 5rem;
 }
 
-#funny-mouse-font-name {
-    p {
-        font-size: 3.5rem;
+#funny-mouse-scheme-img {
+    background-image: url(../img/funnymouse/scheme.png);
+    aspect-ratio: 2.74731183/1;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#funny-mouse-pages-img {
+    background-image: url(../img/funnymouse/pages.png);
+    aspect-ratio: 1.38863287/1;
+    width: 100%;
+}
+
+#funny-mouse-pages-block {
+    gap: 1rem;
+    padding: 0;
+    width: 100%;
+    .horizontal-flex {
+        width: 100%;
+        gap: 1rem;
     }
+}
+
+.funny-mouse-page-img {
+    aspect-ratio: 1.57598978/1;
+    width: 100%;
+}
+
+#funny-mouse-page-1-img {
+    background-image: url(../img/funnymouse/page-1.png);
+}
+
+#funny-mouse-page-2-img {
+    background-image: url(../img/funnymouse/page-2.png);
+}
+
+#funny-mouse-page-3-img {
+    background-image: url(../img/funnymouse/page-3.png);
+}
+
+#funny-mouse-page-4-img {
+    background-image: url(../img/funnymouse/page-4.png);
+}
+
+#funny-mouse-page-5-img {
+    background-image: url(../img/funnymouse/page-5.png);
+}
+
+#funny-mouse-page-6-img {
+    background-image: url(../img/funnymouse/page-6.png);
+}
+
+#funny-mouse-page-7-img {
+    background-image: url(../img/funnymouse/page-7.png);
+}
+
+#funny-mouse-page-8-img {
+    background-image: url(../img/funnymouse/page-8.png);
+}
+
+.funny-mouse-die {
+    gap: .1rem;
 }
