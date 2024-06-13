@@ -382,7 +382,7 @@ li {
     }
     .funny-mouse-blocks,
     .allrooms-blocks {
-        gap: 1rem;
+        gap: 2rem;
         margin: 1rem 0;
         padding: 0 .5rem;
     }
@@ -2022,7 +2022,8 @@ footer {
     padding: 2rem;
     height: 13rem;
     width: fit-content;
-    min-width: 30%;
+    /* min-width: 30%; */
+    min-width: 150px;
     .vertical-flex {
         gap: .75rem;
         p {
@@ -2086,7 +2087,7 @@ footer {
 
 #funny-mouse-scheme-img {
     background-image: url(../img/funnymouse/scheme.png);
-    aspect-ratio: 2.74731183/1;
+    aspect-ratio: 2.357554793/1;
     width: 80%;
     margin: 0 auto;
 }
@@ -2104,6 +2105,9 @@ footer {
     .horizontal-flex {
         width: 100%;
         gap: 1rem;
+    }
+    p {
+        font-weight: 400;
     }
 }
 
@@ -2142,8 +2146,4 @@ footer {
 
 #funny-mouse-page-8-img {
     background-image: url(../img/funnymouse/page-8.png);
-}
-
-.funny-mouse-die {
-    gap: .1rem;
 }
