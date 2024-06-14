@@ -1278,15 +1278,15 @@ footer {
     width: 100%;
 }
 
-#project-category-block {
-    padding: 5rem 0rem 0rem 0rem;
-    align-items: flex-start;
-}
-
 .project-page-block-content {
     max-width: 1440px;
     margin: 0rem auto;
     overflow: hidden;
+}
+
+#project-category-block {
+    padding: 5rem 1rem 0rem 1rem;
+    width: 100%;
 }
 
 .project-page-block-content.vertical-direction {
@@ -1394,7 +1394,7 @@ footer {
 #worterbuch-top-block {
     background-color: #EEEFEA;
     #worterbuch-img-0 {
-        background-image: url(../img/worterbuch/worterbuch-phones.svg);
+        background-image: url(../img/worterbuch/worterbuch-phones.png);
         aspect-ratio: 1.192/1;
     }
 }
@@ -2149,4 +2149,8 @@ footer {
 
 #funny-mouse-page-8-img {
     background-image: url(../img/funnymouse/page-8.png);
+}
+
+#funny-mouse-project-category{
+    background-color: #D8DEEB;
 }
